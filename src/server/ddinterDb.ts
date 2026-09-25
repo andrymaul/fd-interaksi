@@ -3,9 +3,24 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const dbPath = path.resolve(__dirname, '../data/ddinter_complete.db');
+export function resolveDataFile(relName: string): string {
+  if (process.env.DATA_DIR) {
+    const p = path.resolve(process.env.DATA_DIR, relName);
+    if (fs.existsSync(p)) return p;
+  }
+  const fromCwd = path.resolve(process.cwd(), 'src/data', relName);
+  if (fs.existsSync(fromCwd)) return fromCwd;
+
+  const fromDirname = path.resolve(__dirname, '../data', relName);
+  if (fs.existsSync(fromDirname)) return fromDirname;
+
+  const fromDirnameRoot = path.resolve(__dirname, 'src/data', relName);
+  if (fs.existsSync(fromDirnameRoot)) return fromDirnameRoot;
+
+  return fromCwd;
+}
+
+const dbPath = process.env.DB_PATH || resolveDataFile('ddinter_complete.db');
 
 export interface DDInterStats {
   totalApprovedDrugs: number;
@@ -117,7 +132,7 @@ class DDInterDatabaseService {
 
   private loadFallbackDatasets() {
     try {
-      const drugsPath = path.resolve(__dirname, '../data/ddinter_all_drugs.json');
+      const drugsPath = resolveDataFile('ddinter_all_drugs.json');
       if (fs.existsSync(drugsPath)) {
         const raw = JSON.parse(fs.readFileSync(drugsPath, 'utf-8'));
         this.fallbackDrugs = (raw as any[]).map((d) => ({
@@ -134,7 +149,7 @@ class DDInterDatabaseService {
     }
 
     try {
-      const foodsPath = path.resolve(__dirname, '../data/ddinter_all_foods.json');
+      const foodsPath = resolveDataFile('ddinter_all_foods.json');
       if (fs.existsSync(foodsPath)) {
         const raw = JSON.parse(fs.readFileSync(foodsPath, 'utf-8'));
         this.fallbackFoods = (raw as any[]).map((f, idx) => ({
@@ -153,7 +168,7 @@ class DDInterDatabaseService {
     }
 
     try {
-      const ddsiPath = path.resolve(__dirname, '../data/ddinter_all_ddsi.json');
+      const ddsiPath = resolveDataFile('ddinter_all_ddsi.json');
       if (fs.existsSync(ddsiPath)) {
         const raw = JSON.parse(fs.readFileSync(ddsiPath, 'utf-8'));
         this.fallbackDdsi = (raw as any[]).map((d, idx) => ({
@@ -171,7 +186,7 @@ class DDInterDatabaseService {
     }
 
     try {
-      const dupliPath = path.resolve(__dirname, '../data/ddinter_all_dupli.json');
+      const dupliPath = resolveDataFile('ddinter_all_dupli.json');
       if (fs.existsSync(dupliPath)) {
         const raw = JSON.parse(fs.readFileSync(dupliPath, 'utf-8'));
         this.fallbackDupli = (raw as any[]).map((dup, idx) => ({
@@ -190,7 +205,7 @@ class DDInterDatabaseService {
     }
 
     try {
-      const disPath = path.resolve(__dirname, '../data/ddinter_all_diseases.json');
+      const disPath = resolveDataFile('ddinter_all_diseases.json');
       if (fs.existsSync(disPath)) {
         const raw = JSON.parse(fs.readFileSync(disPath, 'utf-8'));
         this.fallbackDiseases = (raw as any[]).map((item) => ({
@@ -213,6 +228,9 @@ class DDInterDatabaseService {
 
     try {
       const stat = fs.statSync(dbPath);
+      if (stat.size < 1000) {
+        console.error(`[DDInterDb] CRITICAL: File at ${dbPath} is only ${stat.size} bytes. This is a Git LFS pointer, not the SQLite database! Please upload the full ~130 MB ddinter_complete.db.`);
+      }
       // Close previous instance if open
       if (this.db) {
         try {
@@ -301,7 +319,7 @@ class DDInterDatabaseService {
 
   public getStats(): DDInterStats {
     if (this.statsCache) return this.statsCache;
-    const statsPath = path.resolve(__dirname, '../data/ddinter_stats.json');
+    const statsPath = resolveDataFile('ddinter_stats.json');
     if (fs.existsSync(statsPath)) {
       try {
         this.statsCache = JSON.parse(fs.readFileSync(statsPath, 'utf-8'));
