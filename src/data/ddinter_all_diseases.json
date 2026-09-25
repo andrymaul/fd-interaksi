@@ -1,0 +1,2362 @@
+[
+  {
+    "name": "Kidney Diseases",
+    "contraindicatedDrugsCount": 668,
+    "sampleWarning": "Amphotericin B lipid complex is substantially less nephrotoxic than traditional amphotericin B but may still cause decreased renal function and abnormalities such as hypo- and hyperkalemia, hypomagnes"
+  },
+  {
+    "name": "Liver Diseases",
+    "contraindicatedDrugsCount": 664,
+    "sampleWarning": "Hepatotoxicity including lactic acidosis, severe hepatomegaly with steatosis, fulminant hepatitis, and hepatic failure has been associated with the use of some nucleoside reverse transcriptase inhibit"
+  },
+  {
+    "name": "Diabetes Mellitus",
+    "contraindicatedDrugsCount": 192,
+    "sampleWarning": "Parenteral drug products containing maltose can interfere with readings from blood glucose monitors that use test strips with glucose dehydrogenase pyrroloquinoline quinone (GDH-PQQ).  The GDH-PQQ-bas"
+  },
+  {
+    "name": "Infections",
+    "contraindicatedDrugsCount": 171,
+    "sampleWarning": "Serious infections (including sepsis, pneumonia) have been reported in patients receiving abatacept.  Caution and close monitoring are recommended when considering the use of abatacept in patients wit"
+  },
+  {
+    "name": "Depressive Disorder",
+    "contraindicatedDrugsCount": 161,
+    "sampleWarning": "Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults in short-term trials; these trials did not show increased risk in patients older than 24"
+  },
+  {
+    "name": "Hepatic Insufficiency",
+    "contraindicatedDrugsCount": 159,
+    "sampleWarning": "Postmarketing studies have associated the use of abiraterone with severe hepatic toxicity, including fulminant hepatitis, acute liver failure and deaths.  Serum transaminases and bilirubin levels shou"
+  },
+  {
+    "name": "Cardiovascular Diseases",
+    "contraindicatedDrugsCount": 149,
+    "sampleWarning": "Some clinical trials have reported increased risk of myocardial infarction in patients treated with abacavir.  Although some of the findings are inconclusive, as a precaution, the underlying risk of c"
+  },
+  {
+    "name": "Water-Electrolyte Imbalance",
+    "contraindicatedDrugsCount": 133,
+    "sampleWarning": "Amphotericin B lipid complex is substantially less nephrotoxic than traditional amphotericin B but may still cause hypo- and hyperkalemia, hypomagnesemia, and hypocalcemia secondary to renal impairmen"
+  },
+  {
+    "name": "Hypotension",
+    "contraindicatedDrugsCount": 129,
+    "sampleWarning": "The use of atypical antipsychotic agents has been associated with orthostatic hypotension and syncope.  Therapy with atypical antipsychotics should be administered cautiously in patients with hypotens"
+  },
+  {
+    "name": "Heart Failure",
+    "contraindicatedDrugsCount": 125,
+    "sampleWarning": "Cases of worsening congestive heart failure (CHF) and new onset CHF have been reported with TNF blockers.  Cases of worsening CHF have also been observed with adalimumab.  Adalimumab has not been form"
+  },
+  {
+    "name": "Bone Marrow Failure Disorders",
+    "contraindicatedDrugsCount": 116,
+    "sampleWarning": "Paclitaxel induces dose-dependent myelosuppression, primarily affecting neutrophils.  Anemia characterized as a red blood cell count <11 g/dl has been reported in 78% of patients administered paclitax"
+  },
+  {
+    "name": "Hypertension",
+    "contraindicatedDrugsCount": 115,
+    "sampleWarning": "Nonsteroidal anti-inflammatory drugs (NSAIDs), including topicals, can lead to new onset of hypertension or worsening of preexisting hypertension, either of which can contribute to the increased incid"
+  },
+  {
+    "name": "Epilepsy",
+    "contraindicatedDrugsCount": 108,
+    "sampleWarning": "Narcotic (opioid) analgesic agents may exacerbate seizures in patients with seizure disorders and, at higher dosages, have been reported to induce seizures in patients without previous history of seiz"
+  },
+  {
+    "name": "Seizures",
+    "contraindicatedDrugsCount": 106,
+    "sampleWarning": "Antipsychotic and neuroleptic drugs can lower the seizure threshold and trigger seizures in a dose-dependent manner.  This risk is greatest in patients with a history of seizures or with conditions th"
+  },
+  {
+    "name": "Glaucoma",
+    "contraindicatedDrugsCount": 97,
+    "sampleWarning": "Systemic beta-adrenergic receptor blocking agents (aka beta-blockers) may lower intraocular pressure.  Therefore, patients with glaucoma or intraocular hypertension may require adjustments in their op"
+  },
+  {
+    "name": "Intestinal Obstruction",
+    "contraindicatedDrugsCount": 95,
+    "sampleWarning": "Opioid agonists are contraindicated in patients with known or suspected gastrointestinal obstruction, including paralytic ileus."
+  },
+  {
+    "name": "Psychotic Disorders",
+    "contraindicatedDrugsCount": 94,
+    "sampleWarning": "Paradoxical reactions, including excitability, irritability, aggressive behavior, agitation, nervousness, hostility, anxiety, sleep disturbances, nightmares and vivid dreams, have been reported with t"
+  },
+  {
+    "name": "Colitis",
+    "contraindicatedDrugsCount": 93,
+    "sampleWarning": "Clostridioides difficile-associated diarrhea (CDAD), formerly pseudomembranous colitis, has been reported with almost all antibacterial drugs and may range from mild diarrhea to fatal colitis.  The mo"
+  },
+  {
+    "name": "Asthma",
+    "contraindicatedDrugsCount": 92,
+    "sampleWarning": "Patients with bronchospastic disease, should, in general, not receive beta blockers, including cardioselective beta-blockers.  Because of the relative beta-1 selectivity, cardioselective beta-blockers"
+  },
+  {
+    "name": "Long QT Syndrome",
+    "contraindicatedDrugsCount": 85,
+    "sampleWarning": "The effects of QT prolongation potential by nabilone have not been studies.  Caution and monitoring is advised if used in patients with long QT syndrome."
+  },
+  {
+    "name": "Respiratory Insufficiency",
+    "contraindicatedDrugsCount": 82,
+    "sampleWarning": "The use of neuroleptic agents is contraindicated in comatose patients and patients with severe central nervous system depression.  Neuroleptic agents may potentiate the CNS and respiratory depression "
+  },
+  {
+    "name": "Liver Failure",
+    "contraindicatedDrugsCount": 80,
+    "sampleWarning": "The use of carbonic anhydrase inhibitors is contraindicated in patients with marked liver disease or cirrhosis.  Carbonic anhydrase inhibitors increase the risk of developing hepatic encephalopathy in"
+  },
+  {
+    "name": "Alcoholic Intoxication",
+    "contraindicatedDrugsCount": 77,
+    "sampleWarning": "The use of neuroleptic agents is contraindicated in patients with acute alcohol intoxication exhibiting depressed vital signs.  The central nervous system depressant effects of neuroleptic agents may "
+  },
+  {
+    "name": "Myasthenia Gravis",
+    "contraindicatedDrugsCount": 75,
+    "sampleWarning": "Beta-adrenergic receptor blocking agents (aka beta-blockers) may potentiate muscle weakness consistent with certain myasthenic symptoms such as diplopia, ptosis, and generalized weakness.  Several bet"
+  },
+  {
+    "name": "Lung Diseases",
+    "contraindicatedDrugsCount": 70,
+    "sampleWarning": "The use of certain multikinase inhibitors has been associated with pulmonary toxicity.  Serious cases of interstitial lung disease (ILD), including fatal cases and interstitial pneumonitis or pulmonar"
+  },
+  {
+    "name": "Hematologic Diseases",
+    "contraindicatedDrugsCount": 69,
+    "sampleWarning": "Cases of leukopenia, neutropenia, and agranulocytosis have been reported with the use of atypical antipsychotic agents.  Patients with preexisting low white blood cell count may be at increased risk. "
+  },
+  {
+    "name": "Diseases requiring hemodialysis",
+    "contraindicatedDrugsCount": 68,
+    "sampleWarning": "Anaphylactoid reactions have been reported in patients undergoing hemodialysis with high-flux polyacrylonitrile membranes and treated concomitantly with an ACE inhibitor.  The frequency and mechanism "
+  },
+  {
+    "name": "Hyperlipidemias",
+    "contraindicatedDrugsCount": 65,
+    "sampleWarning": "The use of retinoids is associated with elevations in serum triglycerides and cholesterol, and decreases in HDL.  In addition to cardiovascular risks, elevation of serum triglycerides to greater than "
+  },
+  {
+    "name": "Arrhythmias, Cardiac",
+    "contraindicatedDrugsCount": 64,
+    "sampleWarning": "Opiate agonists have cholinergic activity.  Large doses and/or rapid intravenous administration may produce bradycardia and arrhythmia via stimulation of medullary vagal nuclei.  Unlike other agents i"
+  },
+  {
+    "name": "Thromboembolism",
+    "contraindicatedDrugsCount": 64,
+    "sampleWarning": "Adrenocorticotropic agents may increase blood coagulability and have rarely been associated with the development of intravascular thrombosis, thromboembolism, and thrombophlebitis.  These agents shoul"
+  },
+  {
+    "name": "Substance-Related Disorders",
+    "contraindicatedDrugsCount": 63,
+    "sampleWarning": "Opiate agonists have the potential to cause dependence and abuse.  Tolerance as well as physical and psychological dependence can develop after prolonged use.  Abrupt cessation, reduction in dosage, o"
+  },
+  {
+    "name": "Heart Diseases",
+    "contraindicatedDrugsCount": 63,
+    "sampleWarning": "The use of some antiemetics such as dronabinol and nabilone has been associated with occasional hypotension, possible hypertension, syncope or tachycardia.  Therapy with these drugs should be administ"
+  },
+  {
+    "name": "Peptic Ulcer",
+    "contraindicatedDrugsCount": 62,
+    "sampleWarning": "Adrenocorticotropic agents may cause peptic ulcer disease and gastrointestinal (GI) hemorrhage, usually when given in high dosages or for prolonged periods.  Delayed healing of peptic ulcers has also "
+  },
+  {
+    "name": "Hypothyroidism",
+    "contraindicatedDrugsCount": 59,
+    "sampleWarning": "Patients with hypothyroidism may have increased risk of respiratory depression and prolonged CNS depression associated with the use of narcotic (opioid) analgesic agents.  These agents may also exacer"
+  },
+  {
+    "name": "Gastrointestinal Diseases",
+    "contraindicatedDrugsCount": 58,
+    "sampleWarning": "Narcotic (opioid) analgesic agents increase smooth muscle tone in the gastrointestinal tract and decrease peristalsis, which can lead to elevated intraluminal pressure, spasm, and constipation followi"
+  },
+  {
+    "name": "Hemorrhage",
+    "contraindicatedDrugsCount": 56,
+    "sampleWarning": "Serious hemorrhagic events, including fatal events, have occurred in patients treated with acalabrutinib.  Care should be exercised when using acalabrutinib in patients with bleeding disorders.  It is"
+  },
+  {
+    "name": "Toxic Optic Neuropathy",
+    "contraindicatedDrugsCount": 55,
+    "sampleWarning": "Ophthalmologic manifestations have been reported with the use of acitretin.  It is recommended that any patient treated with acitretin who is experiencing visual difficulties should discontinue the dr"
+  },
+  {
+    "name": "Hyperkalemia",
+    "contraindicatedDrugsCount": 54,
+    "sampleWarning": "In patients with hyperkalemia, especially those associated with impaired renal function or congestive heart failure, ACE inhibitors may further raise serum potassium levels.  Therapy with ACE inhibito"
+  },
+  {
+    "name": "Anticholinergic Syndrome",
+    "contraindicatedDrugsCount": 49,
+    "sampleWarning": "Most neuroleptic agents have anticholinergic activity, to which elderly patients are particularly sensitive.  Clozapine and low- potency agents such as chlorpromazine and thioridazine tend to exhibit "
+  },
+  {
+    "name": "Neutropenia",
+    "contraindicatedDrugsCount": 47,
+    "sampleWarning": "Neutropenia, including febrile neutropenia has occurred in patients receiving abemaciclib.  Care should be exercised when prescribing this agent to patients with preexisting neutropenia.  It is recomm"
+  },
+  {
+    "name": "Adrenal Insufficiency",
+    "contraindicatedDrugsCount": 47,
+    "sampleWarning": "Patients with Addison's disease may have increased risk of respiratory depression and prolonged CNS depression associated with the use of narcotic (opioid) analgesic agents.  Conversely, these agents "
+  },
+  {
+    "name": "Hyperthyroidism",
+    "contraindicatedDrugsCount": 47,
+    "sampleWarning": "When beta-adrenergic receptor blocking agents (aka beta-blockers) are used to alleviate symptoms of hyperthyroidism such as tachycardia, anxiety, tremor and heat intolerance, abrupt withdrawal can exa"
+  },
+  {
+    "name": "Tardive Dyskinesia",
+    "contraindicatedDrugsCount": 46,
+    "sampleWarning": "Tardive dyskinesia (TD) has occurred in patients treated with antipsychotic drugs; the syndrome consists of potentially irreversible, involuntary, dyskinetic movements.  The risk appears highest in ol"
+  },
+  {
+    "name": "Peripheral Nervous System Diseases",
+    "contraindicatedDrugsCount": 44,
+    "sampleWarning": "Dose-dependent peripheral neuropathy has been reported in 60% of patients during paclitaxel therapy.  Severe peripheral neuropathy is rare and requires a 20% reduction in dosage of paclitaxel.  Therap"
+  },
+  {
+    "name": "Thyroid Diseases",
+    "contraindicatedDrugsCount": 44,
+    "sampleWarning": "When administering estrogen and/or progestogen therapy in patients with thyroid disorders, clinicians should be aware that these hormones may affect thyroid function tests.  Changes have mostly been r"
+  },
+  {
+    "name": "Anemia",
+    "contraindicatedDrugsCount": 43,
+    "sampleWarning": "Amphotericin B lipid complex may depress red blood cell production and occasionally causes a normocytic, normochromic anemia.  A 4% incidence was reported during clinical trials.  Although the anemia "
+  },
+  {
+    "name": "Urinary Retention",
+    "contraindicatedDrugsCount": 42,
+    "sampleWarning": "Narcotic (opioid) analgesic agents may inhibit the urinary voiding reflex and increase the tone of the vesical sphincter in the bladder.  Acute urinary retention requiring catheterization may occur, p"
+  },
+  {
+    "name": "Dehydration",
+    "contraindicatedDrugsCount": 42,
+    "sampleWarning": "Intravenous administration of acetylcysteine can cause fluid overload, potentially resulting in hyponatremia, seizure and death.  To avoid fluid overload, a diluted dose is recommended, especially in "
+  },
+  {
+    "name": "Premature Birth",
+    "contraindicatedDrugsCount": 40,
+    "sampleWarning": "The use of narcotic (opioid) analgesic agents is contraindicated in premature infants.  These agents may cross the immature blood-brain barrier to a greater extent than in adults, resulting in disprop"
+  },
+  {
+    "name": "Pheochromocytoma",
+    "contraindicatedDrugsCount": 40,
+    "sampleWarning": "Administration of beta-blockers alone in the setting of pheochromocytoma has been associated with a paradoxical increase in blood pressure due to the attenuation of beta-mediated vasodilatation in ske"
+  },
+  {
+    "name": "Neuroleptic Malignant Syndrome",
+    "contraindicatedDrugsCount": 39,
+    "sampleWarning": "The central dopaminergic blocking effects of neuroleptic agents may precipitate or aggravate a potentially fatal symptom complex known as neuroleptic malignant syndrome (NMS).  NMS is observed most fr"
+  },
+  {
+    "name": "Breast Neoplasms",
+    "contraindicatedDrugsCount": 39,
+    "sampleWarning": "The use of estrogens is generally contraindicated in patients with known or suspected estrogen-dependent neoplasia such as breast and endometrial cancer, since it may stimulate tumor proliferation.  H"
+  },
+  {
+    "name": "Mental Disorders",
+    "contraindicatedDrugsCount": 38,
+    "sampleWarning": "The use of retinoids, primarily isotretinoin, has been associated with causing depression, psychosis and rarely, suicidal ideation.  Therapy with retinoids should be administered cautiously in patient"
+  },
+  {
+    "name": "Bipolar Disorder",
+    "contraindicatedDrugsCount": 37,
+    "sampleWarning": "Central nervous system (CNS) stimulants may induce a mixed/manic episode in patients with bipolar disorder.  Prior to initiating treatment, screen patients for risk factors for developing a manic epis"
+  },
+  {
+    "name": "Hypersensitivity",
+    "contraindicatedDrugsCount": 36,
+    "sampleWarning": "The use of beta-adrenergic receptor blocking agents (aka beta-blockers) in patients with a history of allergic reactions or anaphylaxis may be associated with heightened reactivity to culprit allergen"
+  },
+  {
+    "name": "Hyperglycemia",
+    "contraindicatedDrugsCount": 35,
+    "sampleWarning": "Hyperglycemia, in some cases extreme and associated with ketoacidosis or hyperosmolar coma or death, has been reported with the use of atypical antipsychotic agents.  Patients with diabetes should be "
+  },
+  {
+    "name": "Hypokalemia",
+    "contraindicatedDrugsCount": 35,
+    "sampleWarning": "Adrenergic bronchodilators may cause decreases in serum potassium concentrations, primarily when given by nebulization or intravenous administration.  Although this effect is usually transient and doe"
+  },
+  {
+    "name": "Parkinsonian Disorders",
+    "contraindicatedDrugsCount": 33,
+    "sampleWarning": "The use of neuroleptic agents is associated with pseudo-parkinsonian symptoms such as akinesia, bradykinesia, tremors, pill-rolling motion, cogwheel rigidity, and postural abnormalities including stoo"
+  },
+  {
+    "name": "Intracranial Hypertension",
+    "contraindicatedDrugsCount": 33,
+    "sampleWarning": "The use of retinoids has been associated with cases of pseudotumor cerebri (benign intracranial hypertension).  Early signs and symptoms include papilledema, headache, nausea and vomiting, and visual "
+  },
+  {
+    "name": "Glaucoma, Angle-Closure",
+    "contraindicatedDrugsCount": 33,
+    "sampleWarning": "The manufacturers consider the use of benzodiazepines to be contraindicated in patients with acute angle-closure glaucoma or untreated open-angle glaucoma.  These agents do not possess anticholinergic"
+  },
+  {
+    "name": "Cardiomyopathies",
+    "contraindicatedDrugsCount": 33,
+    "sampleWarning": "Antiarrhythmic agents can induce severe hypotension (particularly with IV administration) or induce or worsen congestive heart failure (CHF).  Patients with primary cardiomyopathy or inadequately comp"
+  },
+  {
+    "name": "Adrenocortical Hyperfunction",
+    "contraindicatedDrugsCount": 33,
+    "sampleWarning": "The use of topical corticosteroids may precipitate or aggravate conditions of hyperadrenocorticism.  Systemic absorption of these agents can produce reversible hypothalamic-pituitary-adrenal axis supp"
+  },
+  {
+    "name": "Central Nervous System Diseases",
+    "contraindicatedDrugsCount": 33,
+    "sampleWarning": "Reversible CNS effects such as seizures, mental status changes, manic behavior or psychotic reactions, gait disturbances, and dizziness have occurred in patients receiving interferons.  Therapy with i"
+  },
+  {
+    "name": "Thrombosis",
+    "contraindicatedDrugsCount": 32,
+    "sampleWarning": "Deep venous thrombosis (DVT) and pulmonary embolism (PE) were observed in patients receiving abrocitinib.  Patients 50 years of age and older with at least one cardiovascular risk factor, had higher r"
+  },
+  {
+    "name": "Dysentery",
+    "contraindicatedDrugsCount": 32,
+    "sampleWarning": "Narcotic (opioid) analgesic agents may prolong and/or worsen diarrhea associated with organisms that invade the intestinal mucosa, such as toxigenic E. coli, Salmonella, Shigella, and pseudomembranous"
+  },
+  {
+    "name": "Coronary Artery Disease",
+    "contraindicatedDrugsCount": 32,
+    "sampleWarning": "Increased frequency, duration, and/or severity of angina, as well as acute myocardial infarction, have rarely developed during initiation or dosage increase of calcium channel blockers (CCBs), particu"
+  },
+  {
+    "name": "Kidney Failure, Chronic",
+    "contraindicatedDrugsCount": 32,
+    "sampleWarning": "Acute kidney injury and worsening of chronic renal failure which sometimes required hemodialysis has been reported postmarketing in patients treated with lixisenatide.  Renal function should be closel"
+  },
+  {
+    "name": "Alcoholism",
+    "contraindicatedDrugsCount": 31,
+    "sampleWarning": "Chronic alcohol abusers may be at increased risk of hepatotoxicity during treatment with acetaminophen (APAP).  Severe liver injury, including cases of acute liver failure resulting in liver transplan"
+  },
+  {
+    "name": "Hypoglycemia",
+    "contraindicatedDrugsCount": 31,
+    "sampleWarning": "Hypoglycemia may commonly occur during treatment with insulin and/or oral hypoglycemic agents.  Care should be taken in patients who may be particularly susceptible to the development of hypoglycemic "
+  },
+  {
+    "name": "Blood Platelet Disorders",
+    "contraindicatedDrugsCount": 31,
+    "sampleWarning": "The use of selective serotonin reuptake inhibitors (SSRIs) has been associated with altered platelet function.  Petechiae, purpura, ecchymosis, increased bleeding times, epistaxis and gastrointestinal"
+  },
+  {
+    "name": "Porphyrias",
+    "contraindicatedDrugsCount": 31,
+    "sampleWarning": "The use of sulfonamides is contraindicated in patients with porphyria, since these drugs can precipitate an acute attack."
+  },
+  {
+    "name": "Dementia",
+    "contraindicatedDrugsCount": 30,
+    "sampleWarning": "Older patients with dementia-related psychosis treated with antipsychotic drugs are at an increased risk of death; although the causes were varied, most of the deaths appeared to be either cardiovascu"
+  },
+  {
+    "name": "Angioedema",
+    "contraindicatedDrugsCount": 29,
+    "sampleWarning": "The use of these agents is contraindicated in patients with hereditary angioedema or a history of idiopathic angioedema.  Patients with a history of angioedema unrelated to ACE inhibitors may be at in"
+  },
+  {
+    "name": "Diseases requiring dialysis",
+    "contraindicatedDrugsCount": 29,
+    "sampleWarning": "Ascorbic acid is removed by dialysis."
+  },
+  {
+    "name": "Osteoporosis",
+    "contraindicatedDrugsCount": 28,
+    "sampleWarning": "Isotretinoin may have a negative effect on bone mineral density in some patients.  Clinical trials have shown BMD declines in adolescents during a 20 week treatment.  Therefore, physicians should use "
+  },
+  {
+    "name": "Shock, Cardiogenic",
+    "contraindicatedDrugsCount": 28,
+    "sampleWarning": "The use of beta-adrenergic receptor blocking agents (aka beta-blockers) is contraindicated in patients with hypotension or cardiogenic shock.  Due to their negative inotropic and chronotropic effects "
+  },
+  {
+    "name": "Exanthema",
+    "contraindicatedDrugsCount": 28,
+    "sampleWarning": "Nonsteroidal anti-inflammatory drugs (NSAIDs) can cause serious skin adverse reactions (e.g., Stevens-Johnson syndrome, toxic epidermal necrolysis, and exfoliative dermatitis), which can be fatal.  Th"
+  },
+  {
+    "name": "Inflammatory Bowel Diseases",
+    "contraindicatedDrugsCount": 27,
+    "sampleWarning": "Iron can be irritating and damaging to gastrointestinal mucosa.  Iron therapy should be avoided during an active flare of inflammatory bowel disease."
+  },
+  {
+    "name": "Tachycardia",
+    "contraindicatedDrugsCount": 27,
+    "sampleWarning": "Beta-adrenergic blockade in patients with Wolff-Parkinson-White syndrome and tachycardia has been associated with severe bradycardia requiring treatment with a pacemaker.  In one case, this result was"
+  },
+  {
+    "name": "Hyponatremia",
+    "contraindicatedDrugsCount": 27,
+    "sampleWarning": "The use of carbonic anhydrase inhibitors is contraindicated in patients with hyponatremia .  Carbonic anhydrase inhibitors may cause sodium excretion.  Extreme caution should be exercised if a carboni"
+  },
+  {
+    "name": "Peptic Ulcer Perforation",
+    "contraindicatedDrugsCount": 27,
+    "sampleWarning": "The use of tocilizumab may cause gastrointestinal (GI) perforation.  Tocilizumab should be used with caution in patients who may be at increased risk for GI perforation.  Patients with new onset abdom"
+  },
+  {
+    "name": "Pancreatitis",
+    "contraindicatedDrugsCount": 27,
+    "sampleWarning": "Acute pancreatitis, including fatal and non- fatal hemorrhagic or necrotizing pancreatitis, has been reported postmarketing in patients treated with lixisenatide.  Some patients had risk factors such "
+  },
+  {
+    "name": "Gallbladder Diseases",
+    "contraindicatedDrugsCount": 26,
+    "sampleWarning": "Narcotic (opioid) analgesic agents increase smooth muscle tone in the biliary tract, which can lead to spasm and elevated biliary tract pressure, especially in the sphincter of Oddi.  Biliary effects "
+  },
+  {
+    "name": "Myocardial Infarction",
+    "contraindicatedDrugsCount": 26,
+    "sampleWarning": "Clinical trials studying the use of immediate-release nifedipine in patients who had just sustained myocardial infarctions have not demonstrated any benefit.  In fact, in some trials, patients who rec"
+  },
+  {
+    "name": "Eye Diseases",
+    "contraindicatedDrugsCount": 25,
+    "sampleWarning": "Estrogens and progestogens may cause retinal thrombosis.  Oral contraceptives should be discontinued if there is unexplained partial or complete loss of vision; onset of proptosis or diplopia; papille"
+  },
+  {
+    "name": "Tuberculosis",
+    "contraindicatedDrugsCount": 24,
+    "sampleWarning": "Prior to initiating abatacept, patients should be screened for latent tuberculosis infection with a tuberculin skin test.  Patients testing positive in tuberculosis screening should be treated by stan"
+  },
+  {
+    "name": "Hyperprolactinemia",
+    "contraindicatedDrugsCount": 24,
+    "sampleWarning": "The chronic use of neuroleptic agents can cause persistent elevations in prolactin levels due to antagonism of dopamine D2 receptors.  Based on in vitro data, approximately one-third of human breast c"
+  },
+  {
+    "name": "Thrombocytopenia",
+    "contraindicatedDrugsCount": 24,
+    "sampleWarning": "Thrombocytopenia has been reported with the use of agents that block HER2 activity.  Monitor platelet counts prior to initiation of therapy and prior to each dose.  If appropriate modify the dose acco"
+  },
+  {
+    "name": "Neoplasms",
+    "contraindicatedDrugsCount": 23,
+    "sampleWarning": "Parathyroid hormone and its analogs should not be used in patients who are at increased baseline risk for osteosarcoma.  These agents should only be used if the potential benefits are considered to ou"
+  },
+  {
+    "name": "Atrioventricular Block",
+    "contraindicatedDrugsCount": 23,
+    "sampleWarning": "The use of beta-adrenergic receptor blocking agents (aka beta-blockers) is contraindicated in patients with sinus bradyarrhythmia or heart block greater than the first degree (unless a functioning pac"
+  },
+  {
+    "name": "Cerebrovascular Disorders",
+    "contraindicatedDrugsCount": 23,
+    "sampleWarning": "Beta-adrenergic blocking agents (beta-blockers), should be used with caution in patients with cerebrovascular insufficiency because of their potential effects relative to blood pressure and pulse.  If"
+  },
+  {
+    "name": "Diarrhea",
+    "contraindicatedDrugsCount": 22,
+    "sampleWarning": "Diarrhea, sometimes associated with dehydration and infection, has occurred in patients receiving abemaciclib.  Diarrhea incidence was greatest during the first month of abemaciclib dosing.  Care shou"
+  },
+  {
+    "name": "Keratitis, Herpetic",
+    "contraindicatedDrugsCount": 22,
+    "sampleWarning": "Adrenocorticotropic agents should be used cautiously, if at all, in patients with ocular herpes simplex because of the risk of corneal perforation.  The manufacturers consider their use to be contrain"
+  },
+  {
+    "name": "Hypercalcemia",
+    "contraindicatedDrugsCount": 22,
+    "sampleWarning": "Estrogens influence the metabolism of calcium and phosphorus.  Intestinal absorption and retention of calcium are increased, which may occasionally result in hypercalcemia.  Therapy with estrogens sho"
+  },
+  {
+    "name": "Glucosephosphate Dehydrogenase Deficiency",
+    "contraindicatedDrugsCount": 22,
+    "sampleWarning": "Sulfasalazine may cause hemolytic anemia in patients with glucose-6 phosphate dehydrogenase deficiency.  This reaction is frequently dose related.  It is recommended to observe these patients closely "
+  },
+  {
+    "name": "Weight Gain",
+    "contraindicatedDrugsCount": 21,
+    "sampleWarning": "Weight gain has been observed with atypical antipsychotic use.  While all agents in the class have been shown to produce some changes, each drug has its own specific risk profile.  When treating pedia"
+  },
+  {
+    "name": "Schizophrenia",
+    "contraindicatedDrugsCount": 21,
+    "sampleWarning": "Tricyclic antidepressants (TCAs) may aggravate symptoms of psychosis in schizophrenic patients, particularly those with paranoid symptomatology.  Depressed patients, usually those with bipolar disorde"
+  },
+  {
+    "name": "Malabsorption Syndromes",
+    "contraindicatedDrugsCount": 20,
+    "sampleWarning": "Absorption of vitamin A  depends on the presence of bile and absorbable fat in the GI tract.  Prolonged fat malabsorption (cystic fibrosis, hepatic cirrhosis, sprue) or malabsorption syndromes (celiac"
+  },
+  {
+    "name": "Peripheral Vascular Diseases",
+    "contraindicatedDrugsCount": 20,
+    "sampleWarning": "Due to their negative inotropic and chronotropic effects on the heart, beta-adrenergic receptor blocking agents (aka beta-blockers) reduce cardiac output and may precipitate or aggravate symptoms of a"
+  },
+  {
+    "name": "Diaper Rash",
+    "contraindicatedDrugsCount": 20,
+    "sampleWarning": "Topical corticosteroids, especially the potent agents (e.g., augmented betamethasone, clobetasol, diflorasone, and halobetasol), are generally not recommended for use in the treatment of diaper rash. "
+  },
+  {
+    "name": "Immune Deficiency Disease",
+    "contraindicatedDrugsCount": 20,
+    "sampleWarning": "The expected serum antibody responses may not be obtained when vaccines and/or toxoids are administered to patients with primary or acquired immunodeficiency, including those with severe combined immu"
+  },
+  {
+    "name": "Fibrosis",
+    "contraindicatedDrugsCount": 19,
+    "sampleWarning": "The use of acarbose is contraindicated in patients with primary cirrhosis."
+  },
+  {
+    "name": "Phenylketonurias",
+    "contraindicatedDrugsCount": 18,
+    "sampleWarning": "Several oral acetaminophen and acetaminophen-combination products, particularly flavored chewable tablets, contain the artificial sweetener, aspartame (NutraSweet).  Aspartame is converted to phenylal"
+  },
+  {
+    "name": "Neurotoxicity Syndromes",
+    "contraindicatedDrugsCount": 18,
+    "sampleWarning": "The use of TNF blocking agents has been associated with rare cases of CNS manifestations of systemic vasculitis, seizure and new onset or exacerbation of clinical symptoms and/or radiographic evidence"
+  },
+  {
+    "name": "Fever",
+    "contraindicatedDrugsCount": 18,
+    "sampleWarning": "The release of fentanyl from the transdermal system may be temperature-dependent.  According to the manufacturer, a body temperature of 40 C (102 F) may theoretically increase serum fentanyl concentra"
+  },
+  {
+    "name": "Bradycardia",
+    "contraindicatedDrugsCount": 18,
+    "sampleWarning": "Due to their pharmacological action, cholinesterase inhibitors can have a vagotonic effect on the sinoatrial and atrioventricular nodes producing bradycardia or heart block.  Therapy with cholinestera"
+  },
+  {
+    "name": "Hyperuricemia",
+    "contraindicatedDrugsCount": 18,
+    "sampleWarning": "Potassium-sparing diuretics have been reported to elevate serum uric acid levels.  Therapy with these agents should be administered cautiously in patients with a history of gout."
+  },
+  {
+    "name": "Hemorrhagic Disorders",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "The use of thrombolytics is contraindicated in patients with an active bleed (internal), trauma/surgery (recent CPR/intracranial/intraspinal surgery within 2 months), bleeding diathesis, history of ce"
+  },
+  {
+    "name": "Myocardial Ischemia",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "Heightened sensitivity to catecholamines may occur after prolonged use of beta-adrenergic receptor blocking agents (aka beta-blockers).  Exacerbation of angina, myocardial infarction and ventricular a"
+  },
+  {
+    "name": "Psoriasis",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "The use of beta-blockers in psoriatic patients should be carefully weighed since the use of these agents may cause an aggravation in psoriasis."
+  },
+  {
+    "name": "Acidosis",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "Reduced plasma bicarbonate levels and, in some instances, elevated plasma chloride levels may result in metabolic acidosis during long-term therapy with carbonic anhydrase inhibitors.  Therapy with ca"
+  },
+  {
+    "name": "Mania",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "Selective serotonin reuptake inhibitors (SSRIs), like other antidepressants, may occasionally cause or activate mania or hypomania.  The reported incidence ranged from 0.1% to 2% in premarketing testi"
+  },
+  {
+    "name": "Autoimmune Diseases",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "Aldesleukin may exacerbate existing or activate quiescent autoimmune disease.  Therapy with aldesleukin should be administered cautiously in patients with autoimmune diseases."
+  },
+  {
+    "name": "Pancytopenia",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "Severe, including fatal, autoimmune anemia and thrombocytopenia, and prolonged myelosuppression have been reported in patients receiving alemtuzumab.  It is recommended to withhold therapy for severe "
+  },
+  {
+    "name": "Rhabdomyolysis",
+    "contraindicatedDrugsCount": 17,
+    "sampleWarning": "Severe myopathy, including rhabdomyolysis with acute renal failure secondary to myoglobinuria, has been reported rarely with the use of HMG-CoA reductase inhibitors.  The myopathy may be dose-related "
+  },
+  {
+    "name": "Hepatitis B",
+    "contraindicatedDrugsCount": 16,
+    "sampleWarning": "Because antirheumatic therapies have been associated with hepatitis B reactivation, patients should be screened for viral hepatitis in accordance with published guidelines before starting therapy with"
+  },
+  {
+    "name": "Muscular Diseases",
+    "contraindicatedDrugsCount": 16,
+    "sampleWarning": "Toxic myopathy may occur with the prolonged use of adrenocorticotropic agents, often in patients with disorders of neuromuscular transmission such as myasthenia gravis or in patients receiving neuromu"
+  },
+  {
+    "name": "Pneumonia, Aspiration",
+    "contraindicatedDrugsCount": 15,
+    "sampleWarning": "Esophageal dysmotility and aspiration have been associated with the use of antipsychotic drugs.  These drugs should be administered cautiously in patients at risk for aspiration pneumonia."
+  },
+  {
+    "name": "Obesity",
+    "contraindicatedDrugsCount": 15,
+    "sampleWarning": "The plasma half-lives of benzodiazepines may be prolonged in obese patients, presumably due to increased distribution into fat.  Marked increases in distribution (> 100%) have been reported for diazep"
+  },
+  {
+    "name": "IMMUNE SUPPRESSION",
+    "contraindicatedDrugsCount": 15,
+    "sampleWarning": "Probiotics, especially those containing lactobacillus, should be used with caution in immunosuppressed patients."
+  },
+  {
+    "name": "Tumor Lysis Syndrome",
+    "contraindicatedDrugsCount": 15,
+    "sampleWarning": "Tumor lysis syndrome (TLS) has occurred in patients receiving certain monoclonal antibodies.  Patients with high tumor burden and those with high circulating lymphocyte counts of greater than 25 X 10^"
+  },
+  {
+    "name": "Dyslipidemias",
+    "contraindicatedDrugsCount": 14,
+    "sampleWarning": "Atypical antipsychotic drugs have been associated with undesirable alterations in lipid levels.  While all agents in the class have been shown to produce some changes, each drug has its own specific r"
+  },
+  {
+    "name": "Hypocalcemia",
+    "contraindicatedDrugsCount": 14,
+    "sampleWarning": "The use of bisphosphonates is contraindicated for the treatment of osteoporosis in patients with hypocalcemia.  These agents increase bone mineral density, a process that requires an adequate supply o"
+  },
+  {
+    "name": "Urinary Bladder Neck Obstruction",
+    "contraindicatedDrugsCount": 14,
+    "sampleWarning": "In general, the use of anticholinergic agents is contraindicated in patients with urinary retention and bladder neck obstruction caused by prostatic hypertrophy.  Dysuria may occur and may require cat"
+  },
+  {
+    "name": "Cardiotoxicity",
+    "contraindicatedDrugsCount": 14,
+    "sampleWarning": "Like other methylxanthines, caffeine at high dosages may be associated with positive inotropic and chronotropic effects on the heart.  Caffeine may also produce an increase in systemic vascular resist"
+  },
+  {
+    "name": "Crystalluria",
+    "contraindicatedDrugsCount": 14,
+    "sampleWarning": "Crystalluria can occur during sulfonamide therapy due to precipitation of the sulfonamide and/or its N4-acetyl metabolite in the urinary tract.  Renal toxicity such as uro- and nephrolithiasis, nephri"
+  },
+  {
+    "name": "Ototoxicity",
+    "contraindicatedDrugsCount": 14,
+    "sampleWarning": "Aminoglycosides can cause eighth cranial nerve damage, resulting in vestibular and/or auditory toxicities.  Symptoms include dizziness, nystagmus, vertigo, ataxia, tinnitus, and varying degrees of hea"
+  },
+  {
+    "name": "Lupus Erythematosus, Systemic",
+    "contraindicatedDrugsCount": 14,
+    "sampleWarning": "The use of hydralazine has been associated with the development of lupus erythematosus and lupus-like syndromes, as well as exacerbation of the disease.  Hydralazine therapy should be withdrawn in pat"
+  },
+  {
+    "name": "Diabetic Neuropathies",
+    "contraindicatedDrugsCount": 13,
+    "sampleWarning": "Agents with anticholinergic activity can exacerbate many of the manifestations of autonomic neuropathy, including tachycardia, anhidrosis, bladder atony, obstipation, dry mouth and eyes, cycloplegia a"
+  },
+  {
+    "name": "Hemophilia A",
+    "contraindicatedDrugsCount": 13,
+    "sampleWarning": "There have been postmarketing reports of increased bleeding, including spontaneous skin hematomas and hemarthrosis, in types A and B hemophiliac patients treated with protease inhibitors.  However, a "
+  },
+  {
+    "name": "Latent Tuberculosis",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "In patients with latent tuberculosis or tuberculin reactivity, the use of pharmacologic dosages of adrenocorticotropic agents may cause a reactivation of the disease.  Close monitoring for signs and s"
+  },
+  {
+    "name": "Glucose Intolerance",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Impaired glucose tolerance has been observed in some patients administered oral contraceptives and appears to be related primarily to the estrogen dose.  However, progestogens can increase insulin sec"
+  },
+  {
+    "name": "Edema",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Thiazolidinediones can cause dose-related edema.  Therapy with thiazolidinediones should be administered cautiously in patients at risk for congestive heart failure as well as those with fluid overloa"
+  },
+  {
+    "name": "Tics",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Central nervous system (CNS) stimulants have been reported to exacerbate Tourette's syndrome and other motor and phonic tics.  Therapy with CNS stimulants, if necessary, should be administered cautiou"
+  },
+  {
+    "name": "Diabetes Mellitus, Type 2",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Obese, type 2 diabetic patients who achieve weight loss may demonstrate improved metabolic control of their disease as a result of their reduced weight.  Therefore, patients with type 2 diabetes melli"
+  },
+  {
+    "name": "Bronchial Spasm",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Cholinesterase inhibitors inhibit the hydrolysis of acetylcholine.  The enhanced effect of acetylcholine produces constriction of the bronchi, increased bronchial secretions, and bronchospasm.  Therap"
+  },
+  {
+    "name": "Urethral Obstruction",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "The use of sulfasalazine tablets is contraindicated in patients with urinary obstruction."
+  },
+  {
+    "name": "Blood Coagulation Disorders",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Androgenic anabolic steroids may cause suppression of clotting factors II, V, VII, and X, and an increase in prothrombin time.  Androgen therapy should be administered cautiously in patients with blee"
+  },
+  {
+    "name": "Leukoencephalopathy, Progressive Multifocal",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Serious infections, including reactivation of viral infections, have been reported with the use of anti-CD20 antibodies.  JC virus infections resulting in progressive multifocal leukoencephalopathy (P"
+  },
+  {
+    "name": "Stevens-Johnson Syndrome",
+    "contraindicatedDrugsCount": 12,
+    "sampleWarning": "Cutaneous reactions, in some cases severe, have been reported with the use of EGFR inhibitors.  Monitor patients who develop dermatologic or soft tissue toxicities while receiving these agents for the"
+  },
+  {
+    "name": "Weight Loss",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "The use of selective serotonin reuptake inhibitors (SSRIs) may occasionally cause significant weight loss, which may be undesirable in patients suffering from anorexia, malnutrition or excessive weigh"
+  },
+  {
+    "name": "Scleroderma, Localized",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "The use of adrenocorticotropic agents is contraindicated in patients with scleroderma.  Adrenocorticotropic agents may precipitate renal crisis with malignant hypertension in these patients, possibly "
+  },
+  {
+    "name": "Liver Neoplasms",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "The use of oral contraceptives is contraindicated in patients with liver tumors.  An increased risk of benign hepatic adenomas and hepatocellular carcinomas has been associated with long-term, oral es"
+  },
+  {
+    "name": "Vision Disorders",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "Conjunctivitis and keratitis occurred more frequently in patients with atopic dermatitis who received tralokinmab, being conjunctivitis the most frequently reported eye disorder.  Patients should repo"
+  },
+  {
+    "name": "Cushing Syndrome",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "Corticosteroids mimic the effects of endogenous cortisol and aldosterone.  Use of these agents may aggravate conditions of hyperadrenocorticalism in a dose-dependent manner."
+  },
+  {
+    "name": "Nephrolithiasis",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "Following treatment with orlistat, some patients may develop increased levels of urinary oxalate as a result of fat malabsorption.  Therapy with orlistat should be administered cautiously in patients "
+  },
+  {
+    "name": "Tendinopathy",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "Tendonitis and ruptures of the shoulder, hand, and Achilles tendons have been reported in patients receiving quinolones, both during and after treatment.  Avoid the use of these agents in patients who"
+  },
+  {
+    "name": "Acid-Base Imbalance",
+    "contraindicatedDrugsCount": 11,
+    "sampleWarning": "Alkalinizing agents act as proton acceptors and/or dissociate to provide bicarbonate ions.  Elimination of bicarbonate is decreased in patients with renal impairment and can result in metabolic alkalo"
+  },
+  {
+    "name": "Sick Sinus Syndrome",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "The use of lidocaine is contraindicated in patients with Stokes-Adam syndrome, Wolff-Parkinson White syndrome, or second- or third-degree AV block in the absence of a functional artificial pacemaker, "
+  },
+  {
+    "name": "Uterine Hemorrhage",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "The use of estrogens is contraindicated in patients with undiagnosed, abnormal vaginal bleeding.  Prolonged (> 1 year), unopposed estrogen use (i.e. estrogen without concomitant progestin therapy) has"
+  },
+  {
+    "name": "Macular Edema",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "New onset or worsening diabetic macular edema with decreased visual acuity have been reported in postmarketing reports in some diabetic patients who were taking thiazolidinedione drugs.  Some patients"
+  },
+  {
+    "name": "Prostatic Hyperplasia",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "Topically applied sympathomimetic agents are systemically absorbed, with the potential for producing clinically significant systemic effects, particularly during prolonged or indiscriminate use.  In p"
+  },
+  {
+    "name": "Gastroesophageal Reflux",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "Methylxanthines increase gastric acidity and may also relax lower esophageal sphincter, which can lead to gastric reflux into the esophagus.  Therapy with products containing methylxanthines should be"
+  },
+  {
+    "name": "Strongyloidiasis",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "Unlike most helminths, Strongyloides stercoralis has the ability to replicate in the human host.  In patients with strongyloidiasis, the use of pharmacologic or immunosuppressive dosages of corticoste"
+  },
+  {
+    "name": "Posterior Leukoencephalopathy Syndrome",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "Posterior Reversible Encephalopathy Syndrome (PRES) has been reported with the use of inhibitors of vascular endothelial growth factor receptors (VEGFR) in clinical studies.  PRES is a neurological di"
+  },
+  {
+    "name": "Craniocerebral Trauma",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "The use of phenothiazines is contraindicated in patients with suspected or established subcortical brain damage, with or without hypothalamic involvement.  Phenothiazines can interfere with thermoregu"
+  },
+  {
+    "name": "Heart Valve Diseases",
+    "contraindicatedDrugsCount": 10,
+    "sampleWarning": "The use of some factor Xa inhibitors (including apixaban, edoxaban, and rivaroxaban) is not recommended in patients with prosthetic heart valves; safety and efficacy have not been established in such "
+  },
+  {
+    "name": "Neuromuscular Diseases",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "Treatment with botulinum toxin products, including abobotulinumtoxinA, incobotulinumtoxinA, onabotulinumtoxinA, daxibotulinumtoxinA and others can result in swallowing and breathing difficulties and i"
+  },
+  {
+    "name": "Cardiac Conduction System Disease",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "Severe conduction abnormalities, some requiring pacemaker placement, have been reported during paclitaxel therapy.  Therapy with paclitaxel should be administered cautiously in patients with or predis"
+  },
+  {
+    "name": "Diabetic Ketoacidosis",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "The use of alpha-glucosidase inhibitors is contraindicated for the treatment of patients with diabetic ketoacidosis."
+  },
+  {
+    "name": "Priapism",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "Atypical antipsychotic agents with alpha-adrenergic blocking effects may cause priapism.  The condition is characterized by prolonged, often painful erections lasting longer than 4 hours.  If not trea"
+  },
+  {
+    "name": "Nervous System Diseases",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "The use of whole-cell pertussis vaccine has rarely been associated with the development of severe encephalopathies.  Permanent brain damage and death have been reported.  Although a causal relationshi"
+  },
+  {
+    "name": "Acute Myocardial Infarction Recovery",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "The use of most tricyclic antidepressants is contraindicated in patients that are going through the acute recovery period after a myocardial infarction."
+  },
+  {
+    "name": "Osteomalacia",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "Rickets and osteomalacia have rarely been reported following prolonged use of barbiturates, possibly due to increased metabolism of vitamin D as a result of enzyme induction by barbiturates.  Long-ter"
+  },
+  {
+    "name": "Prostatic Neoplasms",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "The use of androgenic anabolic steroids is contraindicated for male patients with carcinoma of the breast or prostate.  Circulating androgens can be converted in peripheral tissues to estrogens and di"
+  },
+  {
+    "name": "Renal Insufficiency",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "Atropine-like agents are primarily eliminated by the kidney.  Therapy with atropine-like agents should be administered cautiously to patients with renal disease."
+  },
+  {
+    "name": "Dystonic Disorders",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "Phenothiazines may cause acute, dose-related dystonic reactions secondary to central dopaminergic blockade.  These reactions are characterized by spastic contraction of discrete muscle groups and may "
+  },
+  {
+    "name": "Cardiovascular disease",
+    "contraindicatedDrugsCount": 9,
+    "sampleWarning": "Patients with heart failure associated with preserved left ventricular systolic function, such as in restrictive cardiomyopathy, constrictive pericarditis, amyloid heart disease and acute cor pulmonal"
+  },
+  {
+    "name": "Lung Diseases, Interstitial",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "Patients treated with abemaciclib have reported severe, life-threatening, or fatal interstitial lung disease (ILD) and/or pneumonitis.  It is recommended to monitor patients for pulmonary symptoms ind"
+  },
+  {
+    "name": "Hypomagnesemia 1, Intestinal",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "Symptomatic and asymptomatic hypomagnesemia has been reported rarely in patients treated with PPIs for at least 3 months, in most cases after a year of therapy.  Serious adverse events can include tet"
+  },
+  {
+    "name": "Cataract",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "Intraoperative Floppy Iris Syndrome has been observed during cataract surgery in some patients on or previously treated with antiadrenergic agents.  If a patient is undergoing cataract surgery, the op"
+  },
+  {
+    "name": "Pneumonia",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "Severe pneumonitis, including acute interstitial pneumonitis and interstitial lung disease, has been reported in patients treated with alpelisib.  It is recommended to interrupt alpelisib immediately "
+  },
+  {
+    "name": "Prinzmetal's variant angina",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "Agents with non-selective beta-blocking activity may provoke chest pain in patients with Prinzmetal's variant angina.  the use of non-selective beta blockers is not recommended in these patients.  Cau"
+  },
+  {
+    "name": "Hypersensitivity, Immediate",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "The use of sulfonamides is associated with large increases in the risk of Stevens-Johnson syndrome, toxic epidermal necrolysis and other serious dermatologic reactions, although these phenomena are ra"
+  },
+  {
+    "name": "Hyperlipoproteinemias",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "Androgenic anabolic steroids may adversely affect serum lipids, including lowering HDL and elevating LDL levels.  These changes can be marked, particularly with the 17-alpha-alkyl derivatives (i.e., f"
+  },
+  {
+    "name": "Cholelithiasis",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "The use of fibric acid derivatives is contraindicated in patients with gallbladder disease.  A significantly increased incidence of cholelithiasis has been observed in patients treated with the fibric"
+  },
+  {
+    "name": "Anuria",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "The use of thiazide diuretics is contraindicated in patients with anuria."
+  },
+  {
+    "name": "Renal Artery Obstruction",
+    "contraindicatedDrugsCount": 8,
+    "sampleWarning": "In patients with bilateral renal artery stenosis or renal artery stenosis in a solitary kidney, angiotensin II receptor (AR) antagonists may reduce renal perfusion to a critically low level.  Increase"
+  },
+  {
+    "name": "Hyperparathyroidism",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "Patients known to have an underlying hypercalcemic disorder, such as primary hyperparathyroidism, should not be treated with parathyroid hormone and its analogs because of the risk of exacerbating hyp"
+  },
+  {
+    "name": "Diabetic Retinopathy",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "Somatropin is contraindicated in patients with active proliferative or severe non- proliferative diabetic retinopathy."
+  },
+  {
+    "name": "Fractures, Bone",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "Various published observational studies have reported that PPI therapy may be associated with an increased risk for osteoporosis related fractures of the hip, wrist or spine.  The risk was increased i"
+  },
+  {
+    "name": "Bisphosphonate-Associated Osteonecrosis of the Jaw",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "Osteonecrosis of the jaw (ONJ), which can occur spontaneously, is generally associated with tooth extraction and/or local infection with delayed healing, and has been reported in patients taking bisph"
+  },
+  {
+    "name": "Inappropriate ADH Syndrome",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "The use of selective serotonin reuptake inhibitors (SSRIs) has rarely been associated with hyponatremia, sometimes secondary to development of the syndrome of inappropriate secretion of antidiuretic h"
+  },
+  {
+    "name": "Hypertension, Pulmonary",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "The use of some CNS stimulants has been associated with an increased risk of developing pulmonary hypertension, a rare but fatal disorder.  The onset or aggravation of exertional dyspnea, or unexplain"
+  },
+  {
+    "name": "Polycythemia",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "Androgenic anabolic steroids may cause polycythemia when given in high dosages or for prolonged periods.  Patients with preexisting polycythemia may experience worsening of their condition.  Frequent "
+  },
+  {
+    "name": "Burns",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "The use of succinylcholine is contraindicated in patients after the acute phase of injury following major burns.  These patients are more likely to develop significant hyperkalemia which may lead to c"
+  },
+  {
+    "name": "Hyperphosphatemia",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "Increases in phosphate levels are a pharmacodynamic effect of erdafitinib.  Hyperphosphatemia was reported as adverse reaction in 76% of patients after initiating treatment, with 32% requiring phospha"
+  },
+  {
+    "name": "Uveitis",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "Bimatoprost, latanoprost, and travoprost are synthetic prostaglandin analogues.  Theoretically, these agents may mimic endogenous prostaglandins and mediate ocular inflammatory responses.  In clinical"
+  },
+  {
+    "name": "Hemoglobinopathies",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "There is no excretory mechanism for iron.  Iron will correct only hemoglobin abnormalities due to iron deficiency and should not be used to treat conditions such as thalassemia, hemosiderosis, hemochr"
+  },
+  {
+    "name": "Skin Neoplasms",
+    "contraindicatedDrugsCount": 7,
+    "sampleWarning": "The use of calcineurin inhibitors such as pimecrolimus and tacrolimus topical should be avoided on malignant or premalignant skin conditions.  Some of these conditions might present as dermatitis.  Ca"
+  },
+  {
+    "name": "Pulmonary Disease, Chronic Obstructive",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "In studies, patients with chronic obstructive pulmonary disease (COPD) treated with abatacept for rheumatoid arthritis developed adverse events (including COPD exacerbations, cough, rhonchi, dyspnea) "
+  },
+  {
+    "name": "Gout",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Uric acid excretion is decreased during therapy with carbonic anhydrase inhibitors, and gout may be exacerbated.  Therapy with carbonic anhydrase inhibitors should be administered cautiously in patien"
+  },
+  {
+    "name": "Peptic Ulcer Hemorrhage",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Histamine H2 receptor antagonists should not be used in the presence of vomit with blood, or bloody or black stools.  These might be serious conditions and the diagnosis needs to be ruled out."
+  },
+  {
+    "name": "Clostridium Infections",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Published observational studies suggest that proton pump inhibitor (PPI) use may be associated with an increased risk of Clostridium difficile-associated diarrhea (CDAD), especially in hospitalized pa"
+  },
+  {
+    "name": "Melanosis",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "The use of exogenous estrogens may occasionally cause chloasma, especially in women with a history of chloasma gravidarum.  Women with a tendency to chloasma should avoid exposure to the sun or ultrav"
+  },
+  {
+    "name": "Sunburn",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Retinoid-like products can cause extreme irritation when applied to sunburned skin.  Patients with sunburn should be cautioned not to use retinoid-like acne products until fully recovered, and to avoi"
+  },
+  {
+    "name": "Constipation",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Constipation is a common side effect of erenumab therapy and while it is usually mild or moderate in intensity, there have been postmarketing reports of constipation with serious complications includi"
+  },
+  {
+    "name": "Eye Infections",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "The use of ophthalmic corticosteroids is contraindicated in most viral diseases of the cornea and conjunctiva, including epithelial herpes simplex keratitis (dendritic keratitis), vaccinia, and varice"
+  },
+  {
+    "name": "Thyroid Neoplasms",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "GLP-1 receptor agonist antidiabetic drugs are contraindicated in patients with a personal or family history of medullary thyroid carcinoma and in patients with Multiple Endocrine Neoplasia syndrome ty"
+  },
+  {
+    "name": "Cognitive Dysfunction",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Cognitive impairment (e.g., memory loss, forgetfulness, amnesia, memory impairment, confusion) have been observed in patients receiving statins.  The reports are usually not serious, and reversible up"
+  },
+  {
+    "name": "Proteinuria",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "The incidence and severity of proteinuria is increased in patients taking inhibitors of vascular endothelial growth factor receptors (VEGFR).  Therapy with these agents should be administered cautious"
+  },
+  {
+    "name": "Cardiomyopathy, Hypertrophic",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Organic nitrates and nitrites may aggravate the angina associated with hypertrophic cardiomyopathy and should be administered cautiously in patients with this condition."
+  },
+  {
+    "name": "Colitis, Ulcerative",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Antimuscarinic agents may suppress intestinal motility and produce paralytic ileus with resultant precipitation of toxic megacolon.  These drugs should be administered cautiously to patients with ulce"
+  },
+  {
+    "name": "Antiphospholipid Syndrome",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Direct acting oral anticoagulants including factor Xa inhibitors and some thrombin inhibitors as dabigatran, are not recommended for use in patients with antiphospholipid syndrome (APS).  Treatment wi"
+  },
+  {
+    "name": "Reye Syndrome",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "The use of trimethobenzamide should be avoided in children and adolescents whose signs and symptoms suggest Reye's syndrome.  The extrapyramidal symptoms which can occur secondary to trimethobenzamide"
+  },
+  {
+    "name": "Hepatitis",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Immune-mediated hepatitis occurred in patients receiving atezolizumab treatment with reported liver test abnormalities.  Monitor patients for liver function test and for symptoms of hepatitis.  Monito"
+  },
+  {
+    "name": "Rectal Diseases",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "The use of stimulant laxatives is contraindicated in patients with anal or rectal fissures.  These preparations may cause irritation, burning sensation, and proctitis."
+  },
+  {
+    "name": "Paralyses, Familial Periodic",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Administration of potassium salts may precipitate attacks in familial hyperkalemic periodic paralysis or paramyotonia congenita.  Therapy with potassium preparations should be administered cautiously "
+  },
+  {
+    "name": "Achlorhydria",
+    "contraindicatedDrugsCount": 6,
+    "sampleWarning": "Gastric acidity increases iron bioavailability by maintaining the ingested iron in a reduced form as ferrous ions, which are more readily absorbed than ferric ions.  Therefore, when iron therapy is ad"
+  },
+  {
+    "name": "Lactose Intolerance",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "Dysport (brand of abobotulinumtoxinA) may contain trace amounts of cow's milk protein.  Patients known to be allergic to cow's milk protein should not be treated with this product."
+  },
+  {
+    "name": "Esophageal Diseases",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "The use of oral tetracycline capsules and tablets has been associated with esophageal irritation and ulceration in patients who ingested the drug without sufficient fluid shortly before bedtime.  Ther"
+  },
+  {
+    "name": "Cholestasis",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "The use of ursodiol is contraindicated in patients with compelling reasons for cholecystectomy including unremitting acute cholecystitis, cholangitis, biliary obstruction, gallstone pancreatitis, or b"
+  },
+  {
+    "name": "Aortic Valve Stenosis",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "The use of some calcium channel blockers (CCBs) is contraindicated in patients with advanced aortic stenosis.  CCBs whose pharmacologic effect is partially dependent on their ability to reduce afterlo"
+  },
+  {
+    "name": "Parkinson Disease",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "Epinephrine should be administered with caution to patients with Parkinson's disease as these patients may experience psychomotor agitation or notice a temporary worsening of symptoms."
+  },
+  {
+    "name": "Hypercholesterolemia",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "Elevations in cholesterol and triglyceride levels have been reported in patients taking inhibitors of mTOR (mammalian target of rapamycin).  Monitoring of fasting lipid profile is recommended prior to"
+  },
+  {
+    "name": "Stomach Ulcer",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "Antimuscarinic agents may cause a delay in gastric emptying and possibly antral stasis in patients with gastric ulcer.  Therapy with antimuscarinic agents should be administered cautiously to patients"
+  },
+  {
+    "name": "Fructose Intolerance",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "Carbamazepine in chewable tablets and suspension contains sorbitol and should not be administered to patients with rare hereditary problems of fructose intolerance."
+  },
+  {
+    "name": "Paresis",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "Patients with hemiparesis or paraparesis may require higher dosages of non-depolarizing neuromuscular blocking agents in the affected limbs.  Neuromuscular monitoring should be performed on a non-pare"
+  },
+  {
+    "name": "Hearing Loss",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "Use of phosphodiesterase-5 (PDE5) inhibitors has been associated with sudden decrease or loss of hearing, which may be accompanied by tinnitus or dizziness.  Patients with hearing problems should stop"
+  },
+  {
+    "name": "Appendicitis",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "The use of stimulant laxatives is contraindicated in patients with or who may have acute surgical abdomen or appendicitis.  These patients may be candidates for emergency surgery.  Stimulant laxatives"
+  },
+  {
+    "name": "Deglutition Disorders",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "The use of deoxycholic acid might cause dysphagia.  It is recommended to avoid the use of this agent in patients with a current or prior history of dysphagia as deoxycholic acid may exacerbate this co"
+  },
+  {
+    "name": "Vascular Diseases",
+    "contraindicatedDrugsCount": 5,
+    "sampleWarning": "The use of desmopressin, primarily in parenteral administration and/or in large doses, has been infrequently associated with changes in blood pressure, causing either slight elevations or transient de"
+  },
+  {
+    "name": "Venous Thromboembolism",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Venous thromboembolic events have been reported with the use of abemaciclib.  Care should be exercised when using this agent in patients with risk factors or history of venous thromboembolic events.  "
+  },
+  {
+    "name": "Acidosis, Respiratory",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Carbonic anhydrase inhibitors may exacerbate pulmonary disease in patients with elevated pCO2 levels.  Respiratory acidosis may be precipitated or increased in these patients.  Therapy with carbonic a"
+  },
+  {
+    "name": "Abnormal Genital Bleeding",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "The use of contraceptives is contraindicated when there is an undiagnosed abnormal genital bleeding.  Adequate diagnostic measures should be undertaken to rule out the presence of any malignancy."
+  },
+  {
+    "name": "Diabetes Mellitus, Type 1",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Thiazolidinediones exert their hypoglycemic effect only in the presence of insulin.  Therefore, these agents should not be used in patients with type I diabetes or for the treatment of diabetic ketoac"
+  },
+  {
+    "name": "Eczema",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Topical retinoids may cause severe irritation on eczematous skin.  Therapy with topical retinoids should be avoided on abraded or eczematous skin."
+  },
+  {
+    "name": "Gastroparesis",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Lixisenatide slows gastric emptying and patients with preexisting gastroparesis were excluded from clinical trials.  Lixisenatide should not be used in patients with severe gastroparesis."
+  },
+  {
+    "name": "Anemia, Hemolytic",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Blood group isoagglutinins (anti-A and anti-B) are present in antihemophilic factor (human) at concentrations that may not be clinically significant when used to control minor bleeds.  Monitoring of h"
+  },
+  {
+    "name": "Neurologic Manifestations",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Albendazole therapy of neurocysticercosis can induce an inflammatory response within the CNS that precipitates seizures and cerebral hypertension.  Therapy with albendazole for neurocysticercosis shou"
+  },
+  {
+    "name": "Pulmonary Fibrosis",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Interstitial pneumonitis and/or fibrosis (including fatal outcomes), have been reported occasionally during melphalan therapy.  Therapy with melphalan should be administered cautiously in patients wit"
+  },
+  {
+    "name": "Disseminated Intravascular Coagulation",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "The use of aminocaproic acid is contraindicated in patients with active intravascular clotting.  Aminocaproic acid should not be used in the presence of disseminated intravascular coagulation (DIC) wi"
+  },
+  {
+    "name": "Liver Cirrhosis, Biliary",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "The use of fibric acid derivatives is contraindicated in patients with primary biliary cirrhosis.  These agents may further raise the already elevated cholesterol in these patients."
+  },
+  {
+    "name": "Endocarditis, Subacute Bacterial",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Anticoagulants should be given with extreme caution to patients with subacute bacterial endocarditis.  The risk of hemorrhage may be increased in these patients."
+  },
+  {
+    "name": "Brain Diseases",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Serious encephalopathy, including Wernicke's, has occurred in patients treated with arsenic trioxide injection.  Wernicke's is a neurologic emergency.  Consider testing thiamine levels in patients at "
+  },
+  {
+    "name": "Endocrine System Diseases",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Immune-related thyroid disorders, adrenal insufficiency, and type 1 diabetes mellitus, including diabetic ketoacidosis, have been reported in patients receiving atezolizumab.  It is recommended to mon"
+  },
+  {
+    "name": "Meningitis",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Immune-related meningoencephalitis has been reported with the use of atezolizumab therapy.  Monitor patients for clinical signs and symptoms of meningitis or encephalitis.  Permanently discontinue the"
+  },
+  {
+    "name": "Bone Diseases",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "The use of cellulose sodium phosphate is contraindicated in patients with hyperparathyroidism (primary or secondary), bone disease (osteomalacia, osteoporosis), or low intestinal absorption and renal "
+  },
+  {
+    "name": "Sarcoidosis",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Hypercalciuria, with or without hypercalcemia, may occasionally occur in patients with sarcoidosis.  Elevated calcium levels may result from increased intestinal absorption of calcium, which is relate"
+  },
+  {
+    "name": "Alkalosis",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Hypokalemia in patients with metabolic or respiratory alkalosis should generally be treated with potassium chloride rather than an alkalinizing potassium salt (i.e. acetate, bicarbonate, citrate, or g"
+  },
+  {
+    "name": "Multiple Myeloma",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "A definite risk exists in the use of intravascular contrast agents in patients who are known to have multiple myeloma.  In such cases, anuria has developed resulting in progressive uremia, renal failu"
+  },
+  {
+    "name": "Malignant Carcinoid Syndrome",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "The use of nonspecific monoamine oxidase inhibitors (MAOIs) is contraindicated in patients with carcinoid syndrome.  Nonspecific MAOIs inhibit the breakdown of pressor amines, including serotonin, and"
+  },
+  {
+    "name": "Respiration Disorders",
+    "contraindicatedDrugsCount": 4,
+    "sampleWarning": "Pneumonitis, including fatal cases, occurred in <1% of patients treated with olaparib.  It is recommended to interrupt treatment if patients present new or worsening respiratory symptoms such as dyspn"
+  },
+  {
+    "name": "Milk Hypersensitivity",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Some inhaled anticholinergic bronchodilators such as aclidinium and umeclidinium are contraindicated in patients with severe hypersensitivity to milk proteins.  There have been reports of anaphylactic"
+  },
+  {
+    "name": "Ocular Hypertension",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Prolonged use of adrenocorticotropic agents may cause elevated intraocular pressure and glaucoma with possible damage to the optic nerves.  Long-term therapy with these agents should be administered c"
+  },
+  {
+    "name": "Bone Diseases, Metabolic",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of intramuscular medroxyprogesterone for contraception has been shown to induce bone loss, particularly during the early years of therapy.  With continued use, the decline in bone density subs"
+  },
+  {
+    "name": "Stomatitis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Fluorouracil (5-FU) induces stomatitis in the gastrointestinal tract.  Therapy with 5-FU should be administered with extreme caution in patients with peptic ulcer disease and ulcerative colitis."
+  },
+  {
+    "name": "Wounds and Injuries",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Inhibition of mTOR activity results in delays of wound healing and increases the occurrence of wound-related complications, which might require surgical intervention.  Patients with central nervous sy"
+  },
+  {
+    "name": "Folic Acid Deficiency",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Sulfasalazine may interfere with the absorption of dietary folic acid.  Folate deficiency and megaloblastic anemia have been reported.  Therapy with sulfasalazine should be administered cautiously in "
+  },
+  {
+    "name": "Dyspnea",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of lubiprostone may cause dyspnea.  Care should be taken when prescribing this drug to patients that experienced dyspnea or when restarting the drug in those patients experiencing drug induced"
+  },
+  {
+    "name": "Hemochromatosis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Pentetate calcium trisodium should be used only as a single dose in patients with hemochromatosis.  Deaths have been reported in patients with severe hemochromatosis with the use of pentetate calcium "
+  },
+  {
+    "name": "Methemoglobinemia",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Rarely, benzocaine has induced methemoglobinemia resulting in respiratory distress and cyanosis.  Therapy with benzocaine should be administered cautiously to patients with or predisposed to methemogl"
+  },
+  {
+    "name": "Musculoskeletal Diseases",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of succinylcholine is contraindicated in patients with a personal or family history of skeletal muscle myopathies.  Acute rhabdomyolysis with hyperkalemia followed by ventricular arrhythmias, "
+  },
+  {
+    "name": "Hypolipoproteinemias",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "There have been reports of severe decreases in HDL cholesterol (HDL-C) levels (as low as 2 mg/dL) occurring in diabetic and non-diabetic patients initiated on fibric acid derivatives therapy.  The dec"
+  },
+  {
+    "name": "Anaphylaxis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of antivenin (black widow spider) can cause anaphylactic reactions and death in patients with a medical history of asthma.  Close monitoring is recommended in these patients."
+  },
+  {
+    "name": "Heart Block",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Atazanavir may prolong the PR interval of the electrocardiogram in some patients.  In one study, the mean maximum change in PR interval from baseline was 24 msec following a 400 mg oral dose of atazan"
+  },
+  {
+    "name": "Retinitis Pigmentosa",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Phosphodiesterase-5 (PDE5) inhibitors have been associated with transient impairment of color discrimination (blue/green) and blue- or color-tinged vision.  These agents also inhibit phosphodiesterase"
+  },
+  {
+    "name": "Short Qt Syndrome",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Rufinamide can cause shortening of the QT interval.  Its use is contraindicated in patients with Familial Short QT syndrome as this condition is associated with increased risk of sudden death and vent"
+  },
+  {
+    "name": "Optic Atrophy, Hereditary, Leber",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of cyanocobalamin is contraindicated in patients with Leber's disease (hereditary optic nerve atrophy).  Cyanocobalamin has induced severe and rapid optic nerve atrophy in patient's with early"
+  },
+  {
+    "name": "Retinal Diseases",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Retinal vein occlusion (RVO) is a known class- related adverse reaction of MEK inhibitors and may occur in patients treated with binimetinib in combination with encorafenib.  The safety of binimetinib"
+  },
+  {
+    "name": "Urinary Tract Infections",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Botox (brand of onabotulinumtoxinA), a botulinum toxin product for the treatment of overactive bladder or detrusor overactivity associated with a neurologic condition should not be used in patients wh"
+  },
+  {
+    "name": "Wolff-Parkinson-White Syndrome",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of verapamil is contraindicated for the management of atrial flutter or fibrillation in patients with an accessory AV tract (e.g., those with Wolff-Parkinson-White or Lown-Ganong-Levine syndro"
+  },
+  {
+    "name": "Hyperbilirubinemia",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Hyperbilirubinemic neonates, especially premature, should not be treated with ceftriaxone for injection.  Studies have shown that ceftriaxone can displace bilirubin from its binding to serum albumin, "
+  },
+  {
+    "name": "Agranulocytosis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of clozapine is contraindicated in patients with myeloproliferative disorders, preexisting bone marrow depression, or a history of clozapine-induced agranulocytosis or severe granulocytopenia."
+  },
+  {
+    "name": "Graves Disease",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of thyroid hormones is contraindicated in patients with untreated thyrotoxicosis of any etiology, since thyroid hormones may exacerbate the condition."
+  },
+  {
+    "name": "Water Intoxication",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Water intoxication and hyponatremia may occur during therapy with vasopressin or desmopressin due to their antidiuretic action.  Patients are most likely to experience this problem if their fluid inta"
+  },
+  {
+    "name": "Anemia, Megaloblastic",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Hydantoin anticonvulsants may interfere with folate metabolism and precipitate macrocytosis and megaloblastic anemia, which usually respond to folic acid therapy.  These reactions have been fairly unc"
+  },
+  {
+    "name": "Aphakia",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Up to 30% of aphakic patients treated chronically with ophthalmic epinephrine (of which dipivefrin is a prodrug) may develop cystoid macular edema, which is generally reversible following withdrawal o"
+  },
+  {
+    "name": "Sleep Wake Disorders",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Sleep disturbances may be the presenting manifestation of a physical and/or psychiatric disorder.  The symptomatic treatment of insomnia should be initiated only after a careful evaluation of the pati"
+  },
+  {
+    "name": "Hyperthermia",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Oligohidrosis (decreased sweating) and hyperthermia have been reported in association with the use of some carbonic anhydrase inhibitor anticonvulsants such as topiramate and zonisamide.  Most of the "
+  },
+  {
+    "name": "Iron Overload",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Ferumoxides which contains iron, should be used with caution in patients with disorders associated with iron over load (e.g., hemosiderosis, chronic hemolytic anemia with frequent blood transfusions)."
+  },
+  {
+    "name": "Leukemia, Myeloid",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Colony stimulating factors primarily stimulates the proliferation of neutrophils but may also, theoretically, enhance tumor growth, particularly in myeloid malignancies.  Therapy with these drugs shou"
+  },
+  {
+    "name": "Leukocytosis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Filgrastim and pegfilgrastim are growth factors for neutrophil progenitor cells.  Therefore, these should not be used in patients with leukocytosis.  If excessive white blood cell counts occur during "
+  },
+  {
+    "name": "Sepsis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "When filgrastim is used in septic patients, clinicians should be alerted to the theoretical possibility of adult respiratory distress syndrome, which may occur as a result of the influx of neutrophils"
+  },
+  {
+    "name": "Anemia, Sickle Cell",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Severe and sometimes fatal sickle cell crises have been reported in sickle cell disease patients receiving filgrastim products.  Consider the potential risks and benefits prior to initiating therapy i"
+  },
+  {
+    "name": "Gastroenteritis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Vancomycin is potentially oto- and nephrotoxic.  While it is poorly absorbed from the gastrointestinal tract, significant systemic absorption may occur if intestinal mucosal integrity is compromised. "
+  },
+  {
+    "name": "Eosinophilic Esophagitis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of allergen immunotherapy, such as mixed grass pollens, ragweed pollen, house dust mite allergen extract, and timothy grass pollen allergen extracts, is contraindicated in patients with a hist"
+  },
+  {
+    "name": "Headache",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of monoamine oxidase inhibitor (MAOI) antidepressants is contraindicated in patients with a history of headaches.  Nonspecific MAOIs inhibit the breakdown of pressor amines, the accumulation o"
+  },
+  {
+    "name": "Angina Pectoris",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Monoamine oxidase inhibitors may have the capacity to suppress anginal pain that would otherwise serve as a warning of myocardial ischemia.  Caution is advised in patients with a history of angina or "
+  },
+  {
+    "name": "Multiple Sclerosis",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "Rare cases of severe exacerbation of multiple sclerosis (MS), including disease rebound, have been reported after discontinuation of sphingosine 1-phosphate receptor modulator in MS treated patients. "
+  },
+  {
+    "name": "Photosensitivity Disorders",
+    "contraindicatedDrugsCount": 3,
+    "sampleWarning": "The use of methoxsalen with ultraviolet radiation is contraindicated in patients with a history of photosensitive disease states.  Methoxsalen is a potent photosensitizer that can induce severe burns "
+  },
+  {
+    "name": "Urolithiasis",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "No dosage adjustment is required for patients with mild, moderate, or severe renal impairment.  Patients with severe renal impairment may have increased abaloparatide exposure that may increase the ri"
+  },
+  {
+    "name": "Intestinal Diseases",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of alpha-glucosidase inhibitors is contraindicated in patients with inflammatory bowel disease, colonic ulceration, partial intestinal obstruction, or any chronic intestinal disease associated"
+  },
+  {
+    "name": "Scoliosis",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Progression of scoliosis can occur in patients who experience rapid growth.  Since somatropin increases growth rate, children with a history of scoliosis should be monitored for progression of this co"
+  },
+  {
+    "name": "Hemolysis",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Acute hemolysis following administration of high doses of ascorbic acid in patients with glucose-6-phosphate deficiency (G6PD) has been reported.  Ascorbic acid should be administered cautiously and d"
+  },
+  {
+    "name": "Gastrointestinal Hemorrhage",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of acetylcysteine may worsen vomiting.  Patients with peptic ulcer disease should be evaluated for the risk of gastrointestinal hemorrhage.  In the presence of gastric hemorrhage, the decision"
+  },
+  {
+    "name": "Galactosemias",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Since lactulose solution contains galactose, use is contraindicated in patients who require a low galactose diet."
+  },
+  {
+    "name": "Acidosis, Lactic",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of metformin is contraindicated in patients with renal dysfunction (serum creatinine >= 1.5 mg/dL in males and 1.4 mg/dL in females, or above the upper limit of normal for age); congestive hea"
+  },
+  {
+    "name": "Vitamin B 12 Deficiency",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Metformin may interfere with vitamin B12 (cyanocobalamin) absorption from the B12-intrinsic factor complex.  A decrease to subnormal levels of previously normal serum B12 levels has been reported in a"
+  },
+  {
+    "name": "Anovulation",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "In premenopausal, anovulatory patients with insulin resistance, treatment with thiazolidinediones may result in resumption of ovulation.  Due to improved insulin sensitivity, pregnancy can occur if ad"
+  },
+  {
+    "name": "Digestive System Diseases",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Cases of fatal and serious gastrointestinal complication have been reported with the use of brentuximab vedotin.  Care should be taken when using this agent in patients with a history of gastrointesti"
+  },
+  {
+    "name": "Dihydropyrimidine Dehydrogenase Deficiency",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Fluorouracil is metabolized to an inactive form by dihydropyrimidine dehydrogenase.  Inherited deficiency of this enzyme results in decreased clearance of 5-FU and severe toxicity such as stomatitis, "
+  },
+  {
+    "name": "Leukopenia",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Rare reports of reversible reduction in white blood cell count, primarily neutrophils, have been noted.  White blood cell counts returned to normal with discontinuation of methyldopa.  Therapy with me"
+  },
+  {
+    "name": "Fat Soluble Vitamin Deficiency",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "At the recommended therapeutic dosage of 120 mg three times a day, orlistat inhibits dietary fat absorption by approximately 30% and has been shown to reduce the absorption of some fat-soluble vitamin"
+  },
+  {
+    "name": "Skin Diseases",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Severe cutaneous reactions, including Stevens-Johnson Syndrome (SJS) and Erythema Multiforme (EM) were reported in patients treated with alpelisib.  Do not initiate alpelisib treatment in patients wit"
+  },
+  {
+    "name": "Heparin induced Thrombocytopenia",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The brand name products, Kcentra and Bebulin of prothrombin complex, contain heparin; therefore, their use is contraindicated in patients with known heparin-induced thrombocytopenia."
+  },
+  {
+    "name": "HIV Infections",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Some in vitro studies suggest that valproate stimulates the replication of the HIV and CMV viruses under certain experimental conditions.  The clinical consequences are unknown, and the relevance of t"
+  },
+  {
+    "name": "Infectious Mononucleosis",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Patients with mononucleosis treated with an aminopenicillin antibiotic, may develop a pruritic erythematous maculopapular skin rash.  The rash is usually self-limiting and resolves within days of disc"
+  },
+  {
+    "name": "Blood Coagulation Disorders, Inherited",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Snake venom interferes with the blood coagulation cascade.  Patients may experience coagulopathy due to snakebite and should be monitored for signs and symptoms of recurrent bleeding defects for up to"
+  },
+  {
+    "name": "Malignant Hyperthermia",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of succinylcholine is contraindicated in patients with a personal or family history of malignant hyperthermia.  Succinylcholine administration has been associated with acute onset of malignant"
+  },
+  {
+    "name": "Thyroid Hormone Metabolism, Abnormal",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Elevated serum iodine levels can lead to altered thyroid function and metabolic abnormalities in patients receiving oral iodine therapy as well as topical therapy.  Iodine should be used cautiously in"
+  },
+  {
+    "name": "Vitamin D Deficiency",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Routine assessment of vitamin D levels prior to the start of aromatase inhibitor treatment should be performed, due to the high prevalence of vitamin D deficiency in women with early breast cancer.  W"
+  },
+  {
+    "name": "Pulmonary Heart Disease",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Patients with a prior history of cardiac or pulmonary disease should be closely monitored during and after the infusion of anti-CD20 antibodies as they can increase the risk of presenting a severe and"
+  },
+  {
+    "name": "Urogenital Diseases",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of BCG vaccine is contraindicated in patients with a urinary tract infection.  Administration of the vaccine may result in the risk of disseminated BCG infection and/or an increased severity o"
+  },
+  {
+    "name": "Insulinoma",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of glucagon is contraindicated in patients with insulinoma or glucagonoma as it may cause secondary hypoglycemia.  Test patients suspected of having glucagonoma for blood levels of glucagon pr"
+  },
+  {
+    "name": "Hepatitis, Viral, Human",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Viral reactivation, including cases of herpes virus reactivation (e.g., herpes zoster), was reported in clinical studies with baricitinib.  Patients should be screened for viral hepatitis in accordanc"
+  },
+  {
+    "name": "Narcolepsy",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of suvorexant is contraindicated in patient with narcolepsy."
+  },
+  {
+    "name": "Tachycardia, Ventricular",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of intravenous diltiazem or verapamil is contraindicated in patients with ventricular tachycardia.  IV administration of a calcium channel blocker can precipitate cardiac arrest in such patien"
+  },
+  {
+    "name": "Hypophosphatemia",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Sucralfate has phosphate binding properties for which the drug is sometimes used therapeutically.  However, hypophosphatemia may occur in some patients, regardless of renal status.  Therapy with sucra"
+  },
+  {
+    "name": "Retinal Detachment",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of miotic agents may occasionally cause retinal detachment due to drug-induced ciliary or accommodative spasm, which causes the lens and vitreous to move forward and create a retinal tear.  Th"
+  },
+  {
+    "name": "Purpura, Thrombotic Thrombocytopenic",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Cases of thrombotic microangiopathy, including thrombotic thrombocytopenic purpura/hemolytic uremic syndrome (TTP/HUS) have been reported with the use of carfilzomib.  Monitor for signs and symptoms o"
+  },
+  {
+    "name": "Hypoprothrombinemias",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Hypoprothrombinemia, with or without bleeding, has been reported rarely with various cephalosporins, particularly those containing an N-methylthiotetrazole (NMTT) side chain (cefamandole, cefmetazole,"
+  },
+  {
+    "name": "Vitamin K Deficiency",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Cephalosporins may be associated with reduced prothrombin activity/prolonged prothrombin time.  Risk factors include renal or liver dysfunction, poor nutritional state, prolonged antimicrobial therapy"
+  },
+  {
+    "name": "Lesch-Nyhan Syndrome",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Mycophenolate mofetil is an inosine monophosphate dehydrogenase (IMPDH) inhibitor; therefore it should be avoided in patients with hereditary deficiencies of hypoxanthine-guanine phosphoribosyl-transf"
+  },
+  {
+    "name": "Tympanic Membrane Perforation",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of chloramphenicol otic preparations is contraindicated in patients with a perforated tympanic membrane.  The risk of ototoxicity may be increased if medication enters the middle ear."
+  },
+  {
+    "name": "Nutrition disorder",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Bile acid sequestrants may interfere with the absorption of folic acid and fat soluble vitamins such as A, D, and K.  Chronic use of bile acid sequestrants may cause increased bleeding tendency due to"
+  },
+  {
+    "name": "Metrorrhagia",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of clomiphene is contraindicated in patients with undiagnosed, abnormal genital bleeding.  Patients should be evaluated to ensure that neoplastic lesions are not present."
+  },
+  {
+    "name": "Hematuria",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "An association between rosuvastatin and the development of proteinuria and microscopic hematuria was observed among treated patients during clinical trials.  Patients with unexplained persistent prote"
+  },
+  {
+    "name": "Auditory Diseases, Central",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Auditory disturbances (high-frequency hearing loss, decreased hearing), and ocular disturbances (lens opacities, cataracts, elevations in intraocular pressure, and retinal disorders) have been reporte"
+  },
+  {
+    "name": "Arthritis, Rheumatoid",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "A large, randomized, postmarketing safety trial of a JAK inhibitor in rheumatoid arthritis (RA) patients 50 years old and older with at least one cardiovascular risk factor, reported higher rates of a"
+  },
+  {
+    "name": "Cystic Fibrosis",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The penicillinase-resistant penicillins, dicloxacillin and methicillin, are both eliminated by the kidney.  Renal elimination of these penicillins has been shown to increase in patients with cystic fi"
+  },
+  {
+    "name": "Thiamine Deficiency",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Patients with beri beri heart disease may fail to respond adequately to digoxin if the underlying thiamine deficiency is not treated concomitantly."
+  },
+  {
+    "name": "Coronary Vasospasm",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of ergot alkaloids is contraindicated in patients with conditions predisposing them to vasospastic reactions, including, ischemic heart disease (angina, history of myocardial infarction, silen"
+  },
+  {
+    "name": "Helminthiasis",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Patients with preexisting-existing helminth infections should be treated prior to therapy with dupilumab.  It is recommended to discontinue treatment with dupilumab if patients become infected while o"
+  },
+  {
+    "name": "Thrombotic Microangiopathies",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Thrombotic microangiopathy (TMA) complications have occurred after treatment discontinuation or after a missed dose of eculizumab.  It is recommended to monitor patients with atypical hemolytic uremic"
+  },
+  {
+    "name": "Melanoma",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Patients with Parkinson's disease have a higher risk of developing melanoma than the general population.  Patients and providers should be advised to monitor for melanoma frequently and regularly when"
+  },
+  {
+    "name": "Red-Cell Aplasia, Pure",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of erythropoiesis-stimulating agents is contraindicated in patients that develop pure red cell aplasia that begins after treatment with erythropoietin protein drugs."
+  },
+  {
+    "name": "Hypertriglyceridemia",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "In studies of women with a history of marked hypertriglyceridemia (>5.6 mmol/L or >500 mg/dL) in response to treatment with oral estrogen or estrogen plus progestin may develop increased levels of tri"
+  },
+  {
+    "name": "Endometrial Hyperplasia",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Endometrial cancer, endometrial hyperplasia, hypertrophy, and uterine polyps have been reported in some patients treated with toremifene.  Long-term use of toremifene has not been established in patie"
+  },
+  {
+    "name": "Glomerulonephritis",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Although it has been reported that renal dysfunction has no effect on the pharmacokinetics of colony stimulating factors (CSF), filgrastim and pegfilgrastim may cause glomerulonephritis.  Symptoms inc"
+  },
+  {
+    "name": "Ileus",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of lanthanum carbonate is contraindicated in patients with bowel obstruction, including ileus and fecal impaction."
+  },
+  {
+    "name": "Atrial Fibrillation",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Atrial fibrillation and atrial flutter have occurred in patients treated with ibrutinib.  The risk is increased in patients with cardiac risk factors, hypertension, acute infections, and a previous hi"
+  },
+  {
+    "name": "Intestinal Perforation",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Fatal and serious intestinal perforations have been reported in patients treated with idelalisib, some patients reporting moderate to severe diarrhea at the time of perforation.  Advise patients to pr"
+  },
+  {
+    "name": "Acute Kidney Injury",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Acute kidney injury, including renal failure, may occur after ioversol administration.  Risk factors include preexisting renal impairment, dehydration, diabetes, congestive heart failure, advanced vas"
+  },
+  {
+    "name": "Thiopurine S methyltranferase deficiency",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Thioguanine is closely related structurally and functionally to mercaptopurine.  A rare deficiency in the enzyme thiopurine methyltransferase (TMPT) results in an increased sensitivity to the myelosup"
+  },
+  {
+    "name": "Pulmonary Embolism",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Initiation of rivaroxaban is not recommended acutely as an alternative to unfractionated heparin in patients with pulmonary embolism who present with hemodynamic instability or who may receive thrombo"
+  },
+  {
+    "name": "Myelodysplastic Syndromes",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "Myelodysplastic Syndrome/Acute Myeloid Leukemia (MDS/AML), including cases with fatal outcome, have been reported with the use of niraparib.  It is recommended to use caution when using this agent in "
+  },
+  {
+    "name": "Hepatitis, Autoimmune",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of peginterferons alfa are contraindicated in patients with autoimmune hepatitis."
+  },
+  {
+    "name": "Pituitary Neoplasms",
+    "contraindicatedDrugsCount": 2,
+    "sampleWarning": "The use of tesamorelin is contraindicated in patients with disruption of the hypothalamic-pituitary axis due to hypophysectomy, hypopituitarism, pituitary tumor/surgery, head irradiation or head traum"
+  },
+  {
+    "name": "Acute Critical Illness",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Treatment with somatropin is contraindicated in patients with acute critical illness due to any complications following open heart surgery, abdominal surgery, multiple trauma, or acute respiratory fai"
+  },
+  {
+    "name": "Prader-Willi Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Somatropin is contraindicated in patients with Prader-Willi Syndrome who are severely obese, have a history of upper airway obstruction or sleep apnea, or have severe respiratory impairment.  There ha"
+  },
+  {
+    "name": "Turner Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Somatropin may increase the risk of otitis media in patients with Turner syndrome.  These patients should be evaluated carefully for otitis media and other ear disorders as they have an increased risk"
+  },
+  {
+    "name": "Kidney Calculi",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Large doses of ascorbic acid have lead to hyperoxaluria in 5% of patients.  Ascorbic acid can acidify urine resulting in precipitation of urate, cystine, or oxalate stones.  Ascorbic acid should be ad"
+  },
+  {
+    "name": "Hepatic Encephalopathy",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of acetylcysteine should be discontinued in patients with encephalopathy due to hepatic failure to avoid further administration of nitrogenous substances."
+  },
+  {
+    "name": "Demyelinating Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Clinical studies have reported that tocilizumab may have an effect on demyelinating disorders such as multiple sclerosis and chronic inflammatory demyelinating polyneuropathy.  Patients should be moni"
+  },
+  {
+    "name": "Menorrhagia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of medroxyprogesterone in women with undiagnosed vaginal bleeding is contraindicated.  Most women using medroxyprogesterone experience disruption of menstrual bleeding patterns.  Altered menst"
+  },
+  {
+    "name": "Urinary Bladder Neoplasms",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "There are insufficient data to determine if pioglitazone has an effect on preexisting bladder tumors or if it can cause bladder cancer.  However, the manufacturer does not recommend the use of pioglit"
+  },
+  {
+    "name": "Parasitic Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Tralokinumab may influence the immune response against helminth infections by inhibiting interleukin 13 (IL-13) signaling.  Patients with preexisting helminth infections should be treated before initi"
+  },
+  {
+    "name": "Intracranial Hemorrhages",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The safety of aducanumab in patients with pretreatment localized superficial siderosis, patients having had 10 or more brain microhemorrhages, and/or a brain hemorrhage greater than 1 cm within one ye"
+  },
+  {
+    "name": "Lung Neoplasms",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "In clinical trials, lung cancer was observed in smoker and non-smoker patients using inhaled insulin.  In patients with active lung cancer, a prior history of lung cancer, or in patients at risk for l"
+  },
+  {
+    "name": "Myalgia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Elevations of Creatine Phosphokinase (CPK) have been reported with the use of alectinib.  It is recommended to watch closely for signs and symptoms of CPK elevation and to advise patients to report an"
+  },
+  {
+    "name": "Coagulation Defect",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of alosetron is contraindicated in patients with coagulation abnormalities such as thrombophlebitis, or hypercoagulable state."
+  },
+  {
+    "name": "Respiratory Distress Syndrome, Newborn",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Alprostadil injection should not be used in neonates with respiratory distress syndrome.  Apnea is experienced by about 10 to 12% of neonates with congenital heart defects treated with alprostadil inj"
+  },
+  {
+    "name": "Urea Cycle Disorders, Inborn",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Valproic acid and derivative products are contraindicated in patients with known urea cycle disorders (UCD), as hyperammonemic encephalopathy, sometimes fatal, has been reported on these patients foll"
+  },
+  {
+    "name": "Fistula",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Bevacizumab may cause fatal fistula formation involving tracheoesophageal, bronchopleural, biliary, vaginal, renal and bladder sites.  Permanently discontinue bevacizumab in patients with tracheoesoph"
+  },
+  {
+    "name": "Toothache",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Topical lidocaine is not recommended to be used in teething infants and young children, as its ingestion is dangerous and potentially fatal.  Ingestion of the drug has shown to result in seizures, sev"
+  },
+  {
+    "name": "Adrenal Gland Neoplasms",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Clomipramine should be used with caution in patients with tumors of the adrenal medulla (such as pheochromocytoma, neuroblastoma), as the drug can provoke hypertensive crises."
+  },
+  {
+    "name": "Motor Neuron Disease",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of succinylcholine is contraindicated in patients with upper motor neuron injury that can be a sequelae of cerebral vasculopathy.  The risk of hyperkalemia is increased in these patients."
+  },
+  {
+    "name": "Deficiency Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Reports of mean urinary zinc loss during propofol therapy was approximately 2.5 to 3.0 mg/day in adult patients and 1.5 to 2.0 mg/day in pediatric patients.  Practitioners should consider the administ"
+  },
+  {
+    "name": "Megacolon, Toxic",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Decreased intestinal motility and prolonged transit time have resulted in toxic megacolon in patients with acute ulcerative colitis.  Paralytic ileus has also occurred.  Antiperistaltic agent GI motil"
+  },
+  {
+    "name": "Porphyrias, Hepatic",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of carbamazepine should be avoided in patients with a history of hepatic porphyria (e.g., acute intermittent porphyria, variegate porphyria, porphyria cutanea tarda).  Acute attacks have been "
+  },
+  {
+    "name": "Scalp Dermatoses",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "In general, topically applied minoxidil is poorly absorbed from the normal, intact scalp.  However, alteration in scalp epidermal integrity (e.g., abrasion, sunburn, psoriasis) can increase percutaneo"
+  },
+  {
+    "name": "Endocarditis, Bacterial",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The manufacturers state that bacterial endocarditis is a contraindication for the use of fondaparinux injection."
+  },
+  {
+    "name": "Autonomic Dysreflexia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Therapy with intrathecal baclofen should be administered cautiously in patients with a history of autonomic dysreflexia, since the presence of nociceptive stimuli or abrupt withdrawal of the medicatio"
+  },
+  {
+    "name": "Peanut Hypersensitivity",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Dimercaprol ampules are formulated with peanut oil.  Peanut oil may cause allergic reactions in some individuals.  Physicians should use caution in prescribing dimercaprol ampules for peanut-sensitive"
+  },
+  {
+    "name": "Aortic Aneurysm",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of certain fluoroquinolones may increase the risk of aortic aneurysm and dissection.  It is recommended to reserve the use of delafloxacin only when there are no alternative antibacterial trea"
+  },
+  {
+    "name": "Epstein-Barr Virus Infections",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Belatacept is contraindicated in transplant recipients who are Epstein-Barr virus (EBV) seronegative or with unknown EBV serostatus due to the risk of post-transplant lymphoproliferative disorder (PTL"
+  },
+  {
+    "name": "Tendon Injuries",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Bempedoic acid has been associated with an increased risk of tendon rupture or injury.  Ruptures involving the rotator cuff, biceps, or Achilles tendon have been reported.  Risk increases in patients "
+  },
+  {
+    "name": "Esophagitis, Peptic",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Therapy with dicyclomine is contraindicated in patients with reflux esophagitis."
+  },
+  {
+    "name": "Hypohidrosis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Since benztropine contains structural features of atropine, it may produce anhidrosis.  Benztropine should be administered with caution during hot weather, especially when given concomitantly with oth"
+  },
+  {
+    "name": "Dysuria",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Dysuria may occur with the use of benztropine, but it rarely becomes a problem.  Also, urinary retention has been reported.  Caution is advised even when using benztropine in patients with urinary blo"
+  },
+  {
+    "name": "Cysticercosis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Since parasite destruction within the eye can cause irreparable lesions, ocular cysticercosis should not be treated with praziquantel."
+  },
+  {
+    "name": "Brain Neoplasms",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of urofollitropin is contraindicated in the presence of any intracranial lesion or tumor."
+  },
+  {
+    "name": "Crohn Disease",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of brodalumab is contraindicated in patients with Crohn's disease as this agent may cause worsening of the disease.  It is recommended to discontinue the use of brodalumab if patients develop "
+  },
+  {
+    "name": "Restless Legs Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of burosumab-twza may cause new onset of restless leg syndrome (RLS) or worsen RLS severity.  Care should be exercised when using this agent in patients with existing RLS diagnosis."
+  },
+  {
+    "name": "Cardiac Tamponade",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Cardiac tamponade during high dose busulfan therapy combined with cyclophosphamide has been reported in pediatric patients with thalassemia.  Abdominal pain and vomiting may precede the tamponade.  Ca"
+  },
+  {
+    "name": "Neuromuscular Junction Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Verapamil has been reported to decrease neuromuscular transmission in patients with Duchenne's muscular dystrophy and to prolong recovery from the neuromuscular blocking agent, vecuronium.  Therapy wi"
+  },
+  {
+    "name": "PHOTOPAROXYSMAL RESPONSE 1",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of capmatinib may cause photosensitivity reactions.  Exercise care when using this agent in patients predisposed to photosensitivity reactions or with a history of skin cancer.  It is recommen"
+  },
+  {
+    "name": "Ischemic Attack, Transient",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Ischemic cerebrovascular events, including fatalities, occurred in patients treated with vandetanib.  The safety of resumption of vandetanib therapy after resolution of an ischemic cerebrovascular eve"
+  },
+  {
+    "name": "Thrombophilia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Carfilzomib should be used with caution in patients with a history of venous thromboembolic events, including deep venous thrombosis and pulmonary embolism.  Thromboprophylaxis is recommended for pati"
+  },
+  {
+    "name": "Systemic carnitine deficiency",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of cefditoren pivoxil is contraindicated in patients with carnitine deficiency or congenital metabolic disorders that may result in clinically significant carnitine deficiency, since the drug "
+  },
+  {
+    "name": "Syncope",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The administration of human papillomavirus vaccine has been associated with syncope, sometimes resulting in falling with injury.  The syncope sometimes is associated with tonic-clonic movements and ot"
+  },
+  {
+    "name": "Pituitary Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of clomiphene is contraindicated in patients with uncontrolled thyroid or adrenal dysfunction or an organic intracranial lesion such as a pituitary tumor.  Clomiphene interacts with estrogen r"
+  },
+  {
+    "name": "Unconsciousness",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Patients with impaired gag reflex, unconscious or semi-conscious patients, and patients prone to regurgitation or aspiration should be administered polyethylene glycol (PEG) electrolyte solutions caut"
+  },
+  {
+    "name": "Protein C Deficiency",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Tissue necrosis is a rare complication that develops during the initiation of oral anticoagulant therapy due to thrombotic occlusion of venules in the dermis and subcutaneous tissues.  Hereditary, fam"
+  },
+  {
+    "name": "Coumarin Resistance",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Patients with edema, hereditary coumarin resistance, hyperlipidemia, hypothyroidism, or nephrotic syndrome may exhibit lower than expected hypoprothrombinemic response to oral anticoagulants.  Thus, m"
+  },
+  {
+    "name": "Coumarin Sensitivity",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Patients with a collagen vascular disease (e.g., systemic lupus erythematosus, rheumatoid arthritis, scleroderma), congestive heart failure (especially decompensated disease), severe or prolonged diar"
+  },
+  {
+    "name": "Anemia, Iron-Deficiency",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of trientine has been associated with exacerbating iron deficiency.  Therapy with trientine should be administered cautiously in patients with iron deficiency.  If iron supplements are adminis"
+  },
+  {
+    "name": "Subarachnoid Hemorrhage",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of tranexamic acid is contraindicated in patients with subarachnoid hemorrhage.  Cerebral edema and infarction can occur in patients with subarachnoid hemorrhage."
+  },
+  {
+    "name": "Color Vision Defects",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Tranexamic acid should be used with caution in patients with acquired defective color vision or visual disturbances.  Poorly characterized visual abnormalities have been reported in patients during tr"
+  },
+  {
+    "name": "Cystitis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Inflammation of the bladder may interfere with the diagnostic utility of hexaminolevulinate, which is an ester of the heme precursor, aminolevulinic acid.  Following intravesical instillation of hexam"
+  },
+  {
+    "name": "Perimeningeal Infections",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of cytarabine liposomal is contraindicated in patients with active meningeal infection."
+  },
+  {
+    "name": "Alcohol-Induced Disorders",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Patients with a history of abuse or addiction to alcohol or other substances may be at increased risk for abuse of or addiction to daridorexant and should be monitored closely."
+  },
+  {
+    "name": "Pulmonary Arterial Hypertension",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Dasatinib can increase the risk of developing pulmonary arterial hypertension (PAH) which may occur any time after treatment initiation, including after more than 1 year of treatment.  Manifestations "
+  },
+  {
+    "name": "Respiratory Distress Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Acute respiratory distress syndrome has been described in patients with acute iron intoxication or thalassemia following treatment with excessively high intravenous doses of deferoxamine.  Caution is "
+  },
+  {
+    "name": "Diabetes Insipidus, Nephrogenic",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of demeclocycline has been associated with a dose-dependent, reversible, nephrogenic diabetes insipidus syndrome in some patients receiving long-term therapy.  Symptoms of diabetes insipidus i"
+  },
+  {
+    "name": "Extrapyramidal Symptoms",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Extrapyramidal symptoms (EPS) have occurred in approximately 10% of patients receiving metyrosine.  EPS include drooling, speech difficulty, and tremor.  Trismus and parkinsonian syndrome have been re"
+  },
+  {
+    "name": "Intestinal Pseudo-Obstruction",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Morphine liposomal, as with all opiates, diminishes propulsive peristaltic waves in the gastrointestinal tract and may prolong obstruction; therefore, its use is contraindicated in any patient who has"
+  },
+  {
+    "name": "Feeding and Eating Disorders",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Stiripentol can cause decreases in appetite and weight.  It is recommended to monitor pediatric patients' growth and, in some cases, to decrease the dose of concomitant valproate by 30% per week to re"
+  },
+  {
+    "name": "Sleepiness",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Stiripentol can cause somnolence.  If somnolence occurs during co-administration with clobazam, consider an initial reduction of clobazam by 25%.  If somnolence persists, further clobazam reduction by"
+  },
+  {
+    "name": "Respiratory Tract Infections",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The adrenergic blocking effect of phenoxybenzamine may aggravate the symptoms of respiratory infections.  Caution is recommended when treating patients with respiratory infections."
+  },
+  {
+    "name": "Myocarditis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Digoxin can rarely precipitate vasoconstriction and may promote the development of cytokines; therefore, should be avoided in patients with myocarditis."
+  },
+  {
+    "name": "Lymphopenia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of dimethyl fumarate may decrease lymphocyte counts.  Dimethyl fumarate has not been studied in patients with preexisting low lymphocyte counts; caution is advised in these patients.  CBC (inc"
+  },
+  {
+    "name": "Hemolytic-Uremic Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Atypical hemolytic uremic syndrome in the absence of documented infection and resulting in renal insufficiency, electrolyte abnormalities, anemia, and hypertension can occur in patients treated with d"
+  },
+  {
+    "name": "Hypermagnesemia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Each gram of anhydrous magnesium salicylate contains approximately 6.7 mEq of magnesium.  Therapy with products containing magnesium salicylate should be avoided or administered cautiously in patients"
+  },
+  {
+    "name": "Paresthesia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Severe neurosensory symptoms such as paresthesia, dysesthesia, and pain have been reported during docetaxel therapy.  Therapy with docetaxel should be administered cautiously to patients with or predi"
+  },
+  {
+    "name": "Exocrine Pancreatic Insufficiency",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Avoid the administration of triheptanoin in patients with pancreatic insufficiency as reduced absorption will lead to insufficient supplementation."
+  },
+  {
+    "name": "Meningococcal Infections",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Eculizumab is contraindicated in patients with unresolved serious Neisseria meningitidis infection, in those who are not currently vaccinated against Neisseria meningitidis, unless the risks of delayi"
+  },
+  {
+    "name": "Hepatitis C",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Eltrombopag has shown to increase the risk of hepatic decompensation in patients with chronic hepatitis C in treatment with interferon and ribavirin.  Clinical trials reported that ascites and encepha"
+  },
+  {
+    "name": "Pre-Eclampsia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Intravenous magnesium should not be given to mothers with preeclampsia during the two hours preceding delivery."
+  },
+  {
+    "name": "Optic Neuritis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Ethambutol is contraindicated in patients with known optic neuritis unless clinical judgement determines that it may be used.  Ethambutol can produce decreases in visual acuity which appear to be due "
+  },
+  {
+    "name": "Shock, Septic",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Naloxone has been shown in some cases of septic shock to produce a rise in blood pressure that may last up to several hours; however, this pressor response has not been demonstrated to improve patient"
+  },
+  {
+    "name": "Cytopenias",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Adverse hematologic effects including neutropenia, thrombocytopenia, and anemia have been associated with the use of fedratinib.  It is recommended to modify the starting dose in patients with a basel"
+  },
+  {
+    "name": "Anemia, Aplastic",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of felbamate is contraindicated in patients with bone marrow suppression or a current or prior history of blood dyscrasias.  A marked increase in the incidence of aplastic anemia has been asso"
+  },
+  {
+    "name": "Anorexia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Fenfluramine can cause decreases in appetite and weight.  Exercise care when using this agent in patients at risk of decreased appetite or weight.  It is recommended to monitor the growth of pediatric"
+  },
+  {
+    "name": "Malnutrition",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Floxuridine therapy is contraindicated for patients in a poor nutritional state."
+  },
+  {
+    "name": "Central Nervous System Neoplasms",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of menotropins is contraindicated in patients with CNS lesions, such as pituitary gland or hypothalamus tumors.  Menotropins possess LH and FSH activity."
+  },
+  {
+    "name": "Hypotension, Orthostatic",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "There have been reports of transient episodes of symptomatic orthostatic hypotension with the use of teriparatide in short-term clinical pharmacology studies.  Caution is recommended when using this a"
+  },
+  {
+    "name": "Nephrogenic Fibrosing Dermopathy",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Gadolinium based contrast agents (GBCAs) increase the risk for nephrogenic systemic fibrosis (NSF) among patients with impaired elimination of the drugs.  Use of these agents should be avoided in thes"
+  },
+  {
+    "name": "Pancreatic Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Cholecystitis, cholangitis, cholelithiasis, and pancreatitis have been reported in clinical studies with teduglutide.  For identification of the onset or worsening of gallbladder/biliary/pancreatic di"
+  },
+  {
+    "name": "Pericarditis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of intravenous nitroglycerin is contraindicated in patients with constrictive pericarditis, pericardial tamponade, or restrictive cardiomyopathy.  In these patients, cardiac output is dependen"
+  },
+  {
+    "name": "Attention Deficit Disorder with Hyperactivity",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The safety and effectiveness of guanfacine in children under 12 years of age has not been demonstrated and its use in this age group is not recommended.  However, there have been some spontaneous post"
+  },
+  {
+    "name": "Skin Manifestations",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Percutaneous and/or transmucosal absorption during use on generalized dermatologic conditions has resulted in CNS toxicity such as irritability and seizures.  Hexachlorophene should not be applied to "
+  },
+  {
+    "name": "Nephrotic Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of house dust mite allergen extract is contraindicated in children with nephrotic syndrome due to a variety of seemingly unrelated events that may cause an exacerbation of nephrotic disease."
+  },
+  {
+    "name": "Premenopausal",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Pre/perimenopausal women treated with the combination palbociclib plus fulvestrant therapy should be treated with luteinizing hormone-releasing hormone (LHRH) agonists according to current clinical pr"
+  },
+  {
+    "name": "Sjogren-Larsson Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of miltefosine is contraindicated in patients with Sjogren-Larsson syndrome.  Miltefosine undergoes metabolic cleavage in hepatocytes to release choline.  The fatty alcohol-containing fragment"
+  },
+  {
+    "name": "Edema due to obstruction of lymph vessels or disorders of the lymph nodes.",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Lymphoid tissue (e.g., tonsillar and adenoidal) hypertrophy associated with complications such as snoring, sleep apnea, and chronic middle-ear effusions have been reported with the use of mecasermin. "
+  },
+  {
+    "name": "Vitamin A Deficiency",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Treatment with inotersen leads to a decrease in serum vitamin A levels.  Caution is advised in patients with history of vitamin A deficiency.  Supplementation at the recommended daily allowance of vit"
+  },
+  {
+    "name": "Dermatitis Herpetiformis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Potassium iodide should not be used in patients that have or have ever had dermatitis herpetiformis."
+  },
+  {
+    "name": "Vasculitis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "People who are allergic to iodide or have hypocomplementemic vasculitis should not take potassium iodide."
+  },
+  {
+    "name": "Dermatitis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Ipilimumab can cause immune-mediated rash or dermatitis (including bullous and exfoliative dermatitis, Stevens-Johnson syndrome [SJS], toxic epidermal necrolysis [TEN], and drug rash with eosinophilia"
+  },
+  {
+    "name": "Graft vs Host Disease",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Fatal or serious graft-versus-host disease (GVHD) can occur in patients who receive ipilimumab either before or after allogeneic hematopoietic stem cell transplantation (HSCT).  These complications ma"
+  },
+  {
+    "name": "Immune System Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Ipilimumab can cause immune-mediated adverse reactions, which may be severe or fatal.  Immune-mediated adverse reactions can occur in any organ system or tissue.  Care should be exercised when using i"
+  },
+  {
+    "name": "Gastritis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "During clinical studies with sapropterin, gastritis was reported as a serious adverse reaction.  Monitor patients for signs and symptoms of gastritis during treatment, and use with caution in patients"
+  },
+  {
+    "name": "Avitaminosis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Lomitapide may reduce the absorption of fat soluble nutrients.  Patients on clinical trials were provided with daily dietary supplements of vitamin E, linoleic acid, alpha- linoleic acid (ALA), eicosa"
+  },
+  {
+    "name": "Diverticulitis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Gastrointestinal (GI) perforations have been reported with the use of sarilumab.  GI perforation risk may be increased with concurrent diverticulitis or concomitant use of NSAIDs or corticosteroids.  "
+  },
+  {
+    "name": "Serotonin Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of lasmiditan has been associated with reactions consistent with serotonin syndrome.  Serotonin syndrome may also occur with lasmiditan during coadministration with serotonergic drugs.  The on"
+  },
+  {
+    "name": "Herpes Simplex",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Latanoprost should be used with caution in patients with a history of herpetic keratitis and it should be avoided in cases of active simplex keratitis because of the risk of reactivation and inflammat"
+  },
+  {
+    "name": "Perimenopause",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Ovarian macrocysts, often bilateral and multiple, have been reported in premenopausal patients receiving mitotane which might lead to adnexal torsion and hemorrhagic cyst rupture.  It is recommended t"
+  },
+  {
+    "name": "Migraine Disorders",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of rizatriptan is contraindicated in patients with hemiplegic or basilar migraine."
+  },
+  {
+    "name": "Guillain-Barre Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Persons previously diagnosed with Guillain-Barr\u00e9 syndrome (GBS) may be at increased risk of GBS following receipt of meningococcal conjugate vaccine.  The decision to give this vaccine should take int"
+  },
+  {
+    "name": "Anorexia Nervosa",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of sibutramine is contraindicated in patients with anorexia nervosa.  Sibutramine is an anorexiant used in the treatment of obesity."
+  },
+  {
+    "name": "Lymphoma",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Cases of T-cell lymphoma have been reported during treatment with metreleptin in patients with acquired generalized lipodystrophy.  Some, but not all, had immunodeficiency and significant hematologic "
+  },
+  {
+    "name": "Urinary Bladder Diseases",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Valrubicin is contraindicated in patients with perforated bladder or compromised bladder mucosa, including small bladder capacity that is unable to tolerate a 75 mL instillation.  Evaluate the bladder"
+  },
+  {
+    "name": "Nephritis",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Chronic nephritis with nitrogen retention contraindicates the use of vasopressin until reasonable nitrogen blood levels have been attained."
+  },
+  {
+    "name": "Blindness",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Vigabatrin causes permanent bilateral concentric visual field constriction.  The onset of vision loss from vigabatrin is unpredictable, and can occur within weeks of starting treatment or sooner, or a"
+  },
+  {
+    "name": "Ischemic Stroke",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Vorapaxar is contraindicated in patients with a history of stroke, transient ischemic attack (TIA), or intracranial bleeding.  The risk of intracranial bleeding is higher in these patients."
+  },
+  {
+    "name": "Huntington Disease",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Patients with Huntington disease are prone to depression.  Tetrabenazine can increase the risk of depression and suicidal thoughts and should be used with caution in patients with Huntington's disease"
+  },
+  {
+    "name": "Sleep Apnea, Obstructive",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of sodium oxybate may impair the respiratory drive especially in patients with compromised respiratory function.  Sodium oxybate should be used cautiously in patients with sleep apnea and slee"
+  },
+  {
+    "name": "Cachexia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Nondepolarizing neuromuscular blocking agents have been found to exhibit profound neuromuscular blocking effects in cachectic or debilitated patients, patients with neuromuscular diseases, and patient"
+  },
+  {
+    "name": "Cockayne Syndrome",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Secnidazole is contraindicated in patients with Cockayne syndrome.  Severe irreversible hepatotoxicity/acute liver failure with fatal outcomes have been reported after start of metronidazole (another "
+  },
+  {
+    "name": "Hallucinations",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Reversible hallucinations have occurred (usually within the first 2 weeks of therapy) in patients receiving tolcapone.  Confusion, occasional insomnia, and excessive dreaming commonly accompany the ha"
+  },
+  {
+    "name": "Urticaria",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Temozolomide is contraindicated in patients with a history of urticaria, allergic reaction including anaphylaxis, toxic epidermal necrolysis, and Stevens-Johnson syndrome."
+  },
+  {
+    "name": "Glucose Metabolism Disorders",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of gatifloxacin is contraindicated in patients with diabetes mellitus.  Treatment with various quinolones has been associated with disturbances in blood glucose homeostasis possibly stemming f"
+  },
+  {
+    "name": "Ischemia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Terlipressin is a vasoconstrictor that can cause ischemic events, and is contraindicated in patients with coronary, cerebrovascular, peripheral, or mesenteric ischemia."
+  },
+  {
+    "name": "Fetal Hypoxia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Terlipressin is contraindicated in patients with hypoxia (SpO2 less than 90%) or worsening respiratory symptoms.  Patients should be assessed for respiratory status before treatment initiation and mon"
+  },
+  {
+    "name": "Dystonia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Thiothixene may cause dose-related dystonic reactions, prolonged abnormal contractions of muscle groups, may occur in susceptible individuals during the first few days of treatment.  These reactions a"
+  },
+  {
+    "name": "Cerebral Hemorrhage",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of pentoxifylline is contraindicated in patients with recent cerebral and/or retinal hemorrhage.  Dose-related hemorrhagic effects can occur."
+  },
+  {
+    "name": "Diverticulum",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The tablet shell of the manufactured form of treprostinil, Orenitram does not dissolve and can lodge in the diverticulum of patients with diverticulosis.  Care should be exercised when using this drug"
+  },
+  {
+    "name": "Lung Diseases, Obstructive",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of propafenone is contraindicated in patients with bronchospastic disorders or severe obstructive pulmonary disease.  Propafenone has beta-adrenergic blocking properties."
+  },
+  {
+    "name": "Tinnitus",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of quinine is contraindicated in patients with tinnitus.  Quinine has been associated with reversible and irreversible ototoxicity.  Reversible hearing loss, tinnitus, and dizziness has been r"
+  },
+  {
+    "name": "Sleep Apnea Syndromes",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of ramelteon could exacerbate symptoms of sleep apnea, and has not been studied in patients with severe sleep apnea.  Ramelteon is not recommended in patients with severe sleep apnea."
+  },
+  {
+    "name": "Gallstones",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Rauwolfia alkaloids increase gastrointestinal motility and secretion and can precipitate biliary colic in patients with gallstones.  Therapy with rauwolfia alkaloids should be administered cautiously "
+  },
+  {
+    "name": "Endocrine system disease",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Rifampin has enzyme-inducing effects that can enhance the metabolism of many endogenous substrates, including adrenal hormones, thyroid hormones, and vitamin D, the latter of which may affect serum ca"
+  },
+  {
+    "name": "Leukemia",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Progression from myelodysplastic syndromes (MDS) to acute myelogenous leukemia (AML) has been observed in clinical trials with romiplostim.  This drug is not indicated for the treatment of thrombocyto"
+  },
+  {
+    "name": "Papilledema",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Papilledema has been reported in 2% of patients receiving oprelvekin.  Therapy with oprelvekin should be administered cautiously in patients with papilledema or CNS tumors as papilledema can be worsen"
+  },
+  {
+    "name": "Injection Site Reaction",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Injection site reactions, including injection site necrosis, can occur with the use of subcutaneous interferon beta.  Caution should be exercised when prescribing this agent and the decisions to disco"
+  },
+  {
+    "name": "Addison Disease",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Thiopental should not be used in patients with Addison disease or any adrenal gland disorder."
+  },
+  {
+    "name": "Esophageal Fistula",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "The use of photodynamic therapy (PDT) with porfimer is contraindicated for the treatment of esophageal cancer in patients with an existing bronchoesophageal or tracheoesophageal fistula.  Prior to adm"
+  },
+  {
+    "name": "Esophageal and Gastric Varices",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Treatment with photodynamic therapy and porfimer should be conducted with extreme caution in patients with esophageal varices.  Light should not be given directly to the variceal area because of the h"
+  },
+  {
+    "name": "Favism",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Hemolytic anemia with disseminated intravascular coagulation associated with a glucose-6 phosphate deficiency (G6PD) has occurred during therapy with mafenide topical.  Therapy with mafenide topical s"
+  },
+  {
+    "name": "Ovarian Cysts",
+    "contraindicatedDrugsCount": 1,
+    "sampleWarning": "Nafarelin therapy induces a release of pituitary gonadotropins (LH and FSH).  Ovarian cysts or enlargement of existing ovarian cysts (primarily in women with polycystic ovarian disease) have been repo"
+  }
+]

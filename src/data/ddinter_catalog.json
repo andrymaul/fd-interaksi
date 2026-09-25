@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "amprenavir",
+    "name": "Amprenavir",
+    "ddinterId": "DDInter90",
+    "drugbankId": "DB00701",
+    "smiles": "DDInter90",
+    "display": "Amprenavir"
+  },
+  {
+    "id": "abacavir",
+    "name": "Abacavir",
+    "ddinterId": "DDInter1",
+    "drugbankId": "DB01048",
+    "smiles": "DDInter1",
+    "display": "Abacavir"
+  },
+  {
+    "id": "asparaginase-escherichia-coli",
+    "name": "Asparaginase Escherichia coli",
+    "ddinterId": "DDInter127",
+    "drugbankId": "DB00023",
+    "smiles": "unknown",
+    "display": "Asparaginase..."
+  },
+  {
+    "id": "chlorpromazine",
+    "name": "Chlorpromazine",
+    "ddinterId": "DDInter363",
+    "drugbankId": "DB00477",
+    "smiles": "DDInter363",
+    "display": "Chlorpromazine"
+  },
+  {
+    "id": "chlorzoxazone",
+    "name": "Chlorzoxazone",
+    "ddinterId": "DDInter366",
+    "drugbankId": "DB00356",
+    "smiles": "DDInter366",
+    "display": "Chlorzoxazone"
+  },
+  {
+    "id": "cladribine",
+    "name": "Cladribine",
+    "ddinterId": "DDInter392",
+    "drugbankId": "DB00242",
+    "smiles": "DDInter392",
+    "display": "Cladribine"
+  },
+  {
+    "id": "clofarabine",
+    "name": "Clofarabine",
+    "ddinterId": "DDInter405",
+    "drugbankId": "DB00631",
+    "smiles": "DDInter405",
+    "display": "Clofarabine"
+  },
+  {
+    "id": "disulfiram",
+    "name": "Disulfiram",
+    "ddinterId": "DDInter576",
+    "drugbankId": "DB00822",
+    "smiles": "DDInter576",
+    "display": "Disulfiram"
+  },
+  {
+    "id": "efavirenz",
+    "name": "Efavirenz",
+    "ddinterId": "DDInter624",
+    "drugbankId": "DB00625",
+    "smiles": "DDInter624",
+    "display": "Efavirenz"
+  },
+  {
+    "id": "epirubicin",
+    "name": "Epirubicin",
+    "ddinterId": "DDInter655",
+    "drugbankId": "DB00445",
+    "smiles": "DDInter655",
+    "display": "Epirubicin"
+  },
+  {
+    "id": "ethanol",
+    "name": "Ethanol",
+    "ddinterId": "DDInter690",
+    "drugbankId": "DB00898",
+    "smiles": "DDInter690",
+    "display": "Ethanol"
+  },
+  {
+    "id": "interferon-beta-1a",
+    "name": "Interferon beta-1a",
+    "ddinterId": "DDInter947",
+    "drugbankId": "DB00060",
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "interferon-beta-1b",
+    "name": "Interferon beta-1b",
+    "ddinterId": "DDInter948",
+    "drugbankId": "DB00068",
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "isoniazid",
+    "name": "Isoniazid",
+    "ddinterId": "DDInter986",
+    "drugbankId": "DB00951",
+    "smiles": "DDInter986",
+    "display": "Isoniazid"
+  },
+  {
+    "id": "methadone",
+    "name": "Methadone",
+    "ddinterId": "DDInter1166",
+    "drugbankId": "DB00333",
+    "smiles": "DDInter1166",
+    "display": "Methadone"
+  },
+  {
+    "id": "methotrexate",
+    "name": "Methotrexate",
+    "ddinterId": "DDInter1174",
+    "drugbankId": "DB00563",
+    "smiles": "DDInter1174",
+    "display": "Methotrexate"
+  },
+  {
+    "id": "naltrexone",
+    "name": "Naltrexone",
+    "ddinterId": "DDInter1263",
+    "drugbankId": "DB00704",
+    "smiles": "DDInter1263",
+    "display": "Naltrexone"
+  },
+  {
+    "id": "pegaspargase",
+    "name": "Pegaspargase",
+    "ddinterId": "DDInter1404",
+    "drugbankId": "DB00059",
+    "smiles": "unknown",
+    "display": "Pegaspargase"
+  },
+  {
+    "id": "ribavirin",
+    "name": "Ribavirin",
+    "ddinterId": "DDInter1587",
+    "drugbankId": "DB00811",
+    "smiles": "DDInter1587",
+    "display": "Ribavirin"
+  },
+  {
+    "id": "tioguanine",
+    "name": "Tioguanine",
+    "ddinterId": "DDInter1814",
+    "drugbankId": "DB00352",
+    "smiles": "DDInter1814",
+    "display": "Tioguanine"
+  },
+  {
+    "id": "tipranavir",
+    "name": "Tipranavir",
+    "ddinterId": "DDInter1817",
+    "drugbankId": "DB00932",
+    "smiles": "DDInter1817",
+    "display": "Tipranavir"
+  },
+  {
+    "id": "aluminum-hydroxide",
+    "name": "Aluminum hydroxide",
+    "ddinterId": "DDInter58",
+    "drugbankId": "DB06723",
+    "smiles": "DDInter58",
+    "display": "Aluminum..."
+  },
+  {
+    "id": "aminoglutethimide",
+    "name": "Aminoglutethimide",
+    "ddinterId": "DDInter71",
+    "drugbankId": "DB00357",
+    "smiles": "DDInter71",
+    "display": "Aminoglutethimide"
+  },
+  {
+    "id": "amiodarone",
+    "name": "Amiodarone",
+    "ddinterId": "DDInter76",
+    "drugbankId": "DB01118",
+    "smiles": "DDInter76",
+    "display": "Amiodarone"
+  },
+  {
+    "id": "amobarbital",
+    "name": "Amobarbital",
+    "ddinterId": "DDInter81",
+    "drugbankId": "DB01351",
+    "smiles": "DDInter81",
+    "display": "Amobarbital"
+  },
+  {
+    "id": "dolutegravir",
+    "name": "Dolutegravir",
+    "ddinterId": "DDInter582",
+    "drugbankId": "DB08930",
+    "smiles": "DDInter582",
+    "display": "Dolutegravir"
+  },
+  {
+    "id": "aprepitant",
+    "name": "Aprepitant",
+    "ddinterId": "DDInter112",
+    "drugbankId": "DB00673",
+    "smiles": "DDInter112",
+    "display": "Aprepitant"
+  },
+  {
+    "id": "armodafinil",
+    "name": "Armodafinil",
+    "ddinterId": "DDInter119",
+    "drugbankId": "DB06413",
+    "smiles": "DDInter119",
+    "display": "Armodafinil"
+  },
+  {
+    "id": "lamivudine",
+    "name": "Lamivudine",
+    "ddinterId": "DDInter1019",
+    "drugbankId": "DB00709",
+    "smiles": "DDInter1019",
+    "display": "Lamivudine"
+  },
+  {
+    "id": "atazanavir",
+    "name": "Atazanavir",
+    "ddinterId": "DDInter129",
+    "drugbankId": "DB01072",
+    "smiles": "DDInter129",
+    "display": "Atazanavir"
+  },
+  {
+    "id": "attapulgite",
+    "name": "Attapulgite",
+    "ddinterId": "DDInter138",
+    "drugbankId": "DB01574",
+    "smiles": "DDInter138",
+    "display": "Attapulgite"
+  },
+  {
+    "id": "bexarotene",
+    "name": "Bexarotene",
+    "ddinterId": "DDInter202",
+    "drugbankId": "DB00307",
+    "smiles": "DDInter202",
+    "display": "Bexarotene"
+  },
+  {
+    "id": "boceprevir",
+    "name": "Boceprevir",
+    "ddinterId": "DDInter221",
+    "drugbankId": "DB08873",
+    "smiles": "DDInter221",
+    "display": "Boceprevir"
+  },
+  {
+    "id": "bosentan",
+    "name": "Bosentan",
+    "ddinterId": "DDInter223",
+    "drugbankId": "DB00559",
+    "smiles": "DDInter223",
+    "display": "Bosentan"
+  },
+  {
+    "id": "butabarbital",
+    "name": "Butabarbital",
+    "ddinterId": "DDInter256",
+    "drugbankId": "DB00237",
+    "smiles": "DDInter256",
+    "display": "Butabarbital"
+  },
+  {
+    "id": "butalbital",
+    "name": "Butalbital",
+    "ddinterId": "DDInter257",
+    "drugbankId": "DB00241",
+    "smiles": "DDInter257",
+    "display": "Butalbital"
+  },
+  {
+    "id": "calcium-acetate",
+    "name": "Calcium acetate",
+    "ddinterId": "DDInter270",
+    "drugbankId": "DB00258",
+    "smiles": "DDInter270",
+    "display": "Calcium..."
+  },
+  {
+    "id": "calcium-carbonate",
+    "name": "Calcium carbonate",
+    "ddinterId": "DDInter271",
+    "drugbankId": "DB06724",
+    "smiles": "DDInter271",
+    "display": "Calcium..."
+  },
+  {
+    "id": "carbamazepine",
+    "name": "Carbamazepine",
+    "ddinterId": "DDInter293",
+    "drugbankId": "DB00564",
+    "smiles": "DDInter293",
+    "display": "Carbamazepine"
+  },
+  {
+    "id": "iron",
+    "name": "Iron",
+    "ddinterId": "DDInter975",
+    "drugbankId": "DB01592",
+    "smiles": "DDInter975",
+    "display": "Iron"
+  },
+  {
+    "id": "cenobamate",
+    "name": "Cenobamate",
+    "ddinterId": "DDInter338",
+    "drugbankId": "DB06119",
+    "smiles": "DDInter338",
+    "display": "Cenobamate"
+  },
+  {
+    "id": "chloramphenicol",
+    "name": "Chloramphenicol",
+    "ddinterId": "DDInter351",
+    "drugbankId": "DB00446",
+    "smiles": "DDInter351",
+    "display": "Chloramphenicol"
+  },
+  {
+    "id": "cimetidine",
+    "name": "Cimetidine",
+    "ddinterId": "DDInter380",
+    "drugbankId": "DB00501",
+    "smiles": "DDInter380",
+    "display": "Cimetidine"
+  },
+  {
+    "id": "ciprofloxacin",
+    "name": "Ciprofloxacin",
+    "ddinterId": "DDInter384",
+    "drugbankId": "DB00537",
+    "smiles": "DDInter384",
+    "display": "Ciprofloxacin"
+  },
+  {
+    "id": "clarithromycin",
+    "name": "Clarithromycin",
+    "ddinterId": "DDInter393",
+    "drugbankId": "DB01211",
+    "smiles": "DDInter393",
+    "display": "Clarithromycin"
+  },
+  {
+    "id": "clotrimazole",
+    "name": "Clotrimazole",
+    "ddinterId": "DDInter416",
+    "drugbankId": "DB00257",
+    "smiles": "DDInter416",
+    "display": "Clotrimazole"
+  },
+  {
+    "id": "conivaptan",
+    "name": "Conivaptan",
+    "ddinterId": "DDInter438",
+    "drugbankId": "DB00872",
+    "smiles": "DDInter438",
+    "display": "Conivaptan"
+  },
+  {
+    "id": "crizotinib",
+    "name": "Crizotinib",
+    "ddinterId": "DDInter448",
+    "drugbankId": "DB08865",
+    "smiles": "DDInter448",
+    "display": "Crizotinib"
+  },
+  {
+    "id": "cyclosporine",
+    "name": "Cyclosporine",
+    "ddinterId": "DDInter458",
+    "drugbankId": "DB00091",
+    "smiles": "DDInter458",
+    "display": "Cyclosporine"
+  },
+  {
+    "id": "dalfampridine",
+    "name": "Dalfampridine",
+    "ddinterId": "DDInter468",
+    "drugbankId": "DB06637",
+    "smiles": "DDInter468",
+    "display": "Dalfampridine"
+  },
+  {
+    "id": "danazol",
+    "name": "Danazol",
+    "ddinterId": "DDInter472",
+    "drugbankId": "DB01406",
+    "smiles": "DDInter472",
+    "display": "Danazol"
+  },
+  {
+    "id": "darunavir",
+    "name": "Darunavir",
+    "ddinterId": "DDInter482",
+    "drugbankId": "DB01264",
+    "smiles": "DDInter482",
+    "display": "Darunavir"
+  },
+  {
+    "id": "dasatinib",
+    "name": "Dasatinib",
+    "ddinterId": "DDInter484",
+    "drugbankId": "DB01254",
+    "smiles": "DDInter484",
+    "display": "Dasatinib"
+  },
+  {
+    "id": "deferasirox",
+    "name": "Deferasirox",
+    "ddinterId": "DDInter488",
+    "drugbankId": "DB01609",
+    "smiles": "DDInter488",
+    "display": "Deferasirox"
+  },
+  {
+    "id": "delavirdine",
+    "name": "Delavirdine",
+    "ddinterId": "DDInter496",
+    "drugbankId": "DB00705",
+    "smiles": "DDInter496",
+    "display": "Delavirdine"
+  },
+  {
+    "id": "dexamethasone",
+    "name": "Dexamethasone",
+    "ddinterId": "DDInter513",
+    "drugbankId": "DB01234",
+    "smiles": "DDInter513",
+    "display": "Dexamethasone"
+  },
+  {
+    "id": "didanosine",
+    "name": "Didanosine",
+    "ddinterId": "DDInter544",
+    "drugbankId": "DB00900",
+    "smiles": "DDInter544",
+    "display": "Didanosine"
+  },
+  {
+    "id": "diltiazem",
+    "name": "Diltiazem",
+    "ddinterId": "DDInter561",
+    "drugbankId": "DB00343",
+    "smiles": "DDInter561",
+    "display": "Diltiazem"
+  },
+  {
+    "id": "dofetilide",
+    "name": "Dofetilide",
+    "ddinterId": "DDInter580",
+    "drugbankId": "DB00204",
+    "smiles": "DDInter580",
+    "display": "Dofetilide"
+  },
+  {
+    "id": "dronedarone",
+    "name": "Dronedarone",
+    "ddinterId": "DDInter602",
+    "drugbankId": "DB04855",
+    "smiles": "DDInter602",
+    "display": "Dronedarone"
+  },
+  {
+    "id": "enzalutamide",
+    "name": "Enzalutamide",
+    "ddinterId": "DDInter649",
+    "drugbankId": "DB08899",
+    "smiles": "DDInter649",
+    "display": "Enzalutamide"
+  },
+  {
+    "id": "erythromycin",
+    "name": "Erythromycin",
+    "ddinterId": "DDInter670",
+    "drugbankId": "DB00199",
+    "smiles": "DDInter670",
+    "display": "Erythromycin"
+  },
+  {
+    "id": "etravirine",
+    "name": "Etravirine",
+    "ddinterId": "DDInter703",
+    "drugbankId": "DB06414",
+    "smiles": "DDInter703",
+    "display": "Etravirine"
+  },
+  {
+    "id": "felbamate",
+    "name": "Felbamate",
+    "ddinterId": "DDInter715",
+    "drugbankId": "DB00949",
+    "smiles": "DDInter715",
+    "display": "Felbamate"
+  },
+  {
+    "id": "fluconazole",
+    "name": "Fluconazole",
+    "ddinterId": "DDInter743",
+    "drugbankId": "DB00196",
+    "smiles": "DDInter743",
+    "display": "Fluconazole"
+  },
+  {
+    "id": "fluvoxamine",
+    "name": "Fluvoxamine",
+    "ddinterId": "DDInter770",
+    "drugbankId": "DB00176",
+    "smiles": "DDInter770",
+    "display": "Fluvoxamine"
+  },
+  {
+    "id": "fosamprenavir",
+    "name": "Fosamprenavir",
+    "ddinterId": "DDInter777",
+    "drugbankId": "DB01319",
+    "smiles": "DDInter777",
+    "display": "Fosamprenavir"
+  },
+  {
+    "id": "fosaprepitant",
+    "name": "Fosaprepitant",
+    "ddinterId": "DDInter778",
+    "drugbankId": "DB06717",
+    "smiles": "DDInter778",
+    "display": "Fosaprepitant"
+  },
+  {
+    "id": "fosphenytoin",
+    "name": "Fosphenytoin",
+    "ddinterId": "DDInter783",
+    "drugbankId": "DB01320",
+    "smiles": "DDInter783",
+    "display": "Fosphenytoin"
+  },
+  {
+    "id": "grepafloxacin",
+    "name": "Grepafloxacin",
+    "ddinterId": "DDInter842",
+    "drugbankId": "DB00365",
+    "smiles": "DDInter842",
+    "display": "Grepafloxacin"
+  },
+  {
+    "id": "griseofulvin",
+    "name": "Griseofulvin",
+    "ddinterId": "DDInter843",
+    "drugbankId": "DB00400",
+    "smiles": "DDInter843",
+    "display": "Griseofulvin"
+  },
+  {
+    "id": "guanfacine",
+    "name": "Guanfacine",
+    "ddinterId": "DDInter847",
+    "drugbankId": "DB01018",
+    "smiles": "DDInter847",
+    "display": "Guanfacine"
+  },
+  {
+    "id": "imatinib",
+    "name": "Imatinib",
+    "ddinterId": "DDInter909",
+    "drugbankId": "DB00619",
+    "smiles": "DDInter909",
+    "display": "Imatinib"
+  },
+  {
+    "id": "indinavir",
+    "name": "Indinavir",
+    "ddinterId": "DDInter917",
+    "drugbankId": "DB00224",
+    "smiles": "DDInter917",
+    "display": "Indinavir"
+  },
+  {
+    "id": "itraconazole",
+    "name": "Itraconazole",
+    "ddinterId": "DDInter995",
+    "drugbankId": "DB01167",
+    "smiles": "DDInter995",
+    "display": "Itraconazole"
+  },
+  {
+    "id": "ivacaftor",
+    "name": "Ivacaftor",
+    "ddinterId": "DDInter997",
+    "drugbankId": "DB08820",
+    "smiles": "DDInter997",
+    "display": "Ivacaftor"
+  },
+  {
+    "id": "kaolin",
+    "name": "Kaolin",
+    "ddinterId": "DDInter1005",
+    "drugbankId": "DB01575",
+    "smiles": "DDInter1005",
+    "display": "Kaolin"
+  },
+  {
+    "id": "ketoconazole",
+    "name": "Ketoconazole",
+    "ddinterId": "DDInter1008",
+    "drugbankId": "DB01026",
+    "smiles": "DDInter1008",
+    "display": "Ketoconazole"
+  },
+  {
+    "id": "magnesium-oxide",
+    "name": "Magnesium oxide",
+    "ddinterId": "DDInter1119",
+    "drugbankId": "DB01377",
+    "smiles": "DDInter1119",
+    "display": "Magnesium..."
+  },
+  {
+    "id": "magnesium-sulfate",
+    "name": "Magnesium sulfate",
+    "ddinterId": "DDInter1120",
+    "drugbankId": "DB00653",
+    "smiles": "DDInter1120",
+    "display": "Magnesium..."
+  },
+  {
+    "id": "methylphenobarbital",
+    "name": "Methylphenobarbital",
+    "ddinterId": "DDInter1190",
+    "drugbankId": "DB00849",
+    "smiles": "DDInter1190",
+    "display": "Methylphenobarbital"
+  },
+  {
+    "id": "metformin",
+    "name": "Metformin",
+    "ddinterId": "DDInter1164",
+    "drugbankId": "DB00331",
+    "smiles": "DDInter1164",
+    "display": "Metformin"
+  },
+  {
+    "id": "miconazole",
+    "name": "Miconazole",
+    "ddinterId": "DDInter1209",
+    "drugbankId": "DB01110",
+    "smiles": "DDInter1209",
+    "display": "Miconazole"
+  },
+  {
+    "id": "mifepristone",
+    "name": "Mifepristone",
+    "ddinterId": "DDInter1215",
+    "drugbankId": "DB00834",
+    "smiles": "DDInter1215",
+    "display": "Mifepristone"
+  },
+  {
+    "id": "modafinil",
+    "name": "Modafinil",
+    "ddinterId": "DDInter1236",
+    "drugbankId": "DB00745",
+    "smiles": "DDInter1236",
+    "display": "Modafinil"
+  },
+  {
+    "id": "nafcillin",
+    "name": "Nafcillin",
+    "ddinterId": "DDInter1256",
+    "drugbankId": "DB00607",
+    "smiles": "DDInter1256",
+    "display": "Nafcillin"
+  },
+  {
+    "id": "nefazodone",
+    "name": "Nefazodone",
+    "ddinterId": "DDInter1274",
+    "drugbankId": "DB01149",
+    "smiles": "DDInter1274",
+    "display": "Nefazodone"
+  },
+  {
+    "id": "nelfinavir",
+    "name": "Nelfinavir",
+    "ddinterId": "DDInter1276",
+    "drugbankId": "DB00220",
+    "smiles": "DDInter1276",
+    "display": "Nelfinavir"
+  },
+  {
+    "id": "nevirapine",
+    "name": "Nevirapine",
+    "ddinterId": "DDInter1285",
+    "drugbankId": "DB00238",
+    "smiles": "DDInter1285",
+    "display": "Nevirapine"
+  },
+  {
+    "id": "nifedipine",
+    "name": "Nifedipine",
+    "ddinterId": "DDInter1291",
+    "drugbankId": "DB01115",
+    "smiles": "DDInter1291",
+    "display": "Nifedipine"
+  },
+  {
+    "id": "nilotinib",
+    "name": "Nilotinib",
+    "ddinterId": "DDInter1293",
+    "drugbankId": "DB04868",
+    "smiles": "DDInter1293",
+    "display": "Nilotinib"
+  },
+  {
+    "id": "oxcarbazepine",
+    "name": "Oxcarbazepine",
+    "ddinterId": "DDInter1360",
+    "drugbankId": "DB00776",
+    "smiles": "DDInter1360",
+    "display": "Oxcarbazepine"
+  },
+  {
+    "id": "pentobarbital",
+    "name": "Pentobarbital",
+    "ddinterId": "DDInter1423",
+    "drugbankId": "DB00312",
+    "smiles": "DDInter1423",
+    "display": "Pentobarbital"
+  },
+  {
+    "id": "phenobarbital",
+    "name": "Phenobarbital",
+    "ddinterId": "DDInter1442",
+    "drugbankId": "DB01174",
+    "smiles": "DDInter1442",
+    "display": "Phenobarbital"
+  },
+  {
+    "id": "phenylbutazone",
+    "name": "Phenylbutazone",
+    "ddinterId": "DDInter1451",
+    "drugbankId": "DB00812",
+    "smiles": "DDInter1451",
+    "display": "Phenylbutazone"
+  },
+  {
+    "id": "phenytoin",
+    "name": "Phenytoin",
+    "ddinterId": "DDInter1460",
+    "drugbankId": "DB00252",
+    "smiles": "DDInter1460",
+    "display": "Phenytoin"
+  },
+  {
+    "id": "posaconazole",
+    "name": "Posaconazole",
+    "ddinterId": "DDInter1494",
+    "drugbankId": "DB01263",
+    "smiles": "DDInter1494",
+    "display": "Posaconazole"
+  },
+  {
+    "id": "primidone",
+    "name": "Primidone",
+    "ddinterId": "DDInter1521",
+    "drugbankId": "DB00794",
+    "smiles": "DDInter1521",
+    "display": "Primidone"
+  },
+  {
+    "id": "ranolazine",
+    "name": "Ranolazine",
+    "ddinterId": "DDInter1570",
+    "drugbankId": "DB00243",
+    "smiles": "DDInter1570",
+    "display": "Ranolazine"
+  },
+  {
+    "id": "regorafenib",
+    "name": "Regorafenib",
+    "ddinterId": "DDInter1576",
+    "drugbankId": "DB08896",
+    "smiles": "DDInter1576",
+    "display": "Regorafenib"
+  },
+  {
+    "id": "rifabutin",
+    "name": "Rifabutin",
+    "ddinterId": "DDInter1589",
+    "drugbankId": "DB00615",
+    "smiles": "DDInter1589",
+    "display": "Rifabutin"
+  },
+  {
+    "id": "rifampicin",
+    "name": "Rifampicin",
+    "ddinterId": "DDInter1590",
+    "drugbankId": "DB01045",
+    "smiles": "DDInter1590",
+    "display": "Rifampicin"
+  },
+  {
+    "id": "rifapentine",
+    "name": "Rifapentine",
+    "ddinterId": "DDInter1592",
+    "drugbankId": "DB01201",
+    "smiles": "DDInter1592",
+    "display": "Rifapentine"
+  },
+  {
+    "id": "ritonavir",
+    "name": "Ritonavir",
+    "ddinterId": "DDInter1607",
+    "drugbankId": "DB00503",
+    "smiles": "DDInter1607",
+    "display": "Ritonavir"
+  },
+  {
+    "id": "rufinamide",
+    "name": "Rufinamide",
+    "ddinterId": "DDInter1627",
+    "drugbankId": "DB06201",
+    "smiles": "DDInter1627",
+    "display": "Rufinamide"
+  },
+  {
+    "id": "saquinavir",
+    "name": "Saquinavir",
+    "ddinterId": "DDInter1640",
+    "drugbankId": "DB01232",
+    "smiles": "DDInter1640",
+    "display": "Saquinavir"
+  },
+  {
+    "id": "secobarbital",
+    "name": "Secobarbital",
+    "ddinterId": "DDInter1650",
+    "drugbankId": "DB00418",
+    "smiles": "DDInter1650",
+    "display": "Secobarbital"
+  },
+  {
+    "id": "sodium-bicarbonate",
+    "name": "Sodium bicarbonate",
+    "ddinterId": "DDInter1683",
+    "drugbankId": "DB01390",
+    "smiles": "DDInter1683",
+    "display": "Sodium..."
+  },
+  {
+    "id": "somatotropin",
+    "name": "Somatotropin",
+    "ddinterId": "DDInter1699",
+    "drugbankId": "DB00052",
+    "smiles": "unknown",
+    "display": "Somatotropin"
+  },
+  {
+    "id": "sorafenib",
+    "name": "Sorafenib",
+    "ddinterId": "DDInter1702",
+    "drugbankId": "DB00398",
+    "smiles": "DDInter1702",
+    "display": "Sorafenib"
+  },
+  {
+    "id": "st-john-s-wort",
+    "name": "St. John's Wort",
+    "ddinterId": "DDInter1708",
+    "drugbankId": "DB01323",
+    "smiles": "unknown",
+    "display": "St...."
+  },
+  {
+    "id": "sucralfate",
+    "name": "Sucralfate",
+    "ddinterId": "DDInter1717",
+    "drugbankId": "DB00364",
+    "smiles": "DDInter1717",
+    "display": "Sucralfate"
+  },
+  {
+    "id": "sulfinpyrazone",
+    "name": "Sulfinpyrazone",
+    "ddinterId": "DDInter1726",
+    "drugbankId": "DB01138",
+    "smiles": "DDInter1726",
+    "display": "Sulfinpyrazone"
+  },
+  {
+    "id": "telaprevir",
+    "name": "Telaprevir",
+    "ddinterId": "DDInter1755",
+    "drugbankId": "DB05521",
+    "smiles": "DDInter1755",
+    "display": "Telaprevir"
+  },
+  {
+    "id": "telithromycin",
+    "name": "Telithromycin",
+    "ddinterId": "DDInter1758",
+    "drugbankId": "DB00976",
+    "smiles": "DDInter1758",
+    "display": "Telithromycin"
+  },
+  {
+    "id": "ticagrelor",
+    "name": "Ticagrelor",
+    "ddinterId": "DDInter1802",
+    "drugbankId": "DB08816",
+    "smiles": "DDInter1802",
+    "display": "Ticagrelor"
+  },
+  {
+    "id": "trimethoprim",
+    "name": "Trimethoprim",
+    "ddinterId": "DDInter1874",
+    "drugbankId": "DB00440",
+    "smiles": "DDInter1874",
+    "display": "Trimethoprim"
+  },
+  {
+    "id": "troglitazone",
+    "name": "Troglitazone",
+    "ddinterId": "DDInter1881",
+    "drugbankId": "DB00197",
+    "smiles": "DDInter1881",
+    "display": "Troglitazone"
+  },
+  {
+    "id": "varenicline",
+    "name": "Varenicline",
+    "ddinterId": "DDInter1919",
+    "drugbankId": "DB01273",
+    "smiles": "DDInter1919",
+    "display": "Varenicline"
+  },
+  {
+    "id": "vemurafenib",
+    "name": "Vemurafenib",
+    "ddinterId": "DDInter1925",
+    "drugbankId": "DB08881",
+    "smiles": "DDInter1925",
+    "display": "Vemurafenib"
+  },
+  {
+    "id": "verapamil",
+    "name": "Verapamil",
+    "ddinterId": "DDInter1928",
+    "drugbankId": "DB00661",
+    "smiles": "DDInter1928",
+    "display": "Verapamil"
+  },
+  {
+    "id": "voriconazole",
+    "name": "Voriconazole",
+    "ddinterId": "DDInter1946",
+    "drugbankId": "DB00582",
+    "smiles": "DDInter1946",
+    "display": "Voriconazole"
+  },
+  {
+    "id": "zidovudine",
+    "name": "Zidovudine",
+    "ddinterId": "DDInter1961",
+    "drugbankId": "DB00495",
+    "smiles": "DDInter1961",
+    "display": "Zidovudine"
+  },
+  {
+    "id": "acetaminophen",
+    "name": "Acetaminophen",
+    "ddinterId": "DDInter14",
+    "drugbankId": "DB00316",
+    "smiles": "DDInter14",
+    "display": "Acetaminophen"
+  },
+  {
+    "id": "adalimumab",
+    "name": "Adalimumab",
+    "ddinterId": "DDInter27",
+    "drugbankId": "DB00051",
+    "smiles": "unknown",
+    "display": "Adalimumab"
+  },
+  {
+    "id": "aldesleukin",
+    "name": "Aldesleukin",
+    "ddinterId": "DDInter38",
+    "drugbankId": "DB00041",
+    "smiles": "unknown",
+    "display": "Aldesleukin"
+  },
+  {
+    "id": "alefacept",
+    "name": "Alefacept",
+    "ddinterId": "DDInter40",
+    "drugbankId": "DB00092",
+    "smiles": "unknown",
+    "display": "Alefacept"
+  },
+  {
+    "id": "alemtuzumab",
+    "name": "Alemtuzumab",
+    "ddinterId": "DDInter41",
+    "drugbankId": "DB00087",
+    "smiles": "unknown",
+    "display": "Alemtuzumab"
+  },
+  {
+    "id": "alprazolam",
+    "name": "Alprazolam",
+    "ddinterId": "DDInter54",
+    "drugbankId": "DB00404",
+    "smiles": "DDInter54",
+    "display": "Alprazolam"
+  },
+  {
+    "id": "altretamine",
+    "name": "Altretamine",
+    "ddinterId": "DDInter57",
+    "drugbankId": "DB00488",
+    "smiles": "DDInter57",
+    "display": "Altretamine"
+  },
+  {
+    "id": "anakinra",
+    "name": "Anakinra",
+    "ddinterId": "DDInter94",
+    "drugbankId": "DB00026",
+    "smiles": "unknown",
+    "display": "Anakinra"
+  },
+  {
+    "id": "betamethasone",
+    "name": "Betamethasone",
+    "ddinterId": "DDInter195",
+    "drugbankId": "DB00443",
+    "smiles": "DDInter195",
+    "display": "Betamethasone"
+  },
+  {
+    "id": "bleomycin",
+    "name": "Bleomycin",
+    "ddinterId": "DDInter219",
+    "drugbankId": "DB00290",
+    "smiles": "DDInter219",
+    "display": "Bleomycin"
+  },
+  {
+    "id": "bortezomib",
+    "name": "Bortezomib",
+    "ddinterId": "DDInter222",
+    "drugbankId": "DB00188",
+    "smiles": "DDInter222",
+    "display": "Bortezomib"
+  },
+  {
+    "id": "carmustine",
+    "name": "Carmustine",
+    "ddinterId": "DDInter302",
+    "drugbankId": "DB00262",
+    "smiles": "DDInter302",
+    "display": "Carmustine"
+  },
+  {
+    "id": "cerivastatin",
+    "name": "Cerivastatin",
+    "ddinterId": "DDInter341",
+    "drugbankId": "DB00439",
+    "smiles": "DDInter341",
+    "display": "Cerivastatin"
+  },
+  {
+    "id": "chlorambucil",
+    "name": "Chlorambucil",
+    "ddinterId": "DDInter350",
+    "drugbankId": "DB00291",
+    "smiles": "DDInter350",
+    "display": "Chlorambucil"
+  },
+  {
+    "id": "chloramphenicol-ophthalmic",
+    "name": "Chloramphenicol (ophthalmic)",
+    "ddinterId": "DDInter352",
+    "drugbankId": "DB00446",
+    "smiles": "DDInter352",
+    "display": "Chloramphenicol..."
+  },
+  {
+    "id": "chlordiazepoxide",
+    "name": "Chlordiazepoxide",
+    "ddinterId": "DDInter355",
+    "drugbankId": "DB00475",
+    "smiles": "DDInter355",
+    "display": "Chlordiazepoxide"
+  },
+  {
+    "id": "cidofovir",
+    "name": "Cidofovir",
+    "ddinterId": "DDInter378",
+    "drugbankId": "DB00369",
+    "smiles": "DDInter378",
+    "display": "Cidofovir"
+  },
+  {
+    "id": "clobazam",
+    "name": "Clobazam",
+    "ddinterId": "DDInter401",
+    "drugbankId": "DB00349",
+    "smiles": "DDInter401",
+    "display": "Clobazam"
+  },
+  {
+    "id": "clozapine",
+    "name": "Clozapine",
+    "ddinterId": "DDInter419",
+    "drugbankId": "DB00363",
+    "smiles": "DDInter419",
+    "display": "Clozapine"
+  },
+  {
+    "id": "dapsone",
+    "name": "Dapsone",
+    "ddinterId": "DDInter475",
+    "drugbankId": "DB00250",
+    "smiles": "DDInter475",
+    "display": "Dapsone"
+  },
+  {
+    "id": "denileukin-diftitox",
+    "name": "Denileukin diftitox",
+    "ddinterId": "DDInter499",
+    "drugbankId": "DB00004",
+    "smiles": "unknown",
+    "display": "Denileukin..."
+  },
+  {
+    "id": "valproic-acid",
+    "name": "Valproic acid",
+    "ddinterId": "DDInter1913",
+    "drugbankId": "DB00313",
+    "smiles": "DDInter1913",
+    "display": "Valproic..."
+  },
+  {
+    "id": "efalizumab",
+    "name": "Efalizumab",
+    "ddinterId": "DDInter623",
+    "drugbankId": "DB00095",
+    "smiles": "unknown",
+    "display": "Efalizumab"
+  },
+  {
+    "id": "etanercept",
+    "name": "Etanercept",
+    "ddinterId": "DDInter687",
+    "drugbankId": "DB00005",
+    "smiles": "unknown",
+    "display": "Etanercept"
+  },
+  {
+    "id": "floxuridine",
+    "name": "Floxuridine",
+    "ddinterId": "DDInter742",
+    "drugbankId": "DB00322",
+    "smiles": "DDInter742",
+    "display": "Floxuridine"
+  },
+  {
+    "id": "gemcitabine",
+    "name": "Gemcitabine",
+    "ddinterId": "DDInter811",
+    "drugbankId": "DB00441",
+    "smiles": "DDInter811",
+    "display": "Gemcitabine"
+  },
+  {
+    "id": "gemtuzumab-ozogamicin",
+    "name": "Gemtuzumab ozogamicin",
+    "ddinterId": "DDInter814",
+    "drugbankId": "DB00056",
+    "smiles": "unknown",
+    "display": "Gemtuzumab..."
+  },
+  {
+    "id": "ibritumomab-tiuxetan",
+    "name": "Ibritumomab tiuxetan",
+    "ddinterId": "DDInter898",
+    "drugbankId": "DB00078",
+    "smiles": "unknown",
+    "display": "Ibritumomab..."
+  },
+  {
+    "id": "indomethacin",
+    "name": "Indomethacin",
+    "ddinterId": "DDInter921",
+    "drugbankId": "DB00328",
+    "smiles": "DDInter921",
+    "display": "Indomethacin"
+  },
+  {
+    "id": "infliximab",
+    "name": "Infliximab",
+    "ddinterId": "DDInter923",
+    "drugbankId": "DB00065",
+    "smiles": "unknown",
+    "display": "Infliximab"
+  },
+  {
+    "id": "interferon-alfa-2a-recombinant",
+    "name": "Interferon alfa-2a, Recombinant",
+    "ddinterId": "DDInter942",
+    "drugbankId": null,
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "interferon-alfa-2b",
+    "name": "Interferon alfa-2b",
+    "ddinterId": "DDInter943",
+    "drugbankId": "DB00105",
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "interferon-alfa-n1",
+    "name": "Interferon alfa-n1",
+    "ddinterId": "DDInter944",
+    "drugbankId": "DB00011",
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "interferon-alfa-n3",
+    "name": "Interferon alfa-n3",
+    "ddinterId": "DDInter945",
+    "drugbankId": "DB00018",
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "interferon-alfacon-1",
+    "name": "Interferon alfacon-1",
+    "ddinterId": "DDInter946",
+    "drugbankId": "DB00069",
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "interferon-gamma-1b",
+    "name": "Interferon gamma-1b",
+    "ddinterId": "DDInter949",
+    "drugbankId": "DB00033",
+    "smiles": "unknown",
+    "display": "Interferon..."
+  },
+  {
+    "id": "tositumomab-i-131",
+    "name": "Tositumomab (I-131)",
+    "ddinterId": "DDInter1839",
+    "drugbankId": null,
+    "smiles": "unknown",
+    "display": "Tositumomab..."
+  },
+  {
+    "id": "ketorolac",
+    "name": "Ketorolac",
+    "ddinterId": "DDInter1010",
+    "drugbankId": "DB00465",
+    "smiles": "DDInter1010",
+    "display": "Ketorolac"
+  },
+  {
+    "id": "lenalidomide",
+    "name": "Lenalidomide",
+    "ddinterId": "DDInter1035",
+    "drugbankId": "DB00480",
+    "smiles": "DDInter1035",
+    "display": "Lenalidomide"
+  },
+  {
+    "id": "lorazepam",
+    "name": "Lorazepam",
+    "ddinterId": "DDInter1092",
+    "drugbankId": "DB00186",
+    "smiles": "DDInter1092",
+    "display": "Lorazepam"
+  },
+  {
+    "id": "lovastatin",
+    "name": "Lovastatin",
+    "ddinterId": "DDInter1098",
+    "drugbankId": "DB00227",
+    "smiles": "DDInter1098",
+    "display": "Lovastatin"
+  },
+  {
+    "id": "mitomycin",
+    "name": "Mitomycin",
+    "ddinterId": "DDInter1232",
+    "drugbankId": "DB00305",
+    "smiles": "DDInter1232",
+    "display": "Mitomycin"
+  },
+  {
+    "id": "nabumetone",
+    "name": "Nabumetone",
+    "ddinterId": "DDInter1254",
+    "drugbankId": "DB00461",
+    "smiles": "DDInter1254",
+    "display": "Nabumetone"
+  },
+  {
+    "id": "natalizumab",
+    "name": "Natalizumab",
+    "ddinterId": "DDInter1268",
+    "drugbankId": "DB00108",
+    "smiles": "unknown",
+    "display": "Natalizumab"
+  },
+  {
+    "id": "peginterferon-alfa-2a",
+    "name": "Peginterferon alfa-2a",
+    "ddinterId": "DDInter1407",
+    "drugbankId": "DB00008",
+    "smiles": "unknown",
+    "display": "Peginterferon..."
+  },
+  {
+    "id": "peginterferon-alfa-2b",
+    "name": "Peginterferon alfa-2b",
+    "ddinterId": "DDInter1408",
+    "drugbankId": "DB00022",
+    "smiles": "unknown",
+    "display": "Peginterferon..."
+  },
+  {
+    "id": "pravastatin",
+    "name": "Pravastatin",
+    "ddinterId": "DDInter1509",
+    "drugbankId": "DB00175",
+    "smiles": "DDInter1509",
+    "display": "Pravastatin"
+  },
+  {
+    "id": "pyrimethamine",
+    "name": "Pyrimethamine",
+    "ddinterId": "DDInter1550",
+    "drugbankId": "DB00205",
+    "smiles": "DDInter1550",
+    "display": "Pyrimethamine"
+  },
+  {
+    "id": "rituximab",
+    "name": "Rituximab",
+    "ddinterId": "DDInter1608",
+    "drugbankId": "DB00073",
+    "smiles": "unknown",
+    "display": "Rituximab"
+  },
+  {
+    "id": "streptozocin",
+    "name": "Streptozocin",
+    "ddinterId": "DDInter1714",
+    "drugbankId": "DB00428",
+    "smiles": "DDInter1714",
+    "display": "Streptozocin"
+  },
+  {
+    "id": "temazepam",
+    "name": "Temazepam",
+    "ddinterId": "DDInter1761",
+    "drugbankId": "DB00231",
+    "smiles": "DDInter1761",
+    "display": "Temazepam"
+  },
+  {
+    "id": "teniposide",
+    "name": "Teniposide",
+    "ddinterId": "DDInter1765",
+    "drugbankId": "DB00444",
+    "smiles": "DDInter1765",
+    "display": "Teniposide"
+  },
+  {
+    "id": "tositumomab",
+    "name": "Tositumomab",
+    "ddinterId": "DDInter1838",
+    "drugbankId": "DB00081",
+    "smiles": "unknown",
+    "display": "Tositumomab"
+  },
+  {
+    "id": "trastuzumab",
+    "name": "Trastuzumab",
+    "ddinterId": "DDInter1846",
+    "drugbankId": "DB00072",
+    "smiles": "unknown",
+    "display": "Trastuzumab"
+  },
+  {
+    "id": "vinorelbine",
+    "name": "Vinorelbine",
+    "ddinterId": "DDInter1939",
+    "drugbankId": "DB00361",
+    "smiles": "DDInter1939",
+    "display": "Vinorelbine"
+  },
+  {
+    "id": "calcipotriol-topical",
+    "name": "Calcipotriol (topical)",
+    "ddinterId": "DDInter267",
+    "drugbankId": "DB02300",
+    "smiles": "DDInter267",
+    "display": "Calcipotriol..."
+  },
+  {
+    "id": "calcitriol-topical",
+    "name": "Calcitriol (topical)",
+    "ddinterId": "DDInter269",
+    "drugbankId": "DB00136",
+    "smiles": "DDInter269",
+    "display": "Calcitriol..."
+  },
+  {
+    "id": "digitoxin",
+    "name": "Digitoxin",
+    "ddinterId": "DDInter553",
+    "drugbankId": "DB01396",
+    "smiles": "DDInter553",
+    "display": "Digitoxin"
+  },
+  {
+    "id": "digoxin",
+    "name": "Digoxin",
+    "ddinterId": "DDInter554",
+    "drugbankId": "DB00390",
+    "smiles": "DDInter554",
+    "display": "Digoxin"
+  },
+  {
+    "id": "abiraterone",
+    "name": "Abiraterone",
+    "ddinterId": "DDInter8",
+    "drugbankId": "DB05812",
+    "smiles": "DDInter8",
+    "display": "Abiraterone"
+  },
+  {
+    "id": "acalabrutinib",
+    "name": "Acalabrutinib",
+    "ddinterId": "DDInter9",
+    "drugbankId": "DB11703",
+    "smiles": "DDInter9",
+    "display": "Acalabrutinib"
+  },
+  {
+    "id": "trastuzumab-emtansine",
+    "name": "Trastuzumab emtansine",
+    "ddinterId": "DDInter1848",
+    "drugbankId": "DB05773",
+    "smiles": "unknown",
+    "display": "Trastuzumab..."
+  },
+  {
+    "id": "albendazole",
+    "name": "Albendazole",
+    "ddinterId": "DDInter35",
+    "drugbankId": "DB00518",
+    "smiles": "DDInter35",
+    "display": "Albendazole"
+  },
+  {
+    "id": "alfentanil",
+    "name": "Alfentanil",
+    "ddinterId": "DDInter43",
+    "drugbankId": "DB00802",
+    "smiles": "DDInter43",
+    "display": "Alfentanil"
+  },
+  {
+    "id": "alfuzosin",
+    "name": "Alfuzosin",
+    "ddinterId": "DDInter44",
+    "drugbankId": "DB00346",
+    "smiles": "DDInter44",
+    "display": "Alfuzosin"
+  },
+  {
+    "id": "aliskiren",
+    "name": "Aliskiren",
+    "ddinterId": "DDInter46",
+    "drugbankId": "DB09026",
+    "smiles": "DDInter46",
+    "display": "Aliskiren"
+  },
+  {
+    "id": "almotriptan",
+    "name": "Almotriptan",
+    "ddinterId": "DDInter49",
+    "drugbankId": "DB00918",
+    "smiles": "DDInter49",
+    "display": "Almotriptan"
+  },
+  {
+    "id": "alosetron",
+    "name": "Alosetron",
+    "ddinterId": "DDInter52",
+    "drugbankId": "DB00969",
+    "smiles": "DDInter52",
+    "display": "Alosetron"
+  },
+  {
+    "id": "abametapir-topical",
+    "name": "Abametapir (topical)",
+    "ddinterId": "DDInter3",
+    "drugbankId": null,
+    "smiles": "unknown",
+    "display": "Abametapir..."
+  },
+  {
+    "id": "amitriptyline",
+    "name": "Amitriptyline",
+    "ddinterId": "DDInter78",
+    "drugbankId": "DB00321",
+    "smiles": "DDInter78",
+    "display": "Amitriptyline"
+  },
+  {
+    "id": "amlodipine",
+    "name": "Amlodipine",
+    "ddinterId": "DDInter79",
+    "drugbankId": "DB00381",
+    "smiles": "DDInter79",
+    "display": "Amlodipine"
+  },
+  {
+    "id": "anagrelide",
+    "name": "Anagrelide",
+    "ddinterId": "DDInter93",
+    "drugbankId": "DB00261",
+    "smiles": "DDInter93",
+    "display": "Anagrelide"
+  },
+  {
+    "id": "apixaban",
+    "name": "Apixaban",
+    "ddinterId": "DDInter108",
+    "drugbankId": "DB06605",
+    "smiles": "DDInter108",
+    "display": "Apixaban"
+  },
+  {
+    "id": "apremilast",
+    "name": "Apremilast",
+    "ddinterId": "DDInter111",
+    "drugbankId": "DB05676",
+    "smiles": "DDInter111",
+    "display": "Apremilast"
+  },
+  {
+    "id": "aripiprazole",
+    "name": "Aripiprazole",
+    "ddinterId": "DDInter118",
+    "drugbankId": "DB01238",
+    "smiles": "DDInter118",
+    "display": "Aripiprazole"
+  },
+  {
+    "id": "asenapine",
+    "name": "Asenapine",
+    "ddinterId": "DDInter125",
+    "drugbankId": "DB06216",
+    "smiles": "DDInter125",
+    "display": "Asenapine"
+  },
+  {
+    "id": "astemizole",
+    "name": "Astemizole",
+    "ddinterId": "DDInter128",
+    "drugbankId": "DB00637",
+    "smiles": "DDInter128",
+    "display": "Astemizole"
+  },
+  {
+    "id": "atorvastatin",
+    "name": "Atorvastatin",
+    "ddinterId": "DDInter133",
+    "drugbankId": "DB01076",
+    "smiles": "DDInter133",
+    "display": "Atorvastatin"
+  },
+  {
+    "id": "avanafil",
+    "name": "Avanafil",
+    "ddinterId": "DDInter141",
+    "drugbankId": "DB06237",
+    "smiles": "DDInter141",
+    "display": "Avanafil"
+  },
+  {
+    "id": "axitinib",
+    "name": "Axitinib",
+    "ddinterId": "DDInter147",
+    "drugbankId": "DB06626",
+    "smiles": "DDInter147",
+    "display": "Axitinib"
+  },
+  {
+    "id": "bedaquiline",
+    "name": "Bedaquiline",
+    "ddinterId": "DDInter170",
+    "drugbankId": "DB08903",
+    "smiles": "DDInter170",
+    "display": "Bedaquiline"
+  },
+  {
+    "id": "belinostat",
+    "name": "Belinostat",
+    "ddinterId": "DDInter174",
+    "drugbankId": "DB05015",
+    "smiles": "DDInter174",
+    "display": "Belinostat"
+  },
+  {
+    "id": "bendamustine",
+    "name": "Bendamustine",
+    "ddinterId": "DDInter178",
+    "drugbankId": "DB06769",
+    "smiles": "DDInter178",
+    "display": "Bendamustine"
+  },
+  {
+    "id": "benzphetamine",
+    "name": "Benzphetamine",
+    "ddinterId": "DDInter187",
+    "drugbankId": "DB00865",
+    "smiles": "DDInter187",
+    "display": "Benzphetamine"
+  },
+  {
+    "id": "bosutinib",
+    "name": "Bosutinib",
+    "ddinterId": "DDInter224",
+    "drugbankId": "DB06616",
+    "smiles": "DDInter224",
+    "display": "Bosutinib"
+  },
+  {
+    "id": "brentuximab-vedotin",
+    "name": "Brentuximab vedotin",
+    "ddinterId": "DDInter228",
+    "drugbankId": "DB08870",
+    "smiles": "unknown",
+    "display": "Brentuximab..."
+  },
+  {
+    "id": "brexpiprazole",
+    "name": "Brexpiprazole",
+    "ddinterId": "DDInter231",
+    "drugbankId": "DB09128",
+    "smiles": "DDInter231",
+    "display": "Brexpiprazole"
+  },
+  {
+    "id": "bromocriptine",
+    "name": "Bromocriptine",
+    "ddinterId": "DDInter243",
+    "drugbankId": "DB01200",
+    "smiles": "DDInter243",
+    "display": "Bromocriptine"
+  },
+  {
+    "id": "budesonide",
+    "name": "Budesonide",
+    "ddinterId": "DDInter246",
+    "drugbankId": "DB01222",
+    "smiles": "DDInter246",
+    "display": "Budesonide"
+  },
+  {
+    "id": "bupivacaine",
+    "name": "Bupivacaine",
+    "ddinterId": "DDInter249",
+    "drugbankId": "DB00297",
+    "smiles": "DDInter249",
+    "display": "Bupivacaine"
+  },
+  {
+    "id": "buprenorphine",
+    "name": "Buprenorphine",
+    "ddinterId": "DDInter251",
+    "drugbankId": "DB00921",
+    "smiles": "DDInter251",
+    "display": "Buprenorphine"
+  },
+  {
+    "id": "bupropion",
+    "name": "Bupropion",
+    "ddinterId": "DDInter252",
+    "drugbankId": "DB01156",
+    "smiles": "DDInter252",
+    "display": "Bupropion"
+  },
+  {
+    "id": "buspirone",
+    "name": "Buspirone",
+    "ddinterId": "DDInter254",
+    "drugbankId": "DB00490",
+    "smiles": "DDInter254",
+    "display": "Buspirone"
+  },
+  {
+    "id": "cabazitaxel",
+    "name": "Cabazitaxel",
+    "ddinterId": "DDInter259",
+    "drugbankId": "DB06772",
+    "smiles": "DDInter259",
+    "display": "Cabazitaxel"
+  },
+  {
+    "id": "cabozantinib",
+    "name": "Cabozantinib",
+    "ddinterId": "DDInter262",
+    "drugbankId": "DB08875",
+    "smiles": "DDInter262",
+    "display": "Cabozantinib"
+  },
+  {
+    "id": "caffeine",
+    "name": "Caffeine",
+    "ddinterId": "DDInter263",
+    "drugbankId": "DB00201",
+    "smiles": "DDInter263",
+    "display": "Caffeine"
+  },
+  {
+    "id": "capmatinib",
+    "name": "Capmatinib",
+    "ddinterId": "DDInter287",
+    "drugbankId": "DB11791",
+    "smiles": "DDInter287",
+    "display": "Capmatinib"
+  },
+  {
+    "id": "cariprazine",
+    "name": "Cariprazine",
+    "ddinterId": "DDInter300",
+    "drugbankId": "DB06016",
+    "smiles": "DDInter300",
+    "display": "Cariprazine"
+  },
+  {
+    "id": "ceritinib",
+    "name": "Ceritinib",
+    "ddinterId": "DDInter340",
+    "drugbankId": "DB09063",
+    "smiles": "DDInter340",
+    "display": "Ceritinib"
+  },
+  {
+    "id": "cevimeline",
+    "name": "Cevimeline",
+    "ddinterId": "DDInter346",
+    "drugbankId": "DB00185",
+    "smiles": "DDInter346",
+    "display": "Cevimeline"
+  },
+  {
+    "id": "ciclesonide",
+    "name": "Ciclesonide",
+    "ddinterId": "DDInter375",
+    "drugbankId": "DB01410",
+    "smiles": "DDInter375",
+    "display": "Ciclesonide"
+  },
+  {
+    "id": "cilostazol",
+    "name": "Cilostazol",
+    "ddinterId": "DDInter379",
+    "drugbankId": "DB01166",
+    "smiles": "DDInter379",
+    "display": "Cilostazol"
+  },
+  {
+    "id": "cinacalcet",
+    "name": "Cinacalcet",
+    "ddinterId": "DDInter381",
+    "drugbankId": "DB01012",
+    "smiles": "DDInter381",
+    "display": "Cinacalcet"
+  },
+  {
+    "id": "cisapride",
+    "name": "Cisapride",
+    "ddinterId": "DDInter385",
+    "drugbankId": "DB00604",
+    "smiles": "DDInter385",
+    "display": "Cisapride"
+  },
+  {
+    "id": "citalopram",
+    "name": "Citalopram",
+    "ddinterId": "DDInter388",
+    "drugbankId": "DB00215",
+    "smiles": "DDInter388",
+    "display": "Citalopram"
+  },
+  {
+    "id": "clindamycin",
+    "name": "Clindamycin",
+    "ddinterId": "DDInter398",
+    "drugbankId": "DB01190",
+    "smiles": "DDInter398",
+    "display": "Clindamycin"
+  },
+  {
+    "id": "clomipramine",
+    "name": "Clomipramine",
+    "ddinterId": "DDInter410",
+    "drugbankId": "DB01242",
+    "smiles": "DDInter410",
+    "display": "Clomipramine"
+  },
+  {
+    "id": "clonazepam",
+    "name": "Clonazepam",
+    "ddinterId": "DDInter411",
+    "drugbankId": "DB01068",
+    "smiles": "DDInter411",
+    "display": "Clonazepam"
+  },
+  {
+    "id": "clorazepic-acid",
+    "name": "Clorazepic acid",
+    "ddinterId": "DDInter414",
+    "drugbankId": "DB00628",
+    "smiles": "DDInter414",
+    "display": "Clorazepic..."
+  },
+  {
+    "id": "cobicistat",
+    "name": "Cobicistat",
+    "ddinterId": "DDInter424",
+    "drugbankId": "DB09065",
+    "smiles": "DDInter424",
+    "display": "Cobicistat"
+  },
+  {
+    "id": "cobimetinib",
+    "name": "Cobimetinib",
+    "ddinterId": "DDInter425",
+    "drugbankId": "DB05239",
+    "smiles": "DDInter425",
+    "display": "Cobimetinib"
+  },
+  {
+    "id": "cocaine-topical",
+    "name": "Cocaine (topical)",
+    "ddinterId": "DDInter427",
+    "drugbankId": null,
+    "smiles": "unknown",
+    "display": "Cocaine..."
+  },
+  {
+    "id": "codeine",
+    "name": "Codeine",
+    "ddinterId": "DDInter429",
+    "drugbankId": "DB00318",
+    "smiles": "DDInter429",
+    "display": "Codeine"
+  },
+  {
+    "id": "colchicine",
+    "name": "Colchicine",
+    "ddinterId": "DDInter431",
+    "drugbankId": "DB01394",
+    "smiles": "DDInter431",
+    "display": "Colchicine"
+  },
+  {
+    "id": "conjugated-estrogens",
+    "name": "Conjugated estrogens",
+    "ddinterId": "DDInter439",
+    "drugbankId": "DB00286",
+    "smiles": "unknown",
+    "display": "Conjugated..."
+  },
+  {
+    "id": "cyclobenzaprine",
+    "name": "Cyclobenzaprine",
+    "ddinterId": "DDInter454",
+    "drugbankId": "DB00924",
+    "smiles": "DDInter454",
+    "display": "Cyclobenzaprine"
+  },
+  {
+    "id": "cyclophosphamide",
+    "name": "Cyclophosphamide",
+    "ddinterId": "DDInter456",
+    "drugbankId": "DB00531",
+    "smiles": "DDInter456",
+    "display": "Cyclophosphamide"
+  },
+  {
+    "id": "dabrafenib",
+    "name": "Dabrafenib",
+    "ddinterId": "DDInter462",
+    "drugbankId": "DB08912",
+    "smiles": "DDInter462",
+    "display": "Dabrafenib"
+  },
+  {
+    "id": "daclatasvir",
+    "name": "Daclatasvir",
+    "ddinterId": "DDInter464",
+    "drugbankId": "DB09102",
+    "smiles": "DDInter464",
+    "display": "Daclatasvir"
+  },
+  {
+    "id": "darifenacin",
+    "name": "Darifenacin",
+    "ddinterId": "DDInter480",
+    "drugbankId": "DB00496",
+    "smiles": "DDInter480",
+    "display": "Darifenacin"
+  },
+  {
+    "id": "deflazacort",
+    "name": "Deflazacort",
+    "ddinterId": "DDInter492",
+    "drugbankId": "DB11921",
+    "smiles": "DDInter492",
+    "display": "Deflazacort"
+  },
+  {
+    "id": "desipramine",
+    "name": "Desipramine",
+    "ddinterId": "DDInter504",
+    "drugbankId": "DB01151",
+    "smiles": "DDInter504",
+    "display": "Desipramine"
+  },
+  {
+    "id": "dexlansoprazole",
+    "name": "Dexlansoprazole",
+    "ddinterId": "DDInter519",
+    "drugbankId": "DB05351",
+    "smiles": "DDInter519",
+    "display": "Dexlansoprazole"
+  },
+  {
+    "id": "dextromethorphan",
+    "name": "Dextromethorphan",
+    "ddinterId": "DDInter527",
+    "drugbankId": "DB00514",
+    "smiles": "DDInter527",
+    "display": "Dextromethorphan"
+  },
+  {
+    "id": "diazepam",
+    "name": "Diazepam",
+    "ddinterId": "DDInter534",
+    "drugbankId": "DB00829",
+    "smiles": "DDInter534",
+    "display": "Diazepam"
+  },
+  {
+    "id": "diclofenac",
+    "name": "Diclofenac",
+    "ddinterId": "DDInter537",
+    "drugbankId": "DB00586",
+    "smiles": "DDInter537",
+    "display": "Diclofenac"
+  },
+  {
+    "id": "dihydroergotamine",
+    "name": "Dihydroergotamine",
+    "ddinterId": "DDInter557",
+    "drugbankId": "DB00320",
+    "smiles": "DDInter557",
+    "display": "Dihydroergotamine"
+  },
+  {
+    "id": "disopyramide",
+    "name": "Disopyramide",
+    "ddinterId": "DDInter575",
+    "drugbankId": "DB00280",
+    "smiles": "DDInter575",
+    "display": "Disopyramide"
+  },
+  {
+    "id": "docetaxel",
+    "name": "Docetaxel",
+    "ddinterId": "DDInter578",
+    "drugbankId": "DB01248",
+    "smiles": "DDInter578",
+    "display": "Docetaxel"
+  },
+  {
+    "id": "dolasetron",
+    "name": "Dolasetron",
+    "ddinterId": "DDInter581",
+    "drugbankId": "DB00757",
+    "smiles": "DDInter581",
+    "display": "Dolasetron"
+  },
+  {
+    "id": "donepezil",
+    "name": "Donepezil",
+    "ddinterId": "DDInter583",
+    "drugbankId": "DB00843",
+    "smiles": "DDInter583",
+    "display": "Donepezil"
+  },
+  {
+    "id": "doxazosin",
+    "name": "Doxazosin",
+    "ddinterId": "DDInter592",
+    "drugbankId": "DB00590",
+    "smiles": "DDInter592",
+    "display": "Doxazosin"
+  },
+  {
+    "id": "doxercalciferol",
+    "name": "Doxercalciferol",
+    "ddinterId": "DDInter595",
+    "drugbankId": "DB06410",
+    "smiles": "DDInter595",
+    "display": "Doxercalciferol"
+  },
+  {
+    "id": "doxorubicin",
+    "name": "Doxorubicin",
+    "ddinterId": "DDInter596",
+    "drugbankId": "DB00997",
+    "smiles": "DDInter596",
+    "display": "Doxorubicin"
+  },
+  {
+    "id": "doxorubicin-liposomal",
+    "name": "Doxorubicin (liposomal)",
+    "ddinterId": "DDInter597",
+    "drugbankId": "DB00997",
+    "smiles": "DDInter597",
+    "display": "Doxorubicin..."
+  },
+  {
+    "id": "dronabinol",
+    "name": "Dronabinol",
+    "ddinterId": "DDInter601",
+    "drugbankId": "DB00470",
+    "smiles": "DDInter601",
+    "display": "Dronabinol"
+  },
+  {
+    "id": "droperidol",
+    "name": "Droperidol",
+    "ddinterId": "DDInter603",
+    "drugbankId": "DB00450",
+    "smiles": "DDInter603",
+    "display": "Droperidol"
+  },
+  {
+    "id": "drospirenone",
+    "name": "Drospirenone",
+    "ddinterId": "DDInter604",
+    "drugbankId": "DB01395",
+    "smiles": "DDInter604",
+    "display": "Drospirenone"
+  },
+  {
+    "id": "duloxetine",
+    "name": "Duloxetine",
+    "ddinterId": "DDInter608",
+    "drugbankId": "DB00476",
+    "smiles": "DDInter608",
+    "display": "Duloxetine"
+  },
+  {
+    "id": "dutasteride",
+    "name": "Dutasteride",
+    "ddinterId": "DDInter611",
+    "drugbankId": "DB01126",
+    "smiles": "DDInter611",
+    "display": "Dutasteride"
+  },
+  {
+    "id": "eletriptan",
+    "name": "Eletriptan",
+    "ddinterId": "DDInter627",
+    "drugbankId": "DB00216",
+    "smiles": "DDInter627",
+    "display": "Eletriptan"
+  },
+  {
+    "id": "eliglustat",
+    "name": "Eliglustat",
+    "ddinterId": "DDInter629",
+    "drugbankId": "DB09039",
+    "smiles": "DDInter629",
+    "display": "Eliglustat"
+  },
+  {
+    "id": "eplerenone",
+    "name": "Eplerenone",
+    "ddinterId": "DDInter656",
+    "drugbankId": "DB00700",
+    "smiles": "DDInter656",
+    "display": "Eplerenone"
+  },
+  {
+    "id": "ergometrine",
+    "name": "Ergometrine",
+    "ddinterId": "DDInter664",
+    "drugbankId": "DB01253",
+    "smiles": "DDInter664",
+    "display": "Ergometrine"
+  },
+  {
+    "id": "ergotamine",
+    "name": "Ergotamine",
+    "ddinterId": "DDInter665",
+    "drugbankId": "DB00696",
+    "smiles": "DDInter665",
+    "display": "Ergotamine"
+  },
+  {
+    "id": "erlotinib",
+    "name": "Erlotinib",
+    "ddinterId": "DDInter667",
+    "drugbankId": "DB00530",
+    "smiles": "DDInter667",
+    "display": "Erlotinib"
+  },
+  {
+    "id": "escitalopram",
+    "name": "Escitalopram",
+    "ddinterId": "DDInter672",
+    "drugbankId": "DB01175",
+    "smiles": "DDInter672",
+    "display": "Escitalopram"
+  }
+]

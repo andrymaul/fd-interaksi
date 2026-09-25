@@ -1,0 +1,8 @@
+{
+  "name": "FD Interaksi",
+  "description": "Platform komprehensif monografi obat, informasi penyakit, dan analisis interaksi obat, makanan, serta duplikasi terapi terintegrasi API farmakologi dan DDInter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

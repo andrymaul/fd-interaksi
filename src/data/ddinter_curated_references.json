@@ -1,0 +1,2099 @@
+{
+  "DDInter1951_DDInter20": {
+    "interactId": "34056",
+    "idA": "DDInter1951",
+    "idB": "DDInter20",
+    "drugA": "Warfarin",
+    "drugB": "Acetylsalicylic acid",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/34056/",
+    "references": [
+      "[1] Hirsch J, Dalen J, Guyatt G, American College of Chest Physicians \"The sixth (2000) ACCP guidelines for antithrombotic therapy for prevention and treatment of thrombosis. American College of Physicians.\" Chest 119(1 Suppl) (2001): 1S-2S",
+      "[2] Barrow MV, Quick DT, Cunningham RW \"Salicylate hypoprothrombinemia in rheumatoid arthritis with liver disease. Report of two cases.\" Arch Intern Med 120 (1967): 620-4",
+      "[3] Weiss HJ, Aledort LM, Kochwa S \"The effect of salicylates on the hemostatic properties of platelets in man.\" J Clin Invest 47 (1968): 2169-80",
+      "[4] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[5] Bates ER, Mukherjee D, Lau WC \"Drug-drug interactions involving antiplatelet agents.\" Eur Heart J 24 (2003): 1707-9",
+      "[6] Koch-Weser J, Sellers EM \"Drug interactions with coumarin anticoagulants (second of two parts).\" N Engl J Med 285 (1971): 547-58",
+      "[7] Watson RM, Pierson RN \"Effect of anticoagulant therapy upon aspirin-induced gastrointestinal bleeding.\" Circulation 24 (1961): 613-6",
+      "[8] \"Product Information. Coumadin (warfarin).\" DuPont Pharmaceuticals, Wilmington, DE.",
+      "[9] Donaldson DR, Sreeharan N, Crow MJ, Rajah SM \"Assessment of the interaction of warfarin with aspirin and dipyridamole.\" Thromb Haemost 47 (1982): 77",
+      "[10] Penning-van Beest F, Erkens J, Petersen KU, Koelz HR, Herings R \"Main comedications associated with major bleeding during anticoagulant therapy with coumarins.\" Eur J Clin Pharmacol 61 (2005): 439-44",
+      "[11] Massel D, Little SH \"Risks and benefits of adding anti-platelet therapy to warfarin among patients with prosthetic heart valves: A meta-analysis.\" J Am Coll Cardiol 37 (2001): 569-78",
+      "[12] Hurlen M, Erikssen J, Smith P, Arnesen H, Rollag A \"Comparison of bleeding complications of warfarin and warfarin plus acetylsalicylic acid: a study in 3166 outpatients.\" J Intern Med 236 (1994): 299-304",
+      "[13] Chesebro JH, Fuster V, Elveback LR, et al \"Trial of combined warfarin plus dipyridamole or aspirin therapy in prosthetic heart valve replacement: danger of aspirin compared with dipyridamole.\" Am J Cardiol 51 (1983): 1537-41",
+      "[14] Fausa O \"Salicylate-induced hypoprothrombinemia: a report of four cases.\" Acta Med Scand 188 (1970): 403-8",
+      "[15] Koch-Weser J, Sellers EM \"Drug interactions with coumarin anticoagulants (first of two parts).\" N Engl J Med 285 (1971): 487-98",
+      "[16] Haworth E, Burroughs AK \"Disopyramide and warfarin interaction.\" Br Med J 2 (1977): 866-7",
+      "[17] Donaldson DR, Sreeharan N, Crow MJ, Rajah SM \"Assessment of the interaction of warfarin with aspirin and dipyridamole.\" Thromb Haemost 47 (1982): 77",
+      "[18] Massel D, Little SH \"Risks and benefits of adding anti-platelet therapy to warfarin among patients with prosthetic heart valves: A meta-analysis.\" J Am Coll Cardiol 37 (2001): 569-78",
+      "[19] \"Product Information. Persantine (dipyridamole).\" Boehringer-Ingelheim, Ridgefield, CT.",
+      "[20] Ryll C, Davis LJ \"Warfarin-disopyramide interaction?\" Drug Intell Clin Pharm 13 (1979): 260",
+      "[21] Sylven C, Anderson P \"Evidence that disopyramide does not interact with warfarin.\" Br Med J 286 (1983): 1181",
+      "[22] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36",
+      "[23] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3",
+      "[24] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454",
+      "[25] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9",
+      "[26] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1",
+      "[27] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3",
+      "[28] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70",
+      "[29] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4",
+      "[30] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131",
+      "[31] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6",
+      "[32] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90",
+      "[33] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20",
+      "[34] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362",
+      "[35] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800",
+      "[36] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[37] Agencia Espa\u00f1ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci\u00f3n online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+      "[38] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174",
+      "[39] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557",
+      "[40] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7",
+      "[41] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+      "[42] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70",
+      "[43] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):",
+      "[44] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50",
+      "[45] O&#x27;Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1",
+      "[46] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30",
+      "[47] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6",
+      "[48] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7",
+      "[49] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17",
+      "[50] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70",
+      "[51] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5",
+      "[52] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55",
+      "[53] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1",
+      "[54] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7",
+      "[55] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6",
+      "[56] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6",
+      "[57] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5",
+      "[58] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4",
+      "[59] Ranhosky A, Kempthorne-Rawson J, the Intravenous Dipyridamole Thallium Imaging Study Group \"The safety of intravenous dipyridamole thallium myocardial perfusion imaging.\" Circulation 81 (1990): 1205-9",
+      "[60] \"Product Information. Persantine (dipyridamole).\" Boehringer-Ingelheim, Ridgefield, CT.",
+      "[61] Smits P, Aengevaeren WR, Corstens FH, Thien T \"Caffeine reduces dipyridamole-induced myocardial ischemia.\" J Nucl Med 30 (1989): 1723-6"
+    ],
+    "alternatives": {
+      "Warfarin": [
+        {
+          "name": "Antithrombin III human",
+          "ddinterId": "DDInter105",
+          "atc": "B01A"
+        },
+        {
+          "name": "Protein C",
+          "ddinterId": "DDInter1542",
+          "atc": "B01A"
+        },
+        {
+          "name": "Bivalirudin",
+          "ddinterId": "DDInter234",
+          "atc": "B01A"
+        },
+        {
+          "name": "Selexipag",
+          "ddinterId": "DDInter1644",
+          "atc": "B01A"
+        },
+        {
+          "name": "Vorapaxar",
+          "ddinterId": "DDInter1945",
+          "atc": "B01A"
+        },
+        {
+          "name": "Acetylsalicylic acid",
+          "ddinterId": "DDInter20",
+          "atc": "B01A"
+        }
+      ],
+      "Acetylsalicylic acid": [
+        {
+          "name": "Antithrombin III human",
+          "ddinterId": "DDInter105",
+          "atc": "B01A"
+        },
+        {
+          "name": "Dicoumarol",
+          "ddinterId": "DDInter546",
+          "atc": "B01A"
+        },
+        {
+          "name": "Warfarin",
+          "ddinterId": "DDInter1951",
+          "atc": "B01A"
+        },
+        {
+          "name": "Selexipag",
+          "ddinterId": "DDInter1644",
+          "atc": "B01A"
+        },
+        {
+          "name": "Nebivolol",
+          "ddinterId": "DDInter1260",
+          "atc": "C07F"
+        },
+        {
+          "name": "Ivabradine",
+          "ddinterId": "DDInter974",
+          "atc": "C07F"
+        },
+        {
+          "name": "Bempedoic acid",
+          "ddinterId": "DDInter204",
+          "atc": "C10B"
+        },
+        {
+          "name": "Ziconotide",
+          "ddinterId": "DDInter1988",
+          "atc": "N02B"
+        },
+        {
+          "name": "Methoxyflurane",
+          "ddinterId": "DDInter1177",
+          "atc": "N02B"
+        },
+        {
+          "name": "Oliceridine",
+          "ddinterId": "DDInter1334",
+          "atc": "N02A"
+        },
+        {
+          "name": "Naltrexone",
+          "ddinterId": "DDInter1254",
+          "atc": "N02A"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Warfarin": {
+        "CYP1A2-inh": 0.452,
+        "CYP1A2-sub": 0.941,
+        "CYP2C19-inh": 0.909,
+        "CYP2C19-sub": 0.89,
+        "CYP2C9-inh": 0.92,
+        "CYP2C9-sub": 0.966,
+        "CYP2D6-inh": 0.026,
+        "CYP2D6-sub": 0.6,
+        "CYP3A4-inh": 0.229,
+        "CYP3A4-sub": 0.836
+      },
+      "Acetylsalicylic acid": {
+        "CYP1A2-inh": 0.059,
+        "CYP1A2-sub": 0.057,
+        "CYP2C19-inh": 0.03,
+        "CYP2C19-sub": 0.056,
+        "CYP2C9-inh": 0.059,
+        "CYP2C9-sub": 0.143,
+        "CYP2D6-inh": 0.015,
+        "CYP2D6-sub": 0.104,
+        "CYP3A4-inh": 0.016,
+        "CYP3A4-sub": 0.114
+      }
+    }
+  },
+  "DDInter1951_DDInter1202": {
+    "interactId": "44845",
+    "idA": "DDInter1951",
+    "idB": "DDInter1202",
+    "drugA": "Warfarin",
+    "drugB": "Metronidazole",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/44845/",
+    "references": [
+      "[1] Hermida J, Zarza J, Alberca I, et al. \"Differential effects of 2C9*3 and 2C9*2 variants of cytochrome P-450 CYP2C9 on sensitivity to acenocoumarol.\" Blood 99 (2002): 4237-9",
+      "[2] Venkatakrishnan K, vonMoltke LL, Greenblatt DJ \"Effects of the antifungal agents on oxidative drug metabolism - Clinical relevance.\" Clin Pharmacokinet 38 (2000): 111-80",
+      "[3] Serlin MJ, Breckenridge AM \"Drug interactions with warfarin.\" Drugs 25 (1983): 610-20",
+      "[4] Takahashi H, Wilkinson GR, Caraco Y, et al. \"Population differences in S-warfarin metabolism between CYP2C9 genotype-matched Caucasian and Japanese patients.\" Clin Pharmacol Ther 73 (2003): 253-63",
+      "[5] Miners JO, Birkett DJ \"Cytochrome P4502C9: an enzyme of major importance in human drug metabolism.\" Br J Clin Pharmacol 45 (1998): 525-38",
+      "[6] Dean RP, Talbert RL \"Bleeding associated with concurrent warfarin and metronidazole therapy.\" Drug Intell Clin Pharm 14 (1980): 864-6",
+      "[7] Thijssen HH, Flinois JP, Beaune PH \"Cytochrome P4502C9 is the principal catalyst of racemic acenocoumarol hydroxylation reactions in human liver microsomes.\" Drug Metab Disposition 28 (2000): 1284-90",
+      "[8] Kazmier FJ \"A significant interaction between metronidazole and warfarin.\" Mayo Clin Proc 51 (1976): 782-4",
+      "[9] Hermans JJ, Thijssen HH \"Human liver microsomal metabolism of the enantiomers of warfarin and acenocoumarol: P450 isozyme diversity determines the differences in their pharmacokinetics.\" Br J Pharmacol 110 (1993): 482-90",
+      "[10] Kelly JG, O&#x27;Malley K \"Clinical pharmacokinetics of oral anticoagulants.\" Clin Pharmacokinet 4 (1979): 1-15",
+      "[11] \"Product Information. Flagyl (metronidazole).\" Searle, Skokie, IL.",
+      "[12] Laine K, Forsstrom J, Gronroos P, Irjala K, Kailajarvi M, Scheinin M \"Frequency and clinical outcome of potentially harmful drug metabolic interactions in patients hospitalized on internal and pulmonary medicine wards: Focus on warfarin and cisapride.\" Ther Drug Monit 22 (2000): 503-9",
+      "[13] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[14] O&#x27;Reilly RA \"The stereoselective interaction of warfarin and metronidazole in man.\" N Engl J Med 295 (1976): 354-7",
+      "[15] \"Product Information. Seysara (sarecycline).\" Allergan Inc, Irvine, CA.",
+      "[16] Penning-van Beest F, Erkens J, Petersen KU, Koelz HR, Herings R \"Main comedications associated with major bleeding during anticoagulant therapy with coumarins.\" Eur J Clin Pharmacol 61 (2005): 439-44",
+      "[17] Magid E \"Tolerance to anticoagulants during antibiotic therapy.\" Scand J Clin Lab Invest 14 (1962): 565-6",
+      "[18] Ku LL, Ward CO, Durgin SJ \"A clinical study of drug interaction and anticoagulant therapy.\" Drug Intell Clin Pharm 4 (1970): 300-6",
+      "[19] Visser LE, Penning-Van Bees FJ, Harrie Kasbergen AA, et al. \"Overanticoagulation associated with combined use of antibacterial drugs and acenocoumarol or phenprocoumon anticoagulants.\" Thromb Haemost 88 (2002): 705-10",
+      "[20] Caraco Y, Rubinow A \"Enhanced anticoagulant effect of coumarin derivatives induced by doxycycline coadministration.\" Ann Pharmacother 26 (1992): 1084-6",
+      "[21] Udall JA \"Human sources and absorption of vitamin K in relation to anticoagulation stability.\" JAMA 194 (1965): 107-9",
+      "[22] Westfall LK, Mintzer DL, Wiser TH \"Potentiation of warfarin by tetracycline.\" Am J Hosp Pharm 37 (1980): 1620, 5",
+      "[23] Penning-van Beest FJ, Koerselman J, Herings RM \"Risk of major bleeding during concomitant use of antibiotic drugs and coumarin anticoagulants.\" J Thromb Haemost 6 (2008): 284-90",
+      "[24] Baciewicz AM, Bal BS \"Bleeding associated with doxycycline and warfarin treatment.\" Arch Intern Med 161 (2001): 1231",
+      "[25] O&#x27;Donnell D \"Antibiotic-induced potentiation of oral anticoagulant agents.\" Med J Aust 150 (1989): 163-4",
+      "[26] \"Product Information. Declomycin (demeclocycline).\" Lederle Laboratories, Wayne, NJ.",
+      "[27] Hasan SA \"Interaction of doxycycline and warfarin: an enhanced anticoagulant effect.\" Cornea 26 (2007): 742-3",
+      "[28] \"Product Information. Xerava (eravacycline).\" Tetraphase Pharmaceuticals, Inc, Watertown, MA.",
+      "[29] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[30] \"Product Information. Nuzyra (omadacycline).\" Paratek Pharmaceuticals, Inc., Boston, MA.",
+      "[31] Koch-Weser J, Sellers EM \"Drug interactions with coumarin anticoagulants (second of two parts).\" N Engl J Med 285 (1971): 547-58",
+      "[32] Albert KS, Welch RD, DeSante KA, DiSanto AR \"Decreased tetracycline bioavailability caused by a bismuth subsalicylate antidiarrheal mixture.\" J Pharm Sci 68 (1979): 586-8",
+      "[33] Ericsson CD, Feldman S, Pickering LK, Cleary TG \"Influence of subsalicylate bismuth on absorption of doxycycline.\" JAMA 247 (1982): 2266-7",
+      "[34] \"Product Information. Seysara (sarecycline).\" Allergan Inc, Irvine, CA.",
+      "[35] \"Product Information. Nuzyra (omadacycline).\" Paratek Pharmaceuticals, Inc., Boston, MA.",
+      "[36] Giannini AJ, DeFrance DT \"Metronidazole and alcohol: potential for combinative abuse.\" J Toxicol Clin Toxicol 20 (1983): 509-15",
+      "[37] Edwards DL, Fink PC, Van Dyke PO \"Disulfiram-like reaction associated with intravenous trimethoprim-sulfamethoxazole and metronidazole.\" Clin Pharm 5 (1986): 999-1000",
+      "[38] Krulewitch CJ \"An unexpected adverse drug effect.\" J Midwifery Womens Health 48 (2003): 67-8",
+      "[39] Harries DP, Teale KF, Sunderland G \"Metronidazole and alcohol: potential problems.\" Scott Med J 35 (1990): 179-80",
+      "[40] Visapaa JP, Tillonen JS, Kaihovaara PS, Salaspuro MP \"Lack of disulfiram-like reaction with metronidazole and ethanol.\" Ann Pharmacother 36 (2002): 971-4",
+      "[41] \"Product Information. Benznidazole (benznidazole).\" Everett Laboratories Inc, West Orange, NJ.",
+      "[42] Williams CS, Woodcock KR \"Do ethanol and metronidazole interact to produce a disulfiram-like reaction?.\" Ann Pharmacother 34 (2000): 255-7",
+      "[43] Alexander I \"Alcohol-antabuse syndrome in patients receiving metronidazole during gynaecological treatment.\" Br J Clin Pract 39 (1985): 292-3",
+      "[44] \"Product Information. Flagyl (metronidazole).\" Searle, Skokie, IL.",
+      "[45] \"Product Information. Achromycin (tetracycline).\" Lederle Laboratories, Wayne, NJ.",
+      "[46] \"Product Information. Declomycin (demeclocycline).\" Lederle Laboratories, Wayne, NJ.",
+      "[47] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3",
+      "[48] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36",
+      "[49] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30",
+      "[50] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1",
+      "[51] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70",
+      "[52] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3",
+      "[53] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4",
+      "[54] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6",
+      "[55] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55",
+      "[56] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362",
+      "[57] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7",
+      "[58] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+      "[59] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174",
+      "[60] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557",
+      "[61] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1",
+      "[62] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):",
+      "[63] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50",
+      "[64] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6",
+      "[65] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7",
+      "[66] O&#x27;Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1",
+      "[67] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6",
+      "[68] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70",
+      "[69] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6",
+      "[70] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5",
+      "[71] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4",
+      "[72] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454",
+      "[73] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9",
+      "[74] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131",
+      "[75] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90",
+      "[76] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20",
+      "[77] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800",
+      "[78] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[79] Agencia Espa\u00f1ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci\u00f3n online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+      "[80] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7",
+      "[81] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17",
+      "[82] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70",
+      "[83] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5"
+    ],
+    "alternatives": {
+      "Warfarin": [
+        {
+          "name": "Antithrombin III human",
+          "ddinterId": "DDInter105",
+          "atc": "B01A"
+        },
+        {
+          "name": "Protein C",
+          "ddinterId": "DDInter1542",
+          "atc": "B01A"
+        },
+        {
+          "name": "Bivalirudin",
+          "ddinterId": "DDInter234",
+          "atc": "B01A"
+        },
+        {
+          "name": "Selexipag",
+          "ddinterId": "DDInter1644",
+          "atc": "B01A"
+        },
+        {
+          "name": "Vorapaxar",
+          "ddinterId": "DDInter1945",
+          "atc": "B01A"
+        }
+      ],
+      "Metronidazole": [
+        {
+          "name": "Tinidazole",
+          "ddinterId": "DDInter1814",
+          "atc": "P01A"
+        },
+        {
+          "name": "Secnidazole",
+          "ddinterId": "DDInter1640",
+          "atc": "P01A"
+        },
+        {
+          "name": "Ornidazole",
+          "ddinterId": "DDInter1353",
+          "atc": "P01A"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Warfarin": {
+        "CYP1A2-inh": 0.452,
+        "CYP1A2-sub": 0.941,
+        "CYP2C19-inh": 0.909,
+        "CYP2C19-sub": 0.89,
+        "CYP2C9-inh": 0.92,
+        "CYP2C9-sub": 0.966,
+        "CYP2D6-inh": 0.026,
+        "CYP2D6-sub": 0.6,
+        "CYP3A4-inh": 0.229,
+        "CYP3A4-sub": 0.836
+      },
+      "Metronidazole": {
+        "CYP1A2-inh": 0.12,
+        "CYP1A2-sub": 0.05,
+        "CYP2C19-inh": 0.18,
+        "CYP2C19-sub": 0.04,
+        "CYP2C9-inh": 0.88,
+        "CYP2C9-sub": 0.15,
+        "CYP2D6-inh": 0.02,
+        "CYP2D6-sub": 0.05,
+        "CYP3A4-inh": 0.35,
+        "CYP3A4-sub": 0.42
+      }
+    }
+  },
+  "DDInter413_DDInter1340": {
+    "interactId": "34095",
+    "idA": "DDInter413",
+    "idB": "DDInter1340",
+    "drugA": "Clopidogrel",
+    "drugB": "Omeprazole",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/34095/",
+    "references": [
+      "[1] Lau WC, Gurbel PA \"The drug-drug interaction between proton pump inhibitors and clopidogrel.\" CMAJ 180 (2009): 699-700",
+      "[2] \"Product Information. Prevacid (lansoprazole).\" TAP Pharmaceuticals Inc, Deerfield, IL.",
+      "[3] Pezalla E, Day D, Pulliadath I \"Initial assessment of clinical impact of a drug interaction between clopidogrel and proton pump inhibitors.\" J Am Coll Cardiol 52 (2008): 1038-9",
+      "[4] \"Product Information. Dexilant (dexlansoprazole).\" Takeda Pharmaceuticals America, Lincolnshire, IL.",
+      "[5] Siller-Matula JM, Spiel AO, Lang IM, Kreiner G, Christ G, Jilma B \"Effects of pantoprazole and esomeprazole on platelet inhibition by clopidogrel.\" Am Heart J 157 (2009): 148.e1-5",
+      "[6] Mega JL, Close SL, Wiviott SD, et al. \"Cytochrome p-450 polymorphisms and response to clopidogrel.\" N Engl J Med 360 (2009): 354-62",
+      "[7] Li XQ, Andersson TB, Ahlstrom M, Weidolf L \"Comparison of inhibitory effects of the proton pump-inhibiting drugs omeprazole, esomeprazole, lansoprazole, pantoprazole, and rabeprazole on human cytochrome P450 activities.\" Drug Metab Dispos 32 (2004): 821-7",
+      "[8] Frere C, Cuisset T, Morange PE, et al. \"Effect of Cytochrome P450 Polymorphisms on Platelet Reactivity After Treatment With Clopidogrel in Acute Coronary Syndrome.\" Am J Cardiol 101 (2008): 1088-1093",
+      "[9] Collet JP, Hulot JS, Pena A, et al. \"Cytochrome P450 2C19 polymorphism in young patients treated with clopidogrel after myocardial infarction: a cohort study.\" Lancet 373 (2009): 309-17",
+      "[10] EMA. European Medicines Agency \"Interaction between clopidogrel and proton-pump inhibitors. Available from: URL: http://www.ema.europa.eu/ema/index.jsp?curl=documents/document_library/Public_statement/2010/03/WC500076346.sjsp&amp;jsenabled=true.\" ([2010 Mar 17]):",
+      "[11] Freedman JE, Hylek EM \"Clopidogrel, genetics, and drug responsiveness.\" N Engl J Med 360 (2009): 411-3",
+      "[12] Gilard M, Arnaud B, Cornily JC, et al \"Influence of omeprazole on the antiplatelet action of clopidogrel associated with aspirin: the randomized, double-blind OCLA (Omeprazole CLopidogrel Aspirin) study.\" J Am Coll Cardiol 51 (2008): 256-60",
+      "[13] Moayyedi P, Sadowski DC \"Proton pump inhibitors and clopidogrel -- hazardous drug interaction or hazardous interpretation of data?\" Can J Gastroenterol 23 (2009): 251-2",
+      "[14] Simon T, Verstuyft C, Mary-Krause M, et al \"Genetic determinants of response to clopidogrel and cardiovascular events.\" N Engl J Med 360 (2009): 363-75",
+      "[15] Juurlink DN, Gomes T, Ko DT, et al \"A population-based study of the drug interaction between proton pump inhibitors and clopidogrel.\" CMAJ 180 (2009): 713-8",
+      "[16] Gilard M, Arnaud B, Le Gal G, Abgrall JF, Boschat J \"Influence of omeprazol on the antiplatelet action of clopidogrel associated to aspirin.\" J Thromb Haemost 4 (2006): 2508-9",
+      "[17] Small DS, Farid NA, Payne CD, et al. \"Effects of the proton pump inhibitor lansoprazole on the pharmacokinetics and pharmacodynamics of prasugrel and clopidogrel.\" J Clin Pharmacol 48 (2008): 475-84",
+      "[18] \"Product Information. Kapidex (dexlansoprazole).\" Takeda Pharmaceuticals America, Lincolnshire, IL.",
+      "[19] Varenhorst C, Janes S, Erlinge D, et al \"Genetic variation of CYP2C19 affects both pharmacokinetic and pharmacodynamic responses to clopidogrel but not prasugrel in aspirin-treated patients with coronary artery disease.\" Eur Heart J 30 (2009): 1744-52",
+      "[20] de Aquino Lima JP, Brophy JM \"The potential interaction between clopidogrel and proton pump inhibitors: a systematic review.\" BMC Med 8 (2010): 81",
+      "[21] \"Product Information. Protonix (pantoprazole)\" Wyeth-Ayerst Laboratories, Philadelphia, PA.",
+      "[22] Hulot JS, Bura A, Villard E, et al. \"Cytochrome P450 2C19 loss-of-function polymorphism is a major determinant of clopidogrel responsiveness in healthy subjects.\" Blood (2006):",
+      "[23] \"Product Information. Nexium (esomeprazole)\" Astra-Zeneca Pharmaceuticals, Wilmington, DE.",
+      "[24] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67"
+    ],
+    "alternatives": {
+      "Omeprazole": [
+        {
+          "name": "Tinidazole",
+          "ddinterId": "DDInter1811",
+          "atc": "A02B"
+        },
+        {
+          "name": "Bismuth subcitrate potassium",
+          "ddinterId": "DDInter213",
+          "atc": "A02B"
+        },
+        {
+          "name": "Levofloxacin",
+          "ddinterId": "DDInter1055",
+          "atc": "A02B"
+        },
+        {
+          "name": "Rifabutin",
+          "ddinterId": "DDInter1589",
+          "atc": "A02B"
+        }
+      ],
+      "Clopidogrel": [
+        {
+          "name": "Ticagrelor",
+          "ddinterId": "DDInter1802",
+          "atc": "B01A"
+        },
+        {
+          "name": "Betrixaban",
+          "ddinterId": "DDInter200",
+          "atc": "B01A"
+        },
+        {
+          "name": "Apixaban",
+          "ddinterId": "DDInter108",
+          "atc": "B01A"
+        },
+        {
+          "name": "Rivaroxaban",
+          "ddinterId": "DDInter1609",
+          "atc": "B01A"
+        },
+        {
+          "name": "Lepirudin",
+          "ddinterId": "DDInter1037",
+          "atc": "B01A"
+        },
+        {
+          "name": "Urokinase",
+          "ddinterId": "DDInter1905",
+          "atc": "B01A"
+        },
+        {
+          "name": "Cangrelor",
+          "ddinterId": "DDInter283",
+          "atc": "B01A"
+        },
+        {
+          "name": "Caplacizumab",
+          "ddinterId": "DDInter286",
+          "atc": "B01A"
+        },
+        {
+          "name": "Argatroban",
+          "ddinterId": "DDInter117",
+          "atc": "B01A"
+        },
+        {
+          "name": "Desirudin",
+          "ddinterId": "DDInter505",
+          "atc": "B01A"
+        },
+        {
+          "name": "Streptokinase",
+          "ddinterId": "DDInter1712",
+          "atc": "B01A"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Omeprazole": {
+        "CYP1A2-inh": 0.927,
+        "CYP1A2-sub": 0.965,
+        "CYP2C19-inh": 0.853,
+        "CYP2C19-sub": 0.809,
+        "CYP2C9-inh": 0.417,
+        "CYP2C9-sub": 0.821,
+        "CYP2D6-inh": 0.67,
+        "CYP2D6-sub": 0.855,
+        "CYP3A4-inh": 0.92,
+        "CYP3A4-sub": 0.916,
+        "CYP2B6-inh": 0.016,
+        "CYP2B6-sub": 0.002,
+        "CYP2C8-inh": -4.648
+      },
+      "Clopidogrel": {
+        "CYP1A2-inh": 0.904,
+        "CYP1A2-sub": 0.883,
+        "CYP2C19-inh": 0.951,
+        "CYP2C19-sub": 0.84,
+        "CYP2C9-inh": 0.628,
+        "CYP2C9-sub": 0.866,
+        "CYP2D6-inh": 0.919,
+        "CYP2D6-sub": 0.8859999999999999,
+        "CYP3A4-inh": 0.669,
+        "CYP3A4-sub": 0.908,
+        "CYP2B6-inh": 0.002,
+        "CYP2B6-sub": 0.8759999999999999,
+        "CYP2C8-inh": -4.885
+      }
+    }
+  },
+  "DDInter1675_DDInter393": {
+    "interactId": "68073",
+    "idA": "DDInter1675",
+    "idB": "DDInter393",
+    "drugA": "Simvastatin",
+    "drugB": "Clarithromycin",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/68073/",
+    "references": [
+      "[1] Williams D, Feely J \"Pharmacokinetic-Pharmacodynamic Drug Interactions with HMG-CoA Reductase Inhibitors.\" Clin Pharmacokinet 41 (2002): 343-70",
+      "[2] Spach DH, Bauwens JE, Clark CD, Burke WG \"Rhabdomyolysis associated with lovastatin and erythromycin use.\" West J Med 154 (1991): 213-5",
+      "[3] Watkins JL, Atkinson BJ, Pagliaro LC \"Rhabdomyolysis in a prostate cancer patient taking ketoconazole and simvastatin: case report and review of the literature.\" Ann Pharmacother 45 (2011): e9",
+      "[4] Itakura H, Vaughn D, Haller DG, O&#x27;Dwyer PJ \"Rhabdomyolysis from cytochrome p-450 interaction of ketoconazole and simvastatin in prostate cancer.\" J Urol 169 (2003): 613",
+      "[5] Huynh T, Cordato D, Yang F, et al. \"HMG coA reductase-inhibitor-related myopathy and the influence of drug interactions.\" Intern Med J 32(9-10) (2002): 486-90",
+      "[6] \"Product Information. Zocor (simvastatin).\" Merck &amp; Co, Inc, West Point, PA.",
+      "[7] Ayanian JZ, Fuchs CS, Stone RM \"Lovastatin and rhabdomyolysis.\" Ann Intern Med 109 (1988): 682-3",
+      "[8] Kivisto KT, Kantola T, Neuvonen PJ \"Different effects of itraconazole on the pharmacokinetics of fluvastatin and lovastatin.\" Br J Clin Pharmacol 46 (1998): 49-53",
+      "[9] Corsini A, Bellosta S, Baetta R, Fumagalli R, Paoletti R, Bernini F \"New insights into the pharmacodynamic and pharmacokinetic properties of statins.\" Pharmacol Ther 84 (1999): 413-28",
+      "[10] Kantola T, Kivisto KT, Neuvonen PJ \"Effect of itraconazole on cerivastatin pharmacokinetics.\" Eur J Clin Pharmacol 54 (1999): 851-5",
+      "[11] Corpier CL, Jones PH, Suki WN, et al. \"Rhabdomyolysis and renal injury with lovastatin use. Report of two cases in cardiac transplant recipients.\" JAMA 260 (1988): 239-41",
+      "[12] Kantola T, Kivisto KT, Neuvonen PJ \"Effect of itraconazole on the pharmacokinetics of atorvastatin.\" Clin Pharmacol Ther 64 (1998): 58-65",
+      "[13] Neuvonen PJ, Backman JT, Niemi M \"Pharmacokinetic comparison of the potential over-the-counter statins simvastatin, lovastatin, fluvastatin and pravastatin.\" Clin Pharmacokinet 47 (2008): 463-74",
+      "[14] Jacobson TA \"Comparative pharmacokinetic interaction profiles of pravastatin, simvastatin, and atorvastatin when coadministered with cytochrome P450 inhibitors.\" Am J Cardiol 94 (2004): 1140-6",
+      "[15] Lees RS, Lees AM \"Rhabdomyolysis from the coadministration of lovastatin and the antifungal agent itraconazole.\" N Engl J Med 333 (1995): 664-5",
+      "[16] Sipe BE, Jones RJ, Bokhart GH \"Rhabdomyolysis Causing AV Blockade Due to Possible Atorvastatin, Esomeprazole, and Clarithromycin Interaction.\" Ann Pharmacother 37 (2003): 808-11",
+      "[17] Chouhan UM, Chakrabarti S, Millward LJ \"Simvastatin interaction with clarithromycin and amiodarone causing myositis.\" Ann Pharmacother 39 (2005): 1760-1",
+      "[18] Grunden JW, Fisher KA \"Lovastatin-induced rhabdomyolysis possibly associated with clarithromycin and azithromycin.\" Ann Pharmacother 31 (1997): 859-63",
+      "[19] Horn M \"Coadministration of itraconazole with hypolipidemic agents may induce rhabdomyolysis in healthy individuals.\" Arch Dermatol 132 (1996): 1254",
+      "[20] Garnett WR \"Interactions with hydroxymethylglutaryl-coenzyme A reductase inhibitors.\" Am J Health Syst Pharm 52 (1995): 1639-45",
+      "[21] Paoletti R, Corsini A, Bellosta S \"Pharmacological interactions of statins.\" Atheroscler Suppl 3 (2002): 35-40",
+      "[22] Stein CA, Goel S, Ghavamian R \"Hepatitis and rhabdomyolysis in a patient with hormone refractory prostate cancer on ketoconazole and concurrent lovastatin therapy.\" Invest New Drugs 25 (2007): 277-8",
+      "[23] Jacobson RH, Wang P, Glueck CJ \"Myositis and rhabdomyolysis associated with concurrent use of simvastatin and nefazodone.\" JAMA 277 (1997): 296",
+      "[24] Hare CB, Vu MP, Grunfeld C, Lampiris HW \"Simvastatin-nelfinavir interaction implicated in rhabdomyolysis and death.\" Clin Infect Dis 35 (2002): E111-2",
+      "[25] Neuvonen PJ, Kantola T, Kivisto KT \"Simvastatin but not pravastatin is very susceptible to interaction with the CYP3A4 inhibitor itraconazole.\" Clin Pharmacol Ther 63 (1998): 332-41",
+      "[26] Cheng CH, Miller C, Lowe C, Pearson VE \"Rhabdomyolysis due to probable interaction between simvastatin and ritonavir.\" Am J Health Syst Pharm 59 (2002): 728-30",
+      "[27] Lee AJ, Maddix DS \"Rhabdomyolysis secondary to a drug interaction between simvastatin and clarithromycin.\" Ann Pharmacother 35 (2001): 26-31",
+      "[28] East C, Alivizatos PA, Grundy SM, Jones PH, Farmer JA \"Rhabdomyolysis in patients receiving lovastatin after cardiac transplantation.\" N Engl J Med 318 (1988): 47-8",
+      "[29] Neuvonen PJ, Jalava KM \"Itraconazole drastically increases plasma concentrations of lovastatin and lovastatin acid.\" Clin Pharmacol Ther 60 (1996): 54-61",
+      "[30] Wong PW, Dillard TA, Kroenke K \"Multiple organ toxicity from addition of erythromycin to long-term lovastatin therapy.\" South Med J 91 (1998): 202-5",
+      "[31] Fichtenbaum CJ, Gerber JG, Rosenkranz SL, et al. \"Pharmacokinetic interactions between protease inhibitors and statins in HIV seronegative volunteers: ACTG Study A5047.\" AIDS 16 (2002): 569-577",
+      "[32] Dresser GK, Spence JD, Bailey DG \"Pharmacokinetic-pharmacodynamic consequences and clinical relevance of cytochrome P450 3A4 inhibition.\" Clin Pharmacokinet 38 (2000): 41-57",
+      "[33] \"Product Information. Mevacor (lovastatin).\" Merck &amp; Co, Inc, West Point, PA.",
+      "[34] Omar MA, Wilson JP \"FDA adverse event reports on statin-associated rhabdomyolysis.\" Ann Pharmacother 36 (2002): 288-95",
+      "[35] Gruer PJK, Vega JM, Mercuri MF, Dobrinska MR, Tobert JA \"Concomitant use of cytochrome P450 3A4 inhibitors and simvastatin.\" Am J Cardiol 84 (1999): 811-5",
+      "[36] Gilad R, Lampl Y \"Rhabdomyolysis induced by simvastatin and ketoconazole treatment.\" Clin Neuropharmacol 22 (1999): 295-7",
+      "[37] Skrabal MZ, Stading JA, Monaghan MS \"Rhabdomyolysis associated with simvastatin-nefazodone therapy.\" South Med J 96 (2003): 1034-5",
+      "[38] Karnik NS, Maldonado JR \"Antidepressant and statin interactions: a review and case report of simvastatin and nefazodone-induced rhabdomyolysis and transaminitis.\" Psychosomatics 46 (2005): 565-8",
+      "[39] Thompson M, Samuels S \"Rhabdomyolysis with simvastatin and nefazodone.\" Am J Psychiatry 159 (2002): 1607",
+      "[40] Piliero PJ \"Interaction between ritonavir and statins.\" Am J Med 112 (2002): 510-1",
+      "[41] Schmidt GA, Hoehns JD, Purcell JL, Friedman RL, Elhawi Y \"Severe rhabdomyolysis and acute renal failure secondary to concomitant use of simvastatin, amiodarone, and atazanavir.\" J Am Board Fam Med 20 (2007): 411-6",
+      "[42] Jody DN \"Myositis and rhabdomyolysis associated with concurrent use of simvastatin and nefazodone.\" JAMA 277 (1997): 296-7",
+      "[43] Richter WO, Jacob BG, Schwandt P \"Interaction between fibre and lovastatin.\" Lancet 338 (1991): 706",
+      "[44] Neuvonen PJ, Backman JT, Niemi M \"Pharmacokinetic comparison of the potential over-the-counter statins simvastatin, lovastatin, fluvastatin and pravastatin.\" Clin Pharmacokinet 47 (2008): 463-74",
+      "[45] Lilja JJ, Kivisto KT, Neuvonen PJ \"Grapefruit juice-simvastatin interaction: Effect on serum concentrations of simvastatin, simvastatin acid, and HMG-CoA reductase inhibitors.\" Clin Pharmacol Ther 64 (1998): 477-83",
+      "[46] \"Product Information. Mevacor (lovastatin).\" Merck &amp; Co, Inc, West Point, PA.",
+      "[47] Thompson PD, Clarkson P, Karas RH \"Statin-associated myopathy.\" JAMA 289 (2003): 1681-90",
+      "[48] \"Product Information. Zocor (simvastatin).\" Merck &amp; Co, Inc, West Point, PA.",
+      "[49] Kantola T, Kivisto KT, Neuvonen PJ \"Grapefruit juice greatly increases serum concentrations of lovastatin and lovastatin acid.\" Clin Pharmacol Ther 63 (1998): 397-402",
+      "[50] Bailey DG, Malcolm J, Arnold O, Spence JD \"Grapefruit juice-drug interactions.\" Br J Clin Pharmacol 46 (1998): 101-10"
+    ],
+    "alternatives": {
+      "Simvastatin": [
+        {
+          "name": "Guar gum",
+          "ddinterId": "DDInter2081",
+          "atc": "A10B"
+        },
+        {
+          "name": "Gemfibrozil",
+          "ddinterId": "DDInter812",
+          "atc": "A10B"
+        },
+        {
+          "name": "Fenofibric acid",
+          "ddinterId": "DDInter719",
+          "atc": "A10B"
+        },
+        {
+          "name": "Pitavastatin",
+          "ddinterId": "DDInter1479",
+          "atc": "A10B"
+        },
+        {
+          "name": "Evinacumab",
+          "ddinterId": "DDInter2260",
+          "atc": "A10B"
+        },
+        {
+          "name": "Evolocumab",
+          "ddinterId": "DDInter2261",
+          "atc": "A10B"
+        },
+        {
+          "name": "Dextrothyroxine",
+          "ddinterId": "DDInter530",
+          "atc": "A10B"
+        },
+        {
+          "name": "Cholestyramine",
+          "ddinterId": "DDInter368",
+          "atc": "A10B"
+        },
+        {
+          "name": "Clofibrate",
+          "ddinterId": "DDInter408",
+          "atc": "A10B"
+        },
+        {
+          "name": "Colestipol",
+          "ddinterId": "DDInter433",
+          "atc": "A10B"
+        },
+        {
+          "name": "Bempedoic acid",
+          "ddinterId": "DDInter176",
+          "atc": "A10B"
+        }
+      ],
+      "Clarithromycin": [
+        {
+          "name": "Levofloxacin",
+          "ddinterId": "DDInter1055",
+          "atc": "A02B"
+        },
+        {
+          "name": "Bismuth subcitrate potassium",
+          "ddinterId": "DDInter213",
+          "atc": "A02B"
+        },
+        {
+          "name": "Dexlansoprazole",
+          "ddinterId": "DDInter519",
+          "atc": "A02B"
+        },
+        {
+          "name": "Rifabutin",
+          "ddinterId": "DDInter1589",
+          "atc": "A02B"
+        },
+        {
+          "name": "Dirithromycin",
+          "ddinterId": "DDInter2080",
+          "atc": "A02B"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Simvastatin": {
+        "CYP1A2-inh": 0.037,
+        "CYP1A2-sub": 0.048,
+        "CYP2C19-inh": 0.046,
+        "CYP2C19-sub": 0.813,
+        "CYP2C9-inh": 0.281,
+        "CYP2C9-sub": 0.128,
+        "CYP2D6-inh": 0.005,
+        "CYP2D6-sub": 0.075,
+        "CYP3A4-inh": 0.872,
+        "CYP3A4-sub": 0.713,
+        "CYP2B6-inh": 0.061,
+        "CYP2B6-sub": 1.0,
+        "CYP2C8-inh": -4.736000000000001
+      },
+      "Clarithromycin": {
+        "CYP1A2-inh": 0.002,
+        "CYP1A2-sub": 0.596,
+        "CYP2C19-inh": 0.006,
+        "CYP2C19-sub": 0.928,
+        "CYP2C9-inh": 0.004,
+        "CYP2C9-sub": 0.01,
+        "CYP2D6-inh": 0.002,
+        "CYP2D6-sub": 0.095,
+        "CYP3A4-inh": 0.174,
+        "CYP3A4-sub": 0.901,
+        "CYP2B6-inh": 0.991,
+        "CYP2B6-sub": 1.0,
+        "CYP2C8-inh": -5.303
+      }
+    }
+  },
+  "DDInter1079_DDInter1707": {
+    "interactId": "59302",
+    "idA": "DDInter1079",
+    "idB": "DDInter1707",
+    "drugA": "Lisinopril",
+    "drugB": "Spironolactone",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/59302/",
+    "references": [
+      "[1] Jarman PR, Mather HM \"Diabetes may be independent risk factor for hyperkalaemia.\" BMJ 327 (2003): 812",
+      "[2] Bennett WM \"Drug interactions and consequences of sodium restriction.\" Am J Clin Nutr 65 (1997): S678-81",
+      "[3] Schepkens H \"Life-threatening hyperkalemia during combined therapy with angiotensin-converting enzyme inhibitors and spironolactone.\" Am J Med 111 (2001): 587",
+      "[4] Warren SE, O&#x27;Connor DT \"Hyperkalemia resulting from captopril administration.\" JAMA 244 (1980): 2551-2",
+      "[5] Walmsley RN, White GH, Cain M, McCarthy PJ, Booth J \"Hyperkalemia in the elderly.\" Clin Chem 30 (1984): 1409-12",
+      "[6] Radley AS, Fitzpatrick RW \"An evaluation of the potential interaction between enalapril and amiloride.\" J Clin Pharm Ther 12 (1987): 319-23",
+      "[7] Johnston RT, de Bono DP, Nyman CR \"Preventable sudden death in patients receiving angiotensin converting enzyme inhibitors and loop/potassium sparing diuretic combinations.\" Int J Cardiol 34 (1992): 213-5",
+      "[8] Ponce SP, Jennings AE, Madias NE, Harrington JT \"Drug-induced hyperkalemia.\" Medicine (Baltimore) 64 (1985): 357-70",
+      "[9] Martin J, Mourton S, Nicholls G \"Severe hyperkalaemia with prescription of potassium-retaining agents in an elderly patient.\" N Z Med J 116 (2003): U542",
+      "[10] \"Spironolactone + ace inhibitor or sartan: risk of hyperkalaemia.\" Prescrire Int 13 (2004): 58",
+      "[11] Perazella MA, Mahnensmith RL \"Hyperkalemia in the elderly: drugs exacerbate impaired potassium homeostasis.\" J Gen Intern Med 12 (1997): 646-56",
+      "[12] Schuna AA, Schmidt GR, Pitterle ME \"Serum potassium concentrations after initiation of captopril therapy.\" Clin Pharm 5 (1986): 920-3",
+      "[13] Large DM, Carr PH, Laing I, Davies M \"Hyperkalaemia in diabetes mellitus--potential hazards of coexisting hyporeninaemic hypoaldosteronism.\" Postgrad Med J 60 (1984): 370-3",
+      "[14] Burnakis TG, Mioduch HJ \"Combined therapy with captopril and potassium supplementation: a potential for hyperkalemia.\" Arch Intern Med 144 (1984): 2371-2",
+      "[15] Jarman PR, Kehely AM, Mather HM \"Hyperkalaemia in diabetes: prevalence and associations.\" Postgrad Med J 71 (1995): 551-2",
+      "[16] Lakhani M \"Complete heart block induced by hyperkalaemia associated with treatment with a combination of captopril and spironolactone.\" Br Med J (Clin Res Ed) 293 (1986): 271",
+      "[17] Svensson M, Gustafsson F, Galatius S, Hildebrandt PR, Atar D \"Hyperkalaemia and impaired renal function in patients taking spironolactone for congestive heart failure: retrospective study.\" BMJ 327 (2003): 1141-2",
+      "[18] McNay JL, Oran E \"Possible predisposition of diabetic patients to hyperkalemia following administration of potassium-retaining diuretic, amiloride (MK 870).\" Metabolism 19 (1970): 58-70",
+      "[19] Cruz CS, Cruz AA, Marcilio de Souza CA \"Hyperkalaemia in congestive heart failure patients using ACE inhibitors and spironolactone.\" Nephrol Dial Transplant 18 (2003): 1814-7",
+      "[20] Berry C, McMurray J \"Life-threatening hyperkalemia during combined therapy with angiotensin-converting enzyme inhibitors and spironolactone.\" Am J Med 111 (2001): 587",
+      "[21] Obialo CI, Ofili EO, Mirza T \"Hyperkalemia in congestive heart failure patients aged 63 to 85 years with subclinical renal disease.\" Am J Cardiol 90 (2002): 663-5",
+      "[22] McMurray JJ, O&#x27;Meara E \"Treatment of heart failure with spironolactone--trial and tribulations.\" N Engl J Med 351 (2004): 526-8",
+      "[23] Schepkens H, Vanholder R, Billiouw JM, Lameire N \"Life-threatening hyperkalemia during combined therapy with angiotensin-converting enzyme inhibitors and spironolactone: an analysis of 25 cases.\" Am J Med 110 (2001): 438-41",
+      "[24] Schoolwerth AC, Sica DA, Ballermann BJ, Wilcox CS, Council on the Kidney in Cardiovascular Disease and the Council for High Blood Pressure Research of the American Heart Association \"Renal considerations in angiotensin converting enzyme inhibitor therapy: a statement for healthcare professionals from the Council on the Kidney in Cardiovascular Disease and the Council for High Blood Pressure Research of the American Heart Association.\" Circulation 104 (2001): 1985-91",
+      "[25] Marcy TR, Ripley TL \"Aldosterone antagonists in the treatment of heart failure.\" Am J Health Syst Pharm 63 (2006): 49-58",
+      "[26] Bozkurt B, Agoston I, Knowlton AA \"Complications of inappropriate use of spironolactone in heart failure: when an old medicine spirals out of new guidelines.\" J Am Coll Cardiol 41 (2003): 211-4",
+      "[27] Chiu TF, Bullard MJ, Chen JC, Liaw SJ, Ng CJ \"Rapid life-threatening hyperkalemia after addition of amiloride HCI/hydrochlorothiazide to angiotensin-converting enzyme inhibitor therapy.\" Ann Emerg Med 30 (1997): 612-5",
+      "[28] Speirs CJ, Dollery CT, Inman WH, et al \"Postmarketing surveillance of enalapril II: investigation of the potential role of enalapril in deaths with renal failure.\" Br Med J 297 (1988): 830-2",
+      "[29] Juurlink DN, Mamdani MM, Lee DS, et al. \"Rates of hyperkalemia after publication of the Randomized Aldactone Evaluation Study.\" N Engl J Med 351 (2004): 543-51",
+      "[30] \"Product Information. K-Dur (potassium chloride).\" Schering Laboratories, Kenilworth, NJ.",
+      "[31] Tamirisa KP, Aaronson KD, Koelling TM \"Spironolactone-induced renal insufficiency and hyperkalemia in patients with heart failure.\" Am Heart J 148 (2004): 971-8",
+      "[32] Hu Y, Carpenter JP, Cheung AT \"Life-threatening hyperkalemia: a complication of spironolactone for heart failure in a patient with renal insufficiency.\" Anesth Analg 95 (2002): 39-41",
+      "[33] Lawson DH, O&#x27;Connor PC, Jick H \"Drug attributed alterations in potassium handling in congestive cardiac failure.\" Eur J Clin Pharmacol 23 (1982): 21-5",
+      "[34] Perazella MA \"Drug-induced hyperkalemia: old culprits and new offenders.\" Am J Med 109 (2000): 307-14",
+      "[35] Masoudi FA, Gross CP, Wang Y, et al. \"Adoption of spironolactone therapy for older patients with heart failure and left ventricular systolic dysfunction in the United States, 1998-2001.\" Circulation 112 (2005): 39-47",
+      "[36] Murphy BF, Whitworth JA, Kincaid-Smith P \"Renal insufficiency with combinations of angiotensin converting enzyme inhibitors and diuretics.\" Br Med J 288 (1984): 844-5",
+      "[37] Atlas SA, Case DB, Sealey JE, Laragh JH, McKinstry DN \"Interruption of the renin-angiotensin system in hypertensive patients by captopril induces sustained reduction in aldosterone secretion, potassium retention and natriuresis.\" Hypertension 1 (1979): 279-80",
+      "[38] Berry C, McMurray JJ \"Serious adverse events experienced by patients with chronic heart failure taking spironolactone.\" Heart 85 (2001): E8",
+      "[39] Wrenger E, Muller R, Moesenthin M, Welte T, Frolich JC, Neumann KH \"Interaction of spironolactone with ACE inhibitors or angiotensin receptor blockers: analysis of 44 cases.\" BMJ 327 (2003): 147-9",
+      "[40] Reardon LC, Macpherson DS \"Hyperkalemia in outpatients using angiotensin-converting enzyme inhibitors. How much should we worry?\" Arch Intern Med 158 (1998): 26-32",
+      "[41] Juurlink DN, Mamdani M, Kopp A, Laupacis A, Redelmeier DA \"Drug-drug interactions among elderly patients hospitalized for drug toxicity.\" JAMA 289 (2003): 1652-8",
+      "[42] Ray K, Dorman S, Watson R \"Severe hyperkalaemia due to the concomitant use of salt substitutes and ACE inhibitors in hypertension: a potentially life threatening interaction.\" J Hum Hypertens 13 (1999): 717-20",
+      "[43] \"Product Information. Vasotec (enalapril).\" Merck &amp; Co, Inc, West Point, PA.",
+      "[44] Good CB, McDermott L \"Diet and serum potassium in patients on ACE inhibitors.\" JAMA 274 (1995): 538"
+    ],
+    "alternatives": {
+      "Spironolactone": [],
+      "Lisinopril": [
+        {
+          "name": "Bempedoic acid",
+          "ddinterId": "DDInter176",
+          "atc": "C09B"
+        }
+      ]
+    },
+    "cypMetabolism": null
+  },
+  "DDInter554_DDInter76": {
+    "interactId": "21453",
+    "idA": "DDInter554",
+    "idB": "DDInter76",
+    "drugA": "Digoxin",
+    "drugB": "Amiodarone",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/21453/",
+    "references": [
+      "[1] Rodin SM, Johnson BF \"Pharmacokinetic interactions with digoxin.\" Clin Pharmacokinet 15 (1988): 227-44",
+      "[2] Fenster PE, White NW, Jr Hanson CD \"Pharmacokinetic evaluation of the digoxin-amiodarone interaction.\" J Am Coll Cardiol 5 (1985): 108-12",
+      "[3] Gill J, Heel RC, Fitton A \"Amiodarone: an overview of its pharmacological properties, and review of its therapeutic use in cardiac arrhythmias.\" Drugs 43 (1992): 69-110",
+      "[4] Bajaj BP, Baig MW, Perrins EJ \"Amiodarone-induced torsades de pointes: the possible facilitatory role of digoxin.\" Int J Cardiol 33 (1991): 335-7",
+      "[5] Koren G, Hesslein PS, MacLeod SM \"Digoxin toxicity associated with amiodarone therapy in children.\" J Pediatr 104 (1984): 467-70",
+      "[6] Oetgen WJ, Sobol SM, Tri TB, Heydorn WH, Rakita L \"Amiodarone-digoxin interaction: clinical and experimental observations.\" Chest 86 (1984): 75-9",
+      "[7] Freitag D, Bebee R, Sunderland B \"Digoxin-quinidine and digoxin-amiodarone interactions: frequency of occurrence and monitoring in australian repatriation hospitals.\" J Clin Pharm Ther 20 (1995): 179-83",
+      "[8] Wilson JS, Podrid PJ \"Side effects from amiodarone.\" Am Heart J 121 (1991): 158-71",
+      "[9] Ben-Chetrit E, Ackerman Z, Eliakim M \"Amiodarone-associated hypothyroidism--a possible cause of digoxin intoxication.\" Am J Med Sci 289 (1985): 114-6",
+      "[10] Laer S, Scholz H, Buschmann I, Thoenes M, Meinertz T \"Digitoxin intoxication during concomitant use of amiodarone.\" Eur J Clin Pharmacol 54 (1998): 95-6",
+      "[11] Mingardi G \"Amiodarone and plasma digoxin levels.\" Lancet 1 (1984): 1238",
+      "[12] Moysey JO, Jaggarao NS, Grundy EN, Chamberlain DA \"Amiodarone increases plasma digoxin concentrations.\" Br Med J (Clin Res Ed) 282 (1981): 272",
+      "[13] McGovern B, Garan H, Kelly E, Ruskin JN \"Adverse reactions during treatment with amiodarone hydrochloride.\" Br Med J (Clin Res Ed) 287 (1983): 175-80",
+      "[14] Kerin NZ, Aragon E, Faitel K, Frumin H, Rubenfire M \"Long-term efficacy and toxicity of high- and low-dose amiodarone regimens.\" J Clin Pharmacol 29 (1989): 418-23",
+      "[15] Klein HO, Beker B, DiSegni E, Kaplinsky E \"Asystole produced by the combination of amiodarone and digoxin.\" Am Heart J 113 (1987): 399-400",
+      "[16] Drescher S, Glaeser H, Murdter T, Hitzl M, Eichelbaum M, Fromm MF \"P-glycoprotein-mediated intestinal and biliary digoxin transport in humans.\" Clin Pharmacol Ther 73 (2003): 223-31",
+      "[17] \"Product Information. Cordarone (amiodarone).\" Wyeth-Ayerst Laboratories, Philadelphia, PA.",
+      "[18] Marcus FI \"Pharmacokinetic interactions between digoxin and other drugs.\" J Am Coll Cardiol 5 (1985): a82-90",
+      "[19] Nademanee K, Kannan R, Hendrickson J, Ookhtens M, Kay I, Singh BN \"Amiodarone-digoxin interaction: clinical significance, time course of development, potential pharmacokinetic mechanisms and therapeutic implications.\" J Am Coll Cardiol 4 (1984): 111-6",
+      "[20] Libersa CC, Brique SA, Motte KB, et al. \"Dramatic inhibition of amiodarone metabolism induced by grapefruit juice.\" Br J Clin Pharmacol 49 (2000): 373-8",
+      "[21] Meng X, Mojaverian P, Doedee M, Lin E, Weinryb I, Chiang ST, Kowey PR \"Bioavailability of Amiodarone tablets administered with and without food in healthy subjects.\" Am J Cardiol 87 (2001): 432-5",
+      "[22] \"Product Information. Cordarone (amiodarone).\" Wyeth-Ayerst Laboratories, Philadelphia, PA.",
+      "[23] Darcy PF \"Nutrient-drug interactions.\" Adverse Drug React Toxicol Rev 14 (1995): 233-54",
+      "[24] Becquemont L, Verstuyft C, Kerb R, et al. \"Effect of grapefruit juice on digoxin pharmacokinetics in humans.\" Clin Pharmacol Ther 70 (2001): 311-6"
+    ],
+    "alternatives": {
+      "Digoxin": [],
+      "Amiodarone": [
+        {
+          "name": "Tocainide",
+          "ddinterId": "DDInter1823",
+          "atc": "C01B"
+        }
+      ]
+    },
+    "cypMetabolism": null
+  },
+  "DDInter758_DDInter1841": {
+    "interactId": "5863",
+    "idA": "DDInter758",
+    "idB": "DDInter1841",
+    "drugA": "Fluoxetine",
+    "drugB": "Tramadol",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/5863/",
+    "references": [
+      "[1] Chan BSH, Graudins A, Whyte IM, Dawson AH, Braitberg G, Duggin GG \"Serotonin syndrome resulting from drug interactions.\" Med J Aust 169 (1998): 523-5",
+      "[2] Kitson R, Carr B \"Tramadol and severe serotonin syndrome.\" Anaesthesia 60 (2005): 934-5",
+      "[3] \"Product Information. Paxil (paroxetine).\" GlaxoSmithKline, Research Triangle Park, NC.",
+      "[4] Mills KC \"Serotonin syndrome: A clinical update.\" Crit Care Clin 13 (1997): 763",
+      "[5] \"Product Information. Celexa (citalopram).\" Forest Pharmaceuticals, St. Louis, MO.",
+      "[6] Alfaro CL, Lam YWF, Simpson J, Ereshefsky L \"CYP2D6 status of extensive metabolizers after multiple-dose fluoxetine, fluvoxamine, paroxetine, or sertraline.\" J Clin Psychopharmacol 19 (1999): 155-63",
+      "[7] Mason BJ, Blackburn KH \"Possible serotonin syndrome associated with tramadol and sertraline coadministration.\" Ann Pharmacother 31 (1997): 175-7",
+      "[8] \"Product Information. Lexapro (escitalopram).\" Forest Pharmaceuticals, St. Louis, MO.",
+      "[9] Shakoor M, Ayub S, Ahad A, Ayub Z \"Transient serotonin syndrome caused by concurrent use of tramadol and selective serotonin reuptake inhibitor.\" Am J Case Rep 15 (2014): 562-4",
+      "[10] \"Product Information. Zoloft (sertraline).\" Roerig Division, New York, NY.",
+      "[11] \"Venlafaxine + tramadol: serotonin syndrome.\" Prescrire Int 13 (2004): 57",
+      "[12] Kesavan S, Sobala GM \"Serotonin syndrome with fluoxetine plus tramadol.\" J R Soc Med 92 (1999): 474-5",
+      "[13] \"Product Information. Brintellix (vortioxetine).\" Takeda Pharmaceuticals America, Lincolnshire, IL.",
+      "[14] Mahlberg R, Kunz D, Sasse J, Kirchheiner J \"Serotonin syndrome with tramadol and citalopram.\" Am J Psychiatry 161 (2004): 1129",
+      "[15] \"Product Information. Prozac (fluoxetine).\" Dista Products Company, Indianapolis, IN.",
+      "[16] Sternbach H \"The serotonin syndrome.\" Am J Psychiatry 148 (1991): 705-13",
+      "[17] Houlihan DJ \"Serotonin syndrome resulting from coadministration of tramadol, venlafaxine, and mirtazapine.\" Ann Pharmacother 38 (2004): 411-3",
+      "[18] \"Product Information. Ultram (tramadol).\" McNeil Pharmaceutical, Raritan, NJ.",
+      "[19] Lantz MS, Buchalter EN, Giambanco V \"Serotonin syndrome following the administration of tramadol with paroxetine.\" Int J Geriatr Psychiatry 13 (1998): 343-5",
+      "[20] Lange-Asschenfeldt C, Weigmann H, Hiemke C, Mann K \"Serotonin syndrome as a result of fluoxetine in a patient with tramadol abuse: plasma level-correlated symptomatology.\" J Clin Psychopharmacol 22 (2002): 440-1",
+      "[21] US Food and Drug Administration (FDA) \"FDA Drug Safety Communication: FDA warns about several safety issues with opioid pain medicines; requires label changes. Available from: URL: https://www.fda.gov/downloads/Drugs/DrugSafety/UCM491302.pdf.\" ([2016, Mar 22]):",
+      "[22] Gonzalez-Pinto A, Imaz H, De Heredia JL, Gutierrez M, Mico JA \"Mania and tramadol-fluoxetine combination.\" Am J Psychiatry 158 (2001): 964-5",
+      "[23] Egberts AC, ter Borg J, Brodie-Meijer CC \"Serotonin syndrome attributed to tramadol addition to paroxetine therapy.\" Int Clin Psychopharmacol 12 (1997): 181-2",
+      "[24] Martin TG \"Serotonin syndrome.\" Ann Emerg Med 28 (1996): 520-6",
+      "[25] Mittino D, Mula M, Monaco F \"Serotonin syndrome associated with tramadol-sertraline coadministration.\" Clin Neuropharmacol 27 (2004): 150-1",
+      "[26] \"Product Information. Luvox (fluvoxamine).\" Solvay Pharmaceuticals Inc, Marietta, GA.",
+      "[27] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7",
+      "[28] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+      "[29] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+      "[30] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman&#x27;s the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):",
+      "[31] Warrington SJ, Ankier SI, Turner P \"Evaluation of possible interactions between ethanol and trazodone or amitriptyline.\" Neuropsychobiology 15 (1986): 31-7",
+      "[32] \"Product Information. Fycompa (perampanel).\" Eisai Inc, Teaneck, NJ.",
+      "[33] \"Product Information. Rexulti (brexpiprazole).\" Otsuka American Pharmaceuticals Inc, Rockville, MD.",
+      "[34] Gilman AG, Rall TW, Nies AS, Taylor P, eds. \"Goodman and Gilman&#x27;s the Pharmacological Basis of Therapeutics. 8th ed.\" New York, NY: Pergamon Press Inc. (1990):"
+    ],
+    "alternatives": {
+      "Tramadol": [
+        {
+          "name": "Naloxone",
+          "ddinterId": "DDInter1262",
+          "atc": "N02A"
+        },
+        {
+          "name": "Naltrexone",
+          "ddinterId": "DDInter1263",
+          "atc": "N02A"
+        }
+      ],
+      "Fluoxetine": []
+    },
+    "cypMetabolism": {
+      "Tramadol": {
+        "CYP1A2-inh": 0.107,
+        "CYP1A2-sub": 0.924,
+        "CYP2C19-inh": 0.045,
+        "CYP2C19-sub": 0.973,
+        "CYP2C9-inh": 0.0139999999999999,
+        "CYP2C9-sub": 0.534,
+        "CYP2D6-inh": 0.951,
+        "CYP2D6-sub": 0.933,
+        "CYP3A4-inh": 0.031,
+        "CYP3A4-sub": 0.7440000000000001,
+        "CYP2B6-inh": 0.015,
+        "CYP2B6-sub": 0.0069999999999999,
+        "CYP2C8-inh": -4.552
+      },
+      "Fluoxetine": {
+        "CYP1A2-inh": 0.765,
+        "CYP1A2-sub": 0.912,
+        "CYP2C19-inh": 0.75,
+        "CYP2C19-sub": 0.949,
+        "CYP2C9-inh": 0.265,
+        "CYP2C9-sub": 0.792,
+        "CYP2D6-inh": 0.943,
+        "CYP2D6-sub": 0.913,
+        "CYP3A4-inh": 0.858,
+        "CYP3A4-sub": 0.492,
+        "CYP2B6-inh": 0.001,
+        "CYP2B6-sub": 0.975,
+        "CYP2C8-inh": -4.721
+      }
+    }
+  },
+  "DDInter384_DDInter1791": {
+    "interactId": "66337",
+    "idA": "DDInter384",
+    "idB": "DDInter1791",
+    "drugA": "Ciprofloxacin",
+    "drugB": "Theophylline",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/66337/",
+    "references": [
+      "[1] Wijnands WJ, Vree TB \"Interaction between the fluoroquinolones and the bronchodilator theophylline.\" J Antimicrob Chemother 22 (1988): 109-14",
+      "[2] Davis RL, Quenzer RW, Kelly HW, Powell JR \"Effect of the addition of ciprofloxacin on theophylline pharmacokinetics in subjects inhibited by cimetidine.\" Ann Pharmacother 26 (1992): 11-3",
+      "[3] Bader MB \"Role of ciprofloxacin in fatal seizures.\" Chest 101 (1992): 883-4",
+      "[4] Grasela TH, Dreis MW \"An evaluation of the quinolone-theophylline interaction using the Food and Drug Administration spontaneous reporting system.\" Arch Intern Med 152 (1992): 617-21",
+      "[5] Semel JD, Allen N \"Seizures in patients simultaneously receiving theophylline and imipenem or ciprofloxacin or metronidazole.\" South Med J 84 (1991): 465-8",
+      "[6] Thomson AH, Thomson GD, Hepburn M, Whiting B \"A clinically significant interaction between ciprofloxacin and theophylline.\" Eur J Clin Pharmacol 33 (1987): 435-6",
+      "[7] Richardson JP \"Theophylline toxicity associated with the administration of ciprofloxacin in a nursing home patient.\" J Am Geriatr Soc 38 (1990): 236-8",
+      "[8] Karki SD, Bentley DW, Raghavan M \"Seizure with ciprofloxacin and theophylline combined therapy.\" DICP 24 (1990): 595-6",
+      "[9] Takagi K, Hasegawa T, Ogura Y, et al \"Comparative studies on interaction between theophylline and quinolones.\" J Asthma 25 (1988): 63-71",
+      "[10] Rockwood RP, Embardo LS \"Theophylline, ciprofloxacin, erythromycin: a potentially harmful regimen.\" Ann Pharmacother 27 (1993): 651-2",
+      "[11] Schwartz J, Jauregui L, Lettieri J, Bachmann K \"Impact of ciprofloxacin on theophylline clearance and steady-state concentrations in serum.\" Antimicrob Agents Chemother 32 (1988): 75-7",
+      "[12] Batty KT, Davis TM, Ilett KF, Dusci LJ, Langton SR \"The effect of ciprofloxacin on theophylline pharmacokinetics in healthy subjects.\" Br J Clin Pharmacol 39 (1995): 305-11",
+      "[13] Mizuki Y, Fujiwara I, Yamaguchi T \"Pharmacokinetic interactions related to the chemical structures of fluoroquinolones.\" J Antimicrob Chemother 37 ( Suppl (1996): 41-55",
+      "[14] Robson RA, Begg EJ, Atkinson HC, et al \"Comparative effects of ciprofloxacin and lomefloxacin on the oxidative metabolism of theophylline.\" Br J Clin Pharmacol 29 (1990): 491-3",
+      "[15] Upton RA \"Pharmacokinetic interactions between theophylline and other medication (Part I).\" Clin Pharmacokinet 20 (1991): 66-80",
+      "[16] Segev S. Rehavi M, Rubinstein E \"Quinolones, theophylline, and diclofenac interactions with the gamma-aminobutyric acid receptor.\" Antimicrob Agents Chemother 32 (1988): 1624-6",
+      "[17] Holden R \"Probable fatal interaction between ciprofloxacin and theophylline.\" Br Med J 297 (1988): 1339",
+      "[18] Bachmann KA, Schwartz JI, Jauregui L \"Predicting the ciprofloxacin-theophylline interaction from single plasma theophylline measurements.\" Br J Clin Pharmacol 26 (1988): 191-4",
+      "[19] Loi CM, Parker BM, Cusack BJ, Vestal RE \"Aging and drug interactions .3. individual and combined effects of cimetidine and ciprofloxacin on theophylline metabolism in healthy male and female nonsmokers.\" J Pharmacol Exp Ther 280 (1997): 627-37",
+      "[20] Borcherding SM, Stevens R, Nicholas RA, Corley CR, Self T \"Quinolones: a practical review of clinical uses, dosing considerations, and drug interactions.\" J Fam Pract 42 (1996): 69-78",
+      "[21] Prince RA, Casabar E, Adair CG, et al \"Effect of quinolone antimicrobials on theophylline pharmacokinetics.\" J Clin Pharmacol 29 (1989): 650-4",
+      "[22] Spivey JM, Laughlin PH, Goss TF, et al \"Theophylline toxicity secondary to ciprofloxacin administration.\" Ann Emerg Med 20 (1991): 1131-4",
+      "[23] Duraski RM \"Ciprofloxacin-induced theophylline toxicity.\" South Med J 81 (1988): 1206",
+      "[24] Bem JL, Mann RD \"Danger of interaction between ciprofloxacin and theophylline.\" Br Med J (Clin Res Ed) 296 (1988): 1131",
+      "[25] Edwards DJ, Bowles SK, Svensson CK, Rybak MJ \"Inhibition of drug metabolism by quinolone antibiotics.\" Clin Pharmacokinet 15 (1988): 194-204",
+      "[26] Wijnands GJ, Vree TB, Janssen TJ, Guelen PJ \"Drug-drug interactions affecting fluoroquinolones.\" Am J Med 87 (1989): s47-51",
+      "[27] Polk RE \"Drug-drug interactions with ciprofloxacin and other fluoroquinolones.\" Am J Med 87 (1989): s76-81",
+      "[28] Wijnands WJ, Vree TB, Baars AM, van Herwaarden CL \"Steady-state kinetics of the quinolone derivatives ofloxacin, enoxacin, ciprofloxacin and pefloxacin during maintneance treatment with theophylline.\" Drugs 34 (1987): 159-69",
+      "[29] Raoof S, Wollschlager C, Khan FA \"Ciprofloxacin increases serum levels of theophylline.\" Am J Med 82 (1987): 115-8",
+      "[30] Yuk JH, Nightingale CH, Sweeney KR, Quintiliani R, Lettieri JT, Forst RW \"Relative bioavailability in healthy volunteers of ciprofloxacin administered through a nasogastric tube with and without enteral feeding.\" Antimicrob Agents Chemother 33 (1989): 1118-20",
+      "[31] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+      "[32] Neuhofel AL, Wilton JH, Victory JM, Hejmanowsk LG, Amsden GW \"Lack of bioequivalence of ciprofloxacin when administered with calcium-fortified orange juice: a new twist on an old interaction.\" J Clin Pharmacol 42 (2002): 461-6",
+      "[33] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT.",
+      "[34] Yuk JH, Nightingale CH, Quintiliani R \"Absorption of ciprofloxacin administered through a nasogastric or a nasoduodenal tube in volunteers and patients receiving enteral nutrition.\" Diagn Microbiol Infect Dis 13 (1990): 99-102",
+      "[35] Noer BL, Angaran DW \"The effect of enteral feedings on ciprofloxacin pharmacokinetics.\" Pharmacotherapy 10 (1990): 254",
+      "[36] Sato J, Nakata H, Owada E, Kikuta T, Umetsu M, Ito K \"Influence of usual intake of dietary caffeine on single-dose kinetics of theophylline in healthy human subjects.\" Eur J Clin Pharmacol 44 (1993): 295-8",
+      "[37] Jonkman JH, Sollie FA, Sauter R, Steinijans VW \"The influence of caffeine on the steady-state pharmacokinetics of theophylline.\" Clin Pharmacol Ther 49 (1991): 248-55",
+      "[38] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67"
+    ],
+    "alternatives": {
+      "Theophylline": [
+        {
+          "name": "Omalizumab",
+          "ddinterId": "DDInter1337",
+          "atc": "R03D"
+        },
+        {
+          "name": "Tezepelumab",
+          "ddinterId": "DDInter2140",
+          "atc": "R03D"
+        },
+        {
+          "name": "Benralizumab",
+          "ddinterId": "DDInter2174",
+          "atc": "R03D"
+        },
+        {
+          "name": "Reslizumab",
+          "ddinterId": "DDInter2269",
+          "atc": "R03D"
+        },
+        {
+          "name": "Dyphylline",
+          "ddinterId": "DDInter613",
+          "atc": "R03D"
+        },
+        {
+          "name": "Mepolizumab",
+          "ddinterId": "DDInter2267",
+          "atc": "R03D"
+        },
+        {
+          "name": "Bromotheophylline",
+          "ddinterId": "DDInter244",
+          "atc": "R03D"
+        }
+      ],
+      "Ciprofloxacin": [
+        {
+          "name": "Tinidazole",
+          "ddinterId": "DDInter1811",
+          "atc": "J01R"
+        },
+        {
+          "name": "Cefepime",
+          "ddinterId": "DDInter317",
+          "atc": "J01R"
+        },
+        {
+          "name": "Secnidazole",
+          "ddinterId": "DDInter1649",
+          "atc": "J01R"
+        },
+        {
+          "name": "Cefixime",
+          "ddinterId": "DDInter319",
+          "atc": "J01R"
+        },
+        {
+          "name": "Levofloxacin",
+          "ddinterId": "DDInter1055",
+          "atc": "J01R"
+        },
+        {
+          "name": "Polymyxin B",
+          "ddinterId": "DDInter1489",
+          "atc": "J01R"
+        },
+        {
+          "name": "Chloramphenicol",
+          "ddinterId": "DDInter351",
+          "atc": "J01R"
+        },
+        {
+          "name": "Gentamicin",
+          "ddinterId": "DDInter815",
+          "atc": "J01R"
+        },
+        {
+          "name": "Chlorhexidine",
+          "ddinterId": "DDInter356",
+          "atc": "J01R"
+        },
+        {
+          "name": "Neomycin",
+          "ddinterId": "DDInter1277",
+          "atc": "J01R"
+        },
+        {
+          "name": "Gatifloxacin",
+          "ddinterId": "DDInter809",
+          "atc": "J01R"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Theophylline": {
+        "CYP1A2-inh": 0.236,
+        "CYP1A2-sub": 0.975,
+        "CYP2C19-inh": 0.023,
+        "CYP2C19-sub": 0.349,
+        "CYP2C9-inh": 0.005,
+        "CYP2C9-sub": 0.8340000000000001,
+        "CYP2D6-inh": 0.006,
+        "CYP2D6-sub": 0.069,
+        "CYP3A4-inh": 0.0289999999999999,
+        "CYP3A4-sub": 0.79,
+        "CYP2B6-inh": 0.981,
+        "CYP2B6-sub": 0.079,
+        "CYP2C8-inh": -4.957
+      },
+      "Ciprofloxacin": {
+        "CYP1A2-inh": 0.1009999999999999,
+        "CYP1A2-sub": 0.26,
+        "CYP2C19-inh": 0.061,
+        "CYP2C19-sub": 0.201,
+        "CYP2C9-inh": 0.094,
+        "CYP2C9-sub": 0.075,
+        "CYP2D6-inh": 0.033,
+        "CYP2D6-sub": 0.152,
+        "CYP3A4-inh": 0.011,
+        "CYP3A4-sub": 0.148,
+        "CYP2B6-inh": 0.999,
+        "CYP2B6-sub": 0.001,
+        "CYP2C8-inh": -5.269
+      }
+    }
+  },
+  "DDInter1951_DDInter900": {
+    "interactId": "10470",
+    "idA": "DDInter1951",
+    "idB": "DDInter900",
+    "drugA": "Warfarin",
+    "drugB": "Ibuprofen",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/10470/",
+    "references": [
+      "[1] Loftin JP, Vesell ES \"Interaction between sulindac and warfarin: different results in normal subjects and in an unusual patient with a potassium-losing renal tubular defect.\" J Clin Pharmacol 19 (1979): 733-42",
+      "[2] Gabb GM \"Fatal outcome of interaction between warfarin and a non-steroidal anti-inflammatory drug.\" Med J Aust 164 (1996): 700-1",
+      "[3] Penning-van Beest F, Erkens J, Petersen KU, Koelz HR, Herings R \"Main comedications associated with major bleeding during anticoagulant therapy with coumarins.\" Eur J Clin Pharmacol 61 (2005): 439-44",
+      "[4] Schafer AI \"Effects of nonsteroidal antiinflammatory drugs on platelet function and systemic hemostasis.\" J Clin Pharmacol 35 (1995): 209-19",
+      "[5] Stricker BH, Delhez JL \"Interaction between flurbiprofen and courmarins.\" Br Med J 285 (1982): 812-3",
+      "[6] Koch-Weser J, Sellers EM \"Drug interactions with coumarin anticoagulants (second of two parts).\" N Engl J Med 285 (1971): 547-58",
+      "[7] Bull J, Mackinnon J \"Phenylbutazone and anticoagulant control.\" Practitioner 215 (1975): 767-72",
+      "[8] O&#x27;Reilly RA, Goulart DA \"Comparative interaction of sulfinpyrazone and phenylbutazone with racemic warfarin: alteration in vivo of free fraction of plasma warfarin.\" J Pharmacol Exp Ther 219 (1981): 691-4",
+      "[9] Pardo A, GarciaLosa M, FernandezPavon A, delCastillo S, PascualGarcia T, GarciaMendez E, DalRe R \"A placebo-controlled study of interaction between nabumetone and acenocoumarol.\" Br J Clin Pharmacol 47 (1999): 441-4",
+      "[10] Self TH, Evans WE, Ferguson T \"Drug enhancement of warfarin activity.\" Lancet 2 (1975): 557-8",
+      "[11] Koren JF, Cochran DL, Janes RL \"Tolmetin-warfarin interaction.\" Am J Med 82 (1987): 1278-80",
+      "[12] Serlin MJ, Mossman S, Sibeon RG, Tempero KF, Breckeridge AM \"Interaction between diflunisal and warfarin.\" Clin Pharmacol Ther 28 (1980): 493-8",
+      "[13] Serlin MJ, Breckenridge AM \"Drug interactions with warfarin.\" Drugs 25 (1983): 610-20",
+      "[14] Davis LJ, Kayser SR, Hubsher J, Williams RL \"Effect of oxaprozin on the steady-state anticoagulant activity of warfarin.\" Clin Pharm 3 (1984): 295-7",
+      "[15] Rhodes RS, Rhodes PJ, Klein C, Sintek CD \"A warfarin-piroxicam drug interaction.\" Drug Intell Clin Pharm 19 (1985): 556-8",
+      "[16] Udall JA \"Drug interference with warfarin therapy.\" Clin Med 77 (1970): 20-5",
+      "[17] Dennis VC, Thomas BK, Hanlon JE \"Potentiation of oral anticoagulation and hemarthrosis associated with nabumetone.\" Pharmacotherapy 20 (2000): 234-9",
+      "[18] Mieszczak C, Winther K \"Lack of interaction of ketoprofen with warfarin.\" Eur J Clin Pharmacol 44 (1993): 205-6",
+      "[19] Cryst C, Hammar S \"Acute granulomatous interstitial nephritis due to co-trimoxazole.\" Am J Nephrol 8 (1988): 483-8",
+      "[20] Held H, Kaminski B, von Oldersausen HF \"Die beeinflussung der elimination von glycodiazin durch leber- und nierenfunctionssorungen und durch eine behandlung mit phenylbutazone, phenprocumarol und doxycyclin.\" Diabetologia 6 (1970): 386-91",
+      "[21] Knijff-Dutmer EA, Schut GA, van de Laar MA \"Concomitant coumarin-NSAID therapy and risk for bleeding.\" Ann Pharmacother 37 (2003): 12-6",
+      "[22] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[23] Buchanan GR, Martin V, Levine PH, et al \"The effects of \"anti-platelet\" drugs on bleeding time and platelet aggregation in normal human subjects.\" Am J Clin Pathol 68 (1977): 355-9",
+      "[24] Dahl SL, Ward JR \"Pharmacology, clinical efficacy, and adverse effects of piroxicam, a new nonsteroidal anti-inflammatory agent.\" Pharmacotherapy 2 (1982): 80-9",
+      "[25] Aggeler PM, O&#x27;Reilly RA, Leong L, Kowitz PE \"Potentiation of anticoagulant effect of warfarin by phenylbutazone.\" N Engl J Med 276 (1967): 496-501",
+      "[26] Ermer JC, Hicks DR, Wheeler SC, Kraml M, Jusko WJ \"Concomitant etodolac affects neither the unbound clearance nor the pharmacologic effect of warfarin.\" Clin Pharmacol Ther 55 (1994): 305-16",
+      "[27] Flessner MF, Knight H \"Prolongation of prothrombin time and severe gastrointestinal bleeding associated with combined use of warfarin and ketoprofen.\" JAMA 259 (1988): 353",
+      "[28] Schulman S, Henriksson K \"Interaction of ibuprofen and warfarin on primary haemostasis.\" Br J Rheumatol 28 (1989): 46-9",
+      "[29] Brouwers JRBJ, Desmet PAGM \"Pharmacokinetic-pharmacodynamic drug interactions with nonsteroidal anti-inflammatory drugs.\" Clin Pharmacokinet 27 (1994): 462-85",
+      "[30] Self TH, Soloway MS, Vaughn D \"Possible interaction of indomethacin and warfarin.\" Drug Intell Clin Pharm 12 (1978): 580-2",
+      "[31] Shorr RI, Ray WA, Daugherty JR, Griffin MR \"Concurrent use of nonsteroidal anti-inflammatory drugs and oral anticoagulants places elderly persons at high risk for hemorrhagic peptic ulcer disease.\" Arch Intern Med 153 (1993): 1665-70",
+      "[32] Kaufman DW, Kelly JP, Sheehan JE, Laszlo A, Wiholm BE, Alfredsson L, Koff RS, Shapiro S \"Nonsteroidal anti-inflammatory drug use in relation to major upper gastrointestinal bleeding.\" Clin Pharmacol Ther 53 (1993): 485-94",
+      "[33] O&#x27;Reilly RA \"Phenylbutazone and sulfinpyrazone interaction with oral anticoagulant phenprocoumon.\" Arch Intern Med 142 (1982): 1634-7",
+      "[34] \"Product Information. Mobic (meloxicam)\" Boehringer-Ingelheim, Ridgefield, CT.",
+      "[35] Ku LL, Ward CO, Durgin SJ \"A clinical study of drug interaction and anticoagulant therapy.\" Drug Intell Clin Pharm 4 (1970): 300-6",
+      "[36] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36",
+      "[37] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3",
+      "[38] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454",
+      "[39] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1",
+      "[40] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9",
+      "[41] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70",
+      "[42] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30",
+      "[43] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131",
+      "[44] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7",
+      "[45] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90",
+      "[46] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20",
+      "[47] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+      "[48] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800",
+      "[49] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[50] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):",
+      "[51] Agencia Espa\u00f1ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci\u00f3n online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+      "[52] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50",
+      "[53] O&#x27;Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1",
+      "[54] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55",
+      "[55] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6",
+      "[56] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7",
+      "[57] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17",
+      "[58] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1",
+      "[59] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6",
+      "[60] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7",
+      "[61] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70",
+      "[62] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5",
+      "[63] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6",
+      "[64] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3",
+      "[65] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5",
+      "[66] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4",
+      "[67] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4",
+      "[68] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6",
+      "[69] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362",
+      "[70] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174",
+      "[71] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557",
+      "[72] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70"
+    ],
+    "alternatives": {
+      "Warfarin": [
+        {
+          "name": "Protein C",
+          "ddinterId": "DDInter1542",
+          "atc": "B01A"
+        },
+        {
+          "name": "Selexipag",
+          "ddinterId": "DDInter1656",
+          "atc": "B01A"
+        }
+      ],
+      "Ibuprofen": [
+        {
+          "name": "Ritodrine",
+          "ddinterId": "DDInter1606",
+          "atc": "G02C"
+        },
+        {
+          "name": "Bremelanotide",
+          "ddinterId": "DDInter227",
+          "atc": "G02C"
+        },
+        {
+          "name": "Flibanserin",
+          "ddinterId": "DDInter741",
+          "atc": "G02C"
+        },
+        {
+          "name": "Black cohosh",
+          "ddinterId": "DDInter1993",
+          "atc": "G02C"
+        },
+        {
+          "name": "Bromocriptine",
+          "ddinterId": "DDInter243",
+          "atc": "G02C"
+        },
+        {
+          "name": "Regadenoson",
+          "ddinterId": "DDInter1575",
+          "atc": "G02C"
+        },
+        {
+          "name": "Ivabradine",
+          "ddinterId": "DDInter996",
+          "atc": "G02C"
+        },
+        {
+          "name": "Tolazoline",
+          "ddinterId": "DDInter1827",
+          "atc": "G02C"
+        },
+        {
+          "name": "Dimethyl sulfoxide",
+          "ddinterId": "DDInter565",
+          "atc": "G02C"
+        },
+        {
+          "name": "Povidone-iodine",
+          "ddinterId": "DDInter2256",
+          "atc": "G02C"
+        },
+        {
+          "name": "Bacitracin",
+          "ddinterId": "DDInter161",
+          "atc": "G02C"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Warfarin": {
+        "CYP1A2-inh": 0.452,
+        "CYP1A2-sub": 0.941,
+        "CYP2C19-inh": 0.909,
+        "CYP2C19-sub": 0.89,
+        "CYP2C9-inh": 0.92,
+        "CYP2C9-sub": 0.966,
+        "CYP2D6-inh": 0.026,
+        "CYP2D6-sub": 0.6,
+        "CYP3A4-inh": 0.2289999999999999,
+        "CYP3A4-sub": 0.836,
+        "CYP2B6-inh": 0.99,
+        "CYP2B6-sub": 0.016,
+        "CYP2C8-inh": -4.763999999999999
+      },
+      "Ibuprofen": {
+        "CYP1A2-inh": 0.079,
+        "CYP1A2-sub": 0.317,
+        "CYP2C19-inh": 0.057,
+        "CYP2C19-sub": 0.91,
+        "CYP2C9-inh": 0.416,
+        "CYP2C9-sub": 0.982,
+        "CYP2D6-inh": 0.004,
+        "CYP2D6-sub": 0.1009999999999999,
+        "CYP3A4-inh": 0.0139999999999999,
+        "CYP3A4-sub": 0.195,
+        "CYP2B6-inh": 0.002,
+        "CYP2B6-sub": 0.0,
+        "CYP2C8-inh": -4.377
+      }
+    }
+  },
+  "DDInter1951_DDInter384": {
+    "interactId": "66381",
+    "idA": "DDInter1951",
+    "idB": "DDInter384",
+    "drugA": "Warfarin",
+    "drugB": "Ciprofloxacin",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/66381/",
+    "references": [
+      "[1] Arnold LM, Nissen LR, Ng TM \"Moxifloxacin and warfarin: additional evidence for a clinically relevant interaction.\" Pharmacotherapy 25 (2005): 904-7",
+      "[2] Bianco TM, Bussey HI, Farnett LE, Linn WD, Roush MK, Wong YW \"Potential warfarin-ciprofloxacin interaction in patients receiving long-term anticoagulation.\" Pharmacotherapy 12 (1992): 435-9",
+      "[3] Glasheen JJ, Fugit RV, Prochazka AV \"Effect of levofloxacin coadministration on the international normalized ratios during warfarin therapy--a comment.\" Pharmacotherapy 23 (2003): 1079-80; discussion 1080",
+      "[4] Jolson HM, Tanner LA, Green L, Grasela TH \"Adverse reaction reporting of interaction between warfarin and fluoroquinolones.\" Arch Intern Med 151 (1991): 1003-4",
+      "[5] \"Product Information. Zagam (sparfloxacin).\" Rhone-Poulenc Rorer, Collegeville, PA.",
+      "[6] Kaplan DS \"Norfloxacin and protime elevation.\" Am J Gastroenterol 85 (1990): 901",
+      "[7] Israel DS, Stotka J, Rock W, Sintek CD, Kamada AK, Klein C, Swaim WR, Pluhar RE, Toscano JP, Lettieri JT, Heller AH, Pol \"Effect of ciprofloxacin on the pharmacokinetics and pharmacodynamics of warfarin.\" Clin Infect Dis 22 (1996): 251-6",
+      "[8] Artymowicz RJ, Cino BJ, Rossi JG, Walker JL, Moore S \"Possible interaction between gatifloxacin and warfarin.\" Am J Health Syst Pharm 59 (2002): 1205-6",
+      "[9] \"Product Information. Levaquin (levofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ.",
+      "[10] Morawiecka I, Djelouah I, Wilcox D \"Fluoroquinolones and warfarin: suspected interactions. Available from: URL: http://www.hc-sc.gc.ca/hpfb-dgpsa/tpd-dpt/adrv14n3_e.html.\" ([2004 July]):",
+      "[11] Ellis RJ, Mayo MS, Bodensteiner DM \"Ciprofloxacin-warfarin coagulopathy: A case series.\" Am J Hematol 63 (2000): 28-31",
+      "[12] Visser LE, Penning-Van Bees FJ, Harrie Kasbergen AA, et al. \"Overanticoagulation associated with combined use of antibacterial drugs and acenocoumarol or phenprocoumon anticoagulants.\" Thromb Haemost 88 (2002): 705-10",
+      "[13] Davey PG \"Overview of drug interactions with the quinolones.\" J Antimicrob Chemother 22(suppl c) (1988): 97-107",
+      "[14] \"Product Information. Cipro (ciprofloxacin).\" Bayer, West Haven, CT.",
+      "[15] Davy M, Bird N, Rost KL, Fuder H \"Lack of effect of gemifloxacin on the steady-state pharmacodynamics of warfarin in healthy volunteers.\" Chemotherapy 45 (1999): 491-5",
+      "[16] Edwards DJ, Bowles SK, Svensson CK, Rybak MJ \"Inhibition of drug metabolism by quinolone antibiotics.\" Clin Pharmacokinet 15 (1988): 194-204",
+      "[17] \"Product Information. Cinobac (cinoxacin).\" Oclassen Pharmaceuticals Inc, San Rafael, CA.",
+      "[18] \"Product Information. Floxin (ofloxacin).\" Ortho Pharmaceutical Corporation, Raritan, NJ.",
+      "[19] Glasheen JJ, Fugit RV, Prochazka AV \"The risk of overanticoagulation with antibiotic use in outpatients on stable warfarin regimens.\" J Gen Intern Med 20 (2005): 653-6",
+      "[20] Yildiz F, Kurtaran B, Cayli M, Candevir A, Sumbul Z \"A significant interaction between moxifloxacin and warfarin in a patient with a mitral bioprosthetic valve.\" Heart Vessels 23 (2008): 286-8",
+      "[21] Gleckman R, Alvarez S, Joubert DW, Matthews SJ \"Drug therapy reviews: nalidixic acid.\" Am J Hosp Pharm 36 (1979): 1071-6",
+      "[22] Jones CB, Fugate SE \"Levofloxacin and warfarin interaction.\" Ann Pharmacother 36 (2002): 1554-7",
+      "[23] \"Product Information. Penetrex (enoxacin).\" Rhone-Poulenc Rorer, Collegeville, PA.",
+      "[24] Potasman I, Bassan H \"Nicoumalone and nalidixic acid interaction.\" Ann Intern Med 92 (1980): 571",
+      "[25] Millar E, Coles S, Wyld P, Nimmo W \"Temafloxacin does not potentiate the anticoagulant effect of warfarin in healthy subjects.\" Clin Pharmacokinet 22(Suppl 1) (1992): 102-6",
+      "[26] Rindone JP, Kelley CL, Jones WN, Garewell HS \"Hypoprothrombinemic effect of warfarin not influenced by ciprofloxacin.\" Clin Pharm 10 (1991): 136-8",
+      "[27] Leor J, Levartowsky D, Sharon C \"Interaction between nalidixic acid and warfarin.\" Ann Intern Med 107 (1987): 601",
+      "[28] Rocci ML Jr, Vlasses PH, Distelrath LM, et al \"Norfloxacin does not alter warfarin&#x27;s disposition or anticoagulant effect.\" J Clin Pharmacol 30 (1990): 728-32",
+      "[29] Efthymiopoulos C, Bramer SL, Maroli A, Blum B \"Theophylline and warfarin interaction studies with grepafloxacin.\" Clin Pharmacokinet 33(Suppl 1) (1997): 39-46",
+      "[30] \"Product Information. Trovan (trovafloxacin).\" Pfizer US Pharmaceuticals, New York, NY.",
+      "[31] McLeod AD, Burgess C \"Drug interaction between warfarin and enoxacin.\" N Z Med J 101 (1988): 216",
+      "[32] Gheno G, Cinetto L \"Levofloxacin-warfarin interaction.\" Eur J Clin Pharmacol 57 (2001): 427",
+      "[33] Chock AW, Stading JA \"Indeterminable International Normalized Ratio with concurrent use of warfarin and gatifloxacin.\" Am J Health Syst Pharm 63 (2006): 1539-42",
+      "[34] Yamreudeewong W, Lower DL, Kilpatrick DM, Enlow AM, Burrows MM, Greenwood MC \"Effect of levofloxacin coadministration on the international normalized ratios during warfarin therapy.\" Pharmacotherapy 23 (2003): 333-8",
+      "[35] Liao S, Palmer M, Fowler C, Nayak RK \"Absence of an effect of levofloxacin on warfarin pharmacokinetics and anticoagulation in male volunteers.\" J Clin Pharmacol 36 (1996): 1072-7",
+      "[36] Mathews S, Cole J, Ryono RA \"Anticoagulation-related outcomes in patients receiving warfarin after starting levofloxacin or gatifloxacin.\" Pharmacotherapy 26 (2006): 1446-52",
+      "[37] \"Product Information. Noroxin (norfloxacin).\" Merck &amp; Co, Inc, West Point, PA.",
+      "[38] Baciewicz AM, Ashar BH, Locke TW \"Interaction of ofloxacin and warfarin.\" Ann Intern Med 119 (1993): 1223",
+      "[39] Loeliger EA, van der Esch B, Mattern MJ, Hemker HC \"The biological disappearance rate of prothrombin, factors VII, IX and X from plasma in hypothyroidism, hyperthyroidism, and during fever.\" Thromb Diath Haemorrh 10 (1963): 267-77",
+      "[40] Leor J, Matezki S \"Ofloxacin and warfarin.\" Ann Intern Med 109 (1988): 761",
+      "[41] Kamada AK \"Possible interaction between ciprofloxacin and warfarin.\" DICP 24 (1990): 27-8",
+      "[42] Linville D, Emory C, Graves L \"Ciprofloxacin and warfarin interaction.\" Am J Med 90 (1991): 765",
+      "[43] Roush MK, Bussey HL, Bianco TM \"Do fluoroquinolones alter the effects of warfarin therapy?\" Arch Intern Med 152 (1992): 1533-4",
+      "[44] Renzi R, Finkbeiner S \"Ciprofloxacin interaction with sodium warfarin: a potentially dangerous side effect.\" Am J Emerg Med 9 (1991): 551-2",
+      "[45] Toon S, Hopkins KJ, Garstang FM, et al \"Enoxacin-warfarin interaction: pharmacokinetic and stereochemical aspects.\" Clin Pharmacol Ther 42 (1987): 33-41",
+      "[46] Ravnan SL, Locke C \"Levofloxacin and warfarin interaction.\" Pharmacotherapy 21 (2001): 884-5",
+      "[47] \"Product Information. Tequin (gatifloxacin)\" Bristol-Myers Squibb, Princeton, NJ.",
+      "[48] \"Product Information. Maxaquin (lomefloxacin).\" Searle, Skokie, IL.",
+      "[49] Randinitis EJ, Alvey CW, Koup JR, et al. \"Drug interactions with clinafloxacin.\" Antimicrob Agents Chemother 45 (2001): 2543-52",
+      "[50] \"Product Information. Avelox (moxifloxacin)\" Bayer, West Haven, CT.",
+      "[51] Marchbanks CR \"Drug-drug interactions with fluoroquinolones.\" Pharmacotherapy 13 (1993): s23-8",
+      "[52] Andriole VT, Haverstock DC, Choudhri SH \"Retrospective analysis of the safety profile of oral moxifloxacin in elderly patients enrolled in clinical trials.\" Drug Saf 28 (2005): 443-52",
+      "[53] Penning-van Beest F, Erkens J, Petersen KU, Koelz HR, Herings R \"Main comedications associated with major bleeding during anticoagulant therapy with coumarins.\" Eur J Clin Pharmacol 61 (2005): 439-44",
+      "[54] Goel K, Menzies D, Cunha BA \"Elevated international normalized ratio associated with trovafloxacin.\" Ann Intern Med 131 (1999): 72",
+      "[55] \"Product Information. NegGram (nalidixic acid).\" Sanofi Winthrop Pharmaceuticals, New York, NY.",
+      "[56] McCall KL, Scott JC, Anderson HG \"Retrospective evaluation of a possible interaction between warfarin and levofloxacin.\" Pharmacotherapy 25 (2005): 67-73",
+      "[57] Mott FE, Murphy S, Hunt V \"Ciprofloxacin and warfarin.\" Ann Intern Med 111 (1989): 542-3",
+      "[58] Stroud LF, Mamdami MM, Kopp A, Bell CM \"The safety of levofloxacin in elderly patients on warfarin.\" Am J Med 118 (2005): 1417",
+      "[59] \"Product Information. Raxar (grepafloxacin).\" Glaxo Wellcome, Research Triangle Park, NC.",
+      "[60] Elbe DH, Chang SW \"Moxifloxacin-warfarin interaction: a series of five case reports.\" Ann Pharmacother 39 (2005): 361-4",
+      "[61] Linville T, Matanin D \"Norfloxacin and warfarin.\" Ann Intern Med 110 (1989): 751-2",
+      "[62] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36",
+      "[63] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3",
+      "[64] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454",
+      "[65] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1",
+      "[66] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9",
+      "[67] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70",
+      "[68] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30",
+      "[69] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131",
+      "[70] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7",
+      "[71] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90",
+      "[72] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20",
+      "[73] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+      "[74] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800",
+      "[75] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[76] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):",
+      "[77] Agencia Espa\u00f1ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci\u00f3n online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+      "[78] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50",
+      "[79] O&#x27;Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1",
+      "[80] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55",
+      "[81] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6",
+      "[82] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7",
+      "[83] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17",
+      "[84] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1",
+      "[85] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6",
+      "[86] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7",
+      "[87] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70",
+      "[88] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5",
+      "[89] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6",
+      "[90] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3",
+      "[91] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5",
+      "[92] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4",
+      "[93] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4",
+      "[94] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6",
+      "[95] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362",
+      "[96] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174",
+      "[97] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557",
+      "[98] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70"
+    ],
+    "alternatives": {
+      "Ciprofloxacin": [
+        {
+          "name": "Amikacin",
+          "ddinterId": "DDInter66",
+          "atc": "J01R"
+        },
+        {
+          "name": "Secnidazole",
+          "ddinterId": "DDInter1649",
+          "atc": "J01R"
+        },
+        {
+          "name": "Polymyxin B",
+          "ddinterId": "DDInter1489",
+          "atc": "J01R"
+        },
+        {
+          "name": "Delafloxacin",
+          "ddinterId": "DDInter495",
+          "atc": "J01R"
+        },
+        {
+          "name": "Polymyxin B",
+          "ddinterId": "DDInter1489",
+          "atc": "J01R"
+        },
+        {
+          "name": "Rifamycin",
+          "ddinterId": "DDInter1591",
+          "atc": "J01R"
+        },
+        {
+          "name": "Ganciclovir",
+          "ddinterId": "DDInter806",
+          "atc": "J01R"
+        },
+        {
+          "name": "Rifamycin",
+          "ddinterId": "DDInter1591",
+          "atc": "J01R"
+        },
+        {
+          "name": "Kanamycin",
+          "ddinterId": "DDInter1004",
+          "atc": "J01R"
+        },
+        {
+          "name": "Netilmicin",
+          "ddinterId": "DDInter1283",
+          "atc": "J01R"
+        },
+        {
+          "name": "Polymyxin B",
+          "ddinterId": "DDInter1489",
+          "atc": "J01R"
+        }
+      ],
+      "Warfarin": [
+        {
+          "name": "Ticagrelor",
+          "ddinterId": "DDInter1802",
+          "atc": "B01A"
+        },
+        {
+          "name": "Betrixaban",
+          "ddinterId": "DDInter200",
+          "atc": "B01A"
+        },
+        {
+          "name": "Rivaroxaban",
+          "ddinterId": "DDInter1609",
+          "atc": "B01A"
+        },
+        {
+          "name": "Iloprost",
+          "ddinterId": "DDInter908",
+          "atc": "B01A"
+        },
+        {
+          "name": "Lepirudin",
+          "ddinterId": "DDInter1037",
+          "atc": "B01A"
+        },
+        {
+          "name": "Urokinase",
+          "ddinterId": "DDInter1905",
+          "atc": "B01A"
+        },
+        {
+          "name": "Cangrelor",
+          "ddinterId": "DDInter283",
+          "atc": "B01A"
+        },
+        {
+          "name": "Caplacizumab",
+          "ddinterId": "DDInter286",
+          "atc": "B01A"
+        },
+        {
+          "name": "Argatroban",
+          "ddinterId": "DDInter117",
+          "atc": "B01A"
+        },
+        {
+          "name": "Prasugrel",
+          "ddinterId": "DDInter1508",
+          "atc": "B01A"
+        },
+        {
+          "name": "Desirudin",
+          "ddinterId": "DDInter505",
+          "atc": "B01A"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Ciprofloxacin": {
+        "CYP1A2-inh": 0.1009999999999999,
+        "CYP1A2-sub": 0.26,
+        "CYP2C19-inh": 0.061,
+        "CYP2C19-sub": 0.201,
+        "CYP2C9-inh": 0.094,
+        "CYP2C9-sub": 0.075,
+        "CYP2D6-inh": 0.033,
+        "CYP2D6-sub": 0.152,
+        "CYP3A4-inh": 0.011,
+        "CYP3A4-sub": 0.148,
+        "CYP2B6-inh": 0.999,
+        "CYP2B6-sub": 0.001,
+        "CYP2C8-inh": -5.269
+      },
+      "Warfarin": {
+        "CYP1A2-inh": 0.452,
+        "CYP1A2-sub": 0.941,
+        "CYP2C19-inh": 0.909,
+        "CYP2C19-sub": 0.89,
+        "CYP2C9-inh": 0.92,
+        "CYP2C9-sub": 0.966,
+        "CYP2D6-inh": 0.026,
+        "CYP2D6-sub": 0.6,
+        "CYP3A4-inh": 0.2289999999999999,
+        "CYP3A4-sub": 0.836,
+        "CYP2B6-inh": 0.99,
+        "CYP2B6-sub": 0.016,
+        "CYP2C8-inh": -4.763999999999999
+      }
+    }
+  },
+  "DDInter1951_DDInter76": {
+    "interactId": "21901",
+    "idA": "DDInter1951",
+    "idB": "DDInter76",
+    "drugA": "Warfarin",
+    "drugB": "Amiodarone",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/21901/",
+    "references": [
+      "[1] Fondevila C, Meschengieser S, Lazzari M \"Amiodarone-acenocoumarin interaction.\" Thromb Haemost 65 (1991): 328",
+      "[2] Cheung B, Lam FM, Kumana CR \"Lesson of the week: insidiously evolving, occult drug interaction involving warfarin and amiodarone.\" BMJ 312 (1996): 107-8",
+      "[3] Shirolkar SC, Fiuzat M, Becker RC \"Dronedarone and vitamin K antagonists: A review of drug-drug interactions.\" Am Heart J 160 (2010): 577-82",
+      "[4] Hamer A, Peter T, Mandel WJ, et al \"The potentiation of warfarin anticoagulation by amiodarone.\" Circulation 65 (1982): 1025-9",
+      "[5] Serlin MJ, Sibeon RG, Breen GJ \"Dangers of amiodarone and anticoagulant treatment.\" Br Med J (Clin Res Ed) 283 (1981): 58",
+      "[6] Kerin NZ, Blevins RD, Goldman L, et al \"The incidence, magnitude, and time course of the amiodarone-warfarin interaction.\" Arch Intern Med 148 (1988): 1779-81",
+      "[7] Jafari-Fesharaki M, Scheinman MM \"Adverse effects of amiodarone.\" Pacing Clin Electrophysiol 21 (1998): 108-20",
+      "[8] Thijssen HH, Flin ois JP, Beaune PH \"Cytochrome P4502C9 is the principal catalyst of racemic acenocoumarol hydroxylation reactions in human liver microsomes.\" Drug Metab Dispos 28 (2000): 1284-90",
+      "[9] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[10] Caraco Y, Chajek-Shaul T \"The incidence and clinical significance of amiodarone and acenocoumarol interaction.\" Thromb Haemost 62 (1989): 906-8",
+      "[11] Heimark LD, Wienkers L, Kunze K, et al \"The mechanism of the interaction between amiodarone and warfarin in humans.\" Clin Pharmacol Ther 51 (1992): 398-407",
+      "[12] Gill J, Heel RC, Fitton A \"Amiodarone: an overview of its pharmacological properties, and review of its therapeutic use in cardiac arrhythmias.\" Drugs 43 (1992): 69-110",
+      "[13] Neyroz P, Bonati M \"In vitro amiodarone protein binding and its interaction with warfarin.\" Experientia 41 (1985): 361-3",
+      "[14] Libersa CC, Brique SA, Motte KB, et al. \"Dramatic inhibition of amiodarone metabolism induced by grapefruit juice.\" Br J Clin Pharmacol 49 (2000): 373-8",
+      "[15] Meng X, Mojaverian P, Doedee M, Lin E, Weinryb I, Chiang ST, Kowey PR \"Bioavailability of Amiodarone tablets administered with and without food in healthy subjects.\" Am J Cardiol 87 (2001): 432-5",
+      "[16] \"Product Information. Cordarone (amiodarone).\" Wyeth-Ayerst Laboratories, Philadelphia, PA.",
+      "[17] Guo LQ, Yamazoe Y \"Inhibition of cytochrome P450 by furanocoumarins in grapefruit juice and herbal medicines.\" Acta Pharmacol Sin 25 (2004): 129-36",
+      "[18] Bodiford AB, Kessler FO, Fermo JD, Ragucci KR \"Elevated international normalized ratio with the consumption of grapefruit and use of warfarin.\" SAGE Open Med Case Rep 0 (2013): 1-3",
+      "[19] Suvarna R, Pirmohamed M, Henderson L \"Possible interaction between warfarin and cranberry juice.\" BMJ 327 (2003): 1454",
+      "[20] Beckey NP, Korman LB, Parra D \"Effect of the moderate consumption of olestra in patients receiving long-term warfarin therapy.\" Pharmacotherapy 19 (1999): 1075-9",
+      "[21] Lee M, Schwartz RN, Sharifi R \"Warfarin resistance and vitamin K.\" Ann Intern Med 94 (1981): 140-1",
+      "[22] Sullivan DM, Ford MA, Boyden TW \"Grapefruit juice and the response to warfarin.\" Am J Health Syst Pharm 55 (1998): 1581-3",
+      "[23] Brandin H, Myrberg O, Rundlof T, Arvidsson AK, Brenning G \"Adverse effects by artificial grapefruit seed extract products in patients on warfarin therapy.\" Eur J Clin Pharmacol 63 (2007): 565-70",
+      "[24] Harrell CC, Kline SS \"Vitamin K-supplemented snacks containing olestra: Implication for patients taking warfarin.\" Jama J Am Med Assn 282 (1999): 1133-4",
+      "[25] Westfall LK \"An unrecognized cause of warfarin resistance.\" Drug Intell Clin Pharm 15 (1981): 131",
+      "[26] Grant P \"Warfarin and cranberry juice: an interaction?\" J Heart Valve Dis 13 (2004): 25-6",
+      "[27] Walker FB \"Myocardial infarction after diet-induced warfarin resistance.\" Arch Intern Med 144 (1984): 2089-90",
+      "[28] Pedersen FM, Hamberg O, Hess K, Ovesen L \"The effect of dietary vitamin K on warfarin-induced anticoagulation.\" J Intern Med 229 (1991): 517-20",
+      "[29] Ge B, Zhang Z, Zuo Z \"Updates on the clinical evidenced herb-warfarin interactions.\" Evid Based Complement Alternat Med 2014 (2014): 957362",
+      "[30] Griffith LD, Olvey SE, Triplett WC \"Increasing prothrombin times in a warfarin-treated patient upon withdrawal of ensure plus.\" Crit Care Med 10 (1982): 799-800",
+      "[31] Wells PS, Holbrook AM, Crowther NR, Hirsh J \"Interactions of warfarin with drugs and food.\" Ann Intern Med 121 (1994): 676-83",
+      "[32] Agencia Espa\u00f1ola de Medicamentos y Productos Sanitarios Healthcare \"Centro de informaci\u00f3n online de medicamentos de la AEMPS - CIMA. Available from: URL: https://cima.aemps.es/cima/publico/home.html.\" ([2018]):",
+      "[33] Zallman JA, Lee DP, Jeffrey PL \"Liquid nutrition as a cause of warfarin resistance.\" Am J Hosp Pharm 38 (1981): 1174",
+      "[34] Watson AJ, Pegg M, Green JR \"Enteral feeds may antagonise warfarin.\" Br Med J 288 (1984): 557",
+      "[35] Kuykendall JR, Houle MD, Rhodes RS \"Possible warfarin failure due to interaction with smokeless tobacco.\" Ann Pharmacother 38 (2004): 595-7",
+      "[36] Wohlt PD, Zheng L, Gunderson S, Balzar SA, Johnson BD, Fish JT \"Recommendations for the use of medications with continuous enteral nutrition.\" Am J Health Syst Pharm 66 (2009): 1438-67",
+      "[37] Andersen P, Godal HC \"Predictable reduction in anticoagulant activity of warfarin by small amounts of vitamin K.\" Acta Med Scand 198 (1975): 269-70",
+      "[38] MHRA. Mediciines and Healthcare products Regulatory Agency. Committee on Safety of Medicines \"Possible interaction between warfarin and cranberry juice. Available from: URL: http://medicines.mhra.gov.uk/ourwork/monitorsafequalmed/currentproblems/currentproblems.htm.\" ([2003 Sept]):",
+      "[39] Karlson B, Leijd B, Hellstrom K \"On the influence of vitamin K-rich vegetables and wine on the effectiveness of warfarin treatment.\" Acta Med Scand 220 (1986): 347-50",
+      "[40] O&#x27;Reilly RA, Rytand DA \"\"Resistance\" to warfarin due to unrecognized vitamin K supplementation.\" N Engl J Med 303 (1980): 160-1",
+      "[41] Kempin SJ \"Warfarin resistance caused by broccoli.\" N Engl J Med 308 (1983): 1229-30",
+      "[42] Cambria-Kiely JA \"Effect of soy milk on warfarin efficacy.\" Ann Pharmacother 36 (2002): 1893-6",
+      "[43] Chow WH, Chow TC, Tse TM, Tai YT, Lee WT \"Anticoagulation instability with life-threatening complication after dietary modification.\" Postgrad Med J 66 (1990): 855-7",
+      "[44] Hamann GL, Campbell JD, George CM \"Warfarin-cranberry juice interaction.\" Ann Pharmacother 45 (2011): e17",
+      "[45] MacLeod SM, Sellers EM \"Pharmacodynamic and pharmacokinetic drug interactions with coumarin anticoagulants.\" Drugs 11 (1976): 461-70",
+      "[46] Jarvis S, Li C, Bogle RG \"Possible interaction between pomegranate juice and warfarin.\" Emerg Med J 27 (2010): 74-5",
+      "[47] Kazmier FJ, Spittell JA Jr \"Coumarin drug interactions.\" Mayo Clin Proc 45 (1970): 249-55",
+      "[48] Monterrey-Rodriguez J \"Interaction between warfarin and mango fruit.\" Ann Pharmacother 36 (2002): 940-1",
+      "[49] Roberts D, Flanagan P \"Case report: Cranberry juice and warfarin.\" Home Healthc Nurse 29 (2011): 92-7",
+      "[50] Griffiths AP, Beddall A, Pegler S \"Fatal haemopericardium and gastrointestinal haemorrhage due to possible interaction of cranberry juice with warfarin.\" J R Soc Health 128 (2008): 324-6",
+      "[51] Parr MD, Record KE, Griffith GL, et al \"Effect of enteral nutrition on warfarin therapy.\" Clin Pharm 1 (1982): 274-6",
+      "[52] Howard PA, Hannaman KN \"Warfarin resistance linked to enteral nutrition products.\" J Am Diet Assoc 85 (1985): 713-5",
+      "[53] Rindone JP, Murphy TW \"Warfarin-cranberry juice interaction resulting in profound hypoprothrombinemia and bleeding.\" Am J Ther 13 (2006): 283-4"
+    ],
+    "alternatives": {
+      "Warfarin": [
+        {
+          "name": "Iloprost",
+          "ddinterId": "DDInter908",
+          "atc": "B01A"
+        },
+        {
+          "name": "Lepirudin",
+          "ddinterId": "DDInter1037",
+          "atc": "B01A"
+        },
+        {
+          "name": "Urokinase",
+          "ddinterId": "DDInter1905",
+          "atc": "B01A"
+        },
+        {
+          "name": "Cangrelor",
+          "ddinterId": "DDInter283",
+          "atc": "B01A"
+        },
+        {
+          "name": "Dipyridamole",
+          "ddinterId": "DDInter573",
+          "atc": "B01A"
+        },
+        {
+          "name": "Caplacizumab",
+          "ddinterId": "DDInter286",
+          "atc": "B01A"
+        },
+        {
+          "name": "Argatroban",
+          "ddinterId": "DDInter117",
+          "atc": "B01A"
+        },
+        {
+          "name": "Prasugrel",
+          "ddinterId": "DDInter1508",
+          "atc": "B01A"
+        },
+        {
+          "name": "Desirudin",
+          "ddinterId": "DDInter505",
+          "atc": "B01A"
+        },
+        {
+          "name": "Eptifibatide",
+          "ddinterId": "DDInter659",
+          "atc": "B01A"
+        },
+        {
+          "name": "Streptokinase",
+          "ddinterId": "DDInter1712",
+          "atc": "B01A"
+        }
+      ],
+      "Amiodarone": [
+        {
+          "name": "Tocainide",
+          "ddinterId": "DDInter1823",
+          "atc": "C01B"
+        },
+        {
+          "name": "Bretylium",
+          "ddinterId": "DDInter229",
+          "atc": "C01B"
+        },
+        {
+          "name": "Ibutilide",
+          "ddinterId": "DDInter901",
+          "atc": "C01B"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Warfarin": {
+        "CYP1A2-inh": 0.452,
+        "CYP1A2-sub": 0.941,
+        "CYP2C19-inh": 0.909,
+        "CYP2C19-sub": 0.89,
+        "CYP2C9-inh": 0.92,
+        "CYP2C9-sub": 0.966,
+        "CYP2D6-inh": 0.026,
+        "CYP2D6-sub": 0.6,
+        "CYP3A4-inh": 0.2289999999999999,
+        "CYP3A4-sub": 0.836,
+        "CYP2B6-inh": 0.99,
+        "CYP2B6-sub": 0.016,
+        "CYP2C8-inh": -4.763999999999999
+      },
+      "Amiodarone": {
+        "CYP1A2-inh": 0.92,
+        "CYP1A2-sub": 0.935,
+        "CYP2C19-inh": 0.108,
+        "CYP2C19-sub": 0.417,
+        "CYP2C9-inh": 0.095,
+        "CYP2C9-sub": 0.7659999999999999,
+        "CYP2D6-inh": 0.8540000000000001,
+        "CYP2D6-sub": 0.903,
+        "CYP3A4-inh": 0.357,
+        "CYP3A4-sub": 0.626,
+        "CYP2B6-inh": 0.996,
+        "CYP2B6-sub": 0.999,
+        "CYP2C8-inh": -5.396
+      }
+    }
+  },
+  "DDInter20_DDInter900": {
+    "interactId": "10165",
+    "idA": "DDInter20",
+    "idB": "DDInter900",
+    "drugA": "Acetylsalicylic acid",
+    "drugB": "Ibuprofen",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/10165/",
+    "references": [
+      "[1] Wilner KD, Rushing M, Walden C, et al. \"Celecoxib does not affect the antiplatelet activity of aspirin in healthy volunteers.\" J Clin Pharmacol 42 (2002): 1027-30",
+      "[2] Livio M, Del Maschio A, Cerletti C, de Gaetano G \"Indomethacin prevents the long-lasting inhibitory effect of aspirin on human platelet cyclo-oxygenase activity.\" Prostaglandins 23 (1982): 787-96",
+      "[3] Grennan DM, Ferry DG, Ashworth ME, Kenny RE, Mackinnnon M \"The aspirin-ibuprofen interaction in rheumatoid arthritis.\" Br J Clin Pharmacol 8 (1979): 497-503",
+      "[4] FDA. U.S. Food and Drug Administration \"Information for healthcare professionals: concomitant use of ibuprofen and aspirin. New information [9/2006] - concomitant use of ibuprofen and aspirin. Available from: URL: http://www.fda.gov/Drugs/DrugSafety/PostmarketDrugSafetyInformationforPatientsand\" ([2006 Sept]):",
+      "[5] Capone ML, Sciulli MG, Tacconelli S, et al. \"Pharmacodynamic interaction of naproxen with low-dose aspirin in healthy subjects.\" J Am Coll Cardiol 45 (2005): 1295-301",
+      "[6] Kurth T, Glynn RJ, Walker AM, et al. \"Inhibition of clinical benefits of aspirin on first myocardial infarction by nonsteroidal antiinflammatory drugs.\" Circulation 108 (2003): 1191-5",
+      "[7] Rao GH, Johnson GG, Reddy KR, White JG \"Ibuprofen protects platelet cycloosygenase from irreversible inhibition by aspirin.\" Arteriosclerosis 3 (1983): 383-8",
+      "[8] Cryer B, Berlin RG, Cooper SA, Hsu C, Wason S \"Double-blind, randomized, parallel, placebo-controlled study of ibuprofen effects on thromboxane B(2) concentrations in aspirin-tereated healthy adult volunteers.\" Clin Ther 27 (2005): 185-91",
+      "[9] Catella-Lawson F, Reilly MP, Kapoor SC, et al. \"Cyclooxygenase inhibitors and the antiplatelet effects of aspirin.\" N Engl J Med 345 (2001): 1809-17",
+      "[10] \"Concomitant use of ibuprofen and aspirin.\" J Pain Palliat Care Pharmacother 21 (2007): 73-4",
+      "[11] MacDonald TM, Wei L \"Effect of ibuprofen on cardioprotective effect of aspirin.\" Lancet 361 (2003): 573-4",
+      "[12] Schafer AI \"Effects of nonsteroidal antiinflammatory drugs on platelet function and systemic hemostasis.\" J Clin Pharmacol 35 (1995): 209-19",
+      "[13] Gladding PA, Webster MW, Farrell HB, Zeng IS, Park R, Ruijne N \"The antiplatelet effect of six non-steroidal anti-inflammatory drugs and their pharmacodynamic interaction with aspirin in healthy volunteers.\" Am J Cardiol 101 (2008): 1060-3",
+      "[14] Kimmel SE, Berlin JA, Reilly M, et al. \"The effects of nonselective non-aspirin non-steroidal anti-inflammatory medications on the risk of nonfatal myocardial infarction and their interaction with aspirin.\" J Am Coll Cardiol 43 (2004): 985-90",
+      "[15] Bates ER, Mukherjee D, Lau WC \"Drug-drug interactions involving antiplatelet agents.\" Eur Heart J 24 (2003): 1707-9"
+    ],
+    "alternatives": {
+      "Acetylsalicylic acid": [
+        {
+          "name": "Protein C",
+          "ddinterId": "DDInter1542",
+          "atc": "B01A"
+        },
+        {
+          "name": "Selexipag",
+          "ddinterId": "DDInter1656",
+          "atc": "B01A"
+        },
+        {
+          "name": "Ivabradine",
+          "ddinterId": "DDInter996",
+          "atc": "B01A"
+        },
+        {
+          "name": "Bempedoic acid",
+          "ddinterId": "DDInter176",
+          "atc": "B01A"
+        },
+        {
+          "name": "Salicylic acid",
+          "ddinterId": "DDInter2085",
+          "atc": "B01A"
+        },
+        {
+          "name": "Choline salicylate",
+          "ddinterId": "DDInter370",
+          "atc": "B01A"
+        },
+        {
+          "name": "Ziconotide",
+          "ddinterId": "DDInter1960",
+          "atc": "B01A"
+        },
+        {
+          "name": "Salsalate",
+          "ddinterId": "DDInter1637",
+          "atc": "B01A"
+        },
+        {
+          "name": "Oliceridine",
+          "ddinterId": "DDInter1329",
+          "atc": "B01A"
+        },
+        {
+          "name": "Oxymorphone",
+          "ddinterId": "DDInter1372",
+          "atc": "B01A"
+        },
+        {
+          "name": "Tapentadol",
+          "ddinterId": "DDInter1746",
+          "atc": "B01A"
+        }
+      ],
+      "Ibuprofen": [
+        {
+          "name": "Ritodrine",
+          "ddinterId": "DDInter1606",
+          "atc": "G02C"
+        },
+        {
+          "name": "Bremelanotide",
+          "ddinterId": "DDInter227",
+          "atc": "G02C"
+        },
+        {
+          "name": "Flibanserin",
+          "ddinterId": "DDInter741",
+          "atc": "G02C"
+        },
+        {
+          "name": "Black cohosh",
+          "ddinterId": "DDInter1993",
+          "atc": "G02C"
+        },
+        {
+          "name": "Bromocriptine",
+          "ddinterId": "DDInter243",
+          "atc": "G02C"
+        },
+        {
+          "name": "Ubidecarenone",
+          "ddinterId": "DDInter2168",
+          "atc": "G02C"
+        },
+        {
+          "name": "Regadenoson",
+          "ddinterId": "DDInter1575",
+          "atc": "G02C"
+        },
+        {
+          "name": "Ivabradine",
+          "ddinterId": "DDInter996",
+          "atc": "G02C"
+        },
+        {
+          "name": "Chondroitin sulfate",
+          "ddinterId": "DDInter371",
+          "atc": "G02C"
+        },
+        {
+          "name": "Glucosamine",
+          "ddinterId": "DDInter829",
+          "atc": "G02C"
+        },
+        {
+          "name": "Tolazoline",
+          "ddinterId": "DDInter1827",
+          "atc": "G02C"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Acetylsalicylic acid": {
+        "CYP1A2-inh": 0.059,
+        "CYP1A2-sub": 0.057,
+        "CYP2C19-inh": 0.03,
+        "CYP2C19-sub": 0.0559999999999999,
+        "CYP2C9-inh": 0.059,
+        "CYP2C9-sub": 0.143,
+        "CYP2D6-inh": 0.015,
+        "CYP2D6-sub": 0.104,
+        "CYP3A4-inh": 0.016,
+        "CYP3A4-sub": 0.114,
+        "CYP2B6-inh": 0.001,
+        "CYP2B6-sub": 0.0,
+        "CYP2C8-inh": -5.062
+      },
+      "Ibuprofen": {
+        "CYP1A2-inh": 0.079,
+        "CYP1A2-sub": 0.317,
+        "CYP2C19-inh": 0.057,
+        "CYP2C19-sub": 0.91,
+        "CYP2C9-inh": 0.416,
+        "CYP2C9-sub": 0.982,
+        "CYP2D6-inh": 0.004,
+        "CYP2D6-sub": 0.1009999999999999,
+        "CYP3A4-inh": 0.0139999999999999,
+        "CYP3A4-sub": 0.195,
+        "CYP2B6-inh": 0.002,
+        "CYP2B6-sub": 0.0,
+        "CYP2C8-inh": -4.377
+      }
+    }
+  },
+  "DDInter1664_DDInter1307": {
+    "interactId": "165711",
+    "idA": "DDInter1664",
+    "idB": "DDInter1307",
+    "drugA": "Sildenafil",
+    "drugB": "Nitroglycerin",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/165711/",
+    "references": [
+      "[1] Hardman JG, Gilman AG, Limbird LE eds. \"Goodman and Gilman&#x27;s the Pharmacological Basis of Therapeutics. 9th ed.\" New York, NY: McGraw-Hill (1995):",
+      "[2] \"Product Information. Ultane (sevoflurane).\" Abbott Pharmaceutical, Abbott Park, IL."
+    ],
+    "alternatives": {
+      "Sevoflurane": [
+        {
+          "name": "Thiopental",
+          "ddinterId": "DDInter1795",
+          "atc": "N01A"
+        },
+        {
+          "name": "Nitrous oxide",
+          "ddinterId": "DDInter1307",
+          "atc": "N01A"
+        },
+        {
+          "name": "Methohexital",
+          "ddinterId": "DDInter1173",
+          "atc": "N01A"
+        },
+        {
+          "name": "Etomidate",
+          "ddinterId": "DDInter700",
+          "atc": "N01A"
+        },
+        {
+          "name": "Ketamine",
+          "ddinterId": "DDInter1007",
+          "atc": "N01A"
+        }
+      ],
+      "Nitrous oxide": [
+        {
+          "name": "Thiopental",
+          "ddinterId": "DDInter1795",
+          "atc": "N01A"
+        },
+        {
+          "name": "Methohexital",
+          "ddinterId": "DDInter1173",
+          "atc": "N01A"
+        },
+        {
+          "name": "Enflurane",
+          "ddinterId": "DDInter641",
+          "atc": "N01A"
+        },
+        {
+          "name": "Sevoflurane",
+          "ddinterId": "DDInter1664",
+          "atc": "N01A"
+        },
+        {
+          "name": "Ketamine",
+          "ddinterId": "DDInter1007",
+          "atc": "N01A"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Sevoflurane": {
+        "CYP1A2-inh": 0.812,
+        "CYP1A2-sub": 0.92,
+        "CYP2C19-inh": 0.474,
+        "CYP2C19-sub": 0.863,
+        "CYP2C9-inh": 0.677,
+        "CYP2C9-sub": 0.053,
+        "CYP2D6-inh": 0.005,
+        "CYP2D6-sub": 0.187,
+        "CYP3A4-inh": 0.01,
+        "CYP3A4-sub": 0.636,
+        "CYP2B6-inh": 0.0,
+        "CYP2B6-sub": 0.069,
+        "CYP2C8-inh": -4.349
+      },
+      "Nitrous oxide": {
+        "CYP1A2-inh": 0.153,
+        "CYP1A2-sub": 0.716,
+        "CYP2C19-inh": 0.042,
+        "CYP2C19-sub": 0.8640000000000001,
+        "CYP2C9-inh": 0.013,
+        "CYP2C9-sub": 0.782,
+        "CYP2D6-inh": 0.005,
+        "CYP2D6-sub": 0.7559999999999999,
+        "CYP3A4-inh": 0.004,
+        "CYP3A4-sub": 0.222,
+        "CYP2B6-inh": 0.0,
+        "CYP2B6-sub": 0.004,
+        "CYP2C8-inh": -4.836
+      }
+    }
+  },
+  "DDInter20_DDInter1202": {
+    "interactId": "223293",
+    "idA": "DDInter20",
+    "idB": "DDInter1202",
+    "drugA": "Acetylsalicylic acid",
+    "drugB": "Metronidazole",
+    "officialUrl": "https://ddinter2.scbdd.com/server/interact/223293/",
+    "references": [],
+    "alternatives": {
+      "Metronidazole": [
+        {
+          "name": "Tinidazole",
+          "ddinterId": "DDInter1811",
+          "atc": "A02B"
+        },
+        {
+          "name": "Bismuth subcitrate potassium",
+          "ddinterId": "DDInter213",
+          "atc": "A02B"
+        },
+        {
+          "name": "Rifabutin",
+          "ddinterId": "DDInter1589",
+          "atc": "A02B"
+        },
+        {
+          "name": "Vonoprazan",
+          "ddinterId": "DDInter2274",
+          "atc": "A02B"
+        },
+        {
+          "name": "Tinidazole",
+          "ddinterId": "DDInter1811",
+          "atc": "A02B"
+        },
+        {
+          "name": "Quinacrine",
+          "ddinterId": "DDInter2139",
+          "atc": "A02B"
+        },
+        {
+          "name": "Secnidazole",
+          "ddinterId": "DDInter1649",
+          "atc": "A02B"
+        },
+        {
+          "name": "Atovaquone",
+          "ddinterId": "DDInter134",
+          "atc": "A02B"
+        },
+        {
+          "name": "Furazolidone",
+          "ddinterId": "DDInter2064",
+          "atc": "A02B"
+        },
+        {
+          "name": "Nitazoxanide",
+          "ddinterId": "DDInter1299",
+          "atc": "A02B"
+        },
+        {
+          "name": "Trimetrexate",
+          "ddinterId": "DDInter1875",
+          "atc": "A02B"
+        }
+      ],
+      "Acetylsalicylic acid": [
+        {
+          "name": "Ticagrelor",
+          "ddinterId": "DDInter1802",
+          "atc": "B01A"
+        },
+        {
+          "name": "Betrixaban",
+          "ddinterId": "DDInter200",
+          "atc": "B01A"
+        },
+        {
+          "name": "Apixaban",
+          "ddinterId": "DDInter108",
+          "atc": "B01A"
+        },
+        {
+          "name": "Rivaroxaban",
+          "ddinterId": "DDInter1609",
+          "atc": "B01A"
+        },
+        {
+          "name": "Iloprost",
+          "ddinterId": "DDInter908",
+          "atc": "B01A"
+        },
+        {
+          "name": "Lepirudin",
+          "ddinterId": "DDInter1037",
+          "atc": "B01A"
+        },
+        {
+          "name": "Urokinase",
+          "ddinterId": "DDInter1905",
+          "atc": "B01A"
+        },
+        {
+          "name": "Cangrelor",
+          "ddinterId": "DDInter283",
+          "atc": "B01A"
+        },
+        {
+          "name": "Dipyridamole",
+          "ddinterId": "DDInter573",
+          "atc": "B01A"
+        },
+        {
+          "name": "Caplacizumab",
+          "ddinterId": "DDInter286",
+          "atc": "B01A"
+        },
+        {
+          "name": "Argatroban",
+          "ddinterId": "DDInter117",
+          "atc": "B01A"
+        }
+      ]
+    },
+    "cypMetabolism": {
+      "Metronidazole": {
+        "CYP1A2-inh": 0.034,
+        "CYP1A2-sub": 0.159,
+        "CYP2C19-inh": 0.027,
+        "CYP2C19-sub": 0.636,
+        "CYP2C9-inh": 0.005,
+        "CYP2C9-sub": 0.66,
+        "CYP2D6-inh": 0.002,
+        "CYP2D6-sub": 0.337,
+        "CYP3A4-inh": 0.0069999999999999,
+        "CYP3A4-sub": 0.327,
+        "CYP2B6-inh": 0.0139999999999999,
+        "CYP2B6-sub": 0.0,
+        "CYP2C8-inh": -4.712
+      },
+      "Acetylsalicylic acid": {
+        "CYP1A2-inh": 0.059,
+        "CYP1A2-sub": 0.057,
+        "CYP2C19-inh": 0.03,
+        "CYP2C19-sub": 0.0559999999999999,
+        "CYP2C9-inh": 0.059,
+        "CYP2C9-sub": 0.143,
+        "CYP2D6-inh": 0.015,
+        "CYP2D6-sub": 0.104,
+        "CYP3A4-inh": 0.016,
+        "CYP3A4-sub": 0.114,
+        "CYP2B6-inh": 0.001,
+        "CYP2B6-sub": 0.0,
+        "CYP2C8-inh": -5.062
+      }
+    }
+  }
+}
