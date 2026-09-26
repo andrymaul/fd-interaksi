@@ -301,6 +301,28 @@ var DDInterDatabaseService = class {
       return false;
     }
   }
+  updateDrugAtc(ddinterId, atcCode, atcCategory = "", therapeuticClass = "") {
+    const db = this.getDb();
+    if (!db) return false;
+    try {
+      db.prepare(`
+        UPDATE drugs SET
+          atc_code = COALESCE(NULLIF(?, ''), atc_code),
+          atc_category = COALESCE(NULLIF(?, ''), atc_category),
+          therapeutic_class = COALESCE(NULLIF(?, ''), therapeutic_class)
+        WHERE ddinter_id = ? COLLATE NOCASE
+      `).run(
+        atcCode || "",
+        atcCategory || "",
+        therapeuticClass || atcCategory || "",
+        ddinterId
+      );
+      return true;
+    } catch (err) {
+      console.warn("[DDInterDb] Error updating drug ATC:", err);
+      return false;
+    }
+  }
   getStats() {
     if (this.statsCache) return this.statsCache;
     const statsPath = resolveDataFile("ddinter_stats.json");
@@ -9481,7 +9503,7 @@ var DDInterLiveService = class {
                   name: item.name || item.display,
                   smiles: item.smiles && item.smiles !== item.internalID ? item.smiles : void 0,
                   structureSvg: item.structure || void 0,
-                  atcClassification: item.drugbank_id ? [item.drugbank_id] : []
+                  atcClassification: []
                 };
               }
             }
@@ -9520,8 +9542,8 @@ var DDInterLiveService = class {
       molecularWeight: (dbDrug?.molecular_weight && dbDrug.molecular_weight > 0 ? String(dbDrug.molecular_weight) : void 0) || cleanStr(curated.molecularWeight) || void 0,
       casNumber: cas || void 0,
       description: desc || void 0,
-      atcClassification: (dbDrug?.atc_code ? dbDrug.atc_code.split(", ") : null) || curated.atcClassification || (dbDrug?.drugbank_id ? [dbDrug.drugbank_id] : []),
-      atcCategoryName: dbDrug?.atc_category || curated.atcCategoryName,
+      atcClassification: (dbDrug?.atc_code && dbDrug.atc_code.length > 1 ? dbDrug.atc_code.split(", ") : null) || (curated.atcClassification?.length ? curated.atcClassification : dbDrug?.atc_code ? [dbDrug.atc_code] : []),
+      atcCategoryName: (dbDrug?.atc_code && dbDrug.atc_code.length > 1 ? dbDrug.atc_category : curated.atcCategoryName) || dbDrug?.atc_category || curated.atcCategoryName,
       brandNames: brands,
       iupacName: cleanStr(curated.iupacName) || void 0,
       inchi: cleanStr(curated.inchi) || void 0,
@@ -9645,7 +9667,8 @@ var DDInterLiveService = class {
     const cached = globalCache.get(cacheKey);
     if (cached) return cached.data;
     const internalDrug = this.buildFallbackDrugDetail(ddinterId);
-    if (internalDrug.molecularFormula && internalDrug.description && (internalDrug.structureSvg || internalDrug.drugType === "biotech")) {
+    const hasFullAtc = Boolean(internalDrug.atcClassification?.length && internalDrug.atcClassification[0].length >= 3);
+    if (internalDrug.molecularFormula && internalDrug.description && hasFullAtc && (internalDrug.structureSvg || internalDrug.drugType === "biotech")) {
       globalCache.set(cacheKey, internalDrug, 86400, "DDInter Internal Database");
       return internalDrug;
     }
@@ -9674,15 +9697,33 @@ var DDInterLiveService = class {
       if (nameMatch) {
         drugName = nameMatch[1].replace(/<[^>]+>/g, "").trim();
       }
-      const atcMatches = Array.from(html.matchAll(/data-tippy-content=["']([^"']+)["'][^>]*>([A-Z0-9]{7})<\/span>/g)).map((m) => m[2]);
-      const uniqueAtc = Array.from(new Set(atcMatches));
+      let atcClassification = [];
       let atcCategoryName = "";
-      const atcTooltipMatch = html.match(/data-tippy-content=["']([^"']+)["'][^>]*>[A-Z0-9]{7}<\/span>/i);
-      if (atcTooltipMatch) {
-        const parts = atcTooltipMatch[1].split(/<br\s*\/?>/i).map((s) => s.trim()).filter(Boolean);
-        if (parts.length >= 2) {
-          atcCategoryName = parts[1].replace(/^[A-Z0-9]+:\s*/, "");
+      const atcCellMatch = html.match(/<td[^>]*class=["']key["'][^>]*>\s*ATC Classification\s*<\/td>\s*<td[^>]*class=["']value["'][^>]*>([\s\S]*?)<\/td>/i);
+      if (atcCellMatch) {
+        const cellHtml = atcCellMatch[1];
+        const badgeMatches = Array.from(cellHtml.matchAll(/<span[^>]*class=["'][^"']*badge[^"']*["'][^>]*>([\s\S]*?)<\/span>/gi)).map((m) => m[1].replace(/<[^>]+>/g, "").trim()).filter((code) => /^[A-Z][0-9]{2}[A-Z0-9]{0,4}$/i.test(code));
+        if (badgeMatches.length > 0) {
+          atcClassification = Array.from(new Set(badgeMatches));
         }
+        const tippyMatches = Array.from(cellHtml.matchAll(/data-tippy-content=["']([^"']+)["']/gi));
+        for (const tm of tippyMatches) {
+          const unescaped = tm[1].replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+          const lines = unescaped.split(/<br\s*\/?>/i).map((s) => s.trim()).filter(Boolean);
+          if (lines.length >= 2 && !atcCategoryName) {
+            atcCategoryName = lines[1].replace(/^[A-Z0-9]+:\s*/, "");
+          }
+        }
+      }
+      if (atcClassification.length === 0 && dict["ATC Classification"]) {
+        const found = dict["ATC Classification"].match(/[A-Z][0-9]{2}[A-Z0-9]{0,4}/g);
+        if (found) atcClassification = Array.from(new Set(found));
+      }
+      if (atcClassification.length === 0 && internalDrug.atcClassification?.length && internalDrug.atcClassification[0].length >= 3) {
+        atcClassification = internalDrug.atcClassification;
+      }
+      if (!atcCategoryName && internalDrug.atcCategoryName) {
+        atcCategoryName = internalDrug.atcCategoryName;
       }
       let structureSvg = "";
       const svgMatch = html.match(/(<svg[\s\S]*?<\/svg>)/i);
@@ -9738,7 +9779,7 @@ var DDInterLiveService = class {
         molecularWeight: molecularWeight || internalDrug.molecularWeight,
         casNumber: casNumber || internalDrug.casNumber,
         description: description || internalDrug.description,
-        atcClassification: uniqueAtc.length > 0 ? uniqueAtc : dict["ATC Classification"] ? dict["ATC Classification"].split(/\s+/) : internalDrug.atcClassification,
+        atcClassification: atcClassification.length > 0 ? atcClassification : internalDrug.atcClassification || [],
         atcCategoryName: atcCategoryName || internalDrug.atcCategoryName,
         brandNames: brandNames.length > 0 ? brandNames : internalDrug.brandNames,
         iupacName: cleanStr(dict["IUPAC Name"]) || internalDrug.iupacName,
@@ -9772,6 +9813,12 @@ var DDInterLiveService = class {
           drugbank_id: dbId,
           chembl_id: cmId
         });
+        if (result.atcClassification && result.atcClassification.length > 0) {
+          const atcStr = result.atcClassification.join(", ");
+          if (atcStr.length > 1) {
+            ddinterDb.updateDrugAtc(result.ddinterId, atcStr, result.atcCategoryName || "");
+          }
+        }
       } catch (err) {
         console.warn("[DDInterLive] SQLite persist warning:", err);
       }
@@ -10166,6 +10213,610 @@ var DDInterLiveService = class {
 };
 var ddinterLiveService = new DDInterLiveService();
 
+// src/server/clinicalTranslator.ts
+function isAlreadyIndonesian(text) {
+  if (!text || text.length < 5) return false;
+  const indonesianTokens = [
+    "dapat",
+    "meningkatkan",
+    "menurunkan",
+    "kombinasi",
+    "risiko",
+    "penggunaan",
+    "bersamaan",
+    "karena",
+    "dengan",
+    "pada",
+    "pasien",
+    "adalah",
+    "atau",
+    "penurunan",
+    "peningkatan",
+    "penghambatan",
+    "konsentrasi",
+    "darah",
+    "perdarahan",
+    "hindari",
+    "pantau",
+    "pertimbangkan",
+    "dosis",
+    "efek",
+    "terapi"
+  ];
+  const lower = text.toLowerCase();
+  let matches = 0;
+  for (const token of indonesianTokens) {
+    if (lower.includes(token)) matches++;
+    if (matches >= 2) return true;
+  }
+  return false;
+}
+var CLINICAL_LEXICON = {
+  "coadministration of": "Pemberian bersamaan antara",
+  "co-administration of": "Pemberian bersamaan antara",
+  "coadministration with": "Pemberian bersamaan dengan",
+  "co-administration with": "Pemberian bersamaan dengan",
+  "concomitant use of": "Penggunaan bersamaan antara",
+  "concomitant administration of": "Pemberian bersamaan antara",
+  "concomitant use": "penggunaan bersamaan",
+  "may increase the risk of": "dapat meningkatkan risiko terjadinya",
+  "can increase the risk of": "dapat meningkatkan risiko terjadinya",
+  "may increase the serum concentration of": "dapat meningkatkan konsentrasi serum darah",
+  "can increase the serum concentration of": "dapat meningkatkan konsentrasi serum darah",
+  "the serum concentration of": "Konsentrasi serum darah",
+  "the metabolism of": "Metabolisme senyawa",
+  "can be decreased when combined with": "dapat menurun / terhambat bila dikombinasikan dengan",
+  "can be increased when combined with": "dapat meningkat secara drastis bila dikombinasikan dengan",
+  "can be decreased when it is combined with": "dapat menurun bila dikombinasikan dengan",
+  "can be increased when it is combined with": "dapat meningkat bila dikombinasikan dengan",
+  "the risk or severity of": "Risiko atau tingkat keparahan",
+  "the therapeutic efficacy of": "Efikasi terapeutik dari",
+  "can be decreased when used in combination with": "dapat menurun bila digunakan dalam kombinasi dengan",
+  "can be increased when used in combination with": "dapat meningkat bila digunakan dalam kombinasi dengan",
+  "bleeding": "perdarahan (hemoragi)",
+  "gastrointestinal bleeding": "perdarahan saluran cerna (gastrointestinal)",
+  "qtc prolongation": "pemanjangan interval QTc jantung (risiko aritmia ventrikel)",
+  "prolongation of the qt interval": "pemanjangan interval QT jantung",
+  "ventricular arrhythmias": "aritmia ventrikel (torsades de pointes)",
+  "hypotension": "hipotensi (penurunan tekanan darah abnormal)",
+  "severe hypotension": "hipotensi berat",
+  "hyperkalemia": "hiperkalemia (kadar kalium darah tinggi yang berbahaya)",
+  "hypokalemia": "hipokalemia (kadar kalium darah rendah)",
+  "hyponatremia": "hiponatremia (kadar natrium darah rendah)",
+  "sedation": "sedasi mendalam",
+  "somnolence": "kantuk berlebih (somnolen)",
+  "central nervous system depression": "depresi sistem saraf pusat (SSP)",
+  "respiratory depression": "depresi pernapasan (hipoventilasi)",
+  "nephrotoxicity": "nefrotoksisitas (kerusakan fungsi ginjal)",
+  "hepatotoxicity": "hepatotoksisitas (kerusakan sel-sel hati)",
+  "myopathy": "miopati (nyeri/kelemahan otot)",
+  "rhabdomyolysis": "rabdomiolisis (kerusakan jaringan otot parah)",
+  "serotonin syndrome": "sindrom serotonin (toksisitas serotonergik akut)",
+  "bradycardia": "bradikardia (denyut jantung lambat abnormal)",
+  "tachycardia": "takikardia (denyut jantung cepat abnormal)",
+  "hypoglycemia": "hipoglikemia (penurunan drastis kadar gula darah)",
+  "hyperglycemia": "hiperglikemia (lonjakan kadar gula darah)",
+  "adverse effects": "efek samping yang merugikan",
+  "adverse reactions": "reaksi efek samping obat",
+  "fatalities": "kematian fatal",
+  "seizures": "kejang epileptiform",
+  "toxicity": "toksisitas sistemik",
+  "potent inhibitors of": "penghambat kuat dari",
+  "potent inhibitor of": "penghambat kuat dari",
+  "potent cyp450 3a4 inhibitors": "penghambat kuat CYP450 3A4",
+  "potassium-sparing diuretics": "diuretik hemat kalium",
+  "potassium-sparing diuretic": "diuretik hemat kalium",
+  "potassium supplements": "suplemen kalium",
+  "potassium-containing salt substitutes": "pengganti garam yang mengandung kalium",
+  "angiotensin converting enzyme (ace) inhibitors": "penghambat enzim pengubah angiotensin (ACE inhibitor)",
+  "ace inhibitors": "ACE inhibitor",
+  "chronic heart failure": "gagal jantung kronis",
+  "congestive heart failure": "gagal jantung kongestif",
+  "excessive diuresis": "diuresis berlebihan",
+  "oral anticoagulants": "antikoagulan oral",
+  "oral anticoagulant": "antikoagulan oral",
+  "in patients on oral anticoagulants": "pada pasien yang mengonsumsi antikoagulan oral",
+  "in patients with": "pada pasien dengan",
+  "especially those associated with": "khususnya yang disertai",
+  "impaired renal function": "gangguan fungsi ginjal",
+  "may further raise": "dapat semakin meningkatkan",
+  "serum potassium levels": "kadar kalium serum darah",
+  "therapy with": "terapi dengan",
+  "should be administered cautiously in patients with or predisposed to": "harus diberikan dengan sangat hati-hati pada pasien dengan atau yang rentan terhadap",
+  "and serum potassium levels should be carefully monitored": "dan kadar kalium serum harus dipantau secara cermat",
+  "risk factors for the development of": "faktor risiko timbulnya",
+  "during ace inhibitor therapy include": "selama terapi ACE inhibitor meliputi",
+  "renal insufficiency": "insufisiensi ginjal",
+  "and lovastatin": "maupun lovastatin",
+  "or lovastatin": "maupun lovastatin"
+};
+var FOOD_TRANSLATIONS = {
+  grapefruit: {
+    idName: "Grapefruit (Jeruk Bali Merah)",
+    category: "Buah/Jus",
+    advice: "Hindari konsumsi buah atau jus grapefruit selama terapi. Kandungan furanokumarin menghambat enzim CYP3A4 usus, meningkatkan bioavailabilitas obat ke tingkat toksik."
+  },
+  "grapefruit juice": {
+    idName: "Jus Grapefruit (Jeruk Bali Merah)",
+    category: "Buah/Jus",
+    advice: "Hindari konsumsi jus grapefruit selama terapi karena menghambat metabolisme hepatik & usus."
+  },
+  alcohol: {
+    idName: "Alkohol & Minuman Beralkohol",
+    category: "Alkohol",
+    advice: "Hindari konsumsi alkohol secara ketat. Alkohol dapat memperparah depresi sistem saraf pusat, memperberat beban hati, atau memicu iritasi lambung masif."
+  },
+  "alcoholic beverages": {
+    idName: "Minuman Beralkohol",
+    category: "Alkohol",
+    advice: "Hindari semua jenis minuman beralkohol selama masa pengobatan."
+  },
+  milk: {
+    idName: "Susu & Produk Olahan Susu (Dairy)",
+    category: "Susu/Kalsium",
+    advice: "Beri jeda waktu minimal 2 jam antara konsumsi susu dan obat. Ion kalsium dalam susu membentuk kelat tidak larut yang menghambat absorpsi obat di usus."
+  },
+  "dairy products": {
+    idName: "Produk Susu & Olahannya (Keju, Yoghurt)",
+    category: "Susu/Kalsium",
+    advice: "Beri jeda konsumsi minimal 2-3 jam untuk menghindari pembentukan khelat kalsium."
+  },
+  "high-calcium food": {
+    idName: "Makanan Berkalsium Tinggi",
+    category: "Susu/Kalsium",
+    advice: "Beri jeda konsumsi minimal 2 jam sebelum atau 4 jam setelah obat."
+  },
+  "high-fat meal": {
+    idName: "Makanan Berlemak Tinggi",
+    category: "Makanan Berlemak",
+    advice: "Konsistensikan pola konsumsi makanan. Lemak tinggi dapat secara signifikan meningkatkan atau memperlambat laju absorpsi obat."
+  },
+  "high fat meal": {
+    idName: "Makanan Berlemak Tinggi",
+    category: "Makanan Berlemak",
+    advice: "Konsistensikan pola konsumsi makanan untuk menjaga kadar terapeutik obat tetap stabil."
+  },
+  caffeine: {
+    idName: "Kafein (Kopi, Teh, Minuman Berenergi)",
+    category: "Kafein",
+    advice: "Batasi asupan kafein. Metabolisme kafein dapat terhambat, memicu palpitasi jantung, insomnia, tremor, dan kegelisahan berlebih."
+  },
+  coffee: {
+    idName: "Kopi / Minuman Berkafein",
+    category: "Kafein",
+    advice: "Batasi konsumsi kopi selama terapi untuk mencegah palpitasi dan stimulasi berlebih."
+  },
+  "st. john's wort": {
+    idName: "St. John's Wort (Herbal Hypericum)",
+    category: "Herbal",
+    advice: "HINDARI penggunaan suplemen ini. St. John's Wort adalah penginduksi kuat CYP3A4 dan P-gp yang menurunkan kadar obat hingga terapi gagal."
+  },
+  "st johns wort": {
+    idName: "St. John's Wort (Herbal)",
+    category: "Herbal",
+    advice: "Hindari suplemen herbal ini karena menurunkan efikasi obat secara drastis."
+  },
+  tyramine: {
+    idName: "Makanan Tinggi Tiramina (Keju Tua, Fermentasi, Daging Asap)",
+    category: "Tiramina",
+    advice: "Patuhi diet rendah tiramina secara ketat untuk mencegah krisis hipertensi fatal."
+  },
+  "tyramine-containing foods": {
+    idName: "Makanan Kaya Tiramina (Keju Tua, Tapai, Ekstrak Ragi)",
+    category: "Tiramina",
+    advice: "Hindari keju tua, makanan fermentasi, kecap kedelai, dan bir guna mencegah lonjakan tekanan darah berbahaya."
+  },
+  "vitamin k-rich foods": {
+    idName: "Makanan Kaya Vitamin K (Bayam, Brokoli, Kale)",
+    category: "Sayuran Hijau",
+    advice: "Pertahankan asupan sayuran hijau tetap konsisten setiap hari. Fluktuasi asupan vitamin K mengubah efektivitas terapi antikoagulan (Warfarin)."
+  },
+  "vitamin k": {
+    idName: "Vitamin K / Sayuran Berdaun Hijau Tua",
+    category: "Sayuran Hijau",
+    advice: "Jaga konsistensi porsi konsumsi sayuran hijau agar efek antikoagulasi tidak terganggu."
+  },
+  "potassium-rich foods": {
+    idName: "Makanan Tinggi Kalium (Pisang, Jeruk, Pengganti Garam)",
+    category: "Kalium",
+    advice: "Waspadai hiperkalemia. Batasi konsumsi pisang berlebih dan hindari garam diet berbasis kalium tanpa petunjuk dokter."
+  },
+  "salt substitutes": {
+    idName: "Pengganti Garam (Garam Rendah Natrium / Kalium Klorida)",
+    category: "Kalium",
+    advice: "Hindari pengganti garam berbahan dasar kalium karena meningkatkan risiko hiperkalemia berat."
+  },
+  food: {
+    idName: "Makanan Umum / Asupan Nutrisi",
+    category: "Makanan Umum",
+    advice: "Konsumsi obat sesuai anjuran (sebelum atau sesudah makan) secara konsisten setiap jadwal minum obat."
+  },
+  "apple juice": {
+    idName: "Jus Apel",
+    category: "Buah/Jus",
+    advice: "Beri jeda minimal 4 jam. Senyawa flavonoid jus apel dapat menghambat polipeptida transporter OATP usus."
+  },
+  "orange juice": {
+    idName: "Jus Jeruk",
+    category: "Buah/Jus",
+    advice: "Beri jeda minimal 4 jam dengan konsumsi obat untuk mencegah gangguan absorpsi pada transporter usus."
+  },
+  "cranberry juice": {
+    idName: "Jus Cranberry",
+    category: "Buah/Jus",
+    advice: "Konsumsi secara wajar dan pantau parameter pembekuan darah atau efek gastrointestinal."
+  }
+};
+var DISEASE_TRANSLATIONS = {
+  "renal impairment": {
+    idName: "Gangguan / Gagal Ginjal (Renal Impairment)",
+    defaultRisk: "Penurunan laju filtrasi glomerulus (LFG) menyebabkan retensi dan akumulasi metabolit obat aktif, meningkatkan risiko nefrotoksisitas dan efek samping sistemik berat.",
+    defaultManagement: "Lakukan penyesuaian dosis berdasarkan klirens kreatinin (CrCl) atau estimasi LFG (eGFR). Pantau kreatinin serum dan elektrolit secara berkala."
+  },
+  "chronic kidney disease": {
+    idName: "Penyakit Ginjal Kronis (CKD)",
+    defaultRisk: "Ekskresi obat melalui ginjal terhambat, memicu akumulasi obat, perburukan fungsi nefron, dan risiko asidosis atau hiperkalemia.",
+    defaultManagement: "Sesuaikan dosis terapi dengan fungsi ginjal terkini. Hindari agen nefrotoksik tambahan."
+  },
+  "hepatic impairment": {
+    idName: "Gangguan Fungsi Hati (Hepatic Impairment)",
+    defaultRisk: "Penurunan kapasitas metabolisme sitokrom hepatik dan klirens empedu, melipatgandakan waktu paruh eliminasi dan bioavailabilitas obat.",
+    defaultManagement: "Gunakan dosis awal yang lebih rendah. Pantau enzim transaminase hati (SGOT/SGPT), bilirubin, dan tanda ensefalopati hepatik."
+  },
+  "liver disease": {
+    idName: "Penyakit Hati Kronis / Sirosis",
+    defaultRisk: "Risiko dekompensasi hepatik, akumulasi obat dalam plasma, dan toksisitas hati sekunder.",
+    defaultManagement: "Pertimbangkan obat alternatif yang tidak dimetabolisme melalui hepar atau kurangi dosis hingga 50%."
+  },
+  "heart failure": {
+    idName: "Gagal Jantung Kongestif (Heart Failure)",
+    defaultRisk: "Potensi retensi cairan, eksaserbasi kelebihan beban volume (volume overload), atau depresi kontraktilitas miokardium.",
+    defaultManagement: "Pantau ketat tanda kongesti perifer, ronkhi paru, perubahan berat badan harian, dan stabilitas hemodinamik."
+  },
+  "hypertension": {
+    idName: "Hipertensi (Tekanan Darah Tinggi)",
+    defaultRisk: "Potensi peningkatan resistensi vaskular sistemik, vasokonstriksi, atau retensi natrium yang menetralkan efikasi antihipertensi.",
+    defaultManagement: "Pantau tekanan darah secara berkala. Hindari ko-peresepan zat yang menaikkan tensi darah."
+  },
+  "diabetes mellitus": {
+    idName: "Diabetes Melitus (Kencing Manis)",
+    defaultRisk: "Perubahan sensitivitas insulin atau glukoneogenesis hepatik, berisiko memicu hiperglikemia tidak terkontrol atau menyamarkan gejala hipoglikemia.",
+    defaultManagement: "Pantau kadar gula darah kapiler harian. Sesuaikan dosis obat antidiabetes bila ditemukan fluktuasi glukosa signifikan."
+  },
+  "asthma": {
+    idName: "Asma Bronkial / PPOK",
+    defaultRisk: "Risiko bronkospasme akut akibat blokade reseptor beta-2 adrenergik atau reaksi pseudoalergi pelepasan leukotrien.",
+    defaultManagement: "KONTRAINDIKASI untuk penyekat beta non-selektif dan hati-hati dengan NSAID. Pastikan inhaler bronkodilator darurat selalu tersedia."
+  },
+  "peptic ulcer": {
+    idName: "Tukak Lambung / Ulkus Peptikum",
+    defaultRisk: "Penekanan sintesis prostaglandin mukosa gastrointestinal atau peningkatan keasaman lambung, memicu perdarahan saluran cerna aktif atau perforasi.",
+    defaultManagement: "Hindari kombinasi NSAID/kortikosteroid. Pertimbangkan proteksi lambung dengan inhibitor pompa proton (PPI) seperti Omeprazole bila terapi mutlak diperlukan."
+  },
+  "gastrointestinal bleeding": {
+    idName: "Riwayat Perdarahan Saluran Cerna",
+    defaultRisk: "Presipitasi perdarahan ulang yang mengancam nyawa pada sawar mukosa lambung-usus.",
+    defaultManagement: "KONTRAINDIKASI relatif untuk antikoagulan dan antiinflamasi non-steroid. Evaluasi rasio manfaat-risiko secara komprehensif."
+  },
+  "long qt syndrome": {
+    idName: "Sindrom Interval QT Panjang / Aritmia",
+    defaultRisk: "Penghambatan kanal ion kalium hERG miokard, memperpanjang repolarisasi ventrikel dan memicu aritmia fatal (Torsades de Pointes).",
+    defaultManagement: "Lakukan rekam EKG serial. Koreksi kelainan elektrolit (terutama kalium dan magnesium) sebelum terapi dimulai."
+  },
+  "glaucoma": {
+    idName: "Glaukoma Sudut Tertutup",
+    defaultRisk: "Efek antikolinergik/midriasis dapat memblokir aliran keluar aqueous humor, memicu lonjakan tekanan intraokular akut yang merusak saraf optik.",
+    defaultManagement: "Hindari obat dengan profil antikolinergik kuat. Rujuk segera ke dokter spesialis mata bila timbul nyeri mata mendadak atau pandangan kabur."
+  },
+  "pregnancy": {
+    idName: "Kehamilan (Pregnancy Risk)",
+    defaultRisk: "Potensi efek teratogenik pada organogenesis janin, gangguan perfusi plasenta, atau toksisitas perinatal.",
+    defaultManagement: "Verifikasi kategori keamanan kehamilan (FDA Pregnancy Category). Ganti ke lini obat yang telah terbukti aman untuk trimester kehamilan saat ini."
+  },
+  "epilepsy": {
+    idName: "Epilepsi / Riwayat Kejang",
+    defaultRisk: "Penurunan ambang kejang (seizure threshold) di korteks serebri, memicu kekambuhan bangkitan konvulsif.",
+    defaultManagement: "Pantau frekuensi kejang. Pertimbangkan optimalisasi dosis antikonvulsan atau pilih obat dengan risiko prokonvulsan minimal."
+  },
+  "hyperkalemia": {
+    idName: "Hiperkalemia (Kadar Kalium Serum Tinggi)",
+    defaultRisk: "Pemberian obat yang menahan kalium dapat memicu lonjakan kalium serum ke tingkat toksik (>5.5 mEq/L), berisiko aritmia jantung fatal atau henti jantung.",
+    defaultManagement: "KONTRAINDIKASI / PERHATIAN EKSTREM: Hindari pemberian kalium eksogen atau diuretik hemat kalium. Pantau kadar kalium darah dan rekam EKG secara berkala."
+  },
+  "hypokalemia": {
+    idName: "Hipokalemia (Kadar Kalium Serum Rendah)",
+    defaultRisk: "Dapat memicu aritmia ventrikel serius dan memperparah toksisitas glikosida jantung (Digoxin).",
+    defaultManagement: "Koreksi kadar kalium serum sebelum memulai terapi."
+  }
+};
+var ClinicalTranslator = class {
+  static {
+    this.translationCache = /* @__PURE__ */ new Map();
+  }
+  /**
+   * Neural online translation with intelligent caching & resilience
+   */
+  static async translateOnline(text) {
+    if (!text || text.trim() === "" || text === "-") return text;
+    const trimmed = text.trim();
+    if (isAlreadyIndonesian(trimmed)) return trimmed;
+    if (this.translationCache.has(trimmed)) {
+      return this.translationCache.get(trimmed);
+    }
+    try {
+      const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=id&dt=t&q=${encodeURIComponent(trimmed)}`;
+      const response = await fetch(url, { signal: AbortSignal.timeout(4500) });
+      if (response.ok) {
+        const data = await response.json();
+        if (Array.isArray(data) && Array.isArray(data[0])) {
+          const translated = data[0].map((item) => item[0]).filter(Boolean).join("");
+          if (translated && translated.trim().length > 0) {
+            const polished = translated.trim();
+            this.translationCache.set(trimmed, polished);
+            return polished;
+          }
+        }
+      }
+    } catch {
+    }
+    return this.translateDdiDescription(trimmed);
+  }
+  static async translateDdiDescriptionAsync(rawDesc, drugA = "", drugB = "") {
+    if (!rawDesc || rawDesc.trim() === "" || rawDesc === "-") {
+      return drugA && drugB ? `Interaksi farmakologis terverifikasi DDInter v2.0 antara ${drugA} dan ${drugB}.` : "Interaksi farmakologis terverifikasi pada basis data DDInter v2.0.";
+    }
+    return this.translateOnline(rawDesc);
+  }
+  static async translateDdiManagementAsync(rawMgmt, drugA = "", drugB = "", severity = "Moderate") {
+    if (!rawMgmt || rawMgmt.trim() === "" || rawMgmt === "-") {
+      return this.translateDdiManagement(rawMgmt, drugA, drugB, severity);
+    }
+    return this.translateOnline(rawMgmt);
+  }
+  static async translateFoodInteractionAsync(rawFoodItem, rawMechanism, rawEffect, rawMgmt, drugName = "") {
+    const foodKey = (rawFoodItem || "").toLowerCase().trim();
+    const matched = FOOD_TRANSLATIONS[foodKey];
+    const foodItem = matched ? matched.idName : rawFoodItem;
+    let mechanism = rawMechanism;
+    if (matched) {
+      mechanism = `Interaksi antara ${drugName || "obat"} dan ${foodItem}. Komponen bioaktif pangan mempengaruhi laju absorpsi atau metabolisme hepatik zat aktif.`;
+    } else if (rawMechanism && rawMechanism !== "-") {
+      mechanism = await this.translateOnline(rawMechanism);
+    }
+    let effect = rawEffect;
+    if (rawEffect && rawEffect !== "-" && !isAlreadyIndonesian(rawEffect)) {
+      effect = await this.translateOnline(rawEffect);
+    } else {
+      effect = `Modifikasi konsentrasi serum puncak atau bioavailabilitas sistemik ${drugName || "obat"} dalam tubuh.`;
+    }
+    let recommendation = rawMgmt;
+    if (matched) {
+      recommendation = matched.advice;
+    } else if (rawMgmt && rawMgmt !== "-" && !isAlreadyIndonesian(rawMgmt)) {
+      recommendation = await this.translateOnline(rawMgmt);
+    }
+    return {
+      foodItem,
+      mechanism,
+      effect,
+      recommendation,
+      originalFoodItem: rawFoodItem,
+      originalMechanism: rawMechanism,
+      originalEffect: rawEffect,
+      originalRecommendation: rawMgmt
+    };
+  }
+  static async translateDiseaseContraindicationAsync(rawDiseaseName, rawRisk, rawMechanism, rawMgmt, drugName = "") {
+    const disKey = (rawDiseaseName || "").toLowerCase().trim();
+    const matched = DISEASE_TRANSLATIONS[disKey];
+    const diseaseName = matched ? matched.idName : rawDiseaseName;
+    let risk = rawRisk;
+    if (matched && (!rawRisk || rawRisk.length < 15)) {
+      risk = matched.defaultRisk;
+    } else if (rawRisk && rawRisk !== "-") {
+      risk = await this.translateOnline(rawRisk);
+    }
+    let mechanism = rawMechanism;
+    if (rawMechanism && rawMechanism !== "-" && !isAlreadyIndonesian(rawMechanism)) {
+      mechanism = await this.translateOnline(rawMechanism);
+    } else {
+      mechanism = `Interaksi patofisiologis antara mekanisme aksi/eliminasi ${drugName || "obat"} dengan kondisi disfungsi organ pada ${diseaseName}.`;
+    }
+    let management = rawMgmt;
+    if (matched && (!rawMgmt || rawMgmt.length < 15)) {
+      management = matched.defaultManagement;
+    } else if (rawMgmt && rawMgmt !== "-" && !isAlreadyIndonesian(rawMgmt)) {
+      management = await this.translateOnline(rawMgmt);
+    }
+    return {
+      diseaseName,
+      risk,
+      mechanism,
+      management,
+      originalDiseaseName: rawDiseaseName,
+      originalRisk: rawRisk,
+      originalMechanism: rawMechanism,
+      originalManagement: rawMgmt
+    };
+  }
+  /**
+   * Translates interaction description / mechanism into professional Bahasa Indonesia
+   */
+  static translateDdiDescription(rawDesc, drugA = "", drugB = "") {
+    if (!rawDesc || rawDesc.trim() === "" || rawDesc === "-") {
+      return drugA && drugB ? `Interaksi farmakologis terverifikasi DDInter v2.0 antara ${drugA} dan ${drugB}.` : "Interaksi farmakologis terverifikasi pada basis data DDInter v2.0.";
+    }
+    if (isAlreadyIndonesian(rawDesc)) {
+      return rawDesc;
+    }
+    let text = rawDesc.trim();
+    const metaDecMatch = text.match(/The metabolism of (.+?) can be decreased when combined with (.+?)\./i);
+    if (metaDecMatch) {
+      const da = metaDecMatch[1].trim();
+      const db = metaDecMatch[2].trim();
+      return `Metabolisme ${da} dapat dihambat atau menurun secara signifikan bila dikombinasikan dengan ${db}, yang berpotensi memicu akumulasi obat dan peningkatan risiko toksisitas.`;
+    }
+    const metaIncMatch = text.match(/The metabolism of (.+?) can be increased when combined with (.+?)\./i);
+    if (metaIncMatch) {
+      const da = metaIncMatch[1].trim();
+      const db = metaIncMatch[2].trim();
+      return `Metabolisme ${da} dapat meningkat saat dikombinasikan dengan ${db} akibat induksi enzim hepar, yang berisiko mempercepat pembersihan obat dan menurunkan efektivitas terapeutik ${da}.`;
+    }
+    const serumIncMatch = text.match(/The serum concentration of (.+?) can be increased when (?:it is )?combined with (.+?)\./i);
+    if (serumIncMatch) {
+      const da = serumIncMatch[1].trim();
+      const db = serumIncMatch[2].trim();
+      return `Konsentrasi serum darah ${da} dapat meningkat saat dikombinasikan dengan ${db}, memperbesar kemungkinan timbulnya efek samping dan reaksi toksik.`;
+    }
+    const serumDecMatch = text.match(/The serum concentration of (.+?) can be decreased when (?:it is )?combined with (.+?)\./i);
+    if (serumDecMatch) {
+      const da = serumDecMatch[1].trim();
+      const db = serumDecMatch[2].trim();
+      return `Konsentrasi serum darah ${da} dapat menurun bila dikombinasikan dengan ${db}, berpotensi menyebabkan kegagalan respons terapeutik.`;
+    }
+    const bleedMatch = text.match(/The risk or severity of bleeding can be increased when (.+?) is combined with (.+?)\./i);
+    if (bleedMatch) {
+      const da = bleedMatch[1].trim();
+      const db = bleedMatch[2].trim();
+      return `Risiko atau tingkat keparahan perdarahan (hemoragi) dapat meningkat drastis bila ${da} dikombinasikan dengan ${db} akibat efek hemostatik aditif.`;
+    }
+    const qtMatch = text.match(/The risk or severity of (?:QTc|QT) prolongation can be increased when (.+?) is combined with (.+?)\./i);
+    if (qtMatch) {
+      const da = qtMatch[1].trim();
+      const db = qtMatch[2].trim();
+      return `Risiko pemanjangan interval QTc jantung dan aritmia ventrikel serius dapat meningkat jika ${da} digunakan bersamaan dengan ${db}.`;
+    }
+    const condMatch = text.match(/The risk or severity of (.+?) can be increased when (.+?) is combined with (.+?)\./i);
+    if (condMatch) {
+      const condition = condMatch[1].trim();
+      const da = condMatch[2].trim();
+      const db = condMatch[3].trim();
+      const idCond = CLINICAL_LEXICON[condition.toLowerCase()] || condition;
+      return `Risiko atau tingkat keparahan ${idCond} dapat meningkat saat ${da} dikombinasikan dengan ${db}.`;
+    }
+    const effMatch = text.match(/The therapeutic efficacy of (.+?) can be decreased when used in combination with (.+?)\./i);
+    if (effMatch) {
+      const da = effMatch[1].trim();
+      const db = effMatch[2].trim();
+      return `Efikasi terapeutik ${da} dapat menurun bila digunakan bersamaan dengan ${db}.`;
+    }
+    text = text.replace(/Coadministration with (.+?) may significantly increase the plasma concentrations and (.+?) of (.+?)\./gi, "Pemberian bersamaan dengan $1 dapat secara signifikan meningkatkan konsentrasi plasma dan $2 dari $3.").replace(/Coadministration with (.+?) may significantly increase the plasma concentrations of (.+?)\./gi, "Pemberian bersamaan dengan $1 dapat secara signifikan meningkatkan konsentrasi plasma dari $2.").replace(/The mechanism is (.+?) inhibition of CYP450 (\w+), the isoenzyme responsible for the metabolic clearance of (.+?)\./gi, "Mekanismenya adalah penghambatan isoenzim CYP450 $2 oleh $1, yaitu enzim yang bertanggung jawab terhadap klirens metabolisme $3.").replace(/Additionally, (.+?) inhibits CYP450 (\w+(?: and \w+)?), which are responsible for the metabolism of (.+?)\./gi, "Selain itu, $1 juga menghambat CYP450 $2 yang bertanggung jawab terhadap metabolisme $3.").replace(/The possibility of prolonged and\/or increased pharmacologic effects of (.+?) should be considered\./gi, "Perlu diwaspadai kemungkinan perpanjangan atau peningkatan efek farmakologis dari $1.").replace(/Severe adverse effects, including fatalities, have been reported following the administration of (.+?) to (.+?)\./gi, "Efek samping yang parah, termasuk kematian fatal, telah dilaporkan menyusul pemberian $1 pada $2.").replace(/The exact mechanism of interaction is unknown, but may involve additive effects on (.+?)\./gi, "Mekanisme pasti interaksi belum diketahui, namun diduga melibatkan efek aditif pada $1.").replace(/The proposed mechanism has not been fully established but may be related to (.+?)\./gi, "Mekanisme yang diajukan belum sepenuhnya dipastikan, namun kemungkinan terkait dengan $1.").replace(/The interaction has been reported with (.+?)\./gi, "Interaksi ini telah dilaporkan terjadi dengan $1.").replace(/Aspirin, even in small doses, (.+?) by inhibiting platelet aggregation, prolonging (.+?) time, and inducing gastrointestinal lesions\./gi, "Aspirin, bahkan dalam dosis rendah, $1 dengan menghambat agregasi trombosit, memperpanjang waktu perdarahan, serta memicu lesi luka pada mukosa saluran cerna.").replace(/Analgesic\/antipyretic doses of aspirin increase the risk of major (.+?) more than low-dose aspirin; however (.+?) has also occurred with low-dose aspirin\./gi, "Dosis analgesik/antipiretik aspirin meningkatkan risiko perdarahan mayor lebih tinggi dibanding dosis rendah; namun perdarahan tetap dapat terjadi meski dengan aspirin dosis rendah.").replace(/Inhibition of ACE results in decreased aldosterone secretion, which can lead to increases in serum potassium that may be additive with that induced by (.+?)\./gi, "Penghambatan ACE menyebabkan penurunan sekresi aldosteron, yang memicu kenaikan kalium serum yang dapat bersifat aditif dengan efek dari $1.").replace(/ACE inhibitors may also cause deterioration of renal function in patients with (.+?), and the risk is increased if they are sodium-depleted or dehydrated after (.+?)\./gi, "ACE inhibitor juga dapat memicu perburukan fungsi ginjal pada pasien dengan $1, dan risiko meningkat bila pasien mengalami deplesi natrium atau dehidrasi setelah $2.").replace(/and their active acid metabolites, all of which are primarily metabolized by the isoenzyme\./gi, "serta metabolit asam aktifnya, yang semuanya terutama dimetabolisme oleh isoenzim tersebut.").replace(/hypoprothrombinemic effect/gi, "efek hipoprotrombinemik (pengenceran darah / peningkatan risiko perdarahan)").replace(/the biologically more active (.+?) enantiomer of/gi, "enansiomer $1 yang lebih aktif secara biologis dari").replace(/which is primarily metabolized by the isoenzyme/gi, "yang terutama dimetabolisme oleh isoenzim tersebut");
+    for (const [enPhrase, idPhrase] of Object.entries(CLINICAL_LEXICON)) {
+      const regex = new RegExp(`\\b${enPhrase}\\b`, "gi");
+      text = text.replace(regex, idPhrase);
+    }
+    text = text.replace(/\bcan be increased\b/gi, "dapat meningkat").replace(/\bcan be decreased\b/gi, "dapat menurun").replace(/\bwhen combined with\b/gi, "bila dikombinasikan dengan").replace(/\bwhen used in combination with\b/gi, "bila digunakan bersamaan dengan").replace(/\bis combined with\b/gi, "dikombinasikan dengan").replace(/\bshould be avoided\b/gi, "sebaiknya dihindari").replace(/\bshould be monitored closely\b/gi, "harus dipantau secara ketat").replace(/\bmay result in\b/gi, "dapat mengakibatkan").replace(/\bhas been reported\b/gi, "telah dilaporkan dalam literatur klinis").replace(/\bconcomitantly with\b/gi, "bersamaan dengan").replace(/\bdue to\b/gi, "karena").replace(/\bin patients treated with\b/gi, "pada pasien yang diobati dengan");
+    return text;
+  }
+  /**
+   * Translates clinical management advice into actionable Indonesian recommendations
+   */
+  static translateDdiManagement(rawMgmt, drugA = "", drugB = "", severity = "Moderate") {
+    if (!rawMgmt || rawMgmt.trim() === "" || rawMgmt === "-") {
+      if (severity.toLowerCase() === "contraindicated") {
+        return `KONTRAINDIKASI MUTLAK: Hindari peresepan bersamaan antara ${drugA || "obat pertama"} dan ${drugB || "obat kedua"}. Gunakan alternatif terapi non-interaktif.`;
+      }
+      if (severity.toLowerCase() === "major") {
+        return `PERHATIAN TINGGI: Hindari kombinasi jika memungkinkan, atau lakukan penyesuaian dosis dan pemantauan klinis ketat terhadap respons pasien.`;
+      }
+      return `Pantau kondisi klinis dan respons terapeutik pasien selama pemberian terapi kombinasi ini.`;
+    }
+    if (isAlreadyIndonesian(rawMgmt)) {
+      return rawMgmt;
+    }
+    let text = rawMgmt.trim();
+    text = text.replace(/Given the potential for interaction and the high degree of interpatient variability with respect to (.+?) metabolism, patients should be closely monitored during concomitant therapy with (.+?)\./gi, "Mengingat tingginya potensi interaksi dan variasi respons antar-pasien terhadap metabolisme $1, pasien harus dipantau secara ketat selama terapi bersamaan dengan $2.").replace(/The INR should be checked frequently and (.+?) dosage adjusted accordingly, particularly following initiation or discontinuation of (.+?) in patients who are stabilized on their (.+?) regimen\./gi, "Pemeriksaan nilai INR harus dilakukan secara berkala dan dosis $1 disesuaikan dengan cermat, terutama setelah memulai atau menghentikan $2 pada pasien yang telah stabil dengan regimen $3.").replace(/The same precaution may be applicable during therapy with other (.+?), although clinical data are lacking\./gi, "Kewaspadaan serupa dapat berlaku selama terapi dengan $1 lainnya, meskipun data klinis masih terbatas.").replace(/Patients should be advised to promptly report any signs of bleeding to their (?:physician|doctor)[^.]*\./gi, "Pasien harus diedukasi untuk segera melaporkan segala tanda perdarahan kepada dokter, termasuk nyeri, bengkak, sakit kepala, pusing, lemas, perdarahan yang sulit berhenti, mimisan, gusi berdarah, memar tidak wajar, atau urin/feses gelap berdarah.").replace(/Patients taking oral anticoagulants should be counseled to avoid large amounts of ethanol, but moderate consumption \(one to two drinks per day\) are not likely to affect the response to the anticoagulant in patients with normal liver function\./gi, "Pasien yang mengonsumsi antikoagulan oral harus diedukasi untuk menghindari konsumsi alkohol berlebih guna mencegah fluktuasi efek antikoagulasi yang berbahaya.").replace(/Frequent INR\/PT monitoring is recommended, especially if (.+?)\./gi, "Pemantauan rutin nilai INR/PT sangat dianjurkan, terutama bila $1.").replace(/It may be advisable to avoid (.+?) in patients with (.+?)\./gi, "Dianjurkan untuk menghindari $1 pada pasien dengan $2.").replace(/Due to the potential for severe interaction, concomitant use of (.+?) is considered (?:contraindicated|Kontraindikasi)\./gi, "Mengingat potensi interaksi parah, penggunaan bersamaan $1 dianggap KONTRAINDIKASI MUTLAK.").replace(/Fluvastatin, pravastatin, pitavastatin, and rosuvastatin are probably safer alternatives, since they are not metabolized by CYP450 3A4\./gi, "Fluvastatin, pravastatin, pitavastatin, dan rosuvastatin merupakan alternatif yang lebih aman karena tidak dimetabolisme oleh CYP450 3A4.").replace(/All patients receiving statin therapy should be advised to promptly report any unexplained muscle pain, tenderness or weakness, particularly if accompanied by fever, malaise and\/or dark-colored urine\./gi, "Semua pasien yang menerima terapi statin harus diedukasi untuk segera melaporkan nyeri otot yang tidak wajar, rasa nyeri tekan, atau kelemahan otot, terutama bila disertai demam, lemas, dan/atau urin berwarna gelap (tanda rabdomiolisis).").replace(/Therapy should be discontinued if creatine kinase is markedly elevated in the absence of strenuous exercise or if myopathy is otherwise suspected or diagnosed\./gi, "Terapi harus segera dihentikan bila kadar kreatin kinase (CK) meningkat drastis tanpa adanya aktivitas fisik berat, atau bila dicurigai/didiagnosis mengalami miopati.").replace(/Caution is advised if ACE inhibitors are used with (.+?), particularly in patients with (.+?)\./gi, "Kehati-hatian tinggi dianjurkan bila ACE inhibitor digunakan bersamaan dengan $1, khususnya pada pasien dengan $2.").replace(/Serum potassium and renal function should be checked regularly, and potassium supplementation should generally be avoided unless it is closely monitored\./gi, "Kadar kalium darah dan fungsi ginjal harus diperiksa secara teratur, dan suplementasi kalium harus dihindari kecuali dengan pemantauan ketat.").replace(/Patients should be given dietary counseling and advised to seek medical attention if they experience signs and symptoms of hyperkalemia such as (.+?)\./gi, "Pasien harus diberikan konseling diet dan dianjurkan segera mencari pertolongan medis bila mengalami gejala hiperkalemia seperti $1.").replace(/This combination, especially with analgesic\/antipyretic aspirin doses, should generally be avoided unless the potential benefit outweighs the risk of bleeding\./gi, "Kombinasi ini, terutama dengan dosis analgesik/antipiretik aspirin, sebaiknya dihindari kecuali bila potensi manfaat klinis terbukti melebihi risiko perdarahan.").replace(/If concomitant therapy is used for additive anticoagulant effects, monitoring for excessive anticoagulation and overt and occult bleeding is recommended\./gi, "Bila terapi bersamaan digunakan untuk efek antikoagulan aditif, pemantauan terhadap antikoagulasi berlebihan serta perdarahan nyata atau tersembunyi sangat dianjurkan.").replace(/The INR should be checked frequently and the dosage adjusted accordingly when aspirin is added to an anticoagulant regimen\./gi, "Nilai INR harus diperiksa secara rutin dan dosis disesuaikan saat aspirin ditambahkan ke dalam regimen antikoagulan.").replace(/Be cognizant that bleeding may occur without INR or prothrombin time increases\./gi, "Perlu diingat bahwa perdarahan dapat terjadi tanpa adanya peningkatan nilai INR atau waktu protrombin.").replace(/Patients should also be counseled to avoid any other over-the-counter oral or topical salicylate products\./gi, "Pasien juga harus diedukasi untuk menghindari penggunaan produk salisilat bebas (OTC) oral maupun topikal lainnya.").replace(/weakness, listlessness, confusion, tingling of the extremities, and irregular heartbeat/gi, "lemas, lesu, kebingungan, kesemutan pada ekstremitas, dan detak jantung tidak teratur").replace(/renal impairment, diabetes, old age, worsening heart failure, and\/or a risk for dehydration/gi, "gangguan ginjal, diabetes, usia lanjut, perburukan gagal jantung, atau risiko dehidrasi").replace(/consider alternative therapy/gi, "Pertimbangkan terapi alternatif").replace(/or monitor INR closely/gi, "atau pantau nilai INR/hemostasis secara ketat").replace(/monitor INR closely/gi, "Pantau nilai INR/hemostasis secara ketat").replace(/monitor blood pressure closely/gi, "Pantau tekanan darah pasien secara ketat").replace(/monitor serum potassium levels/gi, "Pantau kadar kalium darah dan fungsi ginjal secara berkala").replace(/monitor for increased adverse effects/gi, "Pantau potensi kemunculan efek samping yang meningkat").replace(/separate administration by at least (\d+) hours/gi, "Beri jeda waktu konsumsi minimal $1 jam antar obat").replace(/separate administration by/gi, "Pisahkan jadwal minum obat dengan jeda").replace(/dose reduction may be required/gi, "Penurunan dosis mungkin diperlukan").replace(/avoid combination unless benefits outweigh risks/gi, "Hindari kombinasi kecuali bila manfaat klinis terbukti melebihi risikonya").replace(/monitor closely/gi, "Pantau secara ketat").replace(/do not co-administer/gi, "Jangan diberikan bersamaan (kontraindikasi)").replace(/contraindicated/gi, "Kontraindikasi");
+    return text;
+  }
+  /**
+   * Translates Food interaction fields
+   */
+  static translateFoodInteraction(rawFoodItem, rawMechanism, rawEffect, rawMgmt, drugName = "") {
+    const foodKey = (rawFoodItem || "").toLowerCase().trim();
+    const matched = FOOD_TRANSLATIONS[foodKey];
+    const foodItem = matched ? matched.idName : rawFoodItem;
+    let mechanism = rawMechanism;
+    if (!mechanism || mechanism === "-" || !isAlreadyIndonesian(mechanism)) {
+      if (matched) {
+        mechanism = `Interaksi antara ${drugName || "obat"} dan ${foodItem}. Komponen bioaktif pangan mempengaruhi laju absorpsi atau metabolisme hepatik zat aktif.`;
+      } else {
+        mechanism = this.translateDdiDescription(rawMechanism, drugName, foodItem);
+      }
+    }
+    let effect = rawEffect;
+    if (!effect || effect === "-" || !isAlreadyIndonesian(effect)) {
+      effect = `Modifikasi konsentrasi serum puncak atau bioavailabilitas sistemik ${drugName || "obat"} dalam tubuh.`;
+    }
+    let recommendation = rawMgmt;
+    if (!recommendation || recommendation === "-" || !isAlreadyIndonesian(recommendation)) {
+      recommendation = matched ? matched.advice : this.translateDdiManagement(rawMgmt, drugName, foodItem);
+    }
+    return {
+      foodItem,
+      mechanism,
+      effect,
+      recommendation,
+      originalFoodItem: rawFoodItem,
+      originalMechanism: rawMechanism,
+      originalEffect: rawEffect,
+      originalRecommendation: rawMgmt
+    };
+  }
+  /**
+   * Translates Disease contraindication fields
+   */
+  static translateDiseaseContraindication(rawDiseaseName, rawRisk, rawMechanism, rawMgmt, drugName = "") {
+    const disKey = (rawDiseaseName || "").toLowerCase().trim();
+    const matched = DISEASE_TRANSLATIONS[disKey];
+    const diseaseName = matched ? matched.idName : rawDiseaseName;
+    let risk = rawRisk;
+    if (!risk || risk === "-" || !isAlreadyIndonesian(risk)) {
+      if (matched && (!rawRisk || rawRisk.length < 15)) {
+        risk = matched.defaultRisk;
+      } else {
+        risk = this.translateDdiDescription(rawRisk, drugName, diseaseName);
+      }
+    }
+    let mechanism = rawMechanism;
+    if (!mechanism || mechanism === "-" || !isAlreadyIndonesian(mechanism)) {
+      mechanism = `Interaksi patofisiologis antara mekanisme aksi/eliminasi ${drugName || "obat"} dengan kondisi disfungsi organ pada ${diseaseName}.`;
+    }
+    let management = rawMgmt;
+    if (!management || management === "-" || !isAlreadyIndonesian(management)) {
+      management = matched ? matched.defaultManagement : this.translateDdiManagement(rawMgmt, drugName, diseaseName, "Major");
+    }
+    return {
+      diseaseName,
+      risk,
+      mechanism,
+      management,
+      originalDiseaseName: rawDiseaseName,
+      originalRisk: rawRisk,
+      originalMechanism: rawMechanism,
+      originalManagement: rawMgmt
+    };
+  }
+  /**
+   * Translates Therapeutic Duplications
+   */
+  static translateDuplication(rawConcern, rawNote, drugA, drugB, therapeuticClass) {
+    let concern = rawConcern;
+    if (!concern || !isAlreadyIndonesian(concern)) {
+      concern = `Peresepan ganda dua obat dari kelas farmakologi identik (${therapeuticClass}): ${drugA} dan ${drugB}. Kombinasi ini meningkatkan risiko efek samping kumulatif dan toksisitas tanpa memberikan peningkatan manfaat klinis yang sebanding.`;
+    }
+    let recommendation = rawNote;
+    if (!recommendation || !isAlreadyIndonesian(recommendation)) {
+      recommendation = `Evaluasi kembali kebutuhan peresepan bersamaan. Pertimbangkan untuk memilih salah satu obat sebagai monoterapi dengan titrasi dosis yang optimal guna meminimalkan beban polifarmasi.`;
+    }
+    return {
+      concern,
+      recommendation,
+      originalConcern: rawConcern,
+      originalRecommendation: rawNote
+    };
+  }
+};
+
 // server.ts
 try {
   dns2.setDefaultResultOrder("ipv4first");
@@ -10224,7 +10875,7 @@ function buildMonographFromRecord(record) {
   } catch {
   }
   const isBiotech = record.drug_type === "biotech" || Boolean(record.protein_sequence);
-  const atc = record.atc_code || (record.drugbank_id && /^[A-Z][0-9]{2}[A-Z]{2}[0-9]{2}$/.test(record.drugbank_id) ? record.drugbank_id : record.drugbank_id || "-");
+  const atc = record.atc_code || "-";
   const resolved = resolvePharmacotherapyClass(atc, record.name, record.drug_type, record.mechanism);
   const therapeuticClass = (record.therapeutic_class ? record.therapeutic_class.replace(/^Senyawa Farmakologis\s+/i, "") : "") || (record.atc_category && record.atc_category !== "Farmakologi Terverifikasi DDInter v2.0" ? record.atc_category.replace(/^Senyawa Farmakologis\s+/i, "") : "") || resolved.therapeuticClass.replace(/^Senyawa Farmakologis\s+/i, "");
   const atcCategory = (record.atc_category && record.atc_category !== "Farmakologi Terverifikasi DDInter v2.0" ? record.atc_category : "") || resolved.atcCategory;
@@ -10623,9 +11274,11 @@ app.post("/api/interactions/check", async (req, res) => {
         const rawDesc = (item.idx__interaction_description || "").trim();
         const rawMgmt = (item.idx__management || "").trim();
         const fullDetail = !isUnknown ? await ddinterLiveService.getDdiFullDetails(idA, idB, item.drug_a_name, item.drug_b_name) : null;
-        const mechanism = rawDesc && rawDesc !== "-" ? rawDesc : isUnknown ? "-" : `Interaksi terverifikasi DDInter v2.0 antara ${item.drug_a_name} dan ${item.drug_b_name}.`;
-        const clinicalEffect = rawDesc && rawDesc !== "-" ? rawDesc : "-";
-        const management = rawMgmt && rawMgmt !== "-" ? rawMgmt : "-";
+        const transDesc = await ClinicalTranslator.translateDdiDescriptionAsync(rawDesc, item.drug_a_name, item.drug_b_name);
+        const transMgmt = await ClinicalTranslator.translateDdiManagementAsync(rawMgmt, item.drug_a_name, item.drug_b_name, sev);
+        const mechanism = transDesc && transDesc !== "-" ? transDesc : isUnknown ? "-" : `Interaksi terverifikasi DDInter v2.0 antara ${item.drug_a_name} dan ${item.drug_b_name}.`;
+        const clinicalEffect = transDesc && transDesc !== "-" ? transDesc : "-";
+        const management = transMgmt && transMgmt !== "-" ? transMgmt : "-";
         const evidenceLevel = isUnknown ? "-" : "A";
         const level = isUnknown ? "Unknown" : sev === "Major" ? "Severe" : sev;
         foundDdi.push({
@@ -10654,7 +11307,10 @@ app.post("/api/interactions/check", async (req, res) => {
           references: isUnknown ? [] : fullDetail?.references || [],
           alternatives: fullDetail?.alternatives,
           cypMetabolism: fullDetail?.cypMetabolism,
-          officialInteractId: fullDetail?.interactId
+          officialInteractId: fullDetail?.interactId,
+          originalMechanism: rawDesc && rawDesc !== "-" ? rawDesc : void 0,
+          originalClinicalEffect: rawDesc && rawDesc !== "-" ? rawDesc : void 0,
+          originalManagement: rawMgmt && rawMgmt !== "-" ? rawMgmt : void 0
         });
       }
     } catch (liveErr) {
@@ -10683,6 +11339,9 @@ app.post("/api/interactions/check", async (req, res) => {
         d.ddinter_id_b,
         sev
       );
+      const transMech = isUnknown ? "-" : await ClinicalTranslator.translateDdiDescriptionAsync(clinicalInfo.mechanism, d.drug_a, d.drug_b);
+      const transEffect = isUnknown ? "-" : await ClinicalTranslator.translateDdiDescriptionAsync(clinicalInfo.clinicalEffect, d.drug_a, d.drug_b);
+      const transMgmt = isUnknown ? "-" : await ClinicalTranslator.translateDdiManagementAsync(clinicalInfo.management, d.drug_a, d.drug_b, sev);
       const fullDetail = !isUnknown ? await ddinterLiveService.getDdiFullDetails(
         d.ddinter_id_a,
         d.ddinter_id_b,
@@ -10696,18 +11355,21 @@ app.post("/api/interactions/check", async (req, res) => {
         drugB: { id: d.drug_b.toLowerCase().replace(/[^a-z0-9]+/g, "-"), name: d.drug_b, ddinterId: d.ddinter_id_b },
         severity: sev,
         level: isUnknown ? "Unknown" : sev === "Major" ? "Severe" : sev,
-        mechanism: clinicalInfo.mechanism,
-        clinicalEffect: clinicalInfo.clinicalEffect,
+        mechanism: transMech,
+        clinicalEffect: transEffect,
         evidenceLevel: isUnknown ? "-" : clinicalInfo.evidenceLevel || "A",
         onset: isUnknown ? "-" : "Delayed",
-        management: clinicalInfo.management,
+        management: transMgmt,
         mechanismTags: clinicalInfo.mechanismTags,
         source: "DDInter v2.0 Official Database (ddinter2.scbdd.com)",
         officialUrl: fullDetail?.officialUrl || `https://ddinter2.scbdd.com/checker/result/${d.ddinter_id_a}-${d.ddinter_id_b}`,
         references: isUnknown ? [] : fullDetail?.references || [],
         alternatives: fullDetail?.alternatives,
         cypMetabolism: fullDetail?.cypMetabolism,
-        officialInteractId: fullDetail?.interactId
+        officialInteractId: fullDetail?.interactId,
+        originalMechanism: clinicalInfo.mechanism !== transMech ? clinicalInfo.mechanism : void 0,
+        originalClinicalEffect: clinicalInfo.clinicalEffect !== transEffect ? clinicalInfo.clinicalEffect : void 0,
+        originalManagement: clinicalInfo.management !== transMgmt ? clinicalInfo.management : void 0
       });
     }
   }
@@ -10726,18 +11388,29 @@ app.post("/api/interactions/check", async (req, res) => {
           `U.S. Food and Drug Administration (FDA): Avoiding Drug and Food Interactions Guide (2023).`
         );
       }
+      const transFood = await ClinicalTranslator.translateFoodInteractionAsync(
+        f.food_name,
+        f.mechanism || "",
+        "Modifikasi konsentrasi serum puncak atau ketersediaan hayati sistemik obat.",
+        f.management || "",
+        f.drug_name
+      );
       foundFood.push({
         id: `dfi-db-${f.id}`,
         drugId: f.ddinter_id,
         drugName: f.drug_name,
-        foodItem: f.food_name,
+        foodItem: transFood.foodItem,
         foodCategory: "Makanan/Nutrisi",
         severity: sev,
-        mechanism: f.mechanism || "Interaksi absorpsi atau metabolisme gastrointestinal dengan asupan makanan spesifik terdaftar DDInter.",
-        effect: "Modifikasi konsentrasi serum puncak atau ketersediaan hayati sistemik obat.",
-        recommendation: f.management || "Pertimbangkan waktu jeda konsumsi antara makanan dan obat (minimal 1-2 jam sesuai petunjuk DDInter).",
+        mechanism: transFood.mechanism,
+        effect: transFood.effect,
+        recommendation: transFood.recommendation,
         references: foodRefs,
-        source: "DDInter v2.0 Drug-Food Interactions (DFI)"
+        source: "DDInter v2.0 Drug-Food Interactions (DFI)",
+        originalFoodItem: transFood.originalFoodItem,
+        originalMechanism: transFood.originalMechanism,
+        originalEffect: transFood.originalEffect,
+        originalRecommendation: transFood.originalRecommendation
       });
     }
   }
@@ -10756,18 +11429,29 @@ app.post("/api/interactions/check", async (req, res) => {
           `Clinical Pharmacogenetics & Disease Contraindication Guidelines (2023).`
         );
       }
+      const transDis = await ClinicalTranslator.translateDiseaseContraindicationAsync(
+        dis.disease_name,
+        dis.text || "",
+        "",
+        "",
+        dis.drug_name
+      );
       foundDiseaseWarnings.push({
         id: `ddsi-db-${dis.id}`,
         drugId: dis.ddinter_id,
         drugName: dis.drug_name,
         diseaseId: dis.disease_name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
-        diseaseName: dis.disease_name,
+        diseaseName: transDis.diseaseName,
         severity: sev,
-        risk: dis.text && dis.text.length > 0 ? dis.text.length > 400 ? dis.text.slice(0, 400) + "..." : dis.text : "Peringatan kontraindikasi patofisiologis penyakit pada database resmi DDInter v2.0.",
-        mechanism: "Interaksi farmakopatologis antara profil eliminasi/aksi obat dan kondisi disfungsi organ pasien (DDInter DDSI).",
-        management: "Hindari peresepan pada kondisi ini atau konsultasikan penggantian ke lini terapi aman sesuai profil DDInter.",
+        risk: transDis.risk,
+        mechanism: transDis.mechanism,
+        management: transDis.management,
         references: diseaseRefs,
-        source: "DDInter v2.0 Drug-Disease Contraindications (DDSI)"
+        source: "DDInter v2.0 Drug-Disease Contraindications (DDSI)",
+        originalDiseaseName: transDis.originalDiseaseName,
+        originalRisk: transDis.originalRisk,
+        originalMechanism: transDis.originalMechanism,
+        originalManagement: transDis.originalManagement
       });
     }
   }
@@ -10784,16 +11468,25 @@ app.post("/api/interactions/check", async (req, res) => {
         `DDInter v2.0 Polypharmacy & Therapeutic Duplication Surveillance Database (Nucleic Acids Research, 2024). https://ddinter2.scbdd.com/`,
         `DDInter 2.0: 6,033 therapeutic duplication records involving 317 combination drugs and 96 pharmacological classes.`
       ];
+      const transDup = ClinicalTranslator.translateDuplication(
+        dup.warning || "",
+        dup.note || "",
+        nameA,
+        nameB,
+        dup.drug_type
+      );
       foundDuplications.push({
         id: `dupli-db-${dup.id}`,
         drugA: nameA,
         drugB: nameB,
         therapeuticClass: dup.drug_type,
         atcGroup: dup.drug_type,
-        concern: dup.warning || "Pemberian obat multipel dari kelas farmakologi identik terverifikasi DDInter v2.0.",
-        recommendation: dup.note || "Evaluasi indikasi kombinasi untuk mencegah efek kumulatif yang tidak perlu.",
+        concern: transDup.concern,
+        recommendation: transDup.recommendation,
         references: dupliRefs,
-        source: "DDInter v2.0 Therapeutic Duplication Surveillance (ddinter2.scbdd.com)"
+        source: "DDInter v2.0 Therapeutic Duplication Surveillance (ddinter2.scbdd.com)",
+        originalConcern: transDup.originalConcern,
+        originalRecommendation: transDup.originalRecommendation
       });
     }
   }

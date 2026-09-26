@@ -12,6 +12,7 @@ import { clinicalDDIRules } from './src/server/clinicalDDIRules.ts';
 import { resolvePharmacotherapyClass } from './src/data/atcClassifier.ts';
 import { getDiseaseClinicalMonograph } from './src/data/diseaseClinicalData.ts';
 import { ddinterLiveService } from './src/server/ddinterLiveService.ts';
+import { ClinicalTranslator } from './src/server/clinicalTranslator.ts';
 import {
   DrugMonograph,
   DrugInteraction,
@@ -88,11 +89,7 @@ function buildMonographFromRecord(record: DrugRecord): DrugMonograph {
   } catch {}
 
   const isBiotech = record.drug_type === 'biotech' || Boolean(record.protein_sequence);
-  const atc =
-    record.atc_code ||
-    (record.drugbank_id && /^[A-Z][0-9]{2}[A-Z]{2}[0-9]{2}$/.test(record.drugbank_id)
-      ? record.drugbank_id
-      : record.drugbank_id || '-');
+  const atc = record.atc_code || '-';
 
   const resolved = resolvePharmacotherapyClass(atc, record.name, record.drug_type, record.mechanism);
 
@@ -605,16 +602,19 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
           ? await ddinterLiveService.getDdiFullDetails(idA, idB, item.drug_a_name, item.drug_b_name)
           : null;
 
-        const mechanism = (rawDesc && rawDesc !== '-')
-          ? rawDesc
+        const transDesc = await ClinicalTranslator.translateDdiDescriptionAsync(rawDesc, item.drug_a_name, item.drug_b_name);
+        const transMgmt = await ClinicalTranslator.translateDdiManagementAsync(rawMgmt, item.drug_a_name, item.drug_b_name, sev);
+
+        const mechanism = (transDesc && transDesc !== '-')
+          ? transDesc
           : isUnknown ? '-' : `Interaksi terverifikasi DDInter v2.0 antara ${item.drug_a_name} dan ${item.drug_b_name}.`;
 
-        const clinicalEffect = (rawDesc && rawDesc !== '-')
-          ? rawDesc
+        const clinicalEffect = (transDesc && transDesc !== '-')
+          ? transDesc
           : '-';
 
-        const management = (rawMgmt && rawMgmt !== '-')
-          ? rawMgmt
+        const management = (transMgmt && transMgmt !== '-')
+          ? transMgmt
           : '-';
 
         const evidenceLevel = isUnknown ? '-' : 'A';
@@ -647,6 +647,9 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
           alternatives: fullDetail?.alternatives,
           cypMetabolism: fullDetail?.cypMetabolism,
           officialInteractId: fullDetail?.interactId,
+          originalMechanism: rawDesc && rawDesc !== '-' ? rawDesc : undefined,
+          originalClinicalEffect: rawDesc && rawDesc !== '-' ? rawDesc : undefined,
+          originalManagement: rawMgmt && rawMgmt !== '-' ? rawMgmt : undefined,
         });
       }
     } catch (liveErr) {
@@ -683,6 +686,10 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
             sev
           );
 
+      const transMech = isUnknown ? '-' : await ClinicalTranslator.translateDdiDescriptionAsync(clinicalInfo.mechanism, d.drug_a, d.drug_b);
+      const transEffect = isUnknown ? '-' : await ClinicalTranslator.translateDdiDescriptionAsync(clinicalInfo.clinicalEffect, d.drug_a, d.drug_b);
+      const transMgmt = isUnknown ? '-' : await ClinicalTranslator.translateDdiManagementAsync(clinicalInfo.management, d.drug_a, d.drug_b, sev);
+
       const fullDetail = !isUnknown
         ? await ddinterLiveService.getDdiFullDetails(
             d.ddinter_id_a,
@@ -699,11 +706,11 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
         drugB: { id: d.drug_b.toLowerCase().replace(/[^a-z0-9]+/g, '-'), name: d.drug_b, ddinterId: d.ddinter_id_b },
         severity: sev,
         level: isUnknown ? 'Unknown' : (sev === 'Major' ? 'Severe' : sev),
-        mechanism: clinicalInfo.mechanism,
-        clinicalEffect: clinicalInfo.clinicalEffect,
+        mechanism: transMech,
+        clinicalEffect: transEffect,
         evidenceLevel: isUnknown ? '-' : (clinicalInfo.evidenceLevel || 'A'),
         onset: isUnknown ? '-' : 'Delayed',
-        management: clinicalInfo.management,
+        management: transMgmt,
         mechanismTags: clinicalInfo.mechanismTags,
         source: 'DDInter v2.0 Official Database (ddinter2.scbdd.com)',
         officialUrl: fullDetail?.officialUrl || `https://ddinter2.scbdd.com/checker/result/${d.ddinter_id_a}-${d.ddinter_id_b}`,
@@ -711,6 +718,9 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
         alternatives: fullDetail?.alternatives,
         cypMetabolism: fullDetail?.cypMetabolism,
         officialInteractId: fullDetail?.interactId,
+        originalMechanism: clinicalInfo.mechanism !== transMech ? clinicalInfo.mechanism : undefined,
+        originalClinicalEffect: clinicalInfo.clinicalEffect !== transEffect ? clinicalInfo.clinicalEffect : undefined,
+        originalManagement: clinicalInfo.management !== transMgmt ? clinicalInfo.management : undefined,
       });
     }
   }
@@ -738,20 +748,30 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
         );
       }
 
+      const transFood = await ClinicalTranslator.translateFoodInteractionAsync(
+        f.food_name,
+        f.mechanism || '',
+        'Modifikasi konsentrasi serum puncak atau ketersediaan hayati sistemik obat.',
+        f.management || '',
+        f.drug_name
+      );
+
       foundFood.push({
         id: `dfi-db-${f.id}`,
         drugId: f.ddinter_id,
         drugName: f.drug_name,
-        foodItem: f.food_name,
+        foodItem: transFood.foodItem,
         foodCategory: 'Makanan/Nutrisi',
         severity: sev as any,
-        mechanism:
-          f.mechanism || 'Interaksi absorpsi atau metabolisme gastrointestinal dengan asupan makanan spesifik terdaftar DDInter.',
-        effect: 'Modifikasi konsentrasi serum puncak atau ketersediaan hayati sistemik obat.',
-        recommendation:
-          f.management || 'Pertimbangkan waktu jeda konsumsi antara makanan dan obat (minimal 1-2 jam sesuai petunjuk DDInter).',
+        mechanism: transFood.mechanism,
+        effect: transFood.effect,
+        recommendation: transFood.recommendation,
         references: foodRefs,
         source: 'DDInter v2.0 Drug-Food Interactions (DFI)',
+        originalFoodItem: transFood.originalFoodItem,
+        originalMechanism: transFood.originalMechanism,
+        originalEffect: transFood.originalEffect,
+        originalRecommendation: transFood.originalRecommendation,
       });
     }
   }
@@ -779,23 +799,30 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
         );
       }
 
+      const transDis = await ClinicalTranslator.translateDiseaseContraindicationAsync(
+        dis.disease_name,
+        dis.text || '',
+        '',
+        '',
+        dis.drug_name
+      );
+
       foundDiseaseWarnings.push({
         id: `ddsi-db-${dis.id}`,
         drugId: dis.ddinter_id,
         drugName: dis.drug_name,
         diseaseId: dis.disease_name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-        diseaseName: dis.disease_name,
+        diseaseName: transDis.diseaseName,
         severity: sev as any,
-        risk:
-          dis.text && dis.text.length > 0
-            ? dis.text.length > 400
-              ? dis.text.slice(0, 400) + '...'
-              : dis.text
-            : 'Peringatan kontraindikasi patofisiologis penyakit pada database resmi DDInter v2.0.',
-        mechanism: 'Interaksi farmakopatologis antara profil eliminasi/aksi obat dan kondisi disfungsi organ pasien (DDInter DDSI).',
-        management: 'Hindari peresepan pada kondisi ini atau konsultasikan penggantian ke lini terapi aman sesuai profil DDInter.',
+        risk: transDis.risk,
+        mechanism: transDis.mechanism,
+        management: transDis.management,
         references: diseaseRefs,
         source: 'DDInter v2.0 Drug-Disease Contraindications (DDSI)',
+        originalDiseaseName: transDis.originalDiseaseName,
+        originalRisk: transDis.originalRisk,
+        originalMechanism: transDis.originalMechanism,
+        originalManagement: transDis.originalManagement,
       });
     }
   }
@@ -818,16 +845,26 @@ app.post('/api/interactions/check', async (req: Request, res: Response) => {
         `DDInter 2.0: 6,033 therapeutic duplication records involving 317 combination drugs and 96 pharmacological classes.`,
       ];
 
+      const transDup = ClinicalTranslator.translateDuplication(
+        dup.warning || '',
+        dup.note || '',
+        nameA,
+        nameB,
+        dup.drug_type
+      );
+
       foundDuplications.push({
         id: `dupli-db-${dup.id}`,
         drugA: nameA,
         drugB: nameB,
         therapeuticClass: dup.drug_type,
         atcGroup: dup.drug_type,
-        concern: dup.warning || 'Pemberian obat multipel dari kelas farmakologi identik terverifikasi DDInter v2.0.',
-        recommendation: dup.note || 'Evaluasi indikasi kombinasi untuk mencegah efek kumulatif yang tidak perlu.',
+        concern: transDup.concern,
+        recommendation: transDup.recommendation,
         references: dupliRefs,
         source: 'DDInter v2.0 Therapeutic Duplication Surveillance (ddinter2.scbdd.com)',
+        originalConcern: transDup.originalConcern,
+        originalRecommendation: transDup.originalRecommendation,
       });
     }
   }

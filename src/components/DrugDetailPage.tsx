@@ -171,10 +171,10 @@ export const DrugDetailPage: React.FC<DrugDetailPageProps> = ({
               <span className="text-teal-800 font-bold bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
                 {drug.ddinterId}
               </span>
-              {drug.atcCode && drug.atcCode !== '-' && (
+              {drug.atcCode && drug.atcCode !== '-' && drug.atcCode.length > 1 && (
                 <>
                   <span>·</span>
-                  <span className="bg-slate-100 px-2 py-0.5 rounded text-slate-700">ATC: {drug.atcCode}</span>
+                  <span className="bg-slate-100 px-2 py-0.5 rounded text-slate-700 font-semibold">ATC: {drug.atcCode}</span>
                 </>
               )}
               {drug.pubchemCid ? (
@@ -307,7 +307,9 @@ export const DrugDetailPage: React.FC<DrugDetailPageProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                   <div>
                     <span className="text-slate-400 block text-[11px] font-mono">Kode Klasifikasi ATC:</span>
-                    <span className="text-slate-800 font-bold font-mono text-sm">{drug.atcCode || '-'}</span>
+                    <span className="text-slate-800 font-bold font-mono text-sm">
+                      {drug.atcCode && drug.atcCode.length > 1 ? drug.atcCode : (drug.atcCode && drug.atcCode.length === 1 ? `Grup ${drug.atcCode}` : '-')}
+                    </span>
                     <span className="text-teal-700 text-[11px] font-medium block mt-0.5">{activeAtcCategory}</span>
                   </div>
                   <div>

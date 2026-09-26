@@ -292,7 +292,7 @@ class DDInterLiveService {
                   name: item.name || item.display,
                   smiles: item.smiles && item.smiles !== item.internalID ? item.smiles : undefined,
                   structureSvg: item.structure || undefined,
-                  atcClassification: item.drugbank_id ? [item.drugbank_id] : [],
+                  atcClassification: [],
                 };
               }
             }
@@ -334,8 +334,8 @@ class DDInterLiveService {
       molecularWeight: (dbDrug?.molecular_weight && dbDrug.molecular_weight > 0 ? String(dbDrug.molecular_weight) : undefined) || cleanStr(curated.molecularWeight) || undefined,
       casNumber: cas || undefined,
       description: desc || undefined,
-      atcClassification: (dbDrug?.atc_code ? dbDrug.atc_code.split(', ') : null) || curated.atcClassification || (dbDrug?.drugbank_id ? [dbDrug.drugbank_id] : []),
-      atcCategoryName: dbDrug?.atc_category || curated.atcCategoryName,
+      atcClassification: (dbDrug?.atc_code && dbDrug.atc_code.length > 1 ? dbDrug.atc_code.split(', ') : null) || (curated.atcClassification?.length ? curated.atcClassification : (dbDrug?.atc_code ? [dbDrug.atc_code] : [])),
+      atcCategoryName: (dbDrug?.atc_code && dbDrug.atc_code.length > 1 ? dbDrug.atc_category : curated.atcCategoryName) || dbDrug?.atc_category || curated.atcCategoryName,
       brandNames: brands,
       iupacName: cleanStr(curated.iupacName) || undefined,
       inchi: cleanStr(curated.inchi) || undefined,
@@ -467,11 +467,13 @@ class DDInterLiveService {
     const cached = globalCache.get<DDInterLiveDrug>(cacheKey);
     if (cached) return cached.data;
 
-    // If we already have complete authentic DDInter monograph with formula/SVG and description, return immediately!
+    // If we already have complete authentic DDInter monograph with full ATC code, formula/SVG and description, return immediately!
     const internalDrug = this.buildFallbackDrugDetail(ddinterId);
+    const hasFullAtc = Boolean(internalDrug.atcClassification?.length && internalDrug.atcClassification[0].length >= 3);
     if (
       internalDrug.molecularFormula &&
       internalDrug.description &&
+      hasFullAtc &&
       (internalDrug.structureSvg || internalDrug.drugType === 'biotech')
     ) {
       globalCache.set(cacheKey, internalDrug, 86400, 'DDInter Internal Database');
@@ -512,19 +514,45 @@ class DDInterLiveService {
         drugName = nameMatch[1].replace(/<[^>]+>/g, '').trim();
       }
 
-      // Extract ATC codes & hierarchical category name
-      const atcMatches = Array.from(html.matchAll(/data-tippy-content=["']([^"']+)["'][^>]*>([A-Z0-9]{7})<\/span>/g))
-        .map((m) => m[2]);
-      const uniqueAtc = Array.from(new Set(atcMatches));
-
+      // Extract ATC codes & hierarchical category name directly from official DDInter HTML
+      let atcClassification: string[] = [];
       let atcCategoryName = '';
-      const atcTooltipMatch = html.match(/data-tippy-content=["']([^"']+)["'][^>]*>[A-Z0-9]{7}<\/span>/i);
-      if (atcTooltipMatch) {
-        const parts = atcTooltipMatch[1].split(/<br\s*\/?>/i).map((s) => s.trim()).filter(Boolean);
-        if (parts.length >= 2) {
-          // e.g. "H05AA: Parathyroid hormones and analogues" -> "Parathyroid hormones and analogues"
-          atcCategoryName = parts[1].replace(/^[A-Z0-9]+:\s*/, '');
+
+      const atcCellMatch = html.match(/<td[^>]*class=["']key["'][^>]*>\s*ATC Classification\s*<\/td>\s*<td[^>]*class=["']value["'][^>]*>([\s\S]*?)<\/td>/i);
+      if (atcCellMatch) {
+        const cellHtml = atcCellMatch[1];
+        // Match badges: <span class="badge..." data-tippy-content="..."> L02BX03 </span>
+        const badgeMatches = Array.from(cellHtml.matchAll(/<span[^>]*class=["'][^"']*badge[^"']*["'][^>]*>([\s\S]*?)<\/span>/gi))
+          .map((m) => m[1].replace(/<[^>]+>/g, '').trim())
+          .filter((code) => /^[A-Z][0-9]{2}[A-Z0-9]{0,4}$/i.test(code));
+
+        if (badgeMatches.length > 0) {
+          atcClassification = Array.from(new Set(badgeMatches));
         }
+
+        // Parse hierarchical tooltips from data-tippy-content
+        const tippyMatches = Array.from(cellHtml.matchAll(/data-tippy-content=["']([^"']+)["']/gi));
+        for (const tm of tippyMatches) {
+          const unescaped = tm[1].replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+          const lines = unescaped.split(/<br\s*\/?>/i).map((s) => s.trim()).filter(Boolean);
+          if (lines.length >= 2 && !atcCategoryName) {
+            atcCategoryName = lines[1].replace(/^[A-Z0-9]+:\s*/, '');
+          }
+        }
+      }
+
+      // Fallback: check dict['ATC Classification']
+      if (atcClassification.length === 0 && dict['ATC Classification']) {
+        const found = dict['ATC Classification'].match(/[A-Z][0-9]{2}[A-Z0-9]{0,4}/g);
+        if (found) atcClassification = Array.from(new Set(found));
+      }
+
+      // Fallback to internal curated if HTML didn't specify
+      if (atcClassification.length === 0 && internalDrug.atcClassification?.length && internalDrug.atcClassification[0].length >= 3) {
+        atcClassification = internalDrug.atcClassification;
+      }
+      if (!atcCategoryName && internalDrug.atcCategoryName) {
+        atcCategoryName = internalDrug.atcCategoryName;
       }
 
       // Extract 2D Structure SVG
@@ -611,7 +639,7 @@ class DDInterLiveService {
         molecularWeight: molecularWeight || internalDrug.molecularWeight,
         casNumber: casNumber || internalDrug.casNumber,
         description: description || internalDrug.description,
-        atcClassification: uniqueAtc.length > 0 ? uniqueAtc : (dict['ATC Classification'] ? dict['ATC Classification'].split(/\s+/) : internalDrug.atcClassification),
+        atcClassification: atcClassification.length > 0 ? atcClassification : (internalDrug.atcClassification || []),
         atcCategoryName: atcCategoryName || internalDrug.atcCategoryName,
         brandNames: brandNames.length > 0 ? brandNames : internalDrug.brandNames,
         iupacName: cleanStr(dict['IUPAC Name']) || internalDrug.iupacName,
@@ -647,6 +675,13 @@ class DDInterLiveService {
           drugbank_id: dbId,
           chembl_id: cmId,
         });
+
+        if (result.atcClassification && result.atcClassification.length > 0) {
+          const atcStr = result.atcClassification.join(', ');
+          if (atcStr.length > 1) {
+            ddinterDb.updateDrugAtc(result.ddinterId, atcStr, result.atcCategoryName || '');
+          }
+        }
       } catch (err) {
         console.warn('[DDInterLive] SQLite persist warning:', err);
       }

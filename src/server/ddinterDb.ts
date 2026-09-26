@@ -317,6 +317,29 @@ class DDInterDatabaseService {
     }
   }
 
+  public updateDrugAtc(ddinterId: string, atcCode: string, atcCategory: string = '', therapeuticClass: string = ''): boolean {
+    const db = this.getDb();
+    if (!db) return false;
+    try {
+      db.prepare(`
+        UPDATE drugs SET
+          atc_code = COALESCE(NULLIF(?, ''), atc_code),
+          atc_category = COALESCE(NULLIF(?, ''), atc_category),
+          therapeutic_class = COALESCE(NULLIF(?, ''), therapeutic_class)
+        WHERE ddinter_id = ? COLLATE NOCASE
+      `).run(
+        atcCode || '',
+        atcCategory || '',
+        therapeuticClass || atcCategory || '',
+        ddinterId
+      );
+      return true;
+    } catch (err) {
+      console.warn('[DDInterDb] Error updating drug ATC:', err);
+      return false;
+    }
+  }
+
   public getStats(): DDInterStats {
     if (this.statsCache) return this.statsCache;
     const statsPath = resolveDataFile('ddinter_stats.json');

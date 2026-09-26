@@ -23,6 +23,7 @@ import {
   Search,
 } from 'lucide-react';
 import { RegimenAnalysisResult, DrugMonograph, DiseaseInfo } from '../types/pharmacy.ts';
+import { DrugPreviewModal } from './DrugPreviewModal.tsx';
 
 interface InteractionCheckerViewProps {
   selectedDrugIds: string[];
@@ -39,8 +40,13 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
 }) => {
   const [analysis, setAnalysis] = useState<RegimenAnalysisResult | null>(null);
   const [loading, setLoading] = useState(false);
+  const [languageMode, setLanguageMode] = useState<'id' | 'en'>('id');
   const [activeTab, setActiveTab] = useState<'ddi' | 'food' | 'disease' | 'duplication' | 'matrix'>('ddi');
   const [selectedPresetIndex, setSelectedPresetIndex] = useState<string>('');
+
+  // Drug preview modal & substitution state
+  const [previewDrugId, setPreviewDrugId] = useState<string | null>(null);
+  const [replacingDrugName, setReplacingDrugName] = useState<string | null>(null);
 
   // DDInter Reference & Alternative expansion state
   const [expandedRefs, setExpandedRefs] = useState<Record<string, boolean>>({});
@@ -64,6 +70,23 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
     navigator.clipboard.writeText(text);
     setCopiedRef(refKey);
     setTimeout(() => setCopiedRef(null), 2500);
+  };
+
+  const handleSwapDrug = (oldDrugName: string, newDrug: DrugMonograph) => {
+    const newId = newDrug.name;
+    setSelectedDrugIds((prev) => {
+      const lowerOld = oldDrugName.toLowerCase();
+      const filtered = prev.filter((id) => {
+        const mappedName = drugNameMap[id.toLowerCase()] || id;
+        return mappedName.toLowerCase() !== lowerOld && id.toLowerCase() !== lowerOld;
+      });
+      return [...filtered, newId];
+    });
+  };
+
+  const handleOpenDrugPreview = (targetDrugId: string, currentInteractingDrug?: string) => {
+    setPreviewDrugId(targetDrugId);
+    setReplacingDrugName(currentInteractingDrug || null);
   };
 
   // Drug selector input & dynamic options from DDInter
@@ -322,37 +345,38 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
     setSelectedPresetIndex('');
   };
 
-  // Severity style helper
+  // Severity style helper with bilingual localization
   const getSeverityBadge = (severity: string) => {
+    const isEn = languageMode === 'en';
     switch (severity.toLowerCase()) {
       case 'contraindicated':
         return (
           <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-rose-700 text-white">
-            KONTRAINDIKASI
+            {isEn ? 'CONTRAINDICATED' : 'KONTRAINDIKASI MUTLAK'}
           </span>
         );
       case 'major':
         return (
           <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-rose-100 text-rose-800 border border-rose-300">
-            MAJOR
+            {isEn ? 'MAJOR / SEVERE' : 'PARAH / MAYOR'}
           </span>
         );
       case 'moderate':
         return (
           <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-amber-100 text-amber-900 border border-amber-300">
-            MODERATE
+            {isEn ? 'MODERATE' : 'SEDANG / MODERAT'}
           </span>
         );
       case 'minor':
         return (
           <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-slate-100 text-slate-700 border border-slate-300">
-            MINOR
+            {isEn ? 'MINOR' : 'RINGAN / MINOR'}
           </span>
         );
       case 'unknown':
         return (
           <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-[#b6b2b2]/20 text-slate-700 border border-[#b6b2b2]">
-            UNKNOWN
+            {isEn ? 'UNKNOWN / SAFE' : 'BELUM TERDATA'}
           </span>
         );
       default:
@@ -710,6 +734,45 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
             </div>
           </div>
 
+          {/* Language Selection & Translation Control Bar */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white p-3.5 rounded-xl border border-slate-200 shadow-2xs">
+            <div className="flex items-center gap-2 text-xs text-slate-700">
+              <Globe className="w-4 h-4 text-teal-700 shrink-0" />
+              <span className="font-bold">Bahasa Hasil Penapisan:</span>
+              <span className="text-slate-500 text-[11px] hidden md:inline">
+                {languageMode === 'id'
+                  ? 'Mekanisme & rekomendasi otomatis disesuaikan ke Bahasa Indonesia klinis'
+                  : 'Displaying original source text from DDInter 2.0 / DrugBank'}
+              </span>
+            </div>
+            <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-lg border border-slate-200 self-start sm:self-auto">
+              <button
+                type="button"
+                onClick={() => setLanguageMode('id')}
+                className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all cursor-pointer flex items-center gap-1.5 ${
+                  languageMode === 'id'
+                    ? 'bg-teal-800 text-white shadow-2xs'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
+                }`}
+              >
+                <span>🇮🇩 Bahasa Indonesia</span>
+                {languageMode === 'id' && <Check className="w-3 h-3" />}
+              </button>
+              <button
+                type="button"
+                onClick={() => setLanguageMode('en')}
+                className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all cursor-pointer flex items-center gap-1.5 ${
+                  languageMode === 'en'
+                    ? 'bg-teal-800 text-white shadow-2xs'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/60'
+                }`}
+              >
+                <span>🌐 English (Sumber Asli)</span>
+                {languageMode === 'en' && <Check className="w-3 h-3" />}
+              </button>
+            </div>
+          </div>
+
           {/* 5-Dimensional Segmented Navigation Tabs */}
           <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-xs">
             <div className="flex border-b border-slate-200 bg-slate-50/60 overflow-x-auto">
@@ -721,7 +784,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                     : 'border-transparent text-slate-600 hover:text-slate-900'
                 }`}
               >
-                <span>1. Interaksi Obat-Obat</span>
+                <span>{languageMode === 'en' ? '1. Drug-Drug Interactions' : '1. Interaksi Obat-Obat'}</span>
                 <span
                   className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono ${
                     analysis.drugInteractions.length > 0
@@ -745,7 +808,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                 }`}
               >
                 <Utensils className="w-3.5 h-3.5" />
-                <span>2. Interaksi Obat-Makanan</span>
+                <span>{languageMode === 'en' ? '2. Drug-Food Interactions' : '2. Interaksi Obat-Makanan'}</span>
                 <span className="px-1.5 py-0.2 rounded-full text-[10px] font-mono bg-slate-200 text-slate-600">
                   {analysis.foodInteractions.length}
                 </span>
@@ -760,7 +823,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                 }`}
               >
                 <Stethoscope className="w-3.5 h-3.5" />
-                <span>3. Interaksi Obat-Penyakit</span>
+                <span>{languageMode === 'en' ? '3. Drug-Disease Contraindications' : '3. Interaksi Obat-Penyakit'}</span>
                 <span
                   className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono ${
                     analysis.diseaseInteractions.length > 0
@@ -781,7 +844,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                 }`}
               >
                 <CopyX className="w-3.5 h-3.5" />
-                <span>4. Duplikasi Terapi</span>
+                <span>{languageMode === 'en' ? '4. Therapeutic Duplications' : '4. Duplikasi Terapi'}</span>
                 <span
                   className={`px-1.5 py-0.2 rounded-full text-[10px] font-mono ${
                     analysis.therapeuticDuplications.length > 0
@@ -802,7 +865,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                 }`}
               >
                 <Layers className="w-3.5 h-3.5" />
-                <span>5. Matriks Interaksi (N×N)</span>
+                <span>{languageMode === 'en' ? '5. Interaction Matrix (N×N)' : '5. Matriks Interaksi (N×N)'}</span>
               </button>
             </div>
 
@@ -817,7 +880,11 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                       Tidak ditemukan interaksi obat-obat (DDI) berbahaya di antara pasangan obat yang dipilih.
                     </div>
                   ) : (
-                    analysis.drugInteractions.map((inter) => (
+                    analysis.drugInteractions.map((inter) => {
+                      const activeMech = (languageMode === 'en' && inter.originalMechanism) ? inter.originalMechanism : inter.mechanism;
+                      const activeMgmt = (languageMode === 'en' && inter.originalManagement) ? inter.originalManagement : inter.management;
+
+                      return (
                       <div
                         key={inter.id}
                         className="border border-slate-200 rounded-xl p-5 bg-white space-y-3 shadow-2xs hover:border-slate-300 transition-colors"
@@ -825,7 +892,23 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                         <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
                           <div className="flex items-center gap-2">
                             <h3 className="text-base font-bold text-slate-900">
-                              {inter.drugA.name} <span className="text-rose-600 font-mono">⟷</span> {inter.drugB.name}
+                              <button
+                                type="button"
+                                onClick={() => handleOpenDrugPreview(inter.drugA.ddinterId || inter.drugA.name)}
+                                className="hover:text-indigo-600 hover:underline cursor-pointer text-left"
+                                title={`Lihat monografi internal ${inter.drugA.name}`}
+                              >
+                                {inter.drugA.name}
+                              </button>{' '}
+                              <span className="text-rose-600 font-mono">⟷</span>{' '}
+                              <button
+                                type="button"
+                                onClick={() => handleOpenDrugPreview(inter.drugB.ddinterId || inter.drugB.name)}
+                                className="hover:text-indigo-600 hover:underline cursor-pointer text-left"
+                                title={`Lihat monografi internal ${inter.drugB.name}`}
+                              >
+                                {inter.drugB.name}
+                              </button>
                             </h3>
                             {inter.ddinterId && (
                               <span className="text-xs font-mono bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded">
@@ -837,7 +920,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                             {getSeverityBadge(inter.severity)}
                             {inter.evidenceLevel && inter.evidenceLevel !== '-' && inter.severity.toLowerCase() !== 'unknown' && (
                               <span className="text-[11px] font-mono text-slate-500">
-                                Bukti: Level {inter.evidenceLevel}
+                                {languageMode === 'en' ? 'Evidence: Level ' : 'Bukti: Level '}{inter.evidenceLevel}
                               </span>
                             )}
                           </div>
@@ -859,31 +942,24 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
 
                         <div className="space-y-2 text-xs">
                           <div>
-                            <strong className="text-slate-800 block mb-0.5">Mekanisme Farmakologi:</strong>
+                            <strong className="text-slate-800 block mb-0.5">
+                              {languageMode === 'en' ? 'Pharmacological Mechanism:' : 'Mekanisme Farmakologi:'}
+                            </strong>
                             <p className="text-slate-700 leading-relaxed bg-slate-50 p-2.5 rounded border border-slate-100">
-                              {inter.mechanism}
+                              {activeMech}
                             </p>
                           </div>
 
                           <div>
-                            <strong className={inter.clinicalEffect && inter.clinicalEffect !== '-' ? "text-rose-900 block mb-0.5" : "text-slate-800 block mb-0.5"}>Dampak Klinis:</strong>
+                            <strong className={activeMgmt && activeMgmt !== '-' ? "text-teal-950 block mb-0.5 font-semibold" : "text-slate-800 block mb-0.5"}>
+                              {languageMode === 'en' ? 'Clinical Management Guidance:' : 'Rekomendasi Manajemen Klinis:'}
+                            </strong>
                             <p className={`leading-relaxed p-2.5 rounded border ${
-                              inter.clinicalEffect && inter.clinicalEffect !== '-'
-                                ? 'text-rose-950 bg-rose-50/50 border-rose-100'
-                                : 'text-slate-500 bg-slate-50 border-slate-100'
-                            }`}>
-                              {inter.clinicalEffect}
-                            </p>
-                          </div>
-
-                          <div>
-                            <strong className={inter.management && inter.management !== '-' ? "text-teal-950 block mb-0.5" : "text-slate-800 block mb-0.5"}>Rekomendasi Manajemen Klinis:</strong>
-                            <p className={`leading-relaxed p-2.5 rounded border ${
-                              inter.management && inter.management !== '-'
+                              activeMgmt && activeMgmt !== '-'
                                 ? 'text-teal-950 font-medium bg-teal-50/60 border-teal-200'
                                 : 'text-slate-500 bg-slate-50 border-slate-100'
                             }`}>
-                              {inter.management}
+                              {activeMgmt}
                             </p>
                           </div>
                         </div>
@@ -1006,27 +1082,21 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                                     </div>
                                     <div className="flex flex-wrap gap-1.5">
                                       {alts.map((alt, aIdx) => (
-                                        <a
+                                        <button
                                           key={aIdx}
-                                          href={
-                                            alt.ddinterId
-                                              ? `https://ddinter2.scbdd.com/server/drug-detail/${alt.ddinterId}/`
-                                              : undefined
-                                          }
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                          className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs bg-white border border-slate-200 text-slate-800 hover:border-indigo-300 hover:text-indigo-800 shadow-2xs transition-colors"
+                                          type="button"
+                                          onClick={() => handleOpenDrugPreview(alt.ddinterId || alt.name, drugName)}
+                                          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs bg-white border border-slate-200 text-slate-800 hover:border-indigo-400 hover:text-indigo-800 hover:bg-indigo-50/50 shadow-2xs transition-all cursor-pointer group"
+                                          title={`Klik untuk melihat monografi internal ${alt.name} & opsi substitusi terapi`}
                                         >
                                           {alt.atc && (
-                                            <span className="text-[10px] font-mono px-1 py-0.2 rounded bg-slate-100 text-slate-600 font-semibold">
+                                            <span className="text-[10px] font-mono px-1 py-0.2 rounded bg-slate-100 group-hover:bg-indigo-100 group-hover:text-indigo-800 text-slate-600 font-semibold transition-colors">
                                               {alt.atc}
                                             </span>
                                           )}
                                           <span className="font-medium">{alt.name}</span>
-                                          {alt.ddinterId && (
-                                            <ExternalLink className="w-2.5 h-2.5 text-slate-400" />
-                                          )}
-                                        </a>
+                                          <Info className="w-3 h-3 text-slate-400 group-hover:text-indigo-600 transition-colors" />
+                                        </button>
                                       ))}
                                     </div>
                                   </div>
@@ -1123,7 +1193,8 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                           </div>
                         )}
                       </div>
-                    ))
+                    );
+                    })
                   )}
                 </div>
               )}
@@ -1136,7 +1207,13 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                       Tidak ada interaksi makanan/minuman signifikan yang terdaftar untuk obat-obat yang dipilih.
                     </div>
                   ) : (
-                    analysis.foodInteractions.map((food) => (
+                    analysis.foodInteractions.map((food) => {
+                      const activeFoodName = (languageMode === 'en' && food.originalFoodItem) ? food.originalFoodItem : (typeof food.foodItem === 'object' ? (food.foodItem as any)?.name : food.foodItem);
+                      const activeMech = (languageMode === 'en' && food.originalMechanism) ? food.originalMechanism : food.mechanism;
+                      const activeEffect = (languageMode === 'en' && food.originalEffect) ? food.originalEffect : food.effect;
+                      const activeRec = (languageMode === 'en' && food.originalRecommendation) ? food.originalRecommendation : food.recommendation;
+
+                      return (
                       <div
                         key={food.id}
                         className="border border-slate-200 rounded-xl p-5 bg-white space-y-3 shadow-2xs hover:border-slate-300 transition-colors"
@@ -1148,7 +1225,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                             </span>
                             <span className="text-slate-400 font-mono">⟷</span>
                             <span className="font-bold text-amber-900 text-sm">
-                              {typeof food.foodItem === 'object' ? (food.foodItem as any)?.name : food.foodItem}
+                              {activeFoodName}
                             </span>
                           </div>
                           {getSeverityBadge(food.severity)}
@@ -1156,23 +1233,29 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
 
                         <div className="space-y-2 text-xs">
                           <div>
-                            <strong className="text-slate-800 block mb-0.5">Mekanisme Interaksi Nutrisi:</strong>
+                            <strong className="text-slate-800 block mb-0.5">
+                              {languageMode === 'en' ? 'Nutritional Interaction Mechanism:' : 'Mekanisme Interaksi Nutrisi:'}
+                            </strong>
                             <p className="text-slate-600 bg-slate-50 p-2.5 rounded border border-slate-100 leading-relaxed">
-                              {food.mechanism}
+                              {activeMech}
                             </p>
                           </div>
 
                           <div>
-                            <strong className="text-rose-900 block mb-0.5">Efek Klinis:</strong>
+                            <strong className="text-rose-900 block mb-0.5">
+                              {languageMode === 'en' ? 'Clinical Effect:' : 'Efek Klinis:'}
+                            </strong>
                             <p className="text-rose-950 bg-rose-50/50 p-2.5 rounded border border-rose-100 leading-relaxed">
-                              {food.effect}
+                              {activeEffect}
                             </p>
                           </div>
 
                           <div>
-                            <strong className="text-teal-950 block mb-0.5">Konseling Pasien / Edukasi Diet:</strong>
+                            <strong className="text-teal-950 block mb-0.5">
+                              {languageMode === 'en' ? 'Patient Counseling / Dietary Advice:' : 'Konseling Pasien / Edukasi Diet:'}
+                            </strong>
                             <p className="text-teal-950 font-medium bg-teal-50/60 p-2.5 rounded border border-teal-200 leading-relaxed">
-                              {food.recommendation}
+                              {activeRec}
                             </p>
                           </div>
                         </div>
@@ -1264,7 +1347,8 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                           </div>
                         )}
                       </div>
-                    ))
+                    );
+                    })
                   )}
                 </div>
               )}
@@ -1287,7 +1371,12 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                       )}
                     </div>
                   ) : (
-                    analysis.diseaseInteractions.map((item) => (
+                    analysis.diseaseInteractions.map((item) => {
+                      const activeDisName = (languageMode === 'en' && item.originalDiseaseName) ? item.originalDiseaseName : (typeof item.diseaseName === 'object' ? (item.diseaseName as any)?.name : item.diseaseName);
+                      const activeRisk = (languageMode === 'en' && item.originalRisk) ? item.originalRisk : item.risk;
+                      const activeMgmt = (languageMode === 'en' && item.originalManagement) ? item.originalManagement : item.management;
+
+                      return (
                       <div
                         key={item.id}
                         className="border-2 border-rose-200 bg-rose-50/20 rounded-xl p-5 space-y-3"
@@ -1299,7 +1388,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                             </span>
                             <span className="text-rose-600 font-mono">⟷</span>
                             <span className="font-bold text-rose-900 text-sm">
-                              {typeof item.diseaseName === 'object' ? (item.diseaseName as any)?.name : item.diseaseName}
+                              {activeDisName}
                             </span>
                           </div>
                           {getSeverityBadge(item.severity)}
@@ -1307,16 +1396,20 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
 
                         <div className="space-y-2 text-xs">
                           <div>
-                            <strong className="text-rose-900 block mb-0.5">Bahaya Patofisiologis:</strong>
+                            <strong className="text-rose-900 block mb-0.5">
+                              {languageMode === 'en' ? 'Pathophysiological Hazard:' : 'Bahaya Patofisiologis:'}
+                            </strong>
                             <p className="text-rose-950 font-medium bg-rose-100/50 p-2.5 rounded border border-rose-200 leading-relaxed">
-                              {item.risk}
+                              {activeRisk}
                             </p>
                           </div>
 
                           <div>
-                            <strong className="text-slate-800 block mb-0.5">Tindakan Klinis:</strong>
+                            <strong className="text-slate-800 block mb-0.5">
+                              {languageMode === 'en' ? 'Clinical Action / Management:' : 'Tindakan Klinis:'}
+                            </strong>
                             <p className="text-slate-700 bg-white p-2.5 rounded border border-slate-200 leading-relaxed">
-                              {item.management}
+                              {activeMgmt}
                             </p>
                           </div>
                         </div>
@@ -1408,7 +1501,8 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                           </div>
                         )}
                       </div>
-                    ))
+                    );
+                    })
                   )}
                 </div>
               )}
@@ -1422,7 +1516,11 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                       Tidak ditemukan duplikasi terapi atau peresepan ganda kelas obat yang sama (misal 2 NSAID atau 2 ARB).
                     </div>
                   ) : (
-                    analysis.therapeuticDuplications.map((dup) => (
+                    analysis.therapeuticDuplications.map((dup) => {
+                      const activeConcern = (languageMode === 'en' && dup.originalConcern) ? dup.originalConcern : dup.concern;
+                      const activeRec = (languageMode === 'en' && dup.originalRecommendation) ? dup.originalRecommendation : dup.recommendation;
+
+                      return (
                       <div
                         key={dup.id}
                         className="border-2 border-amber-300 bg-amber-50/30 rounded-xl p-5 space-y-3"
@@ -1433,26 +1531,30 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                               {typeof dup.drugA === 'object' ? (dup.drugA as any)?.name : dup.drugA} + {typeof dup.drugB === 'object' ? (dup.drugB as any)?.name : dup.drugB}
                             </span>
                             <div className="text-[11px] font-mono text-amber-900 mt-0.5">
-                              Kelas: {dup.therapeuticClass} ({dup.atcGroup})
+                              {languageMode === 'en' ? 'Class: ' : 'Kelas: '}{dup.therapeuticClass} ({dup.atcGroup})
                             </div>
                           </div>
                           <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-amber-500 text-white">
-                            DUPLIKASI KELAS TERAPI
+                            {languageMode === 'en' ? 'THERAPEUTIC DUPLICATION' : 'DUPLIKASI KELAS TERAPI'}
                           </span>
                         </div>
 
                         <div className="space-y-2 text-xs">
                           <div>
-                            <strong className="text-amber-950 block mb-0.5">Masalah Klinis (Polifarmasi Redundan):</strong>
+                            <strong className="text-amber-950 block mb-0.5">
+                              {languageMode === 'en' ? 'Clinical Concern (Redundant Polypharmacy):' : 'Masalah Klinis (Polifarmasi Redundan):'}
+                            </strong>
                             <p className="text-slate-800 leading-relaxed bg-white p-3 rounded-lg border border-amber-200">
-                              {dup.concern}
+                              {activeConcern}
                             </p>
                           </div>
 
                           <div>
-                            <strong className="text-teal-950 block mb-0.5">Rekomendasi Apoteker / Dokter:</strong>
+                            <strong className="text-teal-950 block mb-0.5">
+                              {languageMode === 'en' ? 'Pharmacist / Clinician Recommendation:' : 'Rekomendasi Apoteker / Dokter:'}
+                            </strong>
                             <p className="text-teal-950 font-medium leading-relaxed bg-teal-50/70 p-3 rounded-lg border border-teal-200">
-                              {dup.recommendation}
+                              {activeRec}
                             </p>
                           </div>
                         </div>
@@ -1534,7 +1636,8 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                           </div>
                         )}
                       </div>
-                    ))
+                    );
+                    })
                   )}
                 </div>
               )}
@@ -1603,7 +1706,7 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
                                       : 'bg-amber-100 text-amber-900 border border-amber-200'
                                   }`}
                                   onClick={() => setActiveTab('ddi')}
-                                  title={`${rowDrug.name} + ${colDrug.name}: ${interaction.clinicalEffect}`}
+                                  title={`${rowDrug.name} + ${colDrug.name}: ${interaction.severity} - ${interaction.mechanism}`}
                                 >
                                   {interaction.severity}
                                 </td>
@@ -1633,6 +1736,18 @@ export const InteractionCheckerView: React.FC<InteractionCheckerViewProps> = ({
           </p>
         </div>
       )}
+
+      {/* Internal Drug Monograph Preview & Substitution Modal */}
+      <DrugPreviewModal
+        drugId={previewDrugId}
+        replacingDrugName={replacingDrugName}
+        isOpen={Boolean(previewDrugId)}
+        onClose={() => {
+          setPreviewDrugId(null);
+          setReplacingDrugName(null);
+        }}
+        onSwapDrug={handleSwapDrug}
+      />
     </div>
   );
 };

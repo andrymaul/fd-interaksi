@@ -12,28 +12,86 @@ import { DiseaseDetailPage } from './components/DiseaseDetailPage.tsx';
 import { InteractionCheckerView } from './components/InteractionCheckerView.tsx';
 import { DDInterTableView } from './components/DDInterTableView.tsx';
 import { CacheStatsModal } from './components/CacheStatsModal.tsx';
+import { AdminPinModal } from './components/AdminPinModal.tsx';
 
 export default function App() {
-  const [currentPath, setCurrentPath] = useState<string>(() => window.location.pathname || '/');
+  const [isAdmin, setIsAdmin] = useState<boolean>(() => {
+    return localStorage.getItem('fd_admin_access') === 'true';
+  });
+  const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
+
+  const [currentPath, setCurrentPath] = useState<string>(() => {
+    const p = window.location.pathname || '/';
+    // If not admin and visiting restricted paths, default to /interaksi
+    const storedAdmin = localStorage.getItem('fd_admin_access') === 'true';
+    if (!storedAdmin && (p === '/' || p === '/obat' || p.startsWith('/penyakit') || p.startsWith('/tabel'))) {
+      return '/interaksi';
+    }
+    return p;
+  });
+
   const [selectedDrugIds, setSelectedDrugIds] = useState<string[]>([]);
   const [selectedDiseaseIds, setSelectedDiseaseIds] = useState<string[]>([]);
   const [isCacheModalOpen, setIsCacheModalOpen] = useState(false);
   const [cacheHitCount, setCacheHitCount] = useState(0);
 
-  // Sync state with browser navigation
+  // Check URL query parameters for instant unlock (e.g. ?pin=Sukses@321 or ?admin=Sukses@321)
+  useEffect(() => {
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      const pinParam = searchParams.get('pin') || searchParams.get('admin');
+      if (pinParam === 'Sukses@321') {
+        localStorage.setItem('fd_admin_access', 'true');
+        setIsAdmin(true);
+        // Clean URL
+        searchParams.delete('pin');
+        searchParams.delete('admin');
+        const newSearch = searchParams.toString() ? `?${searchParams.toString()}` : '';
+        window.history.replaceState({}, '', `${window.location.pathname}${newSearch}`);
+      }
+    } catch {}
+  }, []);
+
+  // Sync state with browser navigation and enforce visitor redirect
   useEffect(() => {
     const handlePopState = () => {
-      setCurrentPath(window.location.pathname || '/');
+      const p = window.location.pathname || '/';
+      if (!isAdmin && (p === '/' || p === '/obat' || p.startsWith('/penyakit') || p.startsWith('/tabel') || p.startsWith('/obat/'))) {
+        navigate('/interaksi');
+      } else {
+        setCurrentPath(p);
+      }
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  }, [isAdmin]);
+
+  // If visitor is on restricted path, automatically push to /interaksi
+  useEffect(() => {
+    if (!isAdmin && (currentPath === '/' || currentPath === '/obat' || currentPath.startsWith('/penyakit') || currentPath.startsWith('/tabel') || currentPath.startsWith('/obat/'))) {
+      navigate('/interaksi');
+    }
+  }, [isAdmin, currentPath]);
 
   const navigate = (path: string) => {
     if (window.location.pathname !== path) {
       window.history.pushState({}, '', path);
     }
     setCurrentPath(path);
+  };
+
+  const handleUnlockAdmin = () => {
+    localStorage.setItem('fd_admin_access', 'true');
+    setIsAdmin(true);
+    setIsAdminModalOpen(false);
+  };
+
+  const handleLockAdmin = () => {
+    if (window.confirm('Kunci kembali ke Mode Visitor? (Menu internal akan disembunyikan)')) {
+      localStorage.removeItem('fd_admin_access');
+      setIsAdmin(false);
+      navigate('/interaksi');
+    }
   };
 
   const fetchCacheStats = async () => {
@@ -71,48 +129,58 @@ export default function App() {
   };
 
   // Route matching logic
-  let activeTab: ActiveTab = 'drugs';
+  let activeTab: ActiveTab = 'interactions';
   let drugDetailId: string | null = null;
   let diseaseDetailName: string | null = null;
 
-  if (currentPath.startsWith('/obat/') && currentPath.length > 6) {
-    activeTab = 'drugs';
-    drugDetailId = decodeURIComponent(currentPath.slice(6));
-  } else if (currentPath === '/obat' || currentPath === '/') {
-    activeTab = 'drugs';
-  } else if (currentPath.startsWith('/penyakit/') && currentPath.length > 10) {
-    activeTab = 'diseases';
-    diseaseDetailName = decodeURIComponent(currentPath.slice(10));
-  } else if (currentPath.startsWith('/penyakit')) {
-    activeTab = 'diseases';
-  } else if (currentPath.startsWith('/interaksi') || currentPath.startsWith('/uji-interaksi')) {
-    activeTab = 'interactions';
-  } else if (currentPath.startsWith('/tabel') || currentPath.startsWith('/tabel-interaksi')) {
-    activeTab = 'ddinter-table';
+  if (isAdmin) {
+    if (currentPath.startsWith('/obat/') && currentPath.length > 6) {
+      activeTab = 'drugs';
+      drugDetailId = decodeURIComponent(currentPath.slice(6));
+    } else if (currentPath === '/obat' || currentPath === '/') {
+      activeTab = 'drugs';
+    } else if (currentPath.startsWith('/penyakit/') && currentPath.length > 10) {
+      activeTab = 'diseases';
+      diseaseDetailName = decodeURIComponent(currentPath.slice(10));
+    } else if (currentPath.startsWith('/penyakit')) {
+      activeTab = 'diseases';
+    } else if (currentPath.startsWith('/interaksi') || currentPath.startsWith('/uji-interaksi')) {
+      activeTab = 'interactions';
+    } else if (currentPath.startsWith('/tabel') || currentPath.startsWith('/tabel-interaksi')) {
+      activeTab = 'ddinter-table';
+    } else {
+      activeTab = 'drugs';
+    }
   } else {
-    activeTab = 'drugs';
+    // Visitor Mode: strictly 'interactions'
+    activeTab = 'interactions';
+    drugDetailId = null;
+    diseaseDetailName = null;
   }
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans selection:bg-teal-100 selection:text-teal-900">
-      {/* Top Navbar with URL navigation */}
+      {/* Top Navbar with Role-based tabs and URL navigation */}
       <Navbar
         activeTab={activeTab}
         onNavigate={navigate}
+        isAdmin={isAdmin}
+        onOpenAdminModal={() => setIsAdminModalOpen(true)}
+        onLockAdmin={handleLockAdmin}
         onOpenCacheStats={() => setIsCacheModalOpen(true)}
         cacheHitCount={cacheHitCount}
       />
 
       {/* Main Content Viewport */}
       <main className={`flex-1 w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 ${activeTab === 'ddinter-table' ? 'max-w-[1440px]' : 'max-w-7xl'}`}>
-        {/* Route: /obat/:id -> Dedicated Drug Detail Page */}
-        {drugDetailId ? (
+        {/* Route: /obat/:id -> Dedicated Drug Detail Page (Admin only) */}
+        {isAdmin && drugDetailId ? (
           <DrugDetailPage
             drugId={drugDetailId}
             onBack={() => navigate('/obat')}
             onSelectForInteraction={handleSelectDrugForInteraction}
           />
-        ) : diseaseDetailName ? (
+        ) : isAdmin && diseaseDetailName ? (
           <DiseaseDetailPage
             diseaseName={diseaseDetailName}
             onBack={() => navigate('/penyakit')}
@@ -121,7 +189,7 @@ export default function App() {
           />
         ) : (
           <>
-            {activeTab === 'drugs' && (
+            {isAdmin && activeTab === 'drugs' && (
               <DrugMonographView
                 onSelectForInteraction={handleSelectDrugForInteraction}
                 selectedDrugIds={selectedDrugIds}
@@ -129,7 +197,7 @@ export default function App() {
               />
             )}
 
-            {activeTab === 'diseases' && (
+            {isAdmin && activeTab === 'diseases' && (
               <DiseaseInfoView
                 onSelectForInteraction={handleSelectDiseaseForInteraction}
                 selectedDiseaseIds={selectedDiseaseIds}
@@ -146,7 +214,7 @@ export default function App() {
               />
             )}
 
-            {activeTab === 'ddinter-table' && (
+            {isAdmin && activeTab === 'ddinter-table' && (
               <DDInterTableView
                 onSelectForInteraction={handleSelectDrugForInteraction}
                 onOpenDrugMonograph={(id) => navigate(`/obat/${encodeURIComponent(id)}`)}
@@ -155,6 +223,13 @@ export default function App() {
           </>
         )}
       </main>
+
+      {/* Admin PIN Unlock Modal */}
+      <AdminPinModal
+        isOpen={isAdminModalOpen}
+        onClose={() => setIsAdminModalOpen(false)}
+        onSuccess={handleUnlockAdmin}
+      />
 
       {/* Cache Telemetry Modal */}
       <CacheStatsModal

@@ -137,6 +137,9 @@ export interface DrugInteraction {
   references?: string[];
   alternatives?: Record<string, { name: string; ddinterId?: string; atc?: string }[]>;
   cypMetabolism?: Record<string, Record<string, number>>;
+  originalMechanism?: string;
+  originalClinicalEffect?: string;
+  originalManagement?: string;
   officialInteractId?: string;
 }
 
@@ -152,6 +155,10 @@ export interface FoodInteraction {
   recommendation: string;
   references?: string[];
   source?: string;
+  originalFoodItem?: string;
+  originalMechanism?: string;
+  originalEffect?: string;
+  originalRecommendation?: string;
 }
 
 export interface DiseaseContraindication {
@@ -166,6 +173,10 @@ export interface DiseaseContraindication {
   management: string;
   references?: string[];
   source?: string;
+  originalDiseaseName?: string;
+  originalRisk?: string;
+  originalMechanism?: string;
+  originalManagement?: string;
 }
 
 export interface TherapeuticDuplication {
@@ -178,6 +189,8 @@ export interface TherapeuticDuplication {
   recommendation: string;
   references?: string[];
   source?: string;
+  originalConcern?: string;
+  originalRecommendation?: string;
 }
 
 export interface RegimenAnalysisResult {
